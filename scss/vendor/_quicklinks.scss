@@ -1,0 +1,31 @@
+//  Quicklinks v2
+//  Docs: http://slatecms.wvu.edu/howtos/developers/theme_development/quicklinks_drop_down_menu
+//  Adapted from: http://examples.furtherahead.com/css-menu/option-4.html 
+//  You should put these styles at the top of your site's stylesheet for better performance & one less http request.
+
+//  Custom changes:
+// Changed selector from an ID to a class
+// Changed downarrow.png background position to 98.5%.
+
+.quicklinks li { font-size: 10px; }
+.quicklinks, .quicklinks ul { margin: 0; padding: 0; list-style: none; }
+
+// Top level nav
+.quicklinks { float: left; margin: 20px 0; /* top bottom outer margin */ background: url(https://code.wvu.edu/public/vendor/quicklinks/2.0/images/downarrow.png) no-repeat #fff 98.5% 10px; border: 1px solid #cedeef; }
+
+// Dropdowns
+.quicklinks ul { position: absolute; z-index: 5000; top: 2.45em; // this is how far from the top hover menu should be displayed. Edit in conjunction with font-size of #quicklinks ul a.
+  left: -9999em; opacity: 0; -webkit-transition: opacity 0.1s linear; transition: opacity 0.1s linear;  min-width: 150px; background-color: #fff; border: 1px solid #cedeef; border-top: 0; }
+.quicklinks li { float: left; position: relative; }
+
+// Top level nav items
+.quicklinks li > a { float: left; padding: 5px; width: 100%; color: #333; font-size: 12px; text-decoration: none; }
+
+// Top level hover state, preserve hover state when hovering dropdown 
+.quicklinks li > a:hover, .quicklinks li > a:focus, .quicklinks li:focus > a, .quicklinks li:hover > a { outline: 0; color: #666; }
+.quicklinks li:hover ul, .quicklinks li:focus ul, .quicklinks ul.show-menu { left: 0; opacity: 0.99; color: #333; }
+.quicklinks ul li { float: none; position: static; }
+.quicklinks ul a { float: none; display: block; color: #333; font-size: 12px; border: 1px solid #fff; border-right: 2px solid #fff; border-top: 0; width: 90%; -webkit-transition: all 0.1s linear;  /* Saf3.2+, Chrome */ -moz-transition: all 0.1s linear;  /* FF4+ */ -ms-transition: all 0.1s linear;  /* IE10? */ -o-transition: all 0.1s linear;  /* Opera 10.5+ */ transition: all 0.1s linear; }
+.quicklinks ul a:hover, .quicklinks ul a:focus { background: #cedeef; color: #333; }
+.quicklinks div.version-nav a { background-color: transparent; display: inline; }
+.quicklinks .area-text { position: relative; top: -20px; }

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="u-full-width">
+  <div class="container">
+
+    <r:breadcrumbs ul_class="breadcrumbs sixteen columns" />
+
+    <main class="main-container u-full-width" role="main">
+      <aside class="sidebar four columns">
+        <div class="nav__main" role="navigation">
+          <r:ancestor_menu start_depth="1" max_depth="3" active_class="nav__main--current-page" open_class="nav__main--open"/>
+        </div> <!-- /.nav__main -->
+      </aside> <!-- /.sidebar -->
+      <h1 class="main__heading twelve columns"><r:page:first_non_blank_attr names="alternate_name,name" /></h1>
+      <r:partial name="staff__individual-loop" />
+    </main><!-- /.main-container -->
+
+   </div> <!-- /.container -->
+ </div> <!-- /.u-full-width -->

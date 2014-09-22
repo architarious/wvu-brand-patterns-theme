@@ -1,0 +1,86 @@
+// Staff Index & Profile Styles
+//==================================================
+// Styles for the main content in the staff_*.html templates
+
+// Staff loop
+.staff-index { padding-left: 0; list-style-type: none; margin-top: 40px; margin-bottom: 90px; }
+.staff-index__department-name { border-bottom: 0; width: 100%; text-align: center; max-width: none; float: left;
+  a { border-bottom: 1px solid #ccc; color: $basecolor; width: 100%; float: left; padding-bottom: 8px; 
+    &:hover { color: $linkhover; text-decoration: underline; }
+  } //a
+  @include mq($bp-large) { font-size: 1.7em; }
+} //.staff-index__department-name
+.staff-index__btn { font-size: 1em; margin-top: 15px; 
+  @include mq($bp-medium) { font-size: 0.66em; width: 100%; }
+  @include mq($bp-large) { font-size: .9em; }
+  @include mq($bp-xlarge) { font-size: 1em; }
+} //.staff-index__btn
+.staff-index__btn-icon { font-size: 1.3em; position: relative; top: 3px; padding-left: 6px; }
+
+// Each person
+// -----------------------------
+.staff-index__individual { margin-bottom: 20px; border-top: 2px dotted #ccc; padding-top: 44px; 
+  @include mq($bp-mini) { border-top: 0; padding-top: 0; }
+} //.staff-index__individual
+.staff-index .staff-index__individual:first-child { border-top: 0; padding-top: 0; }
+
+// Clearing people to harden layout
+.staff_index { // .staff_index refers to the **page template,** not the .staff-index class
+  .staff-index__individual {
+    @include mq($bp-medium) { 
+      &:nth-child(odd) { clear: left; } // Make sure there's only 2 people per row 
+    } //$bp-medium
+  } //.staff-index__individual 
+} //.staff_index
+
+// Clear people on the department page
+.staff_department {
+  .staff-index__individual {
+    @include mq($bp-medium) { 
+      &:nth-child(even) { clear: left; } // Make sure there's only 2 people per row 
+    } //$bp-medium
+  } //.staff-index__individual 
+} //.staff_department
+
+.staff-index__individual-photo-btn { 
+ @include mq($bp-mini) { max-width: 175px; }
+ @include mq($bp-small) { max-width: 275px; }
+ @include mq($bp-medium) { max-width: none; }
+} //.staff-index__individual-photo-btn
+
+// Since I want a custom layout for small sizes, I'm not using the grid on this div
+// mainly for specificity reasons (I'd have to override .container .six.columns)
+.staff-index__individual-info { font-size: .95em; line-height: 1.5; width: 100%; float: left; 
+  @include mq($bp-mini) { width: 42%; margin-left: 20px; }
+  @include mq($bp-medium) { width: 59%; margin-left: 1.30208%; }
+  @include mq($bp-large) { width: 60%; }
+} //.staff-index__individual-info
+.staff-index__name { margin-top: 10px; margin-bottom: 0; text-transform: none; font-size: 1.6em; 
+  @include mq($bp-medium) { margin-top: 0; }
+} //.staff-index__name
+.staff-index__name-link { color: $basecolor; border-bottom: 0; 
+  &:visited { color: $basecolor; }
+  &:hover { color: $linkhover; }
+} //.staff-index__name-link
+.staff-index__phone, .staff-index__email, .staff-index__description, .staff-index__what-i-do { margin-top: 7px; margin-bottom: 7px; }
+.staff-index__title { margin-top: 3px; }
+
+.staff-index__email {
+  // Prevent email addresses from breaking small layouts
+  -ms-word-break: break-all; // Autoprefixer doesn't have word-break yet, so we're including it here
+  word-break: break-all; // Be VERY careful with "break-all", breaks normal words wh_erever
+  word-break: break-word; // Non standard for webkit
+  overflow-wrap: break-word; // Will replace word-break
+  hyphens: auto;
+  // Then reset it for larger screens
+  @include mq($bp-large) { -ms-word-break: normal; word-break: normal; word-break: normal; overflow-wrap: normal; hyphens: manual; }
+} //.staff-index__email
+
+// Staff Profile
+.staff__photo { margin-bottom: 18px; }
+.staff__meta-info { font-size: .9em; 
+  p { margin-top: 8px; margin-bottom: 8px; }
+} //.staff__meta-info
+
+// Staff index - Chief styles 
+.staff-index__chief-link a { @extend .staff-index__name-link; }

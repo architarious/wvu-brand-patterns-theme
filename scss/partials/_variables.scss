@@ -1,0 +1,52 @@
+// WVU Color Pallette
+//==================================================
+
+// These colors are alread imported into v4 of the global stylesheet; however,
+// if we want to use them in this project, we must import them here as well. 
+
+// Primary
+$wvu-blue: #00447c;
+$wvu-gold: #eeb111;
+$alternate-blue: #005daa;
+
+//  Secondary
+$secondary-light-gold: #ffe894;
+$secondary-middle-blue: #0079c1;
+$secondary-light-blue: #a0c4da;
+$purple: #27318b;
+$dark-orange: #d9531e;
+$orange: #f47b20;
+$orange-med: #d9531e;
+$dark-grey: #455560;
+$middle-grey: #5c6f7c;
+// 100% Black: #000;
+
+// Tertiary
+$orange-dark: #bb471a;
+$blue-grey: #abc;
+$light-grey: #e0e0e0;
+$vibrant-blue: #39f;
+$grey-blue: #369;
+$bright-purple: #60c;
+
+$basecolor: #333;
+$linkcolor: #0058aa;
+
+// Double Abstraction
+$linkhover: $wvu-gold;
+$linkvisited: $bright-purple;
+
+// Breakpoints
+//==================================================
+
+$bp-mini: 450;
+$bp-small: 570;
+$bp-medium: 768;
+$bp-large: 960;
+$bp-xlarge: 1200;
+
+// Navigation Colors
+$nav-department__background: #002e5d;
+
+// More accessible colors
+$form-search__submit: #ae0d0d;
