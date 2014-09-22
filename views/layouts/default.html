@@ -7,7 +7,7 @@
     <meta name="description" content="<r:page:meta_description />" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="//fast.fonts.net/cssapi/c0b3379d-85a4-4f8d-965b-269e6058825e.css"/> <r:comment><!-- Helvetica Neue Roman, italic, bold, bold italic, & bold condensed (customized for this project!) web font, valid for *.wvu.edu, *.wvutech.edu, & localhost --></r:comment>
-    <r:include_stylesheet name="styles" />
+    <r:include_stylesheet name="normalize, styles" />
 
     <!-- Modernizr includes the HTML5 Shiv and it's required for old IE to recognize HTML5 tags. -->
     <r:include_javascript name="vendor/modernizr-2.8.3.custom" />
@@ -15,11 +15,11 @@
   </head>
   <body class="<r:page:template:name /> page-<r:page:id />">
 
-    <r:partial name="layouts/masthead--v1" theme="Code" />
+    <r:partial name="wvu-masthead" />
 
     <r:partial name="header" />
 
-    <r:partial name="nav-department" />
+    <r:partial name="navigation" />
 
     <div class="photostrip u-full-width"></div>
 
