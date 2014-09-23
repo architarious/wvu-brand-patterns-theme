@@ -697,11 +697,17 @@ header {
       display: table;
       clear: both; }
   .hero-w-overlay .hero-inner {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
     padding: 2em;
     margin: auto;
     color: white;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
     background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%); }
+    .hero-w-overlay .hero-inner:last-child {
+      margin-right: 0; }
     .hero-w-overlay .hero-inner:after {
       content: "";
       display: table;

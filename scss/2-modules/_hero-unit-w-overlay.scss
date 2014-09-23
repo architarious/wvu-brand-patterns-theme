@@ -23,7 +23,7 @@
   }
 
   .hero-inner {
-    
+    @include span-columns(6);
     @include clearfix;
     padding: 2em;
     margin: auto;
