@@ -1,0 +1,16 @@
+
+.spotlights { 
+  h2 { 
+    font-size: $widget-bullet-size /2.5;
+    padding-top: $widget-bullet-size /7;
+    margin-bottom: $widget-bullet-size /6;
+    border-bottom: 1px solid transparentize($base-font-color, .8);
+    display: inline-block;
+  }
+  ul { 
+    li { margin-bottom: $widget-bullet-size /6; display: inline-block; width: 100%;
+      img { float: left; }
+      p { float: left; }
+    }
+  }
+}

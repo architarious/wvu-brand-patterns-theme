@@ -1,0 +1,21 @@
+
+
+.calendar-feed { 
+  h2 { 
+    font-size: $widget-bullet-size /2.5;
+    padding-top: $widget-bullet-size /7;
+    margin-bottom: $widget-bullet-size /6;
+    border-bottom: 1px solid transparentize($base-font-color, .8);
+    display: inline-block;
+  }
+  ul { 
+    li { margin-bottom: $widget-bullet-size /6; display: inline-block; width: 100%;
+      .eventDate { float: left; margin-right: 4%; width: 10%; text-align: center;}
+      .calEventMonth { font-size: .8em; text-transform: uppercase; }
+      .calEventDay { display: block; font-size: 1.5em; line-height: .8em; clear: both; }
+      .eventInfo { float: left; width: 86%;}
+      .eventTime { font-weight: bold; }
+      .eventName { display: block; }
+    }
+  }
+}

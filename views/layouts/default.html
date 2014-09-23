@@ -21,24 +21,18 @@
 
     <r:partial name="navigation" />
 
-    <div class="photostrip u-full-width"></div>
-
     <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/DFAsPv --></r:comment>
     <r:yield />
 
-    <r:partial name="nav-footer" />
-    
-    <r:partial name="diversity-social" />
+    <r:partial name="super-nav" />
 
-    <div class="footer u-full-width u-padded">
-      <div class="container">
-        <footer>
-          <r:partial name="layouts/footer__contact--v1" theme="Code" />
-          <r:partial name="layouts/footer__credits--v1" theme="Code" />
-          <r:partial name="layouts/footer__icons--v1" theme="Code" />
-        </footer> <!-- /.footer -->
-      </div> <!-- /.container -->
-    </div> <!-- /.u-full-width -->
+
+    <footer>
+      <r:partial name="layouts/footer__contact--v1" theme="Code" />
+      <r:partial name="layouts/footer__credits--v1" theme="Code" />
+      <r:partial name="layouts/footer__icons--v1" theme="Code" />
+    </footer> <!-- /.footer -->
+
 
     <!-- Responsive-nav.com, calendar, & quicklinks -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

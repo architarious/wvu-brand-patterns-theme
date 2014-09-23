@@ -1,4 +1,4 @@
-header.navigation {
+.navigation {
   $navigation-padding: 1em;
   $navigation-background: $dark-gray;
   $navigation-color: transparentize(white, 0.3);
@@ -247,7 +247,6 @@ header.navigation {
   .navigation-tools {
     @include clearfix;
     display: block;
-    padding-right: $navigation-padding;
     padding-left: $navigation-padding/2;
     clear: both;
     background: #505050;

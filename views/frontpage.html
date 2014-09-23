@@ -1,17 +1,66 @@
 ---
 layout: default
 ---
-<div class="lead-text u-full-width">
-  <div class="container">
-    <div class="sixteen columns">
-      <h1 class="lead-text__callout">There's a place for <span class="u-highlight">you</span> at WVU<span class="u-highlight"></span></h1>
-    </div> <!-- /.sixteen.columns -->
-  </div> <!-- /.container -->
-</div> <!-- /.lead-text u-full-width -->
-    
-<r:partial name="department-features" />
 
-<r:partial name="current-events" />
+<div class="hero">
+	<div class="hero-inner">
+		<div class="hero-copy">
+			<h1>Short description of Product</h1>
+			<p>A few reasons why this product is worth using, who it's for and why they need it.</p>	
+		</div>
+    <button>Learn More</button>
+	</div>
+</div>
+
+<div class="hero-w-overlay">
+  <div class="hero-inner-wrapper">
+  	<div class="hero-inner">
+  		<div class="hero-copy">
+  			<h1>Short description of Product</h1>
+  			<p>A few reasons why this product is worth using, who it's for and why they need it.</p>	
+  		</div>
+      <button>Learn More</button>
+  	</div>
+  </div>
+</div>
+
+
+<ul class="bullets">
+  <li class="bullet three-col-bullet">
+    <div class="bullet-icon bullet-icon-1">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
+" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>This Bullet Title</h2>
+      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+      </div>
+  </li>  
+  <li class="bullet three-col-bullet">
+    <div class="bullet-icon bullet-icon-2">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Another Bullet Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+    </div>
+  </li>
+  <li class="bullet three-col-bullet">
+    <div class="bullet-icon bullet-icon-3">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Last Bullet Title</h2>
+      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+    </div>
+  </li> 
+</ul>
+
+<div class="widgets">
+  <r:partial name="calendar-feed" />
+  <r:partial name="spotlights" />
+  <r:partial name="spotlights" />
+</div>
 
 <r:content_for name="page_js"> 
   <r:include_javascript name="vendor/calendar-reformat" />

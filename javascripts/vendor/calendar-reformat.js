@@ -14,7 +14,7 @@ $(function(){
   month[10] = "Nov";
   month[11] = "Dec";
 
-  $('#js-current-events__calendar .calEventDate').each(function(i, event) {
+  $('.cal .eventDate').each(function(i, event) {
     ev = {}
     ev.date = new Date($(this).text());
     ev.month = month[ev.date.getMonth()];

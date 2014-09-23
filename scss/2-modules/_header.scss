@@ -1,0 +1,6 @@
+header { background: linear-gradient($middle-grey, $dark-grey); padding: $base-header-padding;
+  .header__logo {
+    @include outer-container;
+    a { font-size: 2em; text-transform: uppercase; color: $header-logo-color;}
+  }
+}
