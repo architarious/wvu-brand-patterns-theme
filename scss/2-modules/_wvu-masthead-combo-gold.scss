@@ -1,4 +1,4 @@
-.wvu-masthead-combo-gold { @include background(linear-gradient($wvu-gold, $pms-115-c));
+.wvu-masthead-combo-gold { background-color: $wvu-gold; @include background(linear-gradient($wvu-gold, $pms-115-c));
   .wvu-masthead-container { padding: 1em; 
     @include media($bp-xlarge) { padding: 0; }
     @include outer-container;

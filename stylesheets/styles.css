@@ -527,6 +527,7 @@ button, input[type="submit"] {
     height: 100%; }
 
 .wvu-masthead-combo {
+  background-color: #002855;
   background: -webkit-linear-gradient(#002855, #005EB8);
   background: linear-gradient(#002855, #005EB8);
   color: white; }
@@ -742,6 +743,7 @@ button, input[type="submit"] {
       position: absolute; } }
 
 .wvu-masthead-combo-gold {
+  background-color: #EAAA00;
   background: -webkit-linear-gradient(#EAAA00, #FDDA24);
   background: linear-gradient(#EAAA00, #FDDA24); }
   .wvu-masthead-combo-gold .wvu-masthead-container {

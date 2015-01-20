@@ -1,4 +1,4 @@
-.wvu-masthead-combo { @include background(linear-gradient($wvu-blue, $pms-300-c)); color: white;
+.wvu-masthead-combo { background-color: $wvu-blue; @include background(linear-gradient($wvu-blue, $pms-300-c)); color: white;
   .wvu-masthead-container { padding: 0 1em 1em 1em; 
     @include media($medium-screen) { padding: 0 1em 0 1em; }
     @include media($bp-xlarge) { padding: 0; }
