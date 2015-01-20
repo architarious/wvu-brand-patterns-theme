@@ -1,3 +1,8 @@
+.type-system {
+  padding: 50px 2em;
+  @include media($bp-xlarge) { padding: 50px 0; }
+}
+
 article.type-system-geometric {
   $sans-serif: 'Questrial', sans-serif;
   $serif: 'Sanchez', serif;

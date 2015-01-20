@@ -1,0 +1,4 @@
+.type-system {
+  padding: 50px 1em;
+  @include media($bp-xlarge) { padding: 50px 0; }
+}

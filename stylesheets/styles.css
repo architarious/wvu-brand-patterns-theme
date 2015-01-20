@@ -1641,7 +1641,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       font-size: 4em;
       font-family: "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif; }
       .hero-unit-small-photo .hero-inner .hero-copy h1.shout {
-        color: #2C2A29;
+        color: #002855;
         font-family: "HelveticaNeueW01-97Blac", "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
         text-transform: uppercase; }
     .hero-unit-small-photo .hero-inner .hero-copy p {
@@ -2568,7 +2568,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
           max-width: 40%; } }
 
 .cards-wrapper {
-  padding: 50px 0; }
+  padding: 50px 1em; }
+  @media screen and (min-width: 75em) {
+    .cards-wrapper {
+      padding: 50px 0; } }
 
 .cards:after {
   content: "";
@@ -2683,6 +2686,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       font-weight: normal;
       font-size: 0.8em;
       padding: 1em 0 0 0; }
+
+.type-system {
+  padding: 50px 1em; }
+  @media screen and (min-width: 75em) {
+    .type-system {
+      padding: 50px 0; } }
 
 .bullets {
   overflow: auto;
