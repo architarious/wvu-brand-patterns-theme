@@ -25,7 +25,8 @@
   .search-bar { padding-top: 3.5em; font-size: 0.8em;
     .search-box { color: $black; }
     .search-button {
-      border-color: white;
+      border-color: $wvu-blue;
+      background: $wvu-blue;
       padding: 4px;
       img { max-height: 18px; }
       &:hover {

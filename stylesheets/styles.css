@@ -716,7 +716,8 @@ button, input[type="submit"] {
   .wvu-masthead-combo-white .search-bar .search-box {
     color: #2C2A29; }
   .wvu-masthead-combo-white .search-bar .search-button {
-    border-color: white;
+    border-color: #002855;
+    background: #002855;
     padding: 4px; }
     .wvu-masthead-combo-white .search-bar .search-button img {
       max-height: 18px; }
