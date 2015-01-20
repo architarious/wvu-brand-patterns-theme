@@ -1,0 +1,56 @@
+.hero-unit-w-photo-long-headline {
+  $hero-background-top: $wvu-blue; 
+  $hero-background-bottom: $pms-300-c;
+  $hero-color: white;
+  $hero-image-photo: '../images/coopers-rock.jpg';
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 2em;
+  padding-top: 2em;
+
+  @include background-image(url($hero-image-photo));
+
+  background-size: cover;
+
+  .hero-logo img {
+    height: 3em;
+    margin-bottom: 2.5em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    padding: 3em;
+    margin: auto;
+    color: $hero-color;
+
+    button {
+      @include button(simple, transparent);
+      font-size: $base-font-size;
+      outline: none;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .hero-copy {
+      
+      h1 {
+        font-family: $headline; font-size: 4.5em;
+        &.shout { color: white; font-family: $shout; text-transform: uppercase; }
+      }
+
+      p {
+        margin-bottom: 3em; 
+        font-weight: bold;
+        line-height: 1.4em;
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}

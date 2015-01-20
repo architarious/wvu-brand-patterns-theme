@@ -1,0 +1,52 @@
+.wvu-masthead-combo { @include background(linear-gradient($wvu-blue, $pms-300-c)); color: white;
+  .wvu-masthead-container { padding: 0 1em 1em 1em; 
+    @include media($medium-screen) { padding: 0 1em 0 1em; }
+    @include media($bp-xlarge) { padding: 0; }
+    @include outer-container;
+  }
+  ul { float: right; margin: 11px 0 0 0; padding: 0; 
+    li { display: inline; list-style-type: none; 
+      a { float: left; color: #fff; margin: 0 2px; padding: 6px 7px; font-size: .7em; font-weight: bold;
+        &:hover { text-decoration: underline; }
+      }
+      &li:first-child a { margin-left: 0; padding-left: 0; }
+    }
+  }
+  .wvu-official-logo { position: relative; padding: 1em 0 1.6em 2em; font-size: 1.5em; overflow: hidden; border: 0; background-color: transparent; width: 100%; background: url(../images/flying-wv.png) no-repeat top 1.2em left; background-size: 1.8em; float: left; color: white; 
+    @include media($medium-screen) { font-size: 1.75em; }
+    @include media($large-screen) { font-size: 2em; }
+    .college { position: absolute; top: 1em; font-size: 0.8em; text-transform: uppercase; }
+    .university { position: absolute; top: 5.9em; left: 5.1em; font-size: 0.4em; text-transform: uppercase; }
+    &.two-line-lockup { 
+      .university { top: 7.1em; }
+      .title { font-size: 0.75em; line-height: 1.08333333em; float: left; margin-top: 0.1em; }
+    }
+  }
+  .wvu-official-logo:before { content: ""; display: block; width: 0; height: 100%; }
+  .search-bar { padding-top: 3.5em; font-size: 0.8em;
+    .search-box { color: $black; }
+    .search-button {
+      border-color: white;
+      padding: 4px;
+      img { max-height: 18px; }
+      &:hover {
+        background: $wvu-gold;
+        border-color: $wvu-gold;
+      }
+      @include media($medium-screen) { height: 30px; }
+    }
+    input[type="checkbox"], input[type="radio"] { margin-right: 0; }
+    .search-type { clear: both; font-weight: bold; 
+      input {
+        &:last-child { margin-left: 1em; }
+      }
+    }
+  }
+  .college-link {
+    font-size: 0.8em;
+    line-height: 1.08333333em;
+    padding: 0.2em 0.5em;
+    margin-bottom: -2em;
+    @include media($medium-screen) { position: absolute; }
+  }
+}

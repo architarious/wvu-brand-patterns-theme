@@ -1,0 +1,15 @@
+<div class="profiles">
+  <r:children:each>
+    <div class="profiles__listing__profile sixteen columns alpha omega">
+      <div class="photo four columns alpha">
+        <r:page:content name="photo" />
+      </div>
+      <div class="description twelve columns omega">
+        <h2><r:page:name /></h2>
+        <h3><r:page:content name="title" /></h3>
+        <p><r:page:content name="intro" /></p>
+        <a href="<r:page:content name="url" />" class="btn">More Information</a>
+      </div>
+    </div>
+  </r:children:each>
+</div>

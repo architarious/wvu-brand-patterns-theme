@@ -1,0 +1,38 @@
+// Typography
+
+$shout: 'HelveticaNeueW01-97Blac', 'HelveticaNeueW01-75Bold', Helvetica, Arial, sans-serif;
+$headline: 'HelveticaNeueW01-75Bold', Helvetica, Arial, sans-serif;
+$helvetica-neue-light: 'HelveticaNeueW01-45Ligh', Helvetica, Arial, sans-serif;
+$iowan: 'IowanOldStyleW01-Roman', Georgia, Times, serif;
+$iowan-italic: 'IowanOldStyleW01-Italic1120392', Georgia, Times, serif;
+
+.helvetica-neue-light { font-family: $helvetica-neue-light; font-weight: normal; line-height: 1em; }
+.iowan { font-family: $iowan; font-weight: normal; line-height: 1.16666666667em; }
+.iowan-italic { font-family: $iowan-italic; font-weight: normal; }
+.helvetica-neue-bold { font-family: $headline; font-weight: normal; line-height: 1.08333333em; }
+
+h1, h2, h3, h4, h5, h6 { color: $dark-grey; clear: both; margin-bottom: 0.5em; }
+
+h1 { font-size: 3em; line-height: 1.08333333em; width: 100%; 
+  &.shout { font-size: 3em; line-height: 0.80487em; font-family: $shout; text-transform: uppercase; font-weight: normal; }
+}
+
+@include media($large-screen) {
+  h1 { font-size: 4em; 
+    &.shout { font-size: 8.2em; }
+  }
+}
+
+.hero {
+  h1 { color: white; }
+}
+
+.site-logo { font-size: 1.5em; color: #005daa; line-height: 1.7; max-width: 100%; display: block; margin-top: 18px; margin-bottom: 18px; text-transform: uppercase; }
+
+h2 { font-size: 2.4em; line-height: 1.08333333em; }
+
+p + h2, ul + h2, ol + h2, div + h2, h3 + h2, h4 + h2, h5 + h2, h6 + h2 { margin-top: 1.5em; }
+
+p.lede { font-size: 2.4em; font-family: $helvetica-neue-light; line-height: 1.08333333em; }
+
+p + p.lede { margin-top: 1em; }

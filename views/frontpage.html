@@ -2,66 +2,142 @@
 layout: default
 ---
 
-<div class="hero">
-	<div class="hero-inner">
-		<div class="hero-copy">
-			<h1>Short description of Product</h1>
-			<p>A few reasons why this product is worth using, who it's for and why they need it.</p>	
-		</div>
-    <button>Learn More</button>
-	</div>
+<r:partial name="layouts/wvu-masthead-combo" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Navigation</h2>
 </div>
 
-<div class="hero-w-overlay">
-  <div class="hero-inner-wrapper">
-  	<div class="hero-inner">
-  		<div class="hero-copy">
-  			<h1>Short description of Product</h1>
-  			<p>A few reasons why this product is worth using, who it's for and why they need it.</p>	
-  		</div>
-      <button>Learn More</button>
-  	</div>
-  </div>
+<r:partial name="layouts/navigation" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Hero Unit with Shout</h2>
 </div>
 
+<r:partial name="hero-unit-w-shout" />
 
-<ul class="bullets">
-  <li class="bullet three-col-bullet">
-    <div class="bullet-icon bullet-icon-1">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
-" alt="">
-    </div>
-    <div class="bullet-content">
-      <h2>This Bullet Title</h2>
-      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
-      </div>
-  </li>  
-  <li class="bullet three-col-bullet">
-    <div class="bullet-icon bullet-icon-2">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
-    </div>
-    <div class="bullet-content">
-      <h2>Another Bullet Title</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
-    </div>
-  </li>
-  <li class="bullet three-col-bullet">
-    <div class="bullet-icon bullet-icon-3">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
-    </div>
-    <div class="bullet-content">
-      <h2>Last Bullet Title</h2>
-      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
-    </div>
-  </li> 
-</ul>
+<div class="line-behind-text">
+  <h2 class="element-header">Hero Unit with Shout and Photo</h2>
+</div>
 
-<div class="widgets">
-  <r:partial name="calendar-feed" />
-  <r:partial name="spotlights" />
-  <r:partial name="spotlights" />
+<r:partial name="hero-unit-w-shout-and-photo" />
+
+
+
+<div class="line-behind-text">
+  <h2 class="element-header">Hero Unit with Shout and Photo Diagonal Line</h2>
+</div>
+
+<r:partial name="hero-unit-w-shout-and-photo-diagonal" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Hero Unit with Long Shout and Photo</h2>
+</div>
+
+<r:partial name="hero-unit-w-shout-and-photo-long-headline" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Hero Unit with Longest Shout and Photo</h2>
+</div>
+
+<r:partial name="layouts/be/hero-unit" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Hero Unit Traditional</h2>
+</div>
+
+<r:partial name="hero-unit-traditional" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Hero Unit for Narrow Audience</h2>
+</div>
+
+<r:partial name="hero-unit-narrow-audience" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Slideshow Hero Unit with Shout and Photo</h2>
+</div>
+
+<r:partial name="flexslider" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Hero Unit with Small Photo</h2>
+</div>
+
+<r:partial name="hero-unit-small-photo" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Features</h2>
+</div>
+
+<r:partial name="cards" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Social Media Icons</h2>
+</div>
+
+<r:partial name="social-media-icons" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Buttons</h2>
+</div>
+
+<r:partial name="buttons" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Type Hierarchy</h2>
+</div>
+
+<r:partial name="article" />
+
+<div class="line-behind-text">
+  <h2 class="element-header">Profile Index</h2>
+</div>
+
+<div class="line-behind-text">
+  <h2 class="element-header">Tabbed UI</h2>
+</div>
+
+<div class="line-behind-text">
+  <h2 class="element-header">YouTube Playlist</h2>
+</div>
+
+<div class="line-behind-text">
+  <h2 class="element-header">YouTube Playlist Grid</h2>
+</div>
+
+<div class="line-behind-text">
+  <h2 class="element-header">Photo Gallery</h2>
+</div>
+
+<div class="line-behind-text">
+  <h2 class="element-header">Super Nav</h2>
+</div>
+
+<div class="line-behind-text">
+  <h2 class="element-header">Footer</h2>
 </div>
 
 <r:content_for name="page_js"> 
   <r:include_javascript name="vendor/calendar-reformat" />
+
+  <!-- Target sliders individually with different properties -->
+  <script type="text/javascript">
+    $(window).load(function() {
+      $('#main-slider').flexslider({
+        animation: 'fade',
+        controlsContainer: '.flex-container'
+      });
+      $('#secondary-slider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 280,
+        itemMargin: 0,
+        minItems: 2,
+        maxItems: 2,
+        delay: 10000
+		
+      });
+    });
+  </script>
 </r:content_for>

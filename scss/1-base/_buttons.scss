@@ -1,0 +1,15 @@
+button, input[type="submit"] {
+  background: transparent;
+  color: $black;
+  border: 2px solid $pms-432-c;
+  margin-bottom: 0.5em;
+  
+  &.big {
+    font-size: 1.5em;
+  }
+  
+  &:hover {
+    background: $pms-432-c;
+  }
+  
+}

@@ -1,0 +1,64 @@
+<!-- Fix IE 8 and below so that media queries get supported -->
+<!--[if lt IE 9]>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Scripts -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="<%= theme_path %>/javascripts/jquery.flexslider.js"></script>
+<script type="text/javascript" src="<%= theme_path %>/javascripts/vendor/responsive-nav.js"></script>
+<script type="text/javascript" src="<%= theme_path %>/javascripts/responsive-nav--custom.js"></script>
+<script type="text/javascript" src="<%= theme_path %>/javascripts/vendor/quicklinks.js"></script>
+
+<!-- Target sliders individually with different properties -->
+<script type="text/javascript">
+  $(window).load(function() {
+    $('#main-slider').flexslider({
+      animation: 'fade',
+      controlsContainer: '.flex-container'
+    });
+    $('#secondary-slider').flexslider({
+      animation: "slide",
+      animationLoop: true,
+      itemWidth: 280,
+      itemMargin: 0,
+      minItems: 2,
+      maxItems: 2,
+      delay: 10000
+		
+    });
+  });
+	
+  // jQuery(function($){
+  //
+  //   var month = [];
+  //
+  //   month[0]="JAN";
+  //   month[1]="FEB";
+  //   month[2]="MAR";
+  //   month[3]="APR";
+  //   month[4]="MAY";
+  //   month[5]="JUN";
+  //   month[6]="JUL";
+  //   month[7]="AUG";
+  //   month[8]="SEP";
+  //   month[9]="OCT";
+  //   month[10]="NOV";
+  //   month[11]="DEC";
+  //
+  // $('.events .eventDate').each(function(i,event){
+  //   ev = {}
+  //     ev.date = new Date($(this).text());
+  //     ev.month = month[ev.date.getMonth()];
+  //     ev.day = ev.date.getDate();
+  //
+  //   $(this).html('<span class="eventMonth">'+ev.month+'</span><span class="eventDay">'+ev.day+'</span>')
+  //
+  //     ev.title = $(event).find('a').text();
+  //   });
+  //
+  // });
+		
+</script>

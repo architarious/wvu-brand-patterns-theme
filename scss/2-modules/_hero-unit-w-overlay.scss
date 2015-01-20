@@ -1,11 +1,13 @@
 .hero-w-overlay {
-  $hero-background-top: $vibrant-blue; 
-  $hero-background-bottom: $purple;
+  $hero-background-top: $wvu-blue; 
+  $hero-background-bottom: $pms-300-c;
   $hero-color: white;
   $gradient-angle: 10deg;
   $hero-image: '../images/tireless.jpg';
+  $diagonal-line-gold: '../images/diagonal-gold.svg';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  
 
   background-repeat: no-repeat;
   background-position: top;
@@ -39,18 +41,13 @@
     .hero-copy { 
       
       h1 {
-        font-size: 1.6em;
-        margin-bottom: .5em;
 
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
       }
 
       p {
 
         margin-bottom: 3em; 
-        font-weight: 200;
+        font-weight: bold;
         line-height: 1.4em;
 
         @include media($large-screen) {

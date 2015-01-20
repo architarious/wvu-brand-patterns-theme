@@ -1,0 +1,103 @@
+// Primary
+.wvu-blue { color: $wvu-blue; border-color: $wvu-blue;
+  &.background { color: white; background-color: $wvu-blue; }
+}
+.wvu-gold { color: $wvu-gold; border-color: $wvu-gold;
+  &.background { color: $wvu-blue; background-color: $wvu-gold; }
+}
+
+//  Secondary
+.black { color: $black;
+  &.background { color: white; background-color: $black; }
+}
+.pms-432-c { color: $pms-432-c; border-color: $pms-432-c;
+  &.background { color: white; background-color: $pms-432-c; 
+    h1, h2, h3, h4, h5, h6, a { color: white; }
+    button, input[type="submit"] {
+      color: white;
+      border: 2px solid white;
+  
+      &:hover {
+        color: $black;
+        background: white;
+      }
+  
+    }
+  }
+}
+.pms-429-c { color: $pms-429-c; border-color: $pms-429-c;
+  &.background { color: $black; background-color: $pms-429-c; 
+    h1, h2, h3, h4, h5, h6 { color: $black; }
+  }
+}
+.pms-warm-gray-11 { color: $pms-warm-gray-11; border-color: $pms-warm-gray-11;
+  &.background { color: white; background-color: $pms-warm-gray-11; 
+    h1, h2, h3, h4, h5, h6, a { color: white; }
+    button, input[type="submit"] {
+      color: white;
+      border: 2px solid white;
+  
+      &:hover {
+        color: $black;
+        background: white;
+      }
+  
+    }
+  }
+}
+.pms-warm-gray-7 { color: $pms-warm-gray-7; border-color: $pms-warm-gray-7;
+  &.background { color: white; background-color: $pms-warm-gray-7; 
+    h1, h2, h3, h4, h5, h6, a { color: white; }
+  }
+}
+.pms-warm-gray-3 { color: $pms-warm-gray-3; border-color: $pms-warm-gray-3;
+  &.background { color: $black; background-color: $pms-warm-gray-3; 
+    h1, h2, h3, h4, h5, h6, a { color: white; }
+  }
+}
+
+// Tertiary
+.pms-286-c { color: $pms-286-c; border-color: $pms-286-c;
+  &.background { color: white; background-color: $pms-286-c; }
+}
+.pms-300-c { color: $pms-300-c; border-color: $pms-300-c;
+  &.background { color: white; background-color: $pms-300-c; }
+}
+.pms-629-c { color: $pms-629-c; border-color: $pms-629-c;
+  &.background { color: white; background-color: $pms-629-c; }
+}
+.pms-7554-c { color: $pms-7554-c; border-color: $pms-7554-c;
+  &.background { color: white; background-color: $pms-7554-c; }
+}
+.pms-7557-c { color: $pms-7557-c; border-color: $pms-7557-c;
+  &.background { color: white; background-color: $pms-7557-c; }
+}
+.pms-144-c { color: $pms-144-c; border-color: $pms-144-c;
+  &.background { color: white; background-color: $pms-144-c; }
+}
+.pms-7476-c { color: $pms-7476-c; border-color: $pms-7476-c;
+  &.background { color: white; background-color: $pms-7476-c; }
+}
+.pms-5625-c { color: $pms-5625-c; border-color: $pms-5625-c;
+  &.background { color: white; background-color: $pms-5625-c; }
+}
+.pms-558-c { color: $pms-558-c; border-color: $pms-558-c;
+  &.background { color: white; background-color: $pms-558-c; }
+}
+.pms-180-c { color: $pms-180-c; border-color: $pms-180-c;
+  &.background { color: white; background-color: $pms-180-c; }
+}
+.pms-166-c { color: $pms-166-c; border-color: $pms-166-c;
+  &.background { color: white; background-color: $pms-166-c; }
+}
+.pms-115-c { color: $pms-115-c; border-color: $pms-115-c;
+  &.background { color: black; background-color: $pms-115-c; }
+}
+
+// Gradients
+.gold-gradient {
+  @include background(linear-gradient($wvu-gold, $pms-115-c) left no-repeat); 
+}
+.blue-gradient {
+  @include background(linear-gradient($pms-300-c, $wvu-blue) left no-repeat);
+}

@@ -1,0 +1,76 @@
+.hero-unit-narrow-audience {
+  $hero-background-top: $wvu-blue; 
+  $hero-background-bottom: $pms-300-c;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: '../images/wv-pattern.png';
+  $hero-image-photo: '../images/coopers-rock.jpg';
+
+  @include background(url($hero-image-photo));
+
+  
+
+  &.photo {
+    @include background(url($hero-image-photo), no-repeat $hero-background-top scroll);
+    background-size: cover;
+    &.overlay {  
+      @include background-image(url($hero-image-photo), url(../images/climber.jpg) );
+      background-position: right -100px top, center;
+      background-repeat: no-repeat, repeat-x;
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 6em;
+  padding-top: 6em;
+
+  background-position: -725px 0;
+  
+  @include media($medium-screen) {
+    background-position: top;
+  }
+  
+  .hero-logo img {
+    height: 3em;
+    margin-bottom: 2.5em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    padding: 3em;
+    margin: auto;
+    color: $hero-color;
+
+    button {
+      @include button(simple, transparent);
+      font-size: $base-font-size;
+      outline: none;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .hero-copy {
+      
+      h1 {
+        font-family: $iowan-italic;
+
+        &.shout { color: white; font-family: $shout; text-transform: uppercase;  }
+
+      }
+
+      p {
+        margin-bottom: 3em; 
+        line-height: 1.4em;
+        font-weight: bold;
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}

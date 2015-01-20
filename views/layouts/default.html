@@ -6,7 +6,7 @@
     <title><r:page:first_non_blank_attr names="title, name" /> | <r:site_name /> | West Virginia University</title>
     <meta name="description" content="<r:page:meta_description />" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="//fast.fonts.net/cssapi/c0b3379d-85a4-4f8d-965b-269e6058825e.css"/> <r:comment><!-- Helvetica Neue Roman, italic, bold, bold italic, & bold condensed (customized for this project!) web font, valid for *.wvu.edu, *.wvutech.edu, & localhost --></r:comment>
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/36d8cd92-7cc7-499b-b169-0eed9d670283.css"/> <r:comment><!-- Helvetica Neue Roman, italic, bold, bold italic, & bold condensed (customized for this project!) web font, valid for *.wvu.edu, *.wvutech.edu, & localhost --></r:comment>
     <r:include_stylesheet name="normalize, styles" />
 
     <!-- Modernizr includes the HTML5 Shiv and it's required for old IE to recognize HTML5 tags. -->
@@ -14,12 +14,8 @@
 
   </head>
   <body class="<r:page:template:name /> page-<r:page:id />">
-
-    <r:partial name="wvu-masthead" />
-
-    <r:partial name="header" />
-
-    <r:partial name="navigation" />
+    
+    
 
     <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/DFAsPv --></r:comment>
     <r:yield />
@@ -37,7 +33,7 @@
     <!-- Responsive-nav.com, calendar, & quicklinks -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="//code.wvu.edu/public/vendor/jquery/1.11.1/jquery.min.js"><\/script>')</script>
-    <r:include_javascript name="vendor/responsive-nav, responsive-nav--custom, vendor/quicklinks" />
+    <r:include_javascript name="vendor/responsive-nav, responsive-nav--custom, jquery.flexslider, vendor/quicklinks" />
 
     <r:yield name="page_js">
         <r:content />

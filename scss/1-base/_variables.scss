@@ -5,8 +5,32 @@
 // if we want to use them in this project, we must import them here as well. 
 
 // Primary
-$wvu-blue: #00447c;
-$wvu-gold: #eeb111;
+$wvu-blue: #002855;
+$wvu-gold: #EAAA00;
+
+//  Secondary
+$black: #2C2A29;
+$pms-432-c: #333F48;
+$pms-429-c: #A2AAAD;
+$pms-warm-gray-11: #6E6259;
+$pms-warm-gray-7: #968C83;
+$pms-warm-gray-3: #BFB8AF;
+
+// Tertiary
+$pms-286-c: #0033A0;
+$pms-300-c: #005EB8;
+$pms-629-c: #9BD3DD;
+$pms-7554-c: #4B3D2A;
+$pms-7557-c: #9F7D23;
+$pms-144-c: #ED8B00;
+$pms-7476-c: #0D5257;
+$pms-5625-c: #708573;
+$pms-558-c: #9ABEAA;
+$pms-180-c: #BE3A34;
+$pms-166-c: #E35205;
+$pms-115-c: #FDDA24;
+
+// Primary
 $alternate-blue: #005daa;
 
 //  Secondary
@@ -57,4 +81,13 @@ $form-search__submit: #ae0d0d;
 
 // Base sizes
 $base-header-padding: 36px 0;
-$widget-bullet-size: 3.5em;
+
+// Typography
+
+$shout: 'HelveticaNeueW01-97Blac', 'HelveticaNeueW01-75Bold', Helvetica, Arial, sans-serif;
+$headline: 'HelveticaNeueW01-75Bold', Helvetica, Arial, sans-serif;
+$subhead: 'HelveticaNeueW01-75Bold', Helvetica, Arial, sans-serif;
+$helvetica-neue-light: 'HelveticaNeueW01-45Ligh', Helvetica, Arial, sans-serif;
+$helvetica-neue-thin: 'HelveticaNeueW01-Thin', Helvetica, Arial, sans-serif;
+$iowan: 'IowanOldStyleW01-Roman', Georgia, Times, serif;
+$iowan-italic: 'IowanOldStyleW01-Italic1120392', Georgia, Times, serif;
