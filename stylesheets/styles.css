@@ -1457,8 +1457,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
         .hero.hero__long-shout .hero-copy h1.shout {
           font-size: 3em; } }
   .hero.hero__diagonal {
-    background: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
-    background: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
+    background: url("../images/coopers-rock.jpg");
+    background: url("../images/coopers-rock.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover; }

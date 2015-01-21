@@ -52,7 +52,7 @@
   
   &.hero__diagonal {
     $diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
-    @include background(url($diagonal-line-gold), url($hero-image));
+    @include background(url($hero-image));
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
