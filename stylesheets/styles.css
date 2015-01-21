@@ -1423,88 +1423,63 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   background-size: cover;
   padding-bottom: 4em;
   padding-top: 4em; }
-  .hero .hero-inner {
+  .hero .hero__inner {
     padding: 3em; }
-    .hero .hero-inner:after {
+    .hero .hero__inner:after {
       content: "";
       display: table;
       clear: both; }
-    .hero .hero-inner button {
+    .hero .hero__inner button {
       color: white;
       border: 2px solid white; }
-    .hero .hero-inner .hero-copy h1 {
+    .hero .hero__inner .hero__copy h1 {
       color: white; }
-    .hero .hero-inner .hero-copy p {
+    .hero .hero__inner .hero__copy p {
       margin-bottom: 3em;
       font-weight: bold; }
       @media screen and (min-width: 40em) {
-        .hero .hero-inner .hero-copy p {
+        .hero .hero__inner .hero__copy p {
           max-width: 40%; } }
     @media screen and (min-width: 75em) {
-      .hero .hero-inner {
+      .hero .hero__inner {
         padding: 3em 0; } }
-  .hero.hero__medium-shout {
+  .hero.hero_medium-shout {
     padding-bottom: 2em;
     padding-top: 2em; }
-    .hero.hero__medium-shout .hero-copy h1.shout {
+    .hero.hero_medium-shout .hero__copy h1.shout {
       font-size: 4.5em; }
-  .hero.hero__long-shout {
+  .hero.hero_long-shout {
     padding-bottom: 2em;
     padding-top: 2em; }
-    .hero.hero__long-shout .hero-copy h1.shout {
+    .hero.hero_long-shout .hero__copy h1.shout {
       font-size: 2em; }
       @media screen and (min-width: 40em) {
-        .hero.hero__long-shout .hero-copy h1.shout {
+        .hero.hero_long-shout .hero__copy h1.shout {
           font-size: 3em; } }
-  .hero.hero__diagonal {
+  .hero.hero_diagonal {
     background: url("../images/coopers-rock.jpg");
     background: url("../images/coopers-rock.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover; }
     @media screen and (min-width: 53.75em) {
-      .hero.hero__diagonal {
+      .hero.hero_diagonal {
         background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
         background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
         background-size: 500px, cover;
         background-position: 59% -209px, center top; } }
-
-.hero-unit-small-photo {
-  padding-bottom: 4em;
-  padding-top: 4em;
-  background-size: cover; }
-  .hero-unit-small-photo .hero-logo img {
-    height: 3em;
-    margin-bottom: 2.5em; }
-  .hero-unit-small-photo .hero-inner {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3em 0;
-    margin: auto;
-    color: #2C2A29; }
-    .hero-unit-small-photo .hero-inner:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .hero-unit-small-photo .hero-inner:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .hero-unit-small-photo .hero-inner .hero-copy h1 {
-      font-size: 4em;
-      font-family: "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif; }
-      .hero-unit-small-photo .hero-inner .hero-copy h1.shout {
+  .hero.hero_small-photo {
+    background-image: none; }
+    .hero.hero_small-photo .hero__inner {
+      color: #2C2A29; }
+      .hero.hero_small-photo .hero__inner h1 {
         color: #002855;
-        font-family: "HelveticaNeueW01-97Blac", "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
-        text-transform: uppercase; }
-    .hero-unit-small-photo .hero-inner .hero-copy p {
-      margin-bottom: 3em;
-      font-weight: bold;
-      line-height: 1.4em; }
-      @media screen and (min-width: 53.75em) {
-        .hero-unit-small-photo .hero-inner .hero-copy p {
-          font-size: 1.1em; } }
+        font-size: 4em; }
+      .hero.hero_small-photo .hero__inner p {
+        max-width: 100%; }
+      .hero.hero_small-photo .hero__inner button {
+        color: #2C2A29;
+        border: 2px solid #2C2A29; }
 
 .cards-wrapper {
   padding: 50px 1em; }
@@ -1932,20 +1907,35 @@ article {
     .color-palette .color-palette__color-container:last-child {
       margin-right: 0; }
 
-.frontpage .hero .hero-inner {
+.frontpage .hero .hero__inner {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .frontpage .hero .hero-inner:after {
+  .frontpage .hero .hero__inner:after {
     content: "";
     display: table;
     clear: both; }
+@media screen and (min-width: 40em) {
+  .frontpage .hero.hero_small-photo .hero__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .frontpage .hero.hero_small-photo .hero__copy:last-child {
+      margin-right: 0; }
+  .frontpage .hero.hero_small-photo .hero__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .frontpage .hero.hero_small-photo .hero__photo:last-child {
+      margin-right: 0; } }
 
-.college-of-business-and-economics-homepage .hero .hero-inner {
+.college-of-business-and-economics-homepage .hero .hero__inner {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .college-of-business-and-economics-homepage .hero .hero-inner:after {
+  .college-of-business-and-economics-homepage .hero .hero__inner:after {
     content: "";
     display: table;
     clear: both; }
@@ -1973,22 +1963,6 @@ article {
       width: 18.96686%; }
       .backpage .sub-nav:last-child {
         margin-right: 0; } }
-
-@media screen and (min-width: 40em) {
-  .hero-unit-small-photo .hero-copy {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .hero-unit-small-photo .hero-copy:last-child {
-      margin-right: 0; }
-  .hero-unit-small-photo .hero-photo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .hero-unit-small-photo .hero-photo:last-child {
-      margin-right: 0; } }
 
 .buttons {
   max-width: 68em;

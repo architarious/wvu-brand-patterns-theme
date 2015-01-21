@@ -1,5 +1,15 @@
 .frontpage {
   .hero {
-    .hero-inner { @include outer-container; }
+    .hero__inner { @include outer-container; }
+    &.hero_small-photo {
+      @include media($bp-medium) {
+        .hero__copy {
+          @include span-columns(6);
+        }
+        .hero__photo {
+          @include span-columns(6);
+        }
+      }
+    }
   }
 }
