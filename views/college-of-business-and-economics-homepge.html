@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<r:partial name="layouts/be/wvu-masthead-combo" />
+
+<r:partial name="layouts/be/navigation" />
+    
+<r:partial name="flexslider" />
+
+<r:partial name="layouts/be/features" />
+
+<r:content_for name="page_js"> 
+  <r:include_javascript name="jqueryflexslider" />
+  <r:include_javascript name="vendor/calendar-reformat" />
+  
+
+  <!-- Target sliders individually with different properties -->
+  <script type="text/javascript">
+    $(window).load(function() {
+      $('#main-slider').flexslider({
+        animation: 'fade',
+        controlsContainer: '.flex-container'
+      });
+      $('#secondary-slider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 280,
+        itemMargin: 0,
+        minItems: 2,
+        maxItems: 2,
+        delay: 10000
+		
+      });
+    });
+  </script>
+</r:content_for>
