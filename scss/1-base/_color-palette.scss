@@ -93,11 +93,3 @@
 .pms-115-c { color: $pms-115-c; border-color: $pms-115-c;
   &.background { color: black; background-color: $pms-115-c; }
 }
-
-// Gradients
-.gold-gradient {
-  @include background(linear-gradient($wvu-gold, $pms-115-c) left no-repeat); 
-}
-.blue-gradient {
-  @include background(linear-gradient($pms-300-c, $wvu-blue) left no-repeat);
-}
