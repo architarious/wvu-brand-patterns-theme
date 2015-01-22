@@ -415,7 +415,7 @@ input[type="submit"] {
   line-height: 1.08333333em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #455560;
+  color: #333F48;
   clear: both;
   margin-bottom: 0.5em; }
 
@@ -1553,7 +1553,6 @@ footer {
   top: 13px;
   text-transform: uppercase;
   display: inline-block;
-  color: #5c6f7c;
   font-size: 18px; }
 
 .line-behind-text {
