@@ -1,153 +1,19 @@
-.cards-wrapper {
-  padding: 50px 1em;
-  @include media($bp-xlarge) { padding: 50px 0; }
+.cards { padding: 5em 1em; 
+  @include media($bp-xlarge) { padding: 5em 0; }
 }
 
-.cards {
-  @include clearfix;
-  
-  &.quad {
-    .card {
-      @include media($large-screen) {
-        @include span-columns(3);  
-      }
-    }
-  }
-  
+.cards__card { font-size: 0.8em; 
+  div + h2 { margin-top: 0.5em; }
 }
 
+.cards--pms-warm-gray-3 { background: $pms-warm-gray-3; }
 
+.cards--pms-429-c { background: $pms-429-c; }
 
-.card {
-  $card-border-color: $base-border-color;
-  $card-border: 1px solid $card-border-color;
-  $card-background: lighten($card-border-color, 10);
-  $card-header-background: $card-background;
-  $card-hover-background: lighten($card-background, 5);
-  $card-image-background: #DBD199;
-  $card-image-hover-background: lighten($card-image-background, 5);
-  $card-stats-color: lighten($base-accent-color, 10);
+.cards--pms-432-c { background: $pms-432-c; color: white; 
+  h1, h2, h3, h4, h5, h6, a { color: white; }
+}
 
-  @include transition (all 0.2s ease-in-out);
-
-  margin-bottom: $base-spacing;
-  cursor: pointer;
-  position: relative;
-  
-  border-top: 4px solid $wvu-gold;
-  
-  &.major {
-    border-top: 4px solid $pms-300-c;
-  }
-  
-  &.feature-story {
-    border-top: 4px solid $pms-5625-c;
-  }
-
-  &.student-profile {
-    border-top: 4px solid $pms-144-c;
-  }
-
-  @include media($large-screen) {
-    @include span-columns(4);  
-  }
-
-  .card-image {
-    overflow: hidden;
-    max-height: 150px;
-
-    img {
-      width: 100%;
-      @include transition (all 0.2s ease-in-out);
-    }
-  }
-
-  .ribbon-wrapper {
-    $ribbon-size: 85px;
-    $ribbon-background: $pms-180-c;
-    @include size($ribbon-size);
-    overflow: hidden;
-    position: absolute;
-    top: -1px;
-    right: -1px;
-
-    .ribbon {
-      font-size: .8em;
-      font-weight: 800;
-      text-align: center;
-      @include transform(rotate(45deg));
-      position: relative;
-      padding: 2px 7px;
-      left: -5px;
-      top: 15px;
-      width: 120px;
-      background-color: $ribbon-background;
-      color: white;
-      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    }
-  }
-
-  .card-header {
-    @include transition (all 0.2s ease-in-out);
-    border-radius: $base-border-radius $base-border-radius 0 0;
-    font-family: $subhead;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-  }
-
-  .card-copy {
-    font-size: .9em;
-    line-height: 1.5em;
-  }
-
-  .card-stats {
-    padding: $base-spacing/2 $gutter/2;
-    overflow: auto;
-
-    ul li {
-      display: inline;
-      color: $pms-558-c;
-      font-weight: 800;
-      font-size: 1.2em;
-      float: left;
-      border-right: 1px solid transparentize($base-font-color, .8);
-      line-height: 1.1em;
-      padding: 0 .7em 0 .7em;
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:last-child {
-        border-right: 0;
-      }
-
-      span {
-        color: $base-font-color;
-        font-size: .7em;
-        display: block;
-        font-weight: normal;
-      }
-    }
-  }
-
-  &:hover {
-//    background-color: $card-hover-background;
-    
-    .card-image img {
-      background: $card-image-hover-background;
-    }
-  
-    .card-header {
-//      background-color: $card-hover-background;
-    }
-  }
-
-  &:active {
-//    background-color: $card-background;
-
-    .card-header {
-//      background-color: $card-background;
-    }
-  }
+.cards--pms-warm-gray-11 { background: $pms-warm-gray-11; color: white; 
+  h1, h2, h3, h4, h5, h6, a { color: white; }
 }

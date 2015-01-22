@@ -6,11 +6,22 @@
 h1, h2, h3, h4, h5, h6 { color: $pms-432-c; clear: both; margin-bottom: 0.5em; }
 
 h1 { font-size: 3em; line-height: 1.08333333em; width: 100%;
-  &.shout { font-size: 3em; line-height: 0.80487em; font-family: $shout; text-transform: uppercase; font-weight: normal; }
-  @include media($large-screen) { font-size: 4em; 
-    &.shout { font-size: 8.2em; }
-  }
+  @include media($large-screen) { font-size: 4em; }
 }
+
+.shout { font-size: 3em; line-height: 0.80487em; font-family: $shout; text-transform: uppercase; font-weight: normal; 
+  @include media($large-screen) { font-size: 8.2em; }
+}
+
+.shout--medium-shout { font-size: 4.5em; }
+
+.shout--long-shout { font-size: 2em; 
+  @include media($bp-medium) { font-size: 3em; }
+}
+
+.shout--wvu-gold { color: $wvu-gold; }
+.shout--wvu-blue { color: $wvu-blue; }
+.shout--white { color: white; }
 
 .site-logo { font-size: 1.5em; color: #005daa; line-height: 1.7; max-width: 100%; display: block; margin-top: 18px; margin-bottom: 18px; text-transform: uppercase; }
 

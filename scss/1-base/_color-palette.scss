@@ -13,16 +13,6 @@
 .pms-432-c { color: $pms-432-c; border-color: $pms-432-c;
   &.background { color: white; background-color: $pms-432-c; 
     h1, h2, h3, h4, h5, h6, a { color: white; }
-    button, input[type="submit"] {
-      color: white;
-      border: 2px solid white;
-  
-      &:hover {
-        color: $black;
-        background: white;
-      }
-  
-    }
   }
 }
 .pms-429-c { color: $pms-429-c; border-color: $pms-429-c;
@@ -33,16 +23,6 @@
 .pms-warm-gray-11 { color: $pms-warm-gray-11; border-color: $pms-warm-gray-11;
   &.background { color: white; background-color: $pms-warm-gray-11; 
     h1, h2, h3, h4, h5, h6, a { color: white; }
-    button, input[type="submit"] {
-      color: white;
-      border: 2px solid white;
-  
-      &:hover {
-        color: $black;
-        background: white;
-      }
-  
-    }
   }
 }
 .pms-warm-gray-7 { color: $pms-warm-gray-7; border-color: $pms-warm-gray-7;
@@ -52,7 +32,7 @@
 }
 .pms-warm-gray-3 { color: $pms-warm-gray-3; border-color: $pms-warm-gray-3;
   &.background { color: $black; background-color: $pms-warm-gray-3; 
-    h1, h2, h3, h4, h5, h6, a { color: white; }
+    h1, h2, h3, h4, h5, h6, a { color: $black; }
   }
 }
 

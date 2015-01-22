@@ -1,7 +1,7 @@
-.hero {
+$hero-image: '../images/coopers-rock.jpg';
+$diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
 
-  $hero-image: '../images/coopers-rock.jpg';
-  $diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
+.hero {
 
   color: white;
   background-color: $wvu-blue;
@@ -14,71 +14,52 @@
   text-shadow: 1px 1px 1px #000000;
   
   @include media($bp-large) { background-position: top; }
+  
+}
 
-  .hero__inner {
-    @include clearfix;
-    padding: 3em;
+.hero__inner {
+  @include clearfix;
+  padding: 3em;
+  
+  @include media($bp-xlarge) {
+    padding: 3em 0;
+  }
+}
 
-    button {
-      color: white;
-      border: 2px solid white;
-    }
+.hero__text { margin-bottom: 3em; font-weight: bold; 
+  @include media($bp-medium) { max-width: 40%; }
+}
 
-    .hero__copy {
-      h1 { color: white; }
-      p { margin-bottom: 3em; font-weight: bold; 
-        @include media($bp-medium) { max-width: 40%; }
-      }
-    }
-    
-    @include media($bp-xlarge) {
-      padding: 3em 0;
-    }
+.hero--medium-shout { padding-bottom: 2em; padding-top: 2em; }
+
+.hero--long-shout { padding-bottom: 2em; padding-top: 2em; }
+
+.hero--diagonal {
+  @include background(url($hero-image));
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover;
+  @include media ($bp-large) {
+    @include background-image(url($diagonal-line-gold), url($hero-image));
+    background-size: 500px, cover;
+    background-position: 59% -209px, center top;
   }
-  
-  &.hero_medium-shout { padding-bottom: 2em; padding-top: 2em; 
-    .hero__copy { 
-      h1 {
-        &.shout { font-size: 4.5em; }
-      }
-    }
-  }
-  
-  &.hero_long-shout { padding-bottom: 2em; padding-top: 2em; 
-    .hero__copy { 
-      h1 {
-        &.shout { font-size: 2em; 
-          @include media($bp-medium) { font-size: 3em; }
-        }
-      }
-    }
-  }
-  
-  &.hero_diagonal {
-    @include background(url($hero-image));
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    background-size: cover;
-    @include media ($bp-large) {
-      @include background-image(url($diagonal-line-gold), url($hero-image));
-      background-size: 500px, cover;
-      background-position: 59% -209px, center top;
-    }
-  }
-  
-  &.hero_small-photo { background-image: none; text-shadow: none;
-    .hero__inner { color: $black;
-      h1 { color: $wvu-blue;
-        &.shout { font-size: 3em; 
-          @include media($bp-large) { font-size: 4em; }
-        }
-      }
-      p { max-width: 100%; }
-      button {
-        color: $black;
-        border: 2px solid $black;
-      }
-    }
-  }
-  
+}
+
+.hero--traditional__heading { font-family: $iowan; font-weight: normal; }
+
+.hero--traditional__heading--white { color: white; }
+
+.hero--narrow-audience__heading { font-family: $iowan-italic; font-weight: normal; }
+
+.hero--narrow-audience__heading--white { color: white; }
+
+.hero--small-photo { background-image: none; text-shadow: none; }
+
+.hero__text--full-width { max-width: 100%; }
+
+.hero--small-photo__copy { color: $black; }
+
+.shout--small-photo { font-size: 3em; color: $wvu-blue;
+  @include media($bp-large) { font-size: 3.5em; }
 }

@@ -1,15 +1,36 @@
-button, input[type="submit"] {
+.button {
+  -webkit-font-smoothing: antialiased;
+  border-radius: $base-border-radius;
   background: transparent;
   color: $black;
-  border: 2px solid $pms-432-c;
+  display: inline-block;
+  border: 2px solid $black;
   margin-bottom: 0.5em;
-  
-  &.big {
-    font-size: 1.5em;
-  }
-  
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+
   &:hover {
-    background: $pms-432-c;
+    background-color: $hover-button-color;
+    color: white;
   }
-  
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.button--big {
+  font-size: 1.5em;
+}
+
+.button--white {
+  color: white;
+  border: 2px solid white;
+  &:hover {
+    background-color: white;
+    color: $wvu-blue;
+  }
 }

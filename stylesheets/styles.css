@@ -298,12 +298,6 @@ input[type="submit"] {
     background-color: #333F48; }
     .pms-432-c.background h1, .pms-432-c.background h2, .pms-432-c.background h3, .pms-432-c.background h4, .pms-432-c.background h5, .pms-432-c.background h6, .pms-432-c.background a {
       color: white; }
-    .pms-432-c.background button, .pms-432-c.background input[type="submit"] {
-      color: white;
-      border: 2px solid white; }
-      .pms-432-c.background button:hover, .pms-432-c.background input[type="submit"]:hover {
-        color: #2C2A29;
-        background: white; }
 
 .pms-429-c {
   color: #A2AAAD;
@@ -322,12 +316,6 @@ input[type="submit"] {
     background-color: #6E6259; }
     .pms-warm-gray-11.background h1, .pms-warm-gray-11.background h2, .pms-warm-gray-11.background h3, .pms-warm-gray-11.background h4, .pms-warm-gray-11.background h5, .pms-warm-gray-11.background h6, .pms-warm-gray-11.background a {
       color: white; }
-    .pms-warm-gray-11.background button, .pms-warm-gray-11.background input[type="submit"] {
-      color: white;
-      border: 2px solid white; }
-      .pms-warm-gray-11.background button:hover, .pms-warm-gray-11.background input[type="submit"]:hover {
-        color: #2C2A29;
-        background: white; }
 
 .pms-warm-gray-7 {
   color: #968C83;
@@ -345,7 +333,7 @@ input[type="submit"] {
     color: #2C2A29;
     background-color: #BFB8AF; }
     .pms-warm-gray-3.background h1, .pms-warm-gray-3.background h2, .pms-warm-gray-3.background h3, .pms-warm-gray-3.background h4, .pms-warm-gray-3.background h5, .pms-warm-gray-3.background h6, .pms-warm-gray-3.background a {
-      color: white; }
+      color: #2C2A29; }
 
 .pms-286-c {
   color: #0033A0;
@@ -459,17 +447,37 @@ h1 {
   font-size: 3em;
   line-height: 1.08333333em;
   width: 100%; }
-  h1.shout {
-    font-size: 3em;
-    line-height: 0.80487em;
-    font-family: "HelveticaNeueW01-97Blac", "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: normal; }
   @media screen and (min-width: 53.75em) {
     h1 {
-      font-size: 4em; }
-      h1.shout {
-        font-size: 8.2em; } }
+      font-size: 4em; } }
+
+.shout {
+  font-size: 3em;
+  line-height: 0.80487em;
+  font-family: "HelveticaNeueW01-97Blac", "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal; }
+  @media screen and (min-width: 53.75em) {
+    .shout {
+      font-size: 8.2em; } }
+
+.shout--medium-shout {
+  font-size: 4.5em; }
+
+.shout--long-shout {
+  font-size: 2em; }
+  @media screen and (min-width: 40em) {
+    .shout--long-shout {
+      font-size: 3em; } }
+
+.shout--wvu-gold {
+  color: #EAAA00; }
+
+.shout--wvu-blue {
+  color: #002855; }
+
+.shout--white {
+  color: white; }
 
 .site-logo {
   font-size: 1.5em;
@@ -496,138 +504,166 @@ p.lede {
 p + p.lede {
   margin-top: 1em; }
 
-button, input[type="submit"] {
+.button {
+  -webkit-font-smoothing: antialiased;
+  border-radius: 3px;
   background: transparent;
   color: #2C2A29;
-  border: 2px solid #333F48;
-  margin-bottom: 0.5em; }
-  button.big, input[type="submit"].big {
-    font-size: 1.5em; }
-  button:hover, input[type="submit"]:hover {
-    background: #333F48; }
+  display: inline-block;
+  border: 2px solid #2C2A29;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  .button:hover {
+    background-color: #002855;
+    color: white; }
+  .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+.button--big {
+  font-size: 1.5em; }
+
+.button--white {
+  color: white;
+  border: 2px solid white; }
+  .button--white:hover {
+    background-color: white;
+    color: #002855; }
 
 .wvu-masthead {
   background-color: #002855;
   color: white; }
-  .wvu-masthead .wvu-masthead__container {
-    padding: 0 1em 1em 1em;
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    @media screen and (min-width: 40em) {
-      .wvu-masthead .wvu-masthead__container {
-        padding: 0 1em 0 1em; } }
-    @media screen and (min-width: 75em) {
-      .wvu-masthead .wvu-masthead__container {
-        padding: 0; } }
-    .wvu-masthead .wvu-masthead__container:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .wvu-masthead .wvu-masthead__logo {
-    position: relative;
-    padding: 1em 0 1.6em 2em;
-    font-size: 1.5em;
-    overflow: hidden;
-    border: 0;
-    background-color: transparent;
-    width: 100%;
-    background: url(../images/flying-wv.png) no-repeat top 1.2em left;
-    background-size: 1.8em;
-    float: left;
+
+.wvu-masthead__container {
+  padding: 0 1em 1em 1em; }
+  @media screen and (min-width: 40em) {
+    .wvu-masthead__container {
+      padding: 0 1em 0 1em; } }
+  @media screen and (min-width: 75em) {
+    .wvu-masthead__container {
+      padding: 0; } }
+
+.wvu-masthead__logo {
+  position: relative;
+  padding: 1em 0 1.6em 2em;
+  font-size: 1.5em;
+  overflow: hidden;
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+  background: url(../images/flying-wv.png) no-repeat top 1.2em left;
+  background-size: 1.8em;
+  float: left;
+  color: white; }
+  .wvu-masthead__logo:hover {
     color: white; }
-    @media screen and (min-width: 40em) {
-      .wvu-masthead .wvu-masthead__logo {
-        font-size: 1.75em; } }
-    @media screen and (min-width: 53.75em) {
-      .wvu-masthead .wvu-masthead__logo {
-        font-size: 2em; } }
-    .wvu-masthead .wvu-masthead__logo .wvu-masthead__college {
-      position: absolute;
-      top: 1em;
-      font-size: 0.8em;
-      text-transform: uppercase; }
-    .wvu-masthead .wvu-masthead__logo .wvu-masthead__university {
-      position: absolute;
-      top: 5.9em;
-      left: 5.1em;
-      font-size: 0.4em;
-      text-transform: uppercase; }
-    .wvu-masthead .wvu-masthead__logo.wvu-masthead__logo_two-line-lockup .wvu-masthead__university {
-      top: 7.1em; }
-    .wvu-masthead .wvu-masthead__logo.wvu-masthead__logo_two-line-lockup .wvu-masthead__title {
-      font-size: 0.75em;
-      line-height: 1.08333333em;
-      float: left;
-      margin-top: 0.1em; }
-  .wvu-masthead .wvu-masthead__logo:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%; }
-  .wvu-masthead .wvu-masthead__search-bar {
-    padding-top: 3.5em;
-    font-size: 0.8em; }
-    .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-box {
-      color: #2C2A29; }
-    .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-button {
-      border-color: white;
-      padding: 4px; }
-      .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-button img {
-        max-height: 18px; }
-      .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-button:hover {
-        background: #EAAA00;
-        border-color: #EAAA00; }
-      @media screen and (min-width: 40em) {
-        .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-button {
-          height: 30px; } }
-    .wvu-masthead .wvu-masthead__search-bar input[type="checkbox"], .wvu-masthead .wvu-masthead__search-bar input[type="radio"] {
-      margin-right: 0; }
-    .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-type {
-      clear: both;
-      font-weight: bold; }
-      .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-type input:last-child {
-        margin-left: 1em; }
-  .wvu-masthead .wvu-masthead__college-link {
-    font-size: 0.8em;
-    line-height: 1.08333333em;
-    padding: 0.2em 0.5em;
-    margin-bottom: -2em; }
-    @media screen and (min-width: 40em) {
-      .wvu-masthead .wvu-masthead__college-link {
-        position: absolute; } }
-  .wvu-masthead.wvu-masthead_blue-pattern {
-    background: url(../images/pattern-blue.jpg) no-repeat;
-    background-size: cover; }
-  .wvu-masthead.wvu-masthead_white {
-    background-color: white;
-    color: #002855;
-    background-image: none; }
-    .wvu-masthead.wvu-masthead_white .wvu-masthead__logo {
-      color: #002855; }
-    .wvu-masthead.wvu-masthead_white .wvu-masthead__search-bar {
-      padding-top: 3.5em;
-      font-size: 0.8em; }
-      .wvu-masthead.wvu-masthead_white .wvu-masthead__search-bar .wvu-masthead__search-button {
-        border-color: #002855;
-        background: #002855; }
-        .wvu-masthead.wvu-masthead_white .wvu-masthead__search-bar .wvu-masthead__search-button:hover {
-          background: #EAAA00;
-          border-color: #EAAA00; }
-  .wvu-masthead.wvu-masthead_gold {
-    background-color: #EAAA00;
-    color: #002855;
-    background-image: none; }
-    .wvu-masthead.wvu-masthead_gold .wvu-masthead__logo {
-      background: url(../images/flying-wv-blue.png) no-repeat top 1.2em left;
-      background-size: 1.8em;
-      color: #002855; }
-    .wvu-masthead.wvu-masthead_gold .wvu-masthead__search-bar {
-      padding-top: 3.5em;
-      font-size: 0.8em; }
-      .wvu-masthead.wvu-masthead_gold .wvu-masthead__search-bar .wvu-masthead__search-button:hover {
-        background: #002855;
-        border-color: #002855; }
+  @media screen and (min-width: 40em) {
+    .wvu-masthead__logo {
+      font-size: 1.75em; } }
+  @media screen and (min-width: 53.75em) {
+    .wvu-masthead__logo {
+      font-size: 2em; } }
+
+.wvu-masthead__college {
+  position: absolute;
+  top: 1em;
+  font-size: 0.8em;
+  text-transform: uppercase; }
+
+.wvu-masthead__university {
+  position: absolute;
+  top: 5.9em;
+  left: 5.1em;
+  font-size: 0.4em;
+  text-transform: uppercase; }
+
+.wvu-masthead__university--two-line-lockup {
+  top: 7.1em; }
+
+.wvu-masthead__title--two-line-lockup {
+  font-size: 0.75em;
+  line-height: 1.08333333em;
+  float: left;
+  margin-top: 0.1em; }
+
+.wvu-masthead__logo:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+.wvu-masthead__search-bar {
+  padding-top: 3.5em;
+  font-size: 0.8em; }
+  .wvu-masthead__search-bar input[type="checkbox"], .wvu-masthead__search-bar input[type="radio"] {
+    margin-right: 0; }
+
+.wvu-masthead__search-box {
+  color: #2C2A29; }
+
+.wvu-masthead__search-type {
+  clear: both;
+  font-weight: bold; }
+  .wvu-masthead__search-type input:last-child {
+    margin-left: 1em; }
+
+.wvu-masthead__search-button {
+  border: 2px solid white;
+  background: transparent;
+  padding: 4px; }
+  .wvu-masthead__search-button img {
+    max-height: 18px; }
+  .wvu-masthead__search-button:hover {
+    background: #EAAA00;
+    border-color: #EAAA00; }
+  @media screen and (min-width: 40em) {
+    .wvu-masthead__search-button {
+      height: 30px; } }
+
+.wvu-masthead__college-link {
+  font-size: 0.8em;
+  line-height: 1.08333333em;
+  padding: 0.2em 0.5em;
+  margin-bottom: -2em; }
+  @media screen and (min-width: 40em) {
+    .wvu-masthead__college-link {
+      position: absolute; } }
+
+.wvu-masthead--blue-pattern {
+  background: url(../images/pattern-blue.jpg) no-repeat;
+  background-size: cover; }
+
+.wvu-masthead--white {
+  background-color: white;
+  color: #2C2A29;
+  background-image: none; }
+
+.wvu-masthead__logo--gold-background {
+  background: url(../images/flying-wv-blue.png) no-repeat top 1.2em left;
+  background-size: 1.8em;
+  color: #002855; }
+
+.wvu-masthead__logo--white-background {
+  color: #002855; }
+
+.wvu-masthead__search-button--blue {
+  border-color: #002855;
+  background: #002855; }
+  .wvu-masthead__search-button--blue:hover {
+    background: #EAAA00;
+    border-color: #EAAA00; }
+
+.wvu-masthead--gold {
+  background-color: #EAAA00;
+  color: #002855;
+  background-image: none; }
+
+.wvu-masthead__search-button--gold-background:hover {
+  background: #002855;
+  border-color: #002855; }
 
 .nav-wrapper {
   background: #2C2A29;
@@ -635,6 +671,9 @@ button, input[type="submit"] {
   padding: 20px;
   display: table; }
   @media screen and (min-width: 40em) {
+    .nav-wrapper {
+      padding: 0 20px; } }
+  @media screen and (min-width: 75em) {
     .nav-wrapper {
       padding: 0; } }
   @media screen and (min-width: 40em) {
@@ -644,15 +683,14 @@ button, input[type="submit"] {
     margin-bottom: 0;
     float: left; }
     .nav-wrapper .nav ul li a {
-      font-weight: bold;
       float: left;
       color: white;
       margin-right: 0;
       padding: 1em;
-      font-size: .9em;
       width: 100%; }
       .nav-wrapper .nav ul li a:hover {
-        background: #EAAA00; }
+        background: #EAAA00;
+        color: #002855; }
   .nav-wrapper .nav-collapse {
     clear: both;
     overflow: visible; }
@@ -662,11 +700,11 @@ button, input[type="submit"] {
         float: left; } }
   .nav-wrapper .nav-toggle {
     float: left;
-    width: 98%;
+    width: 100%;
     padding-top: 4px;
     padding-bottom: 4px;
     text-align: center;
-    color: #fff;
+    color: white;
     border: 1px solid #fff;
     border-radius: 7px;
     margin-bottom: 4px; }
@@ -674,12 +712,41 @@ button, input[type="submit"] {
       .nav-wrapper .nav-toggle {
         margin-left: 10px; } }
     .nav-wrapper .nav-toggle:visited {
-      color: #fff; }
+      color: white; }
     .nav-wrapper .nav-toggle:hover {
       text-decoration: none;
-      background-color: #E35205;
-      color: #fff;
-      border: 1px solid pms-166-c; }
+      background-color: #EAAA00;
+      color: #002855;
+      border: 1px solid #EAAA00; }
+
+.cards {
+  padding: 5em 1em; }
+  @media screen and (min-width: 75em) {
+    .cards {
+      padding: 5em 0; } }
+
+.cards__card {
+  font-size: 0.8em; }
+  .cards__card div + h2 {
+    margin-top: 0.5em; }
+
+.cards--pms-warm-gray-3 {
+  background: #BFB8AF; }
+
+.cards--pms-429-c {
+  background: #A2AAAD; }
+
+.cards--pms-432-c {
+  background: #333F48;
+  color: white; }
+  .cards--pms-432-c h1, .cards--pms-432-c h2, .cards--pms-432-c h3, .cards--pms-432-c h4, .cards--pms-432-c h5, .cards--pms-432-c h6, .cards--pms-432-c a {
+    color: white; }
+
+.cards--pms-warm-gray-11 {
+  background: #6E6259;
+  color: white; }
+  .cards--pms-warm-gray-11 h1, .cards--pms-warm-gray-11 h2, .cards--pms-warm-gray-11 h3, .cards--pms-warm-gray-11 h4, .cards--pms-warm-gray-11 h5, .cards--pms-warm-gray-11 h6, .cards--pms-warm-gray-11 a {
+    color: white; }
 
 .social-media-icons {
   text-align: center; }
@@ -687,6 +754,238 @@ button, input[type="submit"] {
     float: left;
     width: 2em;
     margin-right: 5px; }
+
+.hero {
+  color: white;
+  background-color: #002855;
+  background: url("../images/coopers-rock.jpg");
+  background: url("../images/coopers-rock.jpg");
+  background-position: 75% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  text-shadow: 1px 1px 1px #000000; }
+  @media screen and (min-width: 53.75em) {
+    .hero {
+      background-position: top; } }
+
+.hero__inner {
+  padding: 3em; }
+  .hero__inner:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 75em) {
+    .hero__inner {
+      padding: 3em 0; } }
+
+.hero__text {
+  margin-bottom: 3em;
+  font-weight: bold; }
+  @media screen and (min-width: 40em) {
+    .hero__text {
+      max-width: 40%; } }
+
+.hero--medium-shout {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+
+.hero--long-shout {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+
+.hero--diagonal {
+  background: url("../images/coopers-rock.jpg");
+  background: url("../images/coopers-rock.jpg");
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover; }
+  @media screen and (min-width: 53.75em) {
+    .hero--diagonal {
+      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
+      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
+      background-size: 500px, cover;
+      background-position: 59% -209px, center top; } }
+
+.hero--traditional__heading {
+  font-family: "IowanOldStyleW01-Roman", Georgia, Times, serif;
+  font-weight: normal; }
+
+.hero--traditional__heading--white {
+  color: white; }
+
+.hero--narrow-audience__heading {
+  font-family: "IowanOldStyleW01-Italic1120392", Georgia, Times, serif;
+  font-weight: normal; }
+
+.hero--narrow-audience__heading--white {
+  color: white; }
+
+.hero--small-photo {
+  background-image: none;
+  text-shadow: none; }
+
+.hero__text--full-width {
+  max-width: 100%; }
+
+.hero--small-photo__copy {
+  color: #2C2A29; }
+
+.shout--small-photo {
+  font-size: 3em;
+  color: #002855; }
+  @media screen and (min-width: 53.75em) {
+    .shout--small-photo {
+      font-size: 3.5em; } }
+
+.sub-nav {
+  font-weight: bold;
+  border-left: 1px solid #eee;
+  padding-left: 1em; }
+  .sub-nav li {
+    line-height: 1.2em;
+    padding-bottom: 0.5em; }
+    .sub-nav li ul {
+      font-weight: normal;
+      font-size: 0.8em;
+      padding: 1em 0 0 0; }
+
+.type-system {
+  padding: 50px 1em; }
+  @media screen and (min-width: 75em) {
+    .type-system {
+      padding: 50px 0; } }
+
+.calendar-feed ul {
+  padding-bottom: 1em; }
+  .calendar-feed ul li {
+    margin-bottom: 0.58333em;
+    display: inline-block;
+    width: 100%; }
+    .calendar-feed ul li .eventDate {
+      float: left;
+      margin-right: 4%;
+      width: 10%;
+      text-align: center; }
+    .calendar-feed ul li .calEventMonth {
+      font-size: .8em;
+      text-transform: uppercase; }
+    .calendar-feed ul li .calEventDay {
+      display: block;
+      font-size: 1.5em;
+      line-height: .8em;
+      clear: both; }
+    .calendar-feed ul li .eventInfo {
+      float: left;
+      width: 86%; }
+    .calendar-feed ul li .eventTime {
+      font-weight: bold; }
+    .calendar-feed ul li .eventName {
+      display: block; }
+
+.spotlights h2 {
+  font-size: 1.4em;
+  padding-top: 0.5em;
+  margin-bottom: 0.58333em;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  display: inline-block; }
+.spotlights ul li {
+  margin-bottom: 0.58333em;
+  display: inline-block;
+  width: 100%; }
+  .spotlights ul li img {
+    float: left; }
+  .spotlights ul li p {
+    float: left; }
+
+footer {
+  padding: 2em 0; }
+  footer .wvu-credits {
+    clear: left; }
+    footer .wvu-credits ul {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 5px; }
+      footer .wvu-credits ul li {
+        list-style-type: none;
+        display: inline; }
+        footer .wvu-credits ul li:before {
+          content: '|';
+          padding-right: 3px; }
+        footer .wvu-credits ul li:first-child:before {
+          content: '';
+          padding-right: 0; }
+    footer .wvu-credits p {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 5px; }
+  footer .wvu-links li:before {
+    content: '|';
+    padding-right: 3px; }
+  footer .wvu-links li:first-child:before {
+    content: '';
+    padding-right: 0; }
+  footer .wvu-icons ul {
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none; }
+    footer .wvu-icons ul li {
+      display: inline;
+      margin: 0; }
+  footer .wvu-social {
+    padding: 3px 0;
+    float: left; }
+    footer .wvu-social li {
+      float: left; }
+      footer .wvu-social li:last-child a {
+        margin-right: 0; }
+    footer .wvu-social a {
+      height: 24px;
+      margin: 0;
+      float: left;
+      width: 24px;
+      padding-left: 0;
+      padding-top: 5px;
+      overflow: hidden;
+      *text-indent: -9999px;
+      border: 0;
+      background-color: transparent; }
+      footer .wvu-social a:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 100%; }
+  footer .wvu-credits, footer .wvu-icons, footer .wvu-contact, footer .contact_1 {
+    float: left;
+    padding-bottom: 13px;
+    font-size: .75em; }
+  footer .wvu-facebook {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Njc0QURBQzY4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Njc0QURBQzc4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzRBREFDNDgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NzRBREFDNTgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvtWQkIAAAUTSURBVHjajFZbTFxVFN33MTAzDI9CKaU8WkgpkBKgBak14sQ+MCU2xuePP5rYiP7wYSJq+OtHQ2Kk0ZCSGIKJaZr6YS0pHwb4wIQYSKwtCO3wpgww5TXvue973edy7njFaePJrNwL55y19t5n730uA88fTApYw0iBlATP+j+L4PbBEiFkOkJFaBT684TsgxA7EO7p6elLoVDoe1EU76uqGkAEJUlajEQiIz6f78uOjo6TuC4X4UGk24x4pgeEnB8dHT3e2Nh41e12v7GwLnAzK3HYiaig6wa40lgoPeyEmmMZ4OS1dTTiekNDw03cl0BICIV6ZOwXMMknJydfrKqq6t+NGuV3xzZh1p8wl3E4qxsG4A8UzYAcDw/eugNw7lQuLC8v99fX118Nh8MRKpQUYWye8ENDQxVer/fe41Wx7NbIOgiSDpluDskZ03qPmwd8BQ2jHYoqEBVUaDiRDe9fLIJZ30xPTU3N18jzLxGOCpBnWm9vb892xDh7484iqKoGHieyockKvp9ryIN3vEeguTYXaso8MD6zAzxrwNxqDCRZA+8L5adKS0sfDAwMbNgO32Cp9dzU1NTL6U7X5dvDT0AQZEjjCbEKoiSDG4+vuS4PnBj/7ZAIC2sxUBQFDF2DLBcDQ+MbMLUQcbS2tl5paWkpRD4XTRQ2KVBSUvLe3EqEm5nfQSI0QVHRCxUSogwJFCRhIuPGz7Pw3U+PQJFVcw0RYdDYkfF1yM8/1NjW1tacUsDpdDb++WgbZLRM11R8InFChKOHnPDamcJkNrzaUACtZ4+Y87Ism0+e02F+ZRfCMcVVWVnZSAXSCG9SgOf5w0+3okiuYGhkMwTxhARlRzLAe7oAGGZPorm+AJpO5oEoyqYxZJ2OXoQiAoSjEng8nmJK7jB5bdWZLkpkA9nImlnM4SGOPVzDuMfh47dq0F8G+u7OwNyTEGgaqQvaM3CtLEmgYnqlOzhCztO0Z3grTTVNC7rTmRzFFOFMAaIa2JIwFEqy/qfnt8H/NAouJ58sIB3rgkEvnA4W4vF42N67WKtxYQtYPn40GzNIgD0RJXkeLOi20tfxYFVz3kIsLkBuNg/5eW7w+/1Ltt6ks1bjCgQCI2fqiiAHCysWEzBDcLO8B5JN1tDwXZb/mSMIB6NwtrYQ94gbWAfjtMhUu4DW19f3S2YGv/HmxRMQCobNQyTEpBZMARojlf5tIRSKQfFBJ1y+UAkTExO/9vT0+Gw9KSmgdnV1BbDYut9trYXzTaWwubmL4RL3skTTgOP2sohkjEK9CwYjwGoSfH6lGXQ1Md/e3n4HRWP2VsFbHhBV7KA3l5aWqr/45NyHBw+44NbgQ1DRBgdm07c//o4nxsDGVhjrA1NSlKC8KAe++vQ8lJVkbXV2dn6DnTWAPERAQMiEl9l/B2RnZ+eMjY19Vl1d/dH9v/zpt+/9AZO+ABJHMTUNPEwXFB/OggsvnYC3L9VjesZmr127dh3HA9wfRISoiEgNT3ZTjlZgHuJYf3//B2tra79hOOJPt8KGbyFgzMyuG4srW4YgSEYwGPQPDw//UFFR8Tqub0JUIUgfyqSFxu6/DywRBxXykMaFveUVJDmdlZVVwnFcGuZ5aHV1dWlwcHCiu7v7Ma6LU4tj9F2yMijVjWaJ8PQKdNlgVShDXVdoGAQK0ZaeRqobLdWF76CwyK0717rwFQrZZrX+f74qrINn931dMDYBC5rtDv7PF8XfAgwASmnGo/y0fPgAAAAASUVORK5CYII=) no-repeat center center; }
+  footer .wvu-twitter {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Njc0QURBQzI4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Njc0QURBQzM4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzRBREFDMDgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NzRBREFDMTgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PheqJZoAAASvSURBVHjajFZbTBxVGP5nZ3e5uLBt6QUoraDB3h5MkJj2QQyJEkw1UWMfNLbRPuGLQduGmOgLD5ioEY2YmAjSJvbBmLYRQ2kCNGJKr5S07K7tpizLZTfsAu0uLAt7//3O7hkYyIJO8mXmnDnn+2/f+WcU2vxSskC7OAuyEmw0bwDUddCMCLIUkACSEqnNDOkvQWwC8h0Ox2vBYPDnSCQynEgkfEAgGo2OLSws9Dudzs+ampoOYd02wALk6JzYlNw8MDBwMBwOX2DmxGCY+fMZ5mNe5rc8zCenmdsDzNNxZhj23r07dAZ7SoEtQB5g3MhImnxkZKQmFou5nBHmtyeZlQfMJPBQB4zLHjF/N8fpy+12/2K1Wiuwv2gjI2Jg6u3tPQjysZ555tJ/QGTXkTolpAFyACPMJyYQSYrZbre3gaNcpixXpmvlEoN8pOWSbYl5631svi8NrIMC4ioX86FRjG3AMPMnU8zJZDLW3t5+HDx7AavIhsiKVhSjzWar2VW6u/mEiwyO5UzCduDtFtxDUakNaObTHUS/7yFawHN/MLP7Ju5HLIr6UkXJdvDccLlcYamwlJb7PKil/VoQHg7CqyHgDvNz8Ph6iPkUPFQwLkZUwUQm75Ek88eYp1vAdeajiAwqW7p48cJp8FXIopu1Yqi5ubnVlz1wNCETBo+nEUkYCv+mjKi+kGgmjthlZnPg1he7iG7PE41h3eATIn9czdu3b381Xl8GRBRRg2bAaDQWuxbxFJeAoTA29jzJEL4CA+8VrZXddpyWnv1EzyDbwSU4EMOBsFjKZP7FWVINutOZE5XEaeA5hfvVOaLzfhzVLOdzDmuO2YlGApn1cUSrqqpZyjTNbdBkChUEioQZeGHCwgIxGyG6N030hz/7yfl6nKjPS7QEEZhQzgKkD0qc1/cuo9a40ALGD1vNFR1jMI/Z4xBbMdQcgmdvINeGdRYuwej3o3KAVD6LRrE3H4ryeNy63pQyaI3L5/P1H8WB3wkvlpHPc1gWQgQf7iY6bF0lngTZl4+I3r+DCsZkOlHOd4rBuhya7urqurVaRUopUjO5aFzlzc3NvT84zSWnhzHzVMa0imiehmfbkNkEfJqCgcfLurYWyXh/rZ7IcaP/bH19fQfkOoM3j4VpRdc9LUNDQyerql746t2rRL+NSyOGdU1Y0c1FMrW6UkdUqc6O1tbWnkIHnhT1BxZE8rSlImfR6urq8xMT453nXiY6cwBOiiUhGXBK9wUQCodyDsCtK68SPV8Qnm1pafkW5D68WcxURcglzbvSSUU/3yq6ot1ua4OqIn+hm775J/PODpzWH4E2ZtNP6EO/MjffZJ5FK/f7fc7GxsaPsPcIgFNBxfL7sKajarXIky23vLOz8wOv1/t3PB4Pe9Bd7/mZh/EteIAWvRRjDgQCnr6+vrOVlZWvY/2LkryEMlkzS6fXyFszYpKGLHV1dSUNDQ01IKkqLCzcIw4RdB6cmppyd3d3325tbX0oE7YokW4P+kanZPkWqzK8HGlIg1kXdlJWJiLzvSyfNXmuyEL5jw++SUIj18SZWm0oacR0Xqf+z1+FVnjDur8LRWdAg/ZXkfWP4l8BBgDyPYa2BW2NowAAAABJRU5ErkJggg==) no-repeat center center; }
+  footer .wvu-youtube {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEZGMkJDNDU4Mjc4MTFFMkJDM0Q5ODQzMUM5RDAwNTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEZGMkJDNDY4Mjc4MTFFMkJDM0Q5ODQzMUM5RDAwNTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzRBREFDODgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowRkYyQkM0NDgyNzgxMUUyQkMzRDk4NDMxQzlEMDA1NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Phr6zLQAAAU5SURBVHjajFZbbBRVGP7nstvdZdm2gLUUSlhD7SYQKLASSJRGLjUlIkUTQ8QHoy81PLRvRBNeBKqJSjHaSKJhjYQY76QBEimkqVgRwqX0Qilr24V229126V66l5mdy/E/0zN1LIU4yZfZ2Tnn+/77GQ6efHHzwLzIPJiX4HH/8whhDkwRSqYjVITGoD9JyHpRYhvC1dfXV5tIJL6SJOmmqqoRRFyW5aFUKnVpYGDgvYMHD67GdYsQbkSBxYjHekDJxY6OjlV+v/+wy+XaIwXvCNnu66BOjgPRVOBdbijwVoKrahNozgVjaMTxjRs3nsZ9WYSMUJhHZK6AQd7d3b3Z5/MFSCz6TOzHkyDduYFLNeAEwVhNCAGiqCAUl0Dh9j1Q/NJeCIVCgaqqqsPJZDLFhGZFOIsnYltbW0V1dfVZqe+WNxJoBj09BYLHM0NuzS4VkSRQM1nwbN4JZW83wp1gsGXNmjWf4Ov/iJg76d1+4sSJFjIxtmX42CHQpBRwCxYYZFpeBh3vuqbNQNeB8OiwzQbT/bfxfR6822rXr1ixoqu1tXXcknxiJkXs6enZWlZa+sFQSxOfGw1irF0zZPiadxeCPDUJGn3GyNK7xoRAFCHRcxPcq1YL3g3PLUGeK4ODgxkmovNMQCgvL389dbdHiHX9BaSgABS0Kk/DgJZ7G45A2f4DwBctgVwyDnImbbynUHUNoUL4/E9Q8lSJv76+/gXkc7JK5EVTwOFw+Eeu/QH5XAZ4h20m1rhZ4HjMQxGU7HwVFm3ZAdH2sxC58AvkwiHg7Q7g0ANd4GGqvwuU+ENnZWWlH7eeR1Av5FkBURRLp8cegEJLES2bFUAbiKoYz6LbA8t2vwFPb9sNE5d/gwe/fgtSLIIMAno2CXJyCtxu93KaT+aBIFq6s0CWcoCNBJwsWzwQMNFzmsVmB2LDMGIe8hKuxSqj4dQUBQSnQMlFVvacaJYpJi3OudxFVIDHqqFtQgVE9MAsU03KwkhbK4TOnILUYL8hxIk27AsFFDREcDghk8kkrbPLFCBIHCryrfXe++EkLmQhQguJzQFKOgVjly9A8PuvIRHsAx4d5+0FWElYRZoMCnpuL8fuLl0Go1euDFtmky6agysSiVxa/vy2F68vLoVscgJsWEm0B3SsmPaG/ZAavgcczxmJpRs0M0+I6XgS1r5ZA5KqjmMfXGVNZpSp2QcCzp3Ijtpde3WOXxi80EqzbgioSJSNRY10EawonfWAiUwyCY6VlVB96GO4evPWzw0NDW3YH7Sb04j87Aju7OzM19XVyetrX9kZux+CUSxZAWNPjPkDRlP928kz5GkkV50e2PX5KdA9xX/v27fvs2g0Ool8NA85KsAzL2nMZJygpx/cvx+o+bAF1h14H+I5GaZiMchls5CnjafkscokmMaZFpt4CLaVPqg7eQaKnl092dTUdAwna4RZbpAz3tlJSud5cWFhobe3t/cLtFAa+rODfPfOa+TTqjJytFwkR8o48tEqN/ly+zrSfvwoST+MEbR4oLGx8V3cuwXhQ5Sy80G0TmuODTza4osRKwOBwFvhcPh3RVEyifEwCfd2kdHbN0g02E/kXJbE4/HRixcvflNRUfEyrt/EyJciFrJG4+eeB6aIjQm5a2pqluJs2YokGzweTznmxI51nhgZGRk+d+7ctebm5rtsJKQZMuzQUVmZPnKimSIiC5nTArvFbY2VosTinWO/zfIk851o8x34NgaT3Kw688BXGPIWq/X/81VhJp6f83XBWQRMaJYz+JEvin8EGAC8v7igs0rpyAAAAABJRU5ErkJggg==) no-repeat center center; }
+  @media screen and (min-width: 40em) {
+    footer {
+      width: 100%; }
+      footer .wvu-contact, footer .contact_1 {
+        width: 100%;
+        float: left; }
+      footer .wvu-credits, footer .wvu-icons {
+        margin-left: 0;
+        margin-right: 0;
+        width: 50%; }
+      footer .wvu-credits {
+        float: left; }
+      footer .wvu-credits ul, footer .wvu-credits p {
+        margin-bottom: 0; }
+      footer .wvu-icons {
+        float: right; }
+      footer .wvu-icons ul {
+        float: right; } }
 
 /*
  * jQuery FlexSlider v1.8
@@ -965,381 +1264,47 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 @media only screen and (min-width: 75em) {
   #main-slider.flexslider {
     overflow: hidden; } }
-.hero {
-  color: white;
-  background-color: #002855;
-  background: url("../images/coopers-rock.jpg");
-  background: url("../images/coopers-rock.jpg");
-  background-position: 75% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 4em;
-  padding-top: 4em;
-  text-shadow: 1px 1px 1px #000000; }
-  @media screen and (min-width: 53.75em) {
-    .hero {
-      background-position: top; } }
-  .hero .hero__inner {
-    padding: 3em; }
-    .hero .hero__inner:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .hero .hero__inner button {
-      color: white;
-      border: 2px solid white; }
-    .hero .hero__inner .hero__copy h1 {
-      color: white; }
-    .hero .hero__inner .hero__copy p {
-      margin-bottom: 3em;
-      font-weight: bold; }
-      @media screen and (min-width: 40em) {
-        .hero .hero__inner .hero__copy p {
-          max-width: 40%; } }
-    @media screen and (min-width: 75em) {
-      .hero .hero__inner {
-        padding: 3em 0; } }
-  .hero.hero_medium-shout {
-    padding-bottom: 2em;
-    padding-top: 2em; }
-    .hero.hero_medium-shout .hero__copy h1.shout {
-      font-size: 4.5em; }
-  .hero.hero_long-shout {
-    padding-bottom: 2em;
-    padding-top: 2em; }
-    .hero.hero_long-shout .hero__copy h1.shout {
-      font-size: 2em; }
-      @media screen and (min-width: 40em) {
-        .hero.hero_long-shout .hero__copy h1.shout {
-          font-size: 3em; } }
-  .hero.hero_diagonal {
-    background: url("../images/coopers-rock.jpg");
-    background: url("../images/coopers-rock.jpg");
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    background-size: cover; }
-    @media screen and (min-width: 53.75em) {
-      .hero.hero_diagonal {
-        background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
-        background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
-        background-size: 500px, cover;
-        background-position: 59% -209px, center top; } }
-  .hero.hero_small-photo {
-    background-image: none;
-    text-shadow: none; }
-    .hero.hero_small-photo .hero__inner {
-      color: #2C2A29; }
-      .hero.hero_small-photo .hero__inner h1 {
-        color: #002855; }
-        .hero.hero_small-photo .hero__inner h1.shout {
-          font-size: 3em; }
-          @media screen and (min-width: 53.75em) {
-            .hero.hero_small-photo .hero__inner h1.shout {
-              font-size: 4em; } }
-      .hero.hero_small-photo .hero__inner p {
-        max-width: 100%; }
-      .hero.hero_small-photo .hero__inner button {
-        color: #2C2A29;
-        border: 2px solid #2C2A29; }
-
-.cards-wrapper {
-  padding: 50px 1em; }
-  @media screen and (min-width: 75em) {
-    .cards-wrapper {
-      padding: 50px 0; } }
-
-.cards:after {
-  content: "";
-  display: table;
-  clear: both; }
-@media screen and (min-width: 53.75em) {
-  .cards.quad .card {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    .cards.quad .card:last-child {
-      margin-right: 0; } }
-
-.card {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 1.5em;
-  cursor: pointer;
-  position: relative;
-  border-top: 4px solid #EAAA00; }
-  .card.major {
-    border-top: 4px solid #005EB8; }
-  .card.feature-story {
-    border-top: 4px solid #708573; }
-  .card.student-profile {
-    border-top: 4px solid #ED8B00; }
-  @media screen and (min-width: 53.75em) {
-    .card {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .card:last-child {
-        margin-right: 0; } }
-  .card .card-image {
-    overflow: hidden;
-    max-height: 150px; }
-    .card .card-image img {
-      width: 100%;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
-  .card .ribbon-wrapper {
-    height: 85px;
-    width: 85px;
-    overflow: hidden;
-    position: absolute;
-    top: -1px;
-    right: -1px; }
-    .card .ribbon-wrapper .ribbon {
-      font-size: .8em;
-      font-weight: 800;
-      text-align: center;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      position: relative;
-      padding: 2px 7px;
-      left: -5px;
-      top: 15px;
-      width: 120px;
-      background-color: #BE3A34;
-      color: white;
-      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
-  .card .card-header {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    border-radius: 3px 3px 0 0;
-    font-family: "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    margin-bottom: 0.5em; }
-  .card .card-copy {
-    font-size: .9em;
-    line-height: 1.5em; }
-  .card .card-stats {
-    padding: 0.75em 0.809em;
-    overflow: auto; }
-    .card .card-stats ul li {
-      display: inline;
-      color: #9ABEAA;
-      font-weight: 800;
-      font-size: 1.2em;
-      float: left;
-      border-right: 1px solid rgba(51, 51, 51, 0.2);
-      line-height: 1.1em;
-      padding: 0 .7em 0 .7em; }
-      .card .card-stats ul li:first-child {
-        padding-left: 0; }
-      .card .card-stats ul li:last-child {
-        border-right: 0; }
-      .card .card-stats ul li span {
-        color: #333;
-        font-size: .7em;
-        display: block;
-        font-weight: normal; }
-  .card:hover .card-image img {
-    background: #e2daac; }
-
-.sub-nav {
-  font-weight: bold;
-  border-left: 1px solid #eee;
-  padding-left: 1em; }
-  .sub-nav li {
-    line-height: 1.2em;
-    padding-bottom: 0.5em; }
-    .sub-nav li ul {
-      font-weight: normal;
-      font-size: 0.8em;
-      padding: 1em 0 0 0; }
-
-.type-system {
-  padding: 50px 1em; }
-  @media screen and (min-width: 75em) {
-    .type-system {
-      padding: 50px 0; } }
-
-.calendar-feed h2 {
-  font-size: 1.4em;
-  padding-top: 0.5em;
-  margin-bottom: 0.58333em;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  display: inline-block; }
-.calendar-feed ul {
-  padding-bottom: 1em; }
-  .calendar-feed ul li {
-    margin-bottom: 0.58333em;
-    display: inline-block;
-    width: 100%; }
-    .calendar-feed ul li .eventDate {
-      float: left;
-      margin-right: 4%;
-      width: 10%;
-      text-align: center; }
-    .calendar-feed ul li .calEventMonth {
-      font-size: .8em;
-      text-transform: uppercase; }
-    .calendar-feed ul li .calEventDay {
-      display: block;
-      font-size: 1.5em;
-      line-height: .8em;
-      clear: both; }
-    .calendar-feed ul li .eventInfo {
-      float: left;
-      width: 86%; }
-    .calendar-feed ul li .eventTime {
-      font-weight: bold; }
-    .calendar-feed ul li .eventName {
-      display: block; }
-
-.spotlights h2 {
-  font-size: 1.4em;
-  padding-top: 0.5em;
-  margin-bottom: 0.58333em;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  display: inline-block; }
-.spotlights ul li {
-  margin-bottom: 0.58333em;
-  display: inline-block;
-  width: 100%; }
-  .spotlights ul li img {
-    float: left; }
-  .spotlights ul li p {
-    float: left; }
-
-footer {
-  padding: 2em 0; }
-  footer .wvu-credits {
-    clear: left; }
-    footer .wvu-credits ul {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 5px; }
-      footer .wvu-credits ul li {
-        list-style-type: none;
-        display: inline; }
-        footer .wvu-credits ul li:before {
-          content: '|';
-          padding-right: 3px; }
-        footer .wvu-credits ul li:first-child:before {
-          content: '';
-          padding-right: 0; }
-    footer .wvu-credits p {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 5px; }
-  footer .wvu-links li:before {
-    content: '|';
-    padding-right: 3px; }
-  footer .wvu-links li:first-child:before {
-    content: '';
-    padding-right: 0; }
-  footer .wvu-icons ul {
-    clear: both;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style-type: none; }
-    footer .wvu-icons ul li {
-      display: inline;
-      margin: 0; }
-  footer .wvu-social {
-    padding: 3px 0;
-    float: left; }
-    footer .wvu-social li {
-      float: left; }
-      footer .wvu-social li:last-child a {
-        margin-right: 0; }
-    footer .wvu-social a {
-      height: 24px;
-      margin: 0;
-      float: left;
-      width: 24px;
-      padding-left: 0;
-      padding-top: 5px;
-      overflow: hidden;
-      *text-indent: -9999px;
-      border: 0;
-      background-color: transparent; }
-      footer .wvu-social a:before {
-        content: "";
-        display: block;
-        width: 0;
-        height: 100%; }
-  footer .wvu-credits, footer .wvu-icons, footer .wvu-contact, footer .contact_1 {
-    float: left;
-    padding-bottom: 13px;
-    font-size: .75em; }
-  footer .wvu-facebook {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Njc0QURBQzY4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Njc0QURBQzc4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzRBREFDNDgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NzRBREFDNTgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvtWQkIAAAUTSURBVHjajFZbTFxVFN33MTAzDI9CKaU8WkgpkBKgBak14sQ+MCU2xuePP5rYiP7wYSJq+OtHQ2Kk0ZCSGIKJaZr6YS0pHwb4wIQYSKwtCO3wpgww5TXvue973edy7njFaePJrNwL55y19t5n730uA88fTApYw0iBlATP+j+L4PbBEiFkOkJFaBT684TsgxA7EO7p6elLoVDoe1EU76uqGkAEJUlajEQiIz6f78uOjo6TuC4X4UGk24x4pgeEnB8dHT3e2Nh41e12v7GwLnAzK3HYiaig6wa40lgoPeyEmmMZ4OS1dTTiekNDw03cl0BICIV6ZOwXMMknJydfrKqq6t+NGuV3xzZh1p8wl3E4qxsG4A8UzYAcDw/eugNw7lQuLC8v99fX118Nh8MRKpQUYWye8ENDQxVer/fe41Wx7NbIOgiSDpluDskZ03qPmwd8BQ2jHYoqEBVUaDiRDe9fLIJZ30xPTU3N18jzLxGOCpBnWm9vb892xDh7484iqKoGHieyockKvp9ryIN3vEeguTYXaso8MD6zAzxrwNxqDCRZA+8L5adKS0sfDAwMbNgO32Cp9dzU1NTL6U7X5dvDT0AQZEjjCbEKoiSDG4+vuS4PnBj/7ZAIC2sxUBQFDF2DLBcDQ+MbMLUQcbS2tl5paWkpRD4XTRQ2KVBSUvLe3EqEm5nfQSI0QVHRCxUSogwJFCRhIuPGz7Pw3U+PQJFVcw0RYdDYkfF1yM8/1NjW1tacUsDpdDb++WgbZLRM11R8InFChKOHnPDamcJkNrzaUACtZ4+Y87Ism0+e02F+ZRfCMcVVWVnZSAXSCG9SgOf5w0+3okiuYGhkMwTxhARlRzLAe7oAGGZPorm+AJpO5oEoyqYxZJ2OXoQiAoSjEng8nmJK7jB5bdWZLkpkA9nImlnM4SGOPVzDuMfh47dq0F8G+u7OwNyTEGgaqQvaM3CtLEmgYnqlOzhCztO0Z3grTTVNC7rTmRzFFOFMAaIa2JIwFEqy/qfnt8H/NAouJ58sIB3rgkEvnA4W4vF42N67WKtxYQtYPn40GzNIgD0RJXkeLOi20tfxYFVz3kIsLkBuNg/5eW7w+/1Ltt6ks1bjCgQCI2fqiiAHCysWEzBDcLO8B5JN1tDwXZb/mSMIB6NwtrYQ94gbWAfjtMhUu4DW19f3S2YGv/HmxRMQCobNQyTEpBZMARojlf5tIRSKQfFBJ1y+UAkTExO/9vT0+Gw9KSmgdnV1BbDYut9trYXzTaWwubmL4RL3skTTgOP2sohkjEK9CwYjwGoSfH6lGXQ1Md/e3n4HRWP2VsFbHhBV7KA3l5aWqr/45NyHBw+44NbgQ1DRBgdm07c//o4nxsDGVhjrA1NSlKC8KAe++vQ8lJVkbXV2dn6DnTWAPERAQMiEl9l/B2RnZ+eMjY19Vl1d/dH9v/zpt+/9AZO+ABJHMTUNPEwXFB/OggsvnYC3L9VjesZmr127dh3HA9wfRISoiEgNT3ZTjlZgHuJYf3//B2tra79hOOJPt8KGbyFgzMyuG4srW4YgSEYwGPQPDw//UFFR8Tqub0JUIUgfyqSFxu6/DywRBxXykMaFveUVJDmdlZVVwnFcGuZ5aHV1dWlwcHCiu7v7Ma6LU4tj9F2yMijVjWaJ8PQKdNlgVShDXVdoGAQK0ZaeRqobLdWF76CwyK0717rwFQrZZrX+f74qrINn931dMDYBC5rtDv7PF8XfAgwASmnGo/y0fPgAAAAASUVORK5CYII=) no-repeat center center; }
-  footer .wvu-twitter {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Njc0QURBQzI4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Njc0QURBQzM4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzRBREFDMDgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NzRBREFDMTgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PheqJZoAAASvSURBVHjajFZbTBxVGP5nZ3e5uLBt6QUoraDB3h5MkJj2QQyJEkw1UWMfNLbRPuGLQduGmOgLD5ioEY2YmAjSJvbBmLYRQ2kCNGJKr5S07K7tpizLZTfsAu0uLAt7//3O7hkYyIJO8mXmnDnn+2/f+WcU2vxSskC7OAuyEmw0bwDUddCMCLIUkACSEqnNDOkvQWwC8h0Ox2vBYPDnSCQynEgkfEAgGo2OLSws9Dudzs+ampoOYd02wALk6JzYlNw8MDBwMBwOX2DmxGCY+fMZ5mNe5rc8zCenmdsDzNNxZhj23r07dAZ7SoEtQB5g3MhImnxkZKQmFou5nBHmtyeZlQfMJPBQB4zLHjF/N8fpy+12/2K1Wiuwv2gjI2Jg6u3tPQjysZ555tJ/QGTXkTolpAFyACPMJyYQSYrZbre3gaNcpixXpmvlEoN8pOWSbYl5631svi8NrIMC4ioX86FRjG3AMPMnU8zJZDLW3t5+HDx7AavIhsiKVhSjzWar2VW6u/mEiwyO5UzCduDtFtxDUakNaObTHUS/7yFawHN/MLP7Ju5HLIr6UkXJdvDccLlcYamwlJb7PKil/VoQHg7CqyHgDvNz8Ph6iPkUPFQwLkZUwUQm75Ek88eYp1vAdeajiAwqW7p48cJp8FXIopu1Yqi5ubnVlz1wNCETBo+nEUkYCv+mjKi+kGgmjthlZnPg1he7iG7PE41h3eATIn9czdu3b381Xl8GRBRRg2bAaDQWuxbxFJeAoTA29jzJEL4CA+8VrZXddpyWnv1EzyDbwSU4EMOBsFjKZP7FWVINutOZE5XEaeA5hfvVOaLzfhzVLOdzDmuO2YlGApn1cUSrqqpZyjTNbdBkChUEioQZeGHCwgIxGyG6N030hz/7yfl6nKjPS7QEEZhQzgKkD0qc1/cuo9a40ALGD1vNFR1jMI/Z4xBbMdQcgmdvINeGdRYuwej3o3KAVD6LRrE3H4ryeNy63pQyaI3L5/P1H8WB3wkvlpHPc1gWQgQf7iY6bF0lngTZl4+I3r+DCsZkOlHOd4rBuhya7urqurVaRUopUjO5aFzlzc3NvT84zSWnhzHzVMa0imiehmfbkNkEfJqCgcfLurYWyXh/rZ7IcaP/bH19fQfkOoM3j4VpRdc9LUNDQyerql746t2rRL+NSyOGdU1Y0c1FMrW6UkdUqc6O1tbWnkIHnhT1BxZE8rSlImfR6urq8xMT453nXiY6cwBOiiUhGXBK9wUQCodyDsCtK68SPV8Qnm1pafkW5D68WcxURcglzbvSSUU/3yq6ot1ua4OqIn+hm775J/PODpzWH4E2ZtNP6EO/MjffZJ5FK/f7fc7GxsaPsPcIgFNBxfL7sKajarXIky23vLOz8wOv1/t3PB4Pe9Bd7/mZh/EteIAWvRRjDgQCnr6+vrOVlZWvY/2LkryEMlkzS6fXyFszYpKGLHV1dSUNDQ01IKkqLCzcIw4RdB6cmppyd3d3325tbX0oE7YokW4P+kanZPkWqzK8HGlIg1kXdlJWJiLzvSyfNXmuyEL5jw++SUIj18SZWm0oacR0Xqf+z1+FVnjDur8LRWdAg/ZXkfWP4l8BBgDyPYa2BW2NowAAAABJRU5ErkJggg==) no-repeat center center; }
-  footer .wvu-youtube {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEZGMkJDNDU4Mjc4MTFFMkJDM0Q5ODQzMUM5RDAwNTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEZGMkJDNDY4Mjc4MTFFMkJDM0Q5ODQzMUM5RDAwNTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzRBREFDODgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowRkYyQkM0NDgyNzgxMUUyQkMzRDk4NDMxQzlEMDA1NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Phr6zLQAAAU5SURBVHjajFZbbBRVGP7nstvdZdm2gLUUSlhD7SYQKLASSJRGLjUlIkUTQ8QHoy81PLRvRBNeBKqJSjHaSKJhjYQY76QBEimkqVgRwqX0Qilr24V229126V66l5mdy/E/0zN1LIU4yZfZ2Tnn+/77GQ6efHHzwLzIPJiX4HH/8whhDkwRSqYjVITGoD9JyHpRYhvC1dfXV5tIJL6SJOmmqqoRRFyW5aFUKnVpYGDgvYMHD67GdYsQbkSBxYjHekDJxY6OjlV+v/+wy+XaIwXvCNnu66BOjgPRVOBdbijwVoKrahNozgVjaMTxjRs3nsZ9WYSMUJhHZK6AQd7d3b3Z5/MFSCz6TOzHkyDduYFLNeAEwVhNCAGiqCAUl0Dh9j1Q/NJeCIVCgaqqqsPJZDLFhGZFOIsnYltbW0V1dfVZqe+WNxJoBj09BYLHM0NuzS4VkSRQM1nwbN4JZW83wp1gsGXNmjWf4Ov/iJg76d1+4sSJFjIxtmX42CHQpBRwCxYYZFpeBh3vuqbNQNeB8OiwzQbT/bfxfR6822rXr1ixoqu1tXXcknxiJkXs6enZWlZa+sFQSxOfGw1irF0zZPiadxeCPDUJGn3GyNK7xoRAFCHRcxPcq1YL3g3PLUGeK4ODgxkmovNMQCgvL389dbdHiHX9BaSgABS0Kk/DgJZ7G45A2f4DwBctgVwyDnImbbynUHUNoUL4/E9Q8lSJv76+/gXkc7JK5EVTwOFw+Eeu/QH5XAZ4h20m1rhZ4HjMQxGU7HwVFm3ZAdH2sxC58AvkwiHg7Q7g0ANd4GGqvwuU+ENnZWWlH7eeR1Av5FkBURRLp8cegEJLES2bFUAbiKoYz6LbA8t2vwFPb9sNE5d/gwe/fgtSLIIMAno2CXJyCtxu93KaT+aBIFq6s0CWcoCNBJwsWzwQMNFzmsVmB2LDMGIe8hKuxSqj4dQUBQSnQMlFVvacaJYpJi3OudxFVIDHqqFtQgVE9MAsU03KwkhbK4TOnILUYL8hxIk27AsFFDREcDghk8kkrbPLFCBIHCryrfXe++EkLmQhQguJzQFKOgVjly9A8PuvIRHsAx4d5+0FWElYRZoMCnpuL8fuLl0Go1euDFtmky6agysSiVxa/vy2F68vLoVscgJsWEm0B3SsmPaG/ZAavgcczxmJpRs0M0+I6XgS1r5ZA5KqjmMfXGVNZpSp2QcCzp3Ijtpde3WOXxi80EqzbgioSJSNRY10EawonfWAiUwyCY6VlVB96GO4evPWzw0NDW3YH7Sb04j87Aju7OzM19XVyetrX9kZux+CUSxZAWNPjPkDRlP928kz5GkkV50e2PX5KdA9xX/v27fvs2g0Ool8NA85KsAzL2nMZJygpx/cvx+o+bAF1h14H+I5GaZiMchls5CnjafkscokmMaZFpt4CLaVPqg7eQaKnl092dTUdAwna4RZbpAz3tlJSud5cWFhobe3t/cLtFAa+rODfPfOa+TTqjJytFwkR8o48tEqN/ly+zrSfvwoST+MEbR4oLGx8V3cuwXhQ5Sy80G0TmuODTza4osRKwOBwFvhcPh3RVEyifEwCfd2kdHbN0g02E/kXJbE4/HRixcvflNRUfEyrt/EyJciFrJG4+eeB6aIjQm5a2pqluJs2YokGzweTznmxI51nhgZGRk+d+7ctebm5rtsJKQZMuzQUVmZPnKimSIiC5nTArvFbY2VosTinWO/zfIk851o8x34NgaT3Kw688BXGPIWq/X/81VhJp6f83XBWQRMaJYz+JEvin8EGAC8v7igs0rpyAAAAABJRU5ErkJggg==) no-repeat center center; }
-  @media screen and (min-width: 40em) {
-    footer {
-      width: 100%; }
-      footer .wvu-contact, footer .contact_1 {
-        width: 100%;
-        float: left; }
-      footer .wvu-credits, footer .wvu-icons {
-        margin-left: 0;
-        margin-right: 0;
-        width: 50%; }
-      footer .wvu-credits {
-        float: left; }
-      footer .wvu-credits ul, footer .wvu-credits p {
-        margin-bottom: 0; }
-      footer .wvu-icons {
-        float: right; }
-      footer .wvu-icons ul {
-        float: right; } }
-
-.wvu-masthead .wvu-masthead__container, .wvu-masthead_white .wvu-masthead__container, .wvu-masthead__gold .wvu-masthead__container {
+.wvu-masthead__container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .wvu-masthead .wvu-masthead__container:after, .wvu-masthead_white .wvu-masthead__container:after, .wvu-masthead__gold .wvu-masthead__container:after {
+  .wvu-masthead__container:after {
     content: "";
     display: table;
     clear: both; }
+
 @media screen and (min-width: 40em) {
-  .wvu-masthead .wvu-masthead__logo, .wvu-masthead_white .wvu-masthead__logo, .wvu-masthead__gold .wvu-masthead__logo {
+  .wvu-masthead__logo {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 70.14568%; }
-    .wvu-masthead .wvu-masthead__logo:last-child, .wvu-masthead_white .wvu-masthead__logo:last-child, .wvu-masthead__gold .wvu-masthead__logo:last-child {
-      margin-right: 0; }
-  .wvu-masthead .wvu-masthead__search-bar, .wvu-masthead_white .wvu-masthead__search-bar, .wvu-masthead__gold .wvu-masthead__search-bar {
+    .wvu-masthead__logo:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 40em) {
+  .wvu-masthead__search-bar {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 27.49666%; }
-    .wvu-masthead .wvu-masthead__search-bar:last-child, .wvu-masthead_white .wvu-masthead__search-bar:last-child, .wvu-masthead__gold .wvu-masthead__search-bar:last-child {
+    .wvu-masthead__search-bar:last-child {
       margin-right: 0; } }
-.wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-box, .wvu-masthead_white .wvu-masthead__search-bar .wvu-masthead__search-box, .wvu-masthead__gold .wvu-masthead__search-bar .wvu-masthead__search-box {
+
+input.wvu-masthead__search-box {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%; }
-  .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-box:last-child, .wvu-masthead_white .wvu-masthead__search-bar .wvu-masthead__search-box:last-child, .wvu-masthead__gold .wvu-masthead__search-bar .wvu-masthead__search-box:last-child {
+  input.wvu-masthead__search-box:last-child {
     margin-right: 0; }
-.wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-button, .wvu-masthead_white .wvu-masthead__search-bar .wvu-masthead__search-button, .wvu-masthead__gold .wvu-masthead__search-bar .wvu-masthead__search-button {
+
+.wvu-masthead__search-button {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 14.70196%; }
-  .wvu-masthead .wvu-masthead__search-bar .wvu-masthead__search-button:last-child, .wvu-masthead_white .wvu-masthead__search-bar .wvu-masthead__search-button:last-child, .wvu-masthead__gold .wvu-masthead__search-bar .wvu-masthead__search-button:last-child {
+  .wvu-masthead__search-button:last-child {
     margin-right: 0; }
 
 .bullets {
@@ -1404,25 +1369,11 @@ footer {
     display: table;
     clear: both; }
 
-.overlay .hero-copy {
-  margin-left: 51.17883%; }
-.overlay button {
-  margin-left: 51.17883%; }
-
 article {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
   article:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.cards {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .cards:after {
     content: "";
     display: table;
     clear: both; }
@@ -1452,45 +1403,68 @@ article {
     display: table;
     clear: both; }
 
-.frontpage .hero .hero__inner {
+.hero__inner {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .frontpage .hero .hero__inner:after {
+  .hero__inner:after {
     content: "";
     display: table;
     clear: both; }
+
 @media screen and (min-width: 40em) {
-  .frontpage .hero.hero_small-photo .hero__copy {
+  .hero--small-photo__copy {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
-    .frontpage .hero.hero_small-photo .hero__copy:last-child {
-      margin-right: 0; }
-  .frontpage .hero.hero_small-photo .hero__photo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .frontpage .hero.hero_small-photo .hero__photo:last-child {
+    width: 40.29137%; }
+    .hero--small-photo__copy:last-child {
       margin-right: 0; } }
-.frontpage .buttons {
+
+@media screen and (min-width: 40em) {
+  .hero__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    .hero__photo:last-child {
+      margin-right: 0; } }
+
+.buttons {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .frontpage .buttons:after {
+  .buttons:after {
     content: "";
     display: table;
     clear: both; }
-.frontpage .social-media-icons {
+
+.social-media-icons {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .frontpage .social-media-icons:after {
+  .social-media-icons:after {
     content: "";
     display: table;
     clear: both; }
+
+.cards__wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .cards__wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media screen and (min-width: 40em) {
+  .cards__card {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .cards__card:last-child {
+      margin-right: 0; } }
 
 .college-of-business-and-economics-homepage .hero .hero__inner {
   max-width: 68em;

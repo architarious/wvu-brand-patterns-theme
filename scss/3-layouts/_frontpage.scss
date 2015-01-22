@@ -1,17 +1,20 @@
-.frontpage {
-  .hero {
-    .hero__inner { @include outer-container(); }
-    &.hero_small-photo {
-      @include media($bp-medium) {
-        .hero__copy {
-          @include span-columns(6);
-        }
-        .hero__photo {
-          @include span-columns(6);
-        }
-      }
-    }
+
+.hero__inner { @include outer-container(); }
+
+.hero--small-photo__copy {
+  @include media($bp-medium) { @include span-columns(5); }
+}
+.hero__photo {
+  @include media($bp-medium) { @include span-columns(7); }
+}
+
+.buttons { @include outer-container(); }
+.social-media-icons { @include outer-container(); }
+
+.cards__wrapper { @include outer-container(); }
+
+.cards__card { 
+  @include media($bp-medium) {
+    @include span-columns(4);
   }
-  .buttons { @include outer-container(); }
-  .social-media-icons { @include outer-container(); }
 }
