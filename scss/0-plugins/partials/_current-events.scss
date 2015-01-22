@@ -1,0 +1,46 @@
+// Current Events
+//==================================================
+// Styles for the Twitter, Calendar, and RSS Feed on the homepage.
+
+.current-events__twitter, .current-events__calendar { margin-bottom: 38px; 
+  @include mq($bp-medium) { margin-bottom: 8px; }
+}
+
+// Headings for Twitter, Calendar, and Blog Feed
+.current-events__header-wrap { float: left; width: 100%; margin-bottom: 10px; clear: both; 
+  @include mq($bp-medium) { margin-bottom: 22px; }
+} //.current-events__header-wrap
+.current-events__header { @include u-reset-wvu-h2; float: left; font-size: 1.2em; text-transform: none; }
+
+// Twitter
+.current-events__icon--twitter { color: #27aae0; }
+
+// Calendar
+.calEvent { float: left; padding-top: 15px; padding-bottom: 15px; border-top: 1px solid #eaeaea; width: 100%; }
+div.calEvent:nth-of-type(2) { padding-top: 0; border-top: 0; // Remove border and padding
+  @include mq($bp-xlarge) { padding-top: 9px; }
+}
+.calEventDate { float: left; width: 55px; font-size: 1em; padding-top: 8px; line-height: 1; }
+.calEventMonth { display: block; font-size: .95em; }
+.calEventDay { font-size: 1.4em; }
+.calEventInfo { float: left; width: 75%; }
+.calEventTitle { display: block; 
+  a { font-weight: bold; }
+} //.calEventTitle
+.calEventLocation, .calEventStartTime, .calEventEndTime { font-size: .85em; }
+.calEventStartTime, .calEventEndTime { font-weight: bold; }
+.calEventStartTime { padding-left: 4px; }
+
+.current-events__calendar-button { float: left; margin-top: 10px;}
+
+// RSS
+.current-events__rss { float: right; width: 43px; border-bottom: 0; font-size: .8em; font-weight: bold; color: $basecolor; 
+  &:hover { border-bottom: 0; }
+} //.current-events__rss
+.current-events__icon--rss { color: $dark-orange; 
+  &:hover { color: $linkhover; }
+} //.current-events__icon--rss
+.current-events__rss-snippet { margin-top: 0; }
+
+// Fix Mercury edit mode collapsing region for RSS feed
+#_ckey_news { width: 100%; }

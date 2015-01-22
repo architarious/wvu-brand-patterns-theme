@@ -1,0 +1,84 @@
+// Make making buttons easier
+// https://css3-buttons.heroku.com/
+// https://github.com/dira/CSS3-stylish-buttons
+// This file has been converted to SCSS
+// This file has been heavily customized
+// Original buttons.scss available at: 
+// https://gist.github.com/adamjohnson/5155252
+
+// @mixin gradient($top, $bottom) {
+//   background-color: $bottom;
+// }
+
+@mixin button {
+  display: inline-block;
+  padding: 0.7em 1.2em 0.75em;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  // this determines Mozilla to show the padding
+  border: 0;
+  border-radius: 4px;
+  box-shadow: inset 0 -3px rgba(0,0,0,0.3),0 1px rgba(0,0,0,0.05);
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  background-color: $linkcolor;
+  color: #fff;
+  &:hover {
+    text-decoration: none; color: #fff; border-bottom: 0; background-color: lighten($linkcolor, 7%);
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+    box-shadow: inset 0 -2px rgba(0,0,0,0.3),0 1px rgba(0,0,0,0.05); 
+  }
+  &:visited { color: #fff; }
+}
+
+// @mixin color($background) {
+//   @include gradient(lighten($background, 13%), $background);
+//   &:hover {
+//     @include gradient(lighten($background, 10%), darken($background, 5%));
+//   }
+  // &:active {
+  //   @include gradient($background, lighten($background, 10%));
+  //   color: mix(#fff, $background, 70%);
+  // }
+//}
+
+// Mozilla: don't show border around the button's text on click
+// This should probably be somewhere in the partials directory, 
+// but we're gonna keep it here for modulatiry
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="file"] > input[type="button"] {
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
+// Use it
+.btn {
+  @include button;
+}
+
+.btn--inverse {
+  color: $linkcolor;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px $linkcolor;
+  text-shadow: none;
+  &:hover {
+    background-color: $linkcolor;
+  } //hover
+  &:active { 
+    box-shadow: inset 0 0 0 3px $linkcolor;
+  } //active
+  &:visited {
+    color: $linkcolor;
+    &:hover { color: #fff; }
+  } //visited
+} //.btn--inverse

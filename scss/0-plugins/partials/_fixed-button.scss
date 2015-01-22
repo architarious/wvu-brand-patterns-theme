@@ -1,0 +1,36 @@
+// Fixed button
+//==================================================
+// These styles are for the "Sexual Harassment Claims" button fixed to the right side
+// of the browser for $bp-medium and up.
+
+// NOTE: These could likely be written more simply. If you think you can tackle that, by all means have at it.
+
+// Style the fixed Sexual Harassment Claims button
+.sexual-harassment-claims { display: none; position: fixed; top: 400px; right: 0; z-index: 10; background: url(../images/sexual-harassment-claims.png) no-repeat right top; min-height: 228px; width: 54px; border-bottom: 0;
+  &:hover { background-position: left top; border-bottom: 0; }
+  
+  // For all page templates
+  @include mq($bp-xlarge + 120) { display: block; }
+  
+  // If the viewport is at least $bp-xlarge + 120px *and* 825px tall, do:
+  @include mq(825, false, min, height) {
+    .frontpage & { top: 585px; } 
+  } //min-height mq
+
+  // If the viewport is at least $bp-medium:
+  @include mq($bp-medium) {
+    .frontpage & { display: block; position: absolute; } // Homepage only
+    .department &, .department_accessibility &, .blog_index &, .blog_article &, .staff_department & { display: block; } // Department, Department Accessibility & blog templates only
+  } //$bp-medium
+
+  // If the viewport is at least $bp-large:
+  @include mq($bp-large) {
+    .staff_index &, .staff_profile & { display: block; }
+    .staff_index & { position: absolute; }
+  } //$bp-large
+
+  // If the viewport is at least $bp-xlarge + 120, do this for certain page types:
+  @include mq($bp-xlarge + 120) {
+    .frontpage &, .staff_index & { position: fixed; }
+  } //$bp-xlarge
+} //.sexual-harassment-claims

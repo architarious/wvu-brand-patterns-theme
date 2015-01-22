@@ -1,0 +1,14 @@
+// Division Summary
+//==================================================
+// Styles for the division summary on the homepage.
+
+.division-summary { background: url(../images/triangle--grey.png) no-repeat #fff center bottom; }
+
+// Division name
+.division-summary__header { @include u-reset-wvu-h2; font-size: 1.6em; }
+
+// Division summary description
+.division-summary__main { font-size: 1.05em; line-height: 1.8; 
+  @include mq($bp-large) { line-height: 1.9; }
+  p { margin-top: 0; }
+} //.division-summary__main

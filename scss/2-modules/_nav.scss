@@ -1,0 +1,24 @@
+.nav-wrapper { background: $black; width: 100%; padding: 20px; display: table; 
+  @include media($bp-medium) { padding: 0; }
+  .nav { 
+    ul {
+      @include media($bp-medium) { margin-left: -1em; }
+      li { margin-bottom: 0; float: left;
+        a { font-weight: bold; float: left; color: white; margin-right: 0; padding: 1em; font-size: .9em; width: 100%; 
+          &:hover { background: $wvu-gold; }
+        }
+      }
+    }
+  }
+  .nav-collapse { clear: both; overflow: visible;
+    li { 
+      @include media($bp-medium) { width: auto; float: left; }
+    }
+  }
+  // Responsive-nav.com toggle (inside of .nav-department)
+  .nav-toggle { float: left; width: 98%; padding-top: 4px; padding-bottom: 4px; text-align: center; color: #fff; border: 1px solid #fff; border-radius: 7px; margin-bottom: 4px;
+    @include media($bp-medium) { margin-left: 10px; }
+    &:visited { color: #fff; }
+    &:hover { text-decoration: none; background-color: $pms-166-c; color: #fff; border: 1px solid pms-166-c; }
+  } //.nav-toggle
+}

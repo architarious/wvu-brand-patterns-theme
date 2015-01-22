@@ -1,0 +1,15 @@
+// Lead text
+//==================================================
+// Styles for "There's a place for you at WVU" text on the homepage.
+
+.lead-text { background: url(../images/triangle--blue.png) #122e5f no-repeat center bottom; }
+
+.lead-text, .lead-text div { height: 139px;
+  @include mq($bp-large) { height: 190px; }
+} //.lead-text
+
+.lead-text__callout { @include u-vertical-align; max-width: 300px; text-transform: none; color: #fff; text-align: center; font-size: 2em; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;
+  @include mq($bp-medium) { font-size: 2.5em; max-width: 400px; }
+  @include mq($bp-large) { font-size: 3.5em; max-width: 550px; }
+  .ie8 & { top: 17%; }
+} //.mural__callout
