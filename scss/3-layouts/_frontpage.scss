@@ -1,6 +1,6 @@
 .frontpage {
   .hero {
-    .hero__inner { @include outer-container; }
+    .hero__inner { @include outer-container(); }
     &.hero_small-photo {
       @include media($bp-medium) {
         .hero__copy {
@@ -12,4 +12,6 @@
       }
     }
   }
+  .buttons { @include outer-container(); }
+  .social-media-icons { @include outer-container(); }
 }

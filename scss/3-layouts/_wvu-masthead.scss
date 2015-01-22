@@ -1,0 +1,19 @@
+.wvu-masthead, .wvu-masthead_white, .wvu-masthead__gold {
+  .wvu-masthead__container { @include outer-container(); }
+  @include media($medium-screen) {
+    .wvu-masthead__logo {
+      @include span-columns(8.5);
+    }
+    .wvu-masthead__search-bar { 
+      @include span-columns(3.5);
+    }
+  }
+  .wvu-masthead__search-bar { 
+    .wvu-masthead__search-box {
+      @include span-columns(10);
+    }
+    .wvu-masthead__search-button {
+      @include span-columns(2);
+    }
+  }
+}
