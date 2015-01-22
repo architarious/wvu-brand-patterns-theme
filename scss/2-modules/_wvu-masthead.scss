@@ -46,7 +46,9 @@
     @include media($bp-medium) { position: absolute; }
   }
   
-  &.wvu-masthead_white { background-color: white; color: $wvu-blue;
+  &.wvu-masthead_blue-pattern { background: url(../images/pattern-blue.jpg) no-repeat; background-size: cover; }
+  
+  &.wvu-masthead_white { background-color: white; color: $wvu-blue; background-image: none;
     .wvu-masthead__logo { color: $wvu-blue; }
     .wvu-masthead__search-bar { padding-top: 3.5em; font-size: 0.8em;
       .wvu-masthead__search-button {
@@ -60,7 +62,7 @@
     }
   }
   
-  &.wvu-masthead_gold { background-color: $wvu-gold; color: $wvu-blue;
+  &.wvu-masthead_gold { background-color: $wvu-gold; color: $wvu-blue; background-image: none;
     .wvu-masthead__logo { background: url(../images/flying-wv-blue.png) no-repeat top 1.2em left; background-size: 1.8em; color: $wvu-blue; }
     .wvu-masthead__search-bar { padding-top: 3.5em; font-size: 0.8em;
       .wvu-masthead__search-button {

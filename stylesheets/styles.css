@@ -552,9 +552,13 @@ button, input[type="submit"] {
     @media screen and (min-width: 40em) {
       .wvu-masthead .wvu-masthead__college-link {
         position: absolute; } }
+  .wvu-masthead.wvu-masthead_blue-pattern {
+    background: url(../images/pattern-blue.jpg) no-repeat;
+    background-size: cover; }
   .wvu-masthead.wvu-masthead_white {
     background-color: white;
-    color: #002855; }
+    color: #002855;
+    background-image: none; }
     .wvu-masthead.wvu-masthead_white .wvu-masthead__logo {
       color: #002855; }
     .wvu-masthead.wvu-masthead_white .wvu-masthead__search-bar {
@@ -568,7 +572,8 @@ button, input[type="submit"] {
           border-color: #EAAA00; }
   .wvu-masthead.wvu-masthead_gold {
     background-color: #EAAA00;
-    color: #002855; }
+    color: #002855;
+    background-image: none; }
     .wvu-masthead.wvu-masthead_gold .wvu-masthead__logo {
       background: url(../images/flying-wv-blue.png) no-repeat top 1.2em left;
       background-size: 1.8em;
