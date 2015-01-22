@@ -78,26 +78,14 @@ layout: default
 </div>
 
 <r:content_for name="page_js"> 
-  <r:include_javascript name="jqueryflexslider" />
+  <r:include_javascript name="jquery.flexslider" />
   <r:include_javascript name="vendor/calendar-reformat" />
-  
 
   <!-- Target sliders individually with different properties -->
   <script type="text/javascript">
     $(window).load(function() {
-      $('#main-slider').flexslider({
+      $('.flexslider').flexslider({
         animation: 'fade',
-        controlsContainer: '.flex-container'
-      });
-      $('#secondary-slider').flexslider({
-        animation: "slide",
-        animationLoop: true,
-        itemWidth: 280,
-        itemMargin: 0,
-        minItems: 2,
-        maxItems: 2,
-        delay: 10000
-		
       });
     });
   </script>
