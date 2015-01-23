@@ -1,12 +1,9 @@
-.backpage { @include outer-container();
-  @include mq($bp-medium) {
-    .article-body {
-      @include span-columns(9.5);
-    }
-    .sub-nav {
-      @include span-columns(2.5);
-    }
-  }
+.page-content { 
+  @include mq($bp-medium) { @include span-columns(9.5); }
+}
+
+.sub-nav {
+  @include mq($bp-medium) { @include span-columns(2.5); }
 }
 
 .graphic-header__container { @include outer-container(); }
@@ -18,3 +15,5 @@
 .graphic-header__intro { 
   @include mq($bp-medium) { @include span-columns(6); } 
 }
+
+.type-system { @include outer-container(); }

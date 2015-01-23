@@ -270,6 +270,11 @@ input[type="submit"] {
 
   .nav-toggle {
     display: none; } }
+a {
+  color: #0033A0; }
+  a:hover {
+    color: #005EB8; }
+
 .wvu-blue {
   color: #002855;
   border-color: #002855; }
@@ -522,6 +527,10 @@ p + p.lede {
   .button:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
+
+.button--small {
+  font-size: 0.9em;
+  padding: 0.25em 0.5em; }
 
 .button--big {
   font-size: 1.5em; }
@@ -919,12 +928,26 @@ input[type="search"].wvu-masthead__search-box {
   color: white;
   font-weight: bold;
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 0.5em;
   width: 100%; }
+  @media (min-width: 48em) {
+    .wvu-masthead__home-link {
+      margin-bottom: 3px; } }
+  .wvu-masthead__home-link:hover {
+    color: white; }
+
+.wvu-masthead__home-link--blue {
+  color: #002855; }
+  .wvu-masthead__home-link--blue:hover {
+    color: #0033A0; }
 
 .wvu-masthead__search-type {
   clear: both;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-top: 0.5em; }
+  @media (min-width: 48em) {
+    .wvu-masthead__search-type {
+      padding-top: 0; } }
   .wvu-masthead__search-type input:last-child {
     margin-left: 1em; }
 
@@ -963,9 +986,13 @@ input[type="search"].wvu-masthead__search-box {
   background: url(../images/flying-wv-blue.png) no-repeat top 1.2em left;
   background-size: 1.8em;
   color: #002855; }
+  .wvu-masthead__logo--gold-background:hover {
+    color: #002855; }
 
 .wvu-masthead__logo--white-background {
   color: #002855; }
+  .wvu-masthead__logo--white-background:hover {
+    color: #002855; }
 
 .wvu-masthead__search-button--blue {
   border-color: #002855;
@@ -989,40 +1016,39 @@ input[type="search"].wvu-masthead__search-box {
 .breadcrumbs--white a {
   color: white; }
 
-.nav-wrapper {
+.breadcrumbs__container {
+  width: 100%;
+  padding: 1em 0;
+  position: relative; }
+
+.breadcrumbs__links {
+  position: absolute;
+  top: 0; }
+
+.breadcrumbs__breadcrumb {
+  float: left;
+  font-size: .8em;
+  margin-right: 0.5em; }
+
+.nav {
   background: #2C2A29;
   width: 100%;
   padding: 20px;
   display: table; }
   @media (min-width: 48em) {
-    .nav-wrapper {
+    .nav {
       padding: 0 20px; } }
   @media (min-width: 75em) {
-    .nav-wrapper {
+    .nav {
       padding: 0; } }
-  @media (min-width: 48em) {
-    .nav-wrapper .nav ul {
-      margin-left: -1em; } }
-  .nav-wrapper .nav ul li {
-    margin-bottom: 0;
-    float: left; }
-    .nav-wrapper .nav ul li a {
-      float: left;
-      color: white;
-      margin-right: 0;
-      padding: 1em;
-      width: 100%; }
-      .nav-wrapper .nav ul li a:hover {
-        background: #EAAA00;
-        color: #002855; }
-  .nav-wrapper .nav-collapse {
+  .nav .nav-collapse {
     clear: both;
     overflow: visible; }
     @media (min-width: 48em) {
-      .nav-wrapper .nav-collapse li {
+      .nav .nav-collapse li {
         width: auto;
         float: left; } }
-  .nav-wrapper .nav-toggle {
+  .nav .nav-toggle {
     float: left;
     width: 100%;
     padding-top: 4px;
@@ -1033,15 +1059,31 @@ input[type="search"].wvu-masthead__search-box {
     border-radius: 7px;
     margin-bottom: 4px; }
     @media (min-width: 48em) {
-      .nav-wrapper .nav-toggle {
+      .nav .nav-toggle {
         margin-left: 10px; } }
-    .nav-wrapper .nav-toggle:visited {
+    .nav .nav-toggle:visited {
       color: white; }
-    .nav-wrapper .nav-toggle:hover {
+    .nav .nav-toggle:hover {
       text-decoration: none;
       background-color: #EAAA00;
       color: #002855;
       border: 1px solid #EAAA00; }
+
+@media (min-width: 48em) {
+  .nav__menu ul {
+    margin-left: -1em; } }
+.nav__menu ul li {
+  margin-bottom: 0;
+  float: left; }
+  .nav__menu ul li a {
+    float: left;
+    color: white;
+    margin-right: 0;
+    padding: 1em;
+    width: 100%; }
+    .nav__menu ul li a:hover {
+      background: #EAAA00;
+      color: #002855; }
 
 .cards {
   padding: 4em 1em; }
@@ -1053,6 +1095,9 @@ input[type="search"].wvu-masthead__search-box {
   font-size: 0.8em; }
   .cards__card div + h2 {
     margin-top: 0.5em; }
+
+.cards__copy {
+  margin-bottom: 1.5em; }
 
 .cards--pms-warm-gray-3 {
   background: #BFB8AF; }
@@ -1071,6 +1116,25 @@ input[type="search"].wvu-masthead__search-box {
   color: white; }
   .cards--pms-warm-gray-11 h1, .cards--pms-warm-gray-11 h2, .cards--pms-warm-gray-11 h3, .cards--pms-warm-gray-11 h4, .cards--pms-warm-gray-11 h5, .cards--pms-warm-gray-11 h6, .cards--pms-warm-gray-11 a {
     color: white; }
+
+.cards__spotlight-image {
+  margin-top: 0.35em; }
+
+.cards__spotlight {
+  float: left;
+  margin-bottom: 1.5em; }
+
+.cards__spotlight-header h3 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 0.25em; }
+
+.cards__spotlight-copy {
+  margin-bottom: 0.65em; }
+
+@media (min-width: 48em) {
+  .cards__copy-wrapper {
+    padding-left: 0.75em; } }
 
 .social-media-icons {
   text-align: center; }
@@ -1095,10 +1159,6 @@ input[type="search"].wvu-masthead__search-box {
 
 .hero__inner {
   padding: 3em; }
-  .hero__inner:after {
-    content: "";
-    display: table;
-    clear: both; }
   @media (min-width: 75em) {
     .hero__inner {
       padding: 3em 0; } }
@@ -1179,32 +1239,30 @@ input[type="search"].wvu-masthead__search-box {
     .type-system {
       padding: 50px 0; } }
 
-.calendar-feed ul {
-  padding-bottom: 1em; }
-  .calendar-feed ul li {
-    margin-bottom: 0.58333em;
-    display: inline-block;
-    width: 100%; }
-    .calendar-feed ul li .eventDate {
-      float: left;
-      margin-right: 4%;
-      width: 10%;
-      text-align: center; }
-    .calendar-feed ul li .calEventMonth {
-      font-size: .8em;
-      text-transform: uppercase; }
-    .calendar-feed ul li .calEventDay {
-      display: block;
-      font-size: 1.5em;
-      line-height: .8em;
-      clear: both; }
-    .calendar-feed ul li .eventInfo {
-      float: left;
-      width: 86%; }
-    .calendar-feed ul li .eventTime {
-      font-weight: bold; }
-    .calendar-feed ul li .eventName {
-      display: block; }
+.calendar-feed ul li {
+  margin-bottom: 0.58333em;
+  display: inline-block;
+  width: 100%; }
+  .calendar-feed ul li .eventDate {
+    float: left;
+    margin-right: 4%;
+    width: 10%;
+    text-align: center; }
+  .calendar-feed ul li .calEventMonth {
+    font-size: .8em;
+    text-transform: uppercase; }
+  .calendar-feed ul li .calEventDay {
+    display: block;
+    font-size: 1.5em;
+    line-height: .8em;
+    clear: both; }
+  .calendar-feed ul li .eventInfo {
+    float: left;
+    width: 86%; }
+  .calendar-feed ul li .eventTime {
+    font-weight: bold; }
+  .calendar-feed ul li .eventName {
+    display: block; }
 
 .graphic-header {
   padding: 4em 1em;
@@ -1215,7 +1273,7 @@ input[type="search"].wvu-masthead__search-box {
       padding: 4em 0; } }
 
 .graphic-header__header {
-  font-size: 5em;
+  font-size: 6em;
   margin-bottom: 0.15em;
   font-family: "HelveticaNeueW01-97Blac", "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
   color: white;
@@ -1230,7 +1288,7 @@ input[type="search"].wvu-masthead__search-box {
   box-sizing: border-box; }
 
 .graphic-header__intro--overlay {
-  padding: 1em;
+  padding: 2em;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
@@ -1245,21 +1303,6 @@ input[type="search"].wvu-masthead__search-box {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
   /* IE6-9 */ }
-
-.spotlights h2 {
-  font-size: 1.4em;
-  padding-top: 0.5em;
-  margin-bottom: 0.58333em;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  display: inline-block; }
-.spotlights ul li {
-  margin-bottom: 0.58333em;
-  display: inline-block;
-  width: 100%; }
-  .spotlights ul li img {
-    float: left; }
-  .spotlights ul li p {
-    float: left; }
 
 footer {
   padding: 2em 0; }
@@ -1469,14 +1512,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     .flex-caption {
       bottom: 143px; } }
   .flex-caption .caption-container {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 20px; }
-    .flex-caption .caption-container:after {
-      content: "";
-      display: table;
-      clear: both; }
     .flex-caption .caption-container h2 {
       font-size: 1em; }
 
@@ -1688,17 +1724,6 @@ input.wvu-masthead__search-box {
     display: table;
     clear: both; }
 
-.spotlights {
-  padding: 0 0 100px 0; }
-  @media (min-width: 48em) {
-    .spotlights {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .spotlights:last-child {
-        margin-right: 0; } }
-
 footer {
   max-width: 68em;
   margin-left: auto;
@@ -1756,11 +1781,11 @@ article {
     .color-palette .color-palette__color-container:last-child {
       margin-right: 0; }
 
-.nav {
+.nav__container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .nav:after {
+  .nav__container:after {
     content: "";
     display: table;
     clear: both; }
@@ -1828,6 +1853,15 @@ article {
     .cards__card:last-child {
       margin-right: 0; } }
 
+.flex-caption .caption-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .flex-caption .caption-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .college-of-business-and-economics-homepage .hero .hero__inner {
   max-width: 68em;
   margin-left: auto;
@@ -1837,29 +1871,23 @@ article {
     display: table;
     clear: both; }
 
-.backpage {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .backpage:after {
-    content: "";
-    display: table;
-    clear: both; }
-  @media (min-width: 48em) {
-    .backpage .article-body {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 78.67549%; }
-      .backpage .article-body:last-child {
-        margin-right: 0; }
-    .backpage .sub-nav {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 18.96686%; }
-      .backpage .sub-nav:last-child {
-        margin-right: 0; } }
+@media (min-width: 48em) {
+  .page-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 78.67549%; }
+    .page-content:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .sub-nav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 18.96686%; }
+    .sub-nav:last-child {
+      margin-right: 0; } }
 
 .graphic-header__container {
   max-width: 68em;
@@ -1887,5 +1915,30 @@ article {
     width: 48.82117%; }
     .graphic-header__intro:last-child {
       margin-right: 0; } }
+
+.type-system {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .type-system:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.cards__spotlight-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 27.49666%; }
+  .cards__spotlight-image:last-child {
+    margin-right: 0; }
+
+.cards__copy-wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 70.14568%; }
+  .cards__copy-wrapper:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=styles.css.map */

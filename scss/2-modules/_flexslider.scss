@@ -58,7 +58,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-caption { text-shadow: 1px 1px 0 #000; position: absolute; bottom: 10px; padding-top: 20px; width: 100%; color: #fff; margin: 0 auto; padding: 0 0 0 4px; background: rgba(255,255,255,.0);
   @include mq($bp-large) { bottom: 20px; padding-top: 0; }
   @include mq($bp-xlarge) { bottom: 143px; }
-  .caption-container { @include outer-container; padding: 0 20px;
+  .caption-container { padding: 0 20px;
     h2 { font-size: 1em; }
   }
 }

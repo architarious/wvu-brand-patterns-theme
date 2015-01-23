@@ -6,6 +6,8 @@
   div + h2 { margin-top: 0.5em; }
 }
 
+.cards__copy { margin-bottom: 1.5em; }
+
 .cards--pms-warm-gray-3 { background: $pms-warm-gray-3; }
 
 .cards--pms-429-c { background: $pms-429-c; }
@@ -16,4 +18,18 @@
 
 .cards--pms-warm-gray-11 { background: $pms-warm-gray-11; color: white; 
   h1, h2, h3, h4, h5, h6, a { color: white; }
+}
+
+.cards__spotlight-image { margin-top: 0.35em; }
+
+.cards__spotlight { float: left; margin-bottom: 1.5em; }
+
+.cards__spotlight-header h3 { font-size: 1em; line-height: 1.5em; margin-bottom: 0.25em; }
+
+.cards__spotlight-copy { margin-bottom: 0.65em; }
+
+.cards__copy-wrapper {
+  @include mq($bp-medium) {
+    padding-left: 0.75em;
+  }
 }

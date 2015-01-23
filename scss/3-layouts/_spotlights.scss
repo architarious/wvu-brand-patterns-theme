@@ -1,0 +1,11 @@
+.cards__spotlight-image {
+
+    @include span-columns(3.5);
+
+}
+
+.cards__copy-wrapper {
+
+    @include span-columns(8.5);
+
+}

@@ -17,10 +17,7 @@ $diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
   
 }
 
-.hero__inner {
-  @include clearfix;
-  padding: 3em;
-  
+.hero__inner { padding: 3em;
   @include mq($bp-xlarge) {
     padding: 3em 0;
   }

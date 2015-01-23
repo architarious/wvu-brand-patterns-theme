@@ -1,7 +1,7 @@
 $widget-bullet-size: 3.5em;
 
 .calendar-feed { 
-  ul { padding-bottom: 1em;
+  ul {
     li { margin-bottom: $widget-bullet-size /6; display: inline-block; width: 100%;
       .eventDate { float: left; margin-right: 4%; width: 10%; text-align: center;}
       .calEventMonth { font-size: .8em; text-transform: uppercase; }

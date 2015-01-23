@@ -4,12 +4,12 @@ $header-background: '../images/dance-header.jpg';
   @include mq($bp-xlarge) { padding: 4em 0; }
 }
 
-.graphic-header__header { font-size: 5em; margin-bottom: 0.15em; font-family: $shout; color: white; text-transform: uppercase; font-weight: normal; line-height: $shout-line-height; }
+.graphic-header__header { font-size: 6em; margin-bottom: 0.15em; font-family: $shout; color: white; text-transform: uppercase; font-weight: normal; line-height: $shout-line-height; }
 
 .graphic-header__intro { color: white; font-weight: bold; text-shadow: 1px 1px 1px #000000; box-sizing: border-box; }
 
 .graphic-header__intro--overlay {
-  padding: 1em; 
+  padding: 2em; 
   background: -moz-linear-gradient(top,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.7)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
