@@ -1076,8 +1076,7 @@ input[type="search"].wvu-masthead__search-box {
 .hero {
   color: white;
   background-color: #002855;
-  background: url("../images/coopers-rock.jpg");
-  background: url("../images/coopers-rock.jpg");
+  background-image: url("../images/coopers-rock.jpg");
   background-position: 75% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1114,14 +1113,12 @@ input[type="search"].wvu-masthead__search-box {
   padding-top: 2em; }
 
 .hero--diagonal {
-  background: url("../images/coopers-rock.jpg");
-  background: url("../images/coopers-rock.jpg");
+  background-image: url("../images/coopers-rock.jpg");
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: cover; }
-  @media screen and (min-width: 960) {
+  @media (min-width: 60em) {
     .hero--diagonal {
-      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
       background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
       background-size: 500px, cover;
       background-position: 59% -209px, center top; } }
@@ -1142,6 +1139,7 @@ input[type="search"].wvu-masthead__search-box {
 
 .hero--small-photo {
   background-image: none;
+  background-color: transparent;
   text-shadow: none; }
 
 .hero__text--full-width {
