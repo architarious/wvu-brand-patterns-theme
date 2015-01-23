@@ -34,3 +34,127 @@
     color: $wvu-blue;
   }
 }
+
+
+.button--wvu-gold { color: $wvu-gold; border: 2px solid $wvu-gold; color: $black;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--wvu-blue { color: $wvu-blue; border: 2px solid $wvu-blue; 
+  &:hover { background: $wvu-blue; color: white; }
+}
+.button--black { color: $black; border: 2px solid $black; 
+  &:hover { background: $black; color: white; }
+}
+.button--pms-432-c { color: $pms-432-c; border: 2px solid $pms-432-c; 
+  &:hover { background: $pms-432-c; color: $black; }
+}
+.button--pms-429-c { color: $pms-429-c; border: 2px solid $pms-429-c; 
+  &:hover { background: $pms-429-c; color: $black; }
+}
+.button--pms-warm-gray-11 { color: $pms-warm-gray-11; border: 2px solid $pms-warm-gray-11; 
+  &:hover { background: $pms-warm-gray-11; color: $black; }
+}
+.button--pms-warm-gray-7 { color: $pms-warm-gray-7; border: 2px solid $pms-warm-gray-7; 
+  &:hover { background: $pms-warm-gray-7; color: $black; }
+}
+.button--pms-warm-gray-3 { color: $pms-warm-gray-3; border: 2px solid $pms-warm-gray-3; 
+  &:hover { background: $pms-warm-gray-3; color: $black; }
+}
+.button--pms-286-c { color: $pms-286-c; border: 2px solid $pms-286-c; 
+  &:hover { background: $pms-286-c; color: $black; }
+}
+.button--pms-300-c { color: $pms-300-c; border: 2px solid $pms-300-c; 
+  &:hover { background: $pms-300-c; color: $black; }
+}
+.button--pms-629-c { color: $pms-629-c; border: 2px solid $pms-629-c; 
+  &:hover { background: $pms-629-c; color: $black; }
+}
+.button--pms-7554-c { color: $pms-7554-c; border: 2px solid $pms-7554-c; 
+  &:hover { background: $pms-7554-c; color: $black; }
+}
+.button--pms-7557-c { color: $pms-7557-c; border: 2px solid $pms-7557-c; 
+  &:hover { background: $pms-7557-c; color: $black; }
+}
+.button--pms-144-c { color: $pms-144-c; border: 2px solid $pms-144-c; 
+  &:hover { background: $pms-144-c; color: $black; }
+}
+.button--pms-7476-c { color: $pms-7476-c; border: 2px solid $pms-7476-c; 
+  &:hover { background: $pms-7476-c; color: $black; }
+}
+.button--pms-5625-c { color: $pms-5625-c; border: 2px solid $pms-5625-c; 
+  &:hover { background: $pms-5625-c; color: $black; }
+}
+.button--pms-558-c { color: $pms-558-c; border: 2px solid $pms-558-c; 
+  &:hover { background: $pms-558-c; color: $black; }
+}
+.button--pms-180-c { color: $pms-180-c; border: 2px solid $pms-180-c; 
+  &:hover { background: $pms-180-c; color: $black; }
+}
+.button--pms-166-c { color: $pms-166-c; border: 2px solid $pms-166-c; 
+  &:hover { background: $pms-166-c; color: $black; }
+}
+.button--pms-115-c { color: $pms-115-c; border: 2px solid $pms-115-c; 
+  &:hover { background: $pms-115-c; color: $black; }
+}
+
+
+.button--wvu-gold-fill { background: $wvu-gold; border: 2px solid $wvu-gold;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--wvu-blue-fill { background: $wvu-blue; border: 2px solid $wvu-blue; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--black-fill { background: $black; border: 2px solid $black; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-432-c-fill { background: $pms-432-c; border: 2px solid $pms-432-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-429-c-fill { background: $pms-429-c; border: 2px solid $pms-429-c;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-warm-gray-11-fill { background: $pms-warm-gray-11; border: 2px solid $pms-warm-gray-11; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-warm-gray-7-fill { background: $pms-warm-gray-7; border: 2px solid $pms-warm-gray-7; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-warm-gray-3-fill { background: $pms-warm-gray-3; border: 2px solid $pms-warm-gray-3;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-286-c-fill { background: $pms-286-c; border: 2px solid $pms-286-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-300-c-fill { background: $pms-300-c; border: 2px solid $pms-300-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-629-c-fill { background: $pms-629-c; border: 2px solid $pms-629-c;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-7554-c-fill { background: $pms-7554-c; border: 2px solid $pms-7554-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-7557-c-fill { background: $pms-7557-c; border: 2px solid $pms-7557-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-144-c-fill { background: $pms-144-c; border: 2px solid $pms-144-c;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-7476-c-fill { background: $pms-7476-c; border: 2px solid $pms-7476-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-5625-c-fill { background: $pms-5625-c; border: 2px solid $pms-5625-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-558-c-fill { background: $pms-558-c; border: 2px solid $pms-558-c;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-180-c-fill { background: $pms-180-c; border: 2px solid $pms-180-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-166-c-fill { background: $pms-166-c; border: 2px solid $pms-166-c; color: white;
+  &:hover { background: $wvu-gold; color: $black; }
+}
+.button--pms-115-c-fill { background: $pms-115-c; border: 2px solid $pms-115-c;
+  &:hover { background: $wvu-gold; color: $black; }
+}
