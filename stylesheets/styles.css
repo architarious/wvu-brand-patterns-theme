@@ -918,8 +918,9 @@ input[type="search"].wvu-masthead__search-box {
 .wvu-masthead__home-link {
   color: white;
   font-weight: bold;
-  display: inline-block;
-  margin-bottom: 3px; }
+  display: block;
+  margin-bottom: 3px;
+  width: 100%; }
 
 .wvu-masthead__search-type {
   clear: both;

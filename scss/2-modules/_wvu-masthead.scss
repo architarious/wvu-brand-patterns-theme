@@ -29,7 +29,7 @@ input[type="search"] {
   &.wvu-masthead__search-box { margin-bottom: 0.25em; }
 }
 
-.wvu-masthead__home-link { color: white; font-weight: bold; display: inline-block; margin-bottom: 3px; }
+.wvu-masthead__home-link { color: white; font-weight: bold; display: block; margin-bottom: 3px; width: 100%; }
 
 .wvu-masthead__search-type { clear: both; font-weight: bold; 
   input {
