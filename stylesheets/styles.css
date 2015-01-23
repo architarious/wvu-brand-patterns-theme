@@ -983,6 +983,12 @@ input[type="search"].wvu-masthead__search-box {
   background: #002855;
   border-color: #002855; }
 
+.breadcrumbs li {
+  float: left; }
+
+.breadcrumbs--white a {
+  color: white; }
+
 .nav-wrapper {
   background: #2C2A29;
   width: 100%;
@@ -1038,10 +1044,10 @@ input[type="search"].wvu-masthead__search-box {
       border: 1px solid #EAAA00; }
 
 .cards {
-  padding: 5em 1em; }
+  padding: 4em 1em; }
   @media (min-width: 75em) {
     .cards {
-      padding: 5em 0; } }
+      padding: 4em 0; } }
 
 .cards__card {
   font-size: 0.8em; }
@@ -1199,6 +1205,46 @@ input[type="search"].wvu-masthead__search-box {
       font-weight: bold; }
     .calendar-feed ul li .eventName {
       display: block; }
+
+.graphic-header {
+  padding: 4em 1em;
+  background-image: url("../images/dance-header.jpg");
+  background-size: cover; }
+  @media (min-width: 75em) {
+    .graphic-header {
+      padding: 4em 0; } }
+
+.graphic-header__header {
+  font-size: 5em;
+  margin-bottom: 0.15em;
+  font-family: "HelveticaNeueW01-97Blac", "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 0.80487em; }
+
+.graphic-header__intro {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000000;
+  box-sizing: border-box; }
+
+.graphic-header__intro--overlay {
+  padding: 1em;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
+  /* IE6-9 */ }
 
 .spotlights h2 {
   font-size: 1.4em;
@@ -1814,5 +1860,32 @@ article {
       width: 18.96686%; }
       .backpage .sub-nav:last-child {
         margin-right: 0; } }
+
+.graphic-header__container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .graphic-header__container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media (min-width: 48em) {
+  .graphic-header__header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .graphic-header__header:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .graphic-header__intro {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .graphic-header__intro:last-child {
+      margin-right: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

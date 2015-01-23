@@ -8,3 +8,13 @@
     }
   }
 }
+
+.graphic-header__container { @include outer-container(); }
+
+.graphic-header__header { 
+  @include mq($bp-medium) { @include span-columns(6); } 
+}
+
+.graphic-header__intro { 
+  @include mq($bp-medium) { @include span-columns(6); } 
+}
