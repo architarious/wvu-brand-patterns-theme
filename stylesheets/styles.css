@@ -561,7 +561,7 @@ p + p.lede {
   border: 2px solid #333F48; }
   .button--pms-432-c:hover {
     background: #333F48;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-429-c {
   color: #A2AAAD;
@@ -575,14 +575,14 @@ p + p.lede {
   border: 2px solid #6E6259; }
   .button--pms-warm-gray-11:hover {
     background: #6E6259;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-warm-gray-7 {
   color: #968C83;
   border: 2px solid #968C83; }
   .button--pms-warm-gray-7:hover {
     background: #968C83;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-warm-gray-3 {
   color: #BFB8AF;
@@ -596,35 +596,35 @@ p + p.lede {
   border: 2px solid #0033A0; }
   .button--pms-286-c:hover {
     background: #0033A0;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-300-c {
   color: #005EB8;
   border: 2px solid #005EB8; }
   .button--pms-300-c:hover {
     background: #005EB8;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-629-c {
   color: #9BD3DD;
   border: 2px solid #9BD3DD; }
   .button--pms-629-c:hover {
     background: #9BD3DD;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-7554-c {
   color: #4B3D2A;
   border: 2px solid #4B3D2A; }
   .button--pms-7554-c:hover {
     background: #4B3D2A;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-7557-c {
   color: #9F7D23;
   border: 2px solid #9F7D23; }
   .button--pms-7557-c:hover {
     background: #9F7D23;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-144-c {
   color: #ED8B00;
@@ -638,14 +638,14 @@ p + p.lede {
   border: 2px solid #0D5257; }
   .button--pms-7476-c:hover {
     background: #0D5257;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-5625-c {
   color: #708573;
   border: 2px solid #708573; }
   .button--pms-5625-c:hover {
     background: #708573;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-558-c {
   color: #9ABEAA;
@@ -659,21 +659,14 @@ p + p.lede {
   border: 2px solid #BE3A34; }
   .button--pms-180-c:hover {
     background: #BE3A34;
-    color: #2C2A29; }
+    color: white; }
 
 .button--pms-166-c {
   color: #E35205;
   border: 2px solid #E35205; }
   .button--pms-166-c:hover {
     background: #E35205;
-    color: #2C2A29; }
-
-.button--pms-115-c {
-  color: #FDDA24;
-  border: 2px solid #FDDA24; }
-  .button--pms-115-c:hover {
-    background: #FDDA24;
-    color: #2C2A29; }
+    color: white; }
 
 .button--wvu-gold-fill {
   background: #EAAA00;
