@@ -1,13 +1,13 @@
 .wvu-masthead__container { @include outer-container(); }
 
 .wvu-masthead__logo {
-  @include media($bp-medium) {
+  @include mq($bp-medium) {
     @include span-columns(8.5);
   }
 }
 
 .wvu-masthead__search-bar { 
-  @include media($bp-medium) {
+  @include mq($bp-medium) {
     @include span-columns(3.5);
   }
 }

@@ -447,7 +447,7 @@ h1 {
   font-size: 3em;
   line-height: 1.08333333em;
   width: 100%; }
-  @media screen and (min-width: 53.75em) {
+  @media (min-width: 60em) {
     h1 {
       font-size: 4em; } }
 
@@ -457,7 +457,7 @@ h1 {
   font-family: "HelveticaNeueW01-97Blac", "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: normal; }
-  @media screen and (min-width: 53.75em) {
+  @media (min-width: 60em) {
     .shout {
       font-size: 8.2em; } }
 
@@ -466,7 +466,7 @@ h1 {
 
 .shout--long-shout {
   font-size: 2em; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .shout--long-shout {
       font-size: 3em; } }
 
@@ -847,10 +847,10 @@ p + p.lede {
 
 .wvu-masthead__container {
   padding: 0 1em 1em 1em; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .wvu-masthead__container {
       padding: 0 1em 0 1em; } }
-  @media screen and (min-width: 75em) {
+  @media (min-width: 75em) {
     .wvu-masthead__container {
       padding: 0; } }
 
@@ -868,10 +868,10 @@ p + p.lede {
   color: white; }
   .wvu-masthead__logo:hover {
     color: white; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .wvu-masthead__logo {
       font-size: 1.75em; } }
-  @media screen and (min-width: 53.75em) {
+  @media (min-width: 60em) {
     .wvu-masthead__logo {
       font-size: 2em; } }
 
@@ -904,13 +904,22 @@ p + p.lede {
   height: 100%; }
 
 .wvu-masthead__search-bar {
-  padding-top: 3.5em;
+  padding-top: 2.1em;
   font-size: 0.8em; }
   .wvu-masthead__search-bar input[type="checkbox"], .wvu-masthead__search-bar input[type="radio"] {
     margin-right: 0; }
 
 .wvu-masthead__search-box {
   color: #2C2A29; }
+
+input[type="search"].wvu-masthead__search-box {
+  margin-bottom: 0.25em; }
+
+.wvu-masthead__home-link {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 3px; }
 
 .wvu-masthead__search-type {
   clear: both;
@@ -921,13 +930,13 @@ p + p.lede {
 .wvu-masthead__search-button {
   border: 2px solid white;
   background: transparent;
-  padding: 4px; }
+  padding: 4px 4px 0 4px; }
   .wvu-masthead__search-button img {
-    max-height: 18px; }
+    max-height: 20px; }
   .wvu-masthead__search-button:hover {
     background: #EAAA00;
     border-color: #EAAA00; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .wvu-masthead__search-button {
       height: 30px; } }
 
@@ -936,7 +945,7 @@ p + p.lede {
   line-height: 1.08333333em;
   padding: 0.2em 0.5em;
   margin-bottom: -2em; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .wvu-masthead__college-link {
       position: absolute; } }
 
@@ -978,13 +987,13 @@ p + p.lede {
   width: 100%;
   padding: 20px;
   display: table; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .nav-wrapper {
       padding: 0 20px; } }
-  @media screen and (min-width: 75em) {
+  @media (min-width: 75em) {
     .nav-wrapper {
       padding: 0; } }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .nav-wrapper .nav ul {
       margin-left: -1em; } }
   .nav-wrapper .nav ul li {
@@ -1002,7 +1011,7 @@ p + p.lede {
   .nav-wrapper .nav-collapse {
     clear: both;
     overflow: visible; }
-    @media screen and (min-width: 40em) {
+    @media (min-width: 48em) {
       .nav-wrapper .nav-collapse li {
         width: auto;
         float: left; } }
@@ -1016,7 +1025,7 @@ p + p.lede {
     border: 1px solid #fff;
     border-radius: 7px;
     margin-bottom: 4px; }
-    @media screen and (min-width: 40em) {
+    @media (min-width: 48em) {
       .nav-wrapper .nav-toggle {
         margin-left: 10px; } }
     .nav-wrapper .nav-toggle:visited {
@@ -1029,7 +1038,7 @@ p + p.lede {
 
 .cards {
   padding: 5em 1em; }
-  @media screen and (min-width: 75em) {
+  @media (min-width: 75em) {
     .cards {
       padding: 5em 0; } }
 
@@ -1074,7 +1083,7 @@ p + p.lede {
   padding-bottom: 4em;
   padding-top: 4em;
   text-shadow: 1px 1px 1px #000000; }
-  @media screen and (min-width: 53.75em) {
+  @media (min-width: 60em) {
     .hero {
       background-position: top; } }
 
@@ -1084,14 +1093,14 @@ p + p.lede {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (min-width: 75em) {
+  @media (min-width: 75em) {
     .hero__inner {
       padding: 3em 0; } }
 
 .hero__text {
   margin-bottom: 3em;
   font-weight: bold; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .hero__text {
       max-width: 40%; } }
 
@@ -1109,7 +1118,7 @@ p + p.lede {
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: cover; }
-  @media screen and (min-width: 53.75em) {
+  @media screen and (min-width: 960) {
     .hero--diagonal {
       background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
       background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
@@ -1143,7 +1152,7 @@ p + p.lede {
 .shout--small-photo {
   font-size: 3em;
   color: #002855; }
-  @media screen and (min-width: 53.75em) {
+  @media (min-width: 60em) {
     .shout--small-photo {
       font-size: 3.5em; } }
 
@@ -1161,7 +1170,7 @@ p + p.lede {
 
 .type-system {
   padding: 50px 1em; }
-  @media screen and (min-width: 75em) {
+  @media (min-width: 75em) {
     .type-system {
       padding: 50px 0; } }
 
@@ -1276,7 +1285,7 @@ footer {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Njc0QURBQzI4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Njc0QURBQzM4Mjc2MTFFMkJDM0Q5ODQzMUM5RDAwNTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzRBREFDMDgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NzRBREFDMTgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PheqJZoAAASvSURBVHjajFZbTBxVGP5nZ3e5uLBt6QUoraDB3h5MkJj2QQyJEkw1UWMfNLbRPuGLQduGmOgLD5ioEY2YmAjSJvbBmLYRQ2kCNGJKr5S07K7tpizLZTfsAu0uLAt7//3O7hkYyIJO8mXmnDnn+2/f+WcU2vxSskC7OAuyEmw0bwDUddCMCLIUkACSEqnNDOkvQWwC8h0Ox2vBYPDnSCQynEgkfEAgGo2OLSws9Dudzs+ampoOYd02wALk6JzYlNw8MDBwMBwOX2DmxGCY+fMZ5mNe5rc8zCenmdsDzNNxZhj23r07dAZ7SoEtQB5g3MhImnxkZKQmFou5nBHmtyeZlQfMJPBQB4zLHjF/N8fpy+12/2K1Wiuwv2gjI2Jg6u3tPQjysZ555tJ/QGTXkTolpAFyACPMJyYQSYrZbre3gaNcpixXpmvlEoN8pOWSbYl5631svi8NrIMC4ioX86FRjG3AMPMnU8zJZDLW3t5+HDx7AavIhsiKVhSjzWar2VW6u/mEiwyO5UzCduDtFtxDUakNaObTHUS/7yFawHN/MLP7Ju5HLIr6UkXJdvDccLlcYamwlJb7PKil/VoQHg7CqyHgDvNz8Ph6iPkUPFQwLkZUwUQm75Ek88eYp1vAdeajiAwqW7p48cJp8FXIopu1Yqi5ubnVlz1wNCETBo+nEUkYCv+mjKi+kGgmjthlZnPg1he7iG7PE41h3eATIn9czdu3b381Xl8GRBRRg2bAaDQWuxbxFJeAoTA29jzJEL4CA+8VrZXddpyWnv1EzyDbwSU4EMOBsFjKZP7FWVINutOZE5XEaeA5hfvVOaLzfhzVLOdzDmuO2YlGApn1cUSrqqpZyjTNbdBkChUEioQZeGHCwgIxGyG6N030hz/7yfl6nKjPS7QEEZhQzgKkD0qc1/cuo9a40ALGD1vNFR1jMI/Z4xBbMdQcgmdvINeGdRYuwej3o3KAVD6LRrE3H4ryeNy63pQyaI3L5/P1H8WB3wkvlpHPc1gWQgQf7iY6bF0lngTZl4+I3r+DCsZkOlHOd4rBuhya7urqurVaRUopUjO5aFzlzc3NvT84zSWnhzHzVMa0imiehmfbkNkEfJqCgcfLurYWyXh/rZ7IcaP/bH19fQfkOoM3j4VpRdc9LUNDQyerql746t2rRL+NSyOGdU1Y0c1FMrW6UkdUqc6O1tbWnkIHnhT1BxZE8rSlImfR6urq8xMT453nXiY6cwBOiiUhGXBK9wUQCodyDsCtK68SPV8Qnm1pafkW5D68WcxURcglzbvSSUU/3yq6ot1ua4OqIn+hm775J/PODpzWH4E2ZtNP6EO/MjffZJ5FK/f7fc7GxsaPsPcIgFNBxfL7sKajarXIky23vLOz8wOv1/t3PB4Pe9Bd7/mZh/EteIAWvRRjDgQCnr6+vrOVlZWvY/2LkryEMlkzS6fXyFszYpKGLHV1dSUNDQ01IKkqLCzcIw4RdB6cmppyd3d3325tbX0oE7YokW4P+kanZPkWqzK8HGlIg1kXdlJWJiLzvSyfNXmuyEL5jw++SUIj18SZWm0oacR0Xqf+z1+FVnjDur8LRWdAg/ZXkfWP4l8BBgDyPYa2BW2NowAAAABJRU5ErkJggg==) no-repeat center center; }
   footer .wvu-youtube {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEZGMkJDNDU4Mjc4MTFFMkJDM0Q5ODQzMUM5RDAwNTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEZGMkJDNDY4Mjc4MTFFMkJDM0Q5ODQzMUM5RDAwNTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzRBREFDODgyNzYxMUUyQkMzRDk4NDMxQzlEMDA1NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowRkYyQkM0NDgyNzgxMUUyQkMzRDk4NDMxQzlEMDA1NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Phr6zLQAAAU5SURBVHjajFZbbBRVGP7nstvdZdm2gLUUSlhD7SYQKLASSJRGLjUlIkUTQ8QHoy81PLRvRBNeBKqJSjHaSKJhjYQY76QBEimkqVgRwqX0Qilr24V229126V66l5mdy/E/0zN1LIU4yZfZ2Tnn+/77GQ6efHHzwLzIPJiX4HH/8whhDkwRSqYjVITGoD9JyHpRYhvC1dfXV5tIJL6SJOmmqqoRRFyW5aFUKnVpYGDgvYMHD67GdYsQbkSBxYjHekDJxY6OjlV+v/+wy+XaIwXvCNnu66BOjgPRVOBdbijwVoKrahNozgVjaMTxjRs3nsZ9WYSMUJhHZK6AQd7d3b3Z5/MFSCz6TOzHkyDduYFLNeAEwVhNCAGiqCAUl0Dh9j1Q/NJeCIVCgaqqqsPJZDLFhGZFOIsnYltbW0V1dfVZqe+WNxJoBj09BYLHM0NuzS4VkSRQM1nwbN4JZW83wp1gsGXNmjWf4Ov/iJg76d1+4sSJFjIxtmX42CHQpBRwCxYYZFpeBh3vuqbNQNeB8OiwzQbT/bfxfR6822rXr1ixoqu1tXXcknxiJkXs6enZWlZa+sFQSxOfGw1irF0zZPiadxeCPDUJGn3GyNK7xoRAFCHRcxPcq1YL3g3PLUGeK4ODgxkmovNMQCgvL389dbdHiHX9BaSgABS0Kk/DgJZ7G45A2f4DwBctgVwyDnImbbynUHUNoUL4/E9Q8lSJv76+/gXkc7JK5EVTwOFw+Eeu/QH5XAZ4h20m1rhZ4HjMQxGU7HwVFm3ZAdH2sxC58AvkwiHg7Q7g0ANd4GGqvwuU+ENnZWWlH7eeR1Av5FkBURRLp8cegEJLES2bFUAbiKoYz6LbA8t2vwFPb9sNE5d/gwe/fgtSLIIMAno2CXJyCtxu93KaT+aBIFq6s0CWcoCNBJwsWzwQMNFzmsVmB2LDMGIe8hKuxSqj4dQUBQSnQMlFVvacaJYpJi3OudxFVIDHqqFtQgVE9MAsU03KwkhbK4TOnILUYL8hxIk27AsFFDREcDghk8kkrbPLFCBIHCryrfXe++EkLmQhQguJzQFKOgVjly9A8PuvIRHsAx4d5+0FWElYRZoMCnpuL8fuLl0Go1euDFtmky6agysSiVxa/vy2F68vLoVscgJsWEm0B3SsmPaG/ZAavgcczxmJpRs0M0+I6XgS1r5ZA5KqjmMfXGVNZpSp2QcCzp3Ijtpde3WOXxi80EqzbgioSJSNRY10EawonfWAiUwyCY6VlVB96GO4evPWzw0NDW3YH7Sb04j87Aju7OzM19XVyetrX9kZux+CUSxZAWNPjPkDRlP928kz5GkkV50e2PX5KdA9xX/v27fvs2g0Ool8NA85KsAzL2nMZJygpx/cvx+o+bAF1h14H+I5GaZiMchls5CnjafkscokmMaZFpt4CLaVPqg7eQaKnl092dTUdAwna4RZbpAz3tlJSud5cWFhobe3t/cLtFAa+rODfPfOa+TTqjJytFwkR8o48tEqN/ly+zrSfvwoST+MEbR4oLGx8V3cuwXhQ5Sy80G0TmuODTza4osRKwOBwFvhcPh3RVEyifEwCfd2kdHbN0g02E/kXJbE4/HRixcvflNRUfEyrt/EyJciFrJG4+eeB6aIjQm5a2pqluJs2YokGzweTznmxI51nhgZGRk+d+7ctebm5rtsJKQZMuzQUVmZPnKimSIiC5nTArvFbY2VosTinWO/zfIk851o8x34NgaT3Kw688BXGPIWq/X/81VhJp6f83XBWQRMaJYz+JEvin8EGAC8v7igs0rpyAAAAABJRU5ErkJggg==) no-repeat center center; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     footer {
       width: 100%; }
       footer .wvu-contact, footer .contact_1 {
@@ -1407,11 +1416,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   margin: 0 auto;
   padding: 0 0 0 4px;
   background: rgba(255, 255, 255, 0); }
-  @media screen and (min-width: 53.75em) {
+  @media (min-width: 60em) {
     .flex-caption {
       bottom: 20px;
       padding-top: 0; } }
-  @media screen and (min-width: 75em) {
+  @media (min-width: 75em) {
     .flex-caption {
       bottom: 143px; } }
   .flex-caption .caption-container {
@@ -1444,7 +1453,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   cursor: pointer;
   text-indent: -9999px;
   background-size: 30px; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .flex-direction-nav li a {
       background-size: auto;
       width: 66px;
@@ -1458,7 +1467,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .flex-direction-nav li .next {
   background-position: -15px 0;
   right: 21px; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .flex-direction-nav li .next {
       background-position: -66px 0; } }
 
@@ -1581,7 +1590,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     display: table;
     clear: both; }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 48em) {
   .wvu-masthead__logo {
     float: left;
     display: block;
@@ -1590,7 +1599,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     .wvu-masthead__logo:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 48em) {
   .wvu-masthead__search-bar {
     float: left;
     display: block;
@@ -1636,7 +1645,7 @@ input.wvu-masthead__search-box {
 
 .spotlights {
   padding: 0 0 100px 0; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .spotlights {
       float: left;
       display: block;
@@ -1720,7 +1729,7 @@ article {
     display: table;
     clear: both; }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 48em) {
   .hero--small-photo__copy {
     float: left;
     display: block;
@@ -1729,7 +1738,7 @@ article {
     .hero--small-photo__copy:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 48em) {
   .hero__photo {
     float: left;
     display: block;
@@ -1765,7 +1774,7 @@ article {
     display: table;
     clear: both; }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 48em) {
   .cards__card {
     float: left;
     display: block;
@@ -1791,7 +1800,7 @@ article {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (min-width: 40em) {
+  @media (min-width: 48em) {
     .backpage .article-body {
       float: left;
       display: block;

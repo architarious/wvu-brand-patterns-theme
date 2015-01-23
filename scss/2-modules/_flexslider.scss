@@ -56,8 +56,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 /*.flex-caption {width: 96%; padding: 0 0 10px 0; position: absolute;  left: 0; top: -400px; background: rgba(255,255,255,.4);}*/
 
 .flex-caption { text-shadow: 1px 1px 0 #000; position: absolute; bottom: 10px; padding-top: 20px; width: 100%; color: #fff; margin: 0 auto; padding: 0 0 0 4px; background: rgba(255,255,255,.0);
-  @include media($large-screen) { bottom: 20px; padding-top: 0; }
-  @include media($bp-xlarge) { bottom: 143px; }
+  @include mq($bp-large) { bottom: 20px; padding-top: 0; }
+  @include mq($bp-xlarge) { bottom: 143px; }
   .caption-container { @include outer-container; padding: 0 20px;
     h2 { font-size: 1em; }
   }
@@ -72,11 +72,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 /* Direction Nav */
 .flex-direction-nav li a { width: 15px; height: 102px; margin: -23px 0 0; display: block; background: url(../images/nav-arrows-big.png) no-repeat 0 0; filter:alpha(opacity=30); position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; background-size: 30px; 
-  @include media($medium-screen) { background-size: auto; width: 66px; height: 102px; opacity: .1; margin: -52px 0 0; }
+  @include mq($bp-medium) { background-size: auto; width: 66px; height: 102px; opacity: .1; margin: -52px 0 0; }
 }
 .flex-direction-nav li a:hover {opacity: 1;}
 .flex-direction-nav li .next { background-position: -15px 0; right: 21px;
-  @include media($medium-screen) {
+  @include mq($bp-medium) {
     background-position: -66px 0; 
   }
 }

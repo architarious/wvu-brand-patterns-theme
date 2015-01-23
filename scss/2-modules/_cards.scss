@@ -1,5 +1,5 @@
 .cards { padding: 5em 1em; 
-  @include media($bp-xlarge) { padding: 5em 0; }
+  @include mq($bp-xlarge) { padding: 5em 0; }
 }
 
 .cards__card { font-size: 0.8em; 

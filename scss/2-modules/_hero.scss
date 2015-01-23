@@ -13,7 +13,7 @@ $diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
   padding-top: 4em;
   text-shadow: 1px 1px 1px #000000;
   
-  @include media($bp-large) { background-position: top; }
+  @include mq($bp-large) { background-position: top; }
   
 }
 
@@ -21,13 +21,13 @@ $diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
   @include clearfix;
   padding: 3em;
   
-  @include media($bp-xlarge) {
+  @include mq($bp-xlarge) {
     padding: 3em 0;
   }
 }
 
 .hero__text { margin-bottom: 3em; font-weight: bold; 
-  @include media($bp-medium) { max-width: 40%; }
+  @include mq($bp-medium) { max-width: 40%; }
 }
 
 .hero--medium-shout { padding-bottom: 2em; padding-top: 2em; }
@@ -61,5 +61,5 @@ $diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
 .hero--small-photo__copy { color: $black; }
 
 .shout--small-photo { font-size: 3em; color: $wvu-blue;
-  @include media($bp-large) { font-size: 3.5em; }
+  @include mq($bp-large) { font-size: 3.5em; }
 }

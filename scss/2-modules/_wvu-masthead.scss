@@ -1,14 +1,14 @@
 .wvu-masthead { background-color: $wvu-blue; color: white; }
 
 .wvu-masthead__container { padding: 0 1em 1em 1em; 
-  @include media($bp-medium) { padding: 0 1em 0 1em; }
-  @include media($bp-xlarge) { padding: 0; }
+  @include mq($bp-medium) { padding: 0 1em 0 1em; }
+  @include mq($bp-xlarge) { padding: 0; }
 }
 
 .wvu-masthead__logo { position: relative; padding: 1em 0 1.6em 2em; font-size: 1.5em; overflow: hidden; border: 0; background-color: transparent; width: 100%; background: url(../images/flying-wv.png) no-repeat top 1.2em left; background-size: 1.8em; float: left; color: white; 
   &:hover { color: white; }
-  @include media($bp-medium) { font-size: 1.75em; }
-  @include media($bp-large) { font-size: 2em; }
+  @include mq($bp-medium) { font-size: 1.75em; }
+  @include mq($bp-large) { font-size: 2em; }
 }
 
 .wvu-masthead__college { position: absolute; top: 1em; font-size: 0.8em; text-transform: uppercase; }
@@ -19,11 +19,17 @@
 
 .wvu-masthead__logo:before { content: ""; display: block; width: 0; height: 100%; }
 
-.wvu-masthead__search-bar { padding-top: 3.5em; font-size: 0.8em;
+.wvu-masthead__search-bar { padding-top: 2.1em; font-size: 0.8em;
   input[type="checkbox"], input[type="radio"] { margin-right: 0; }
 }
 
 .wvu-masthead__search-box { color: $black; }
+
+input[type="search"] {
+  &.wvu-masthead__search-box { margin-bottom: 0.25em; }
+}
+
+.wvu-masthead__home-link { color: white; font-weight: bold; display: inline-block; margin-bottom: 3px; }
 
 .wvu-masthead__search-type { clear: both; font-weight: bold; 
   input {
@@ -34,13 +40,13 @@
 .wvu-masthead__search-button {
   border: 2px solid white;
   background: transparent;
-  padding: 4px;
-  img { max-height: 18px; }
+  padding: 4px 4px 0 4px;
+  img { max-height: 20px; }
   &:hover {
     background: $wvu-gold;
     border-color: $wvu-gold;
   }
-  @include media($bp-medium) { height: 30px; }
+  @include mq($bp-medium) { height: 30px; }
 }
 
 .wvu-masthead__college-link {
@@ -48,7 +54,7 @@
   line-height: 1.08333333em;
   padding: 0.2em 0.5em;
   margin-bottom: -2em;
-  @include media($bp-medium) { position: absolute; }
+  @include mq($bp-medium) { position: absolute; }
 }
 
 .wvu-masthead--blue-pattern { background: url(../images/pattern-blue.jpg) no-repeat; background-size: cover; }

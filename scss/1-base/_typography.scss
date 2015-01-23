@@ -6,17 +6,17 @@
 h1, h2, h3, h4, h5, h6 { color: $pms-432-c; clear: both; margin-bottom: 0.5em; }
 
 h1 { font-size: 3em; line-height: 1.08333333em; width: 100%;
-  @include media($large-screen) { font-size: 4em; }
+  @include mq($bp-large) { font-size: 4em; }
 }
 
 .shout { font-size: 3em; line-height: 0.80487em; font-family: $shout; text-transform: uppercase; font-weight: normal; 
-  @include media($large-screen) { font-size: 8.2em; }
+  @include mq($bp-large) { font-size: 8.2em; }
 }
 
 .shout--medium-shout { font-size: 4.5em; }
 
 .shout--long-shout { font-size: 2em; 
-  @include media($bp-medium) { font-size: 3em; }
+  @include mq($bp-medium) { font-size: 3em; }
 }
 
 .shout--wvu-gold { color: $wvu-gold; }

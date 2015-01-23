@@ -1,9 +1,9 @@
 .nav-wrapper { background: $black; width: 100%; padding: 20px; display: table; 
-  @include media($bp-medium) { padding: 0 20px; }
-  @include media($bp-xlarge) { padding: 0; }
+  @include mq($bp-medium) { padding: 0 20px; }
+  @include mq($bp-xlarge) { padding: 0; }
   .nav { 
     ul {
-      @include media($bp-medium) { margin-left: -1em; }
+      @include mq($bp-medium) { margin-left: -1em; }
       li { margin-bottom: 0; float: left;
         a { float: left; color: white; margin-right: 0; padding: 1em; width: 100%; 
           &:hover { background: $wvu-gold; color: $wvu-blue; }
@@ -13,12 +13,12 @@
   }
   .nav-collapse { clear: both; overflow: visible;
     li { 
-      @include media($bp-medium) { width: auto; float: left; }
+      @include mq($bp-medium) { width: auto; float: left; }
     }
   }
   // Responsive-nav.com toggle (inside of .nav-department)
   .nav-toggle { float: left; width: 100%; padding-top: 4px; padding-bottom: 4px; text-align: center; color: white; border: 1px solid #fff; border-radius: 7px; margin-bottom: 4px;
-    @include media($bp-medium) { margin-left: 10px; }
+    @include mq($bp-medium) { margin-left: 10px; }
     &:visited { color: white; }
     &:hover { text-decoration: none; background-color: $wvu-gold; color: $wvu-blue; border: 1px solid $wvu-gold; }
   } //.nav-toggle
