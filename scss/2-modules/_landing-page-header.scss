@@ -4,7 +4,9 @@ $header-background: '../images/dance-header.jpg';
   @include mq($bp-xlarge) { padding: 4em 0; }
 }
 
-.graphic-header__header { font-size: 6em; margin-bottom: 0.15em; font-family: $shout; color: white; text-transform: uppercase; font-weight: normal; line-height: $shout-line-height; }
+.graphic-header__header { font-size: 4em; margin-bottom: 1em; font-family: $shout; color: white; text-transform: uppercase; font-weight: normal; line-height: $shout-line-height; 
+  @include mq($bp-large) { font-size: 6em; margin-bottom: 0.15em; }
+}
 
 .graphic-header__intro { color: white; font-weight: bold; text-shadow: 1px 1px 1px #000000; box-sizing: border-box; }
 

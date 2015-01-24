@@ -1,7 +1,38 @@
+.cards__wrapper { @include outer-container(); }
+
+.cards__card { 
+  @include mq($bp-medium) {
+    @include span-columns(4);
+  }
+}
 
 .cards__card--spotlights {
   @include mq($bp-medium) {
     @include span-columns(6)
+  }
+}
+
+.cards__card--events {
+  @include mq($bp-medium) {
+    @include span-columns(6)
+  }
+}
+
+.cards--horizontal__card--spotlights {
+  @include mq($bp-medium) {
+    @include span-columns(6)
+  }
+}
+
+.cards--horizontal__card--events {
+  @include mq($bp-medium) {
+    @include span-columns(4)
+  }
+}
+
+.cards--horizontal__card--quicklinks {
+  @include mq($bp-medium) {
+    @include span-columns(2)
   }
 }
 
@@ -18,13 +49,15 @@
 }
 
 .cards__spotlight-image {
-
     @include span-columns(3.5);
-
 }
 
 .cards__copy-wrapper {
-
     @include span-columns(8.5);
+}
 
+.cards__card--supernav {
+  @include mq($bp-medium) {
+    @include span-columns(3);
+  }
 }

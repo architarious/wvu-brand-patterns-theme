@@ -7,7 +7,11 @@ $footer-font-size: 0.8em;
 }
 
 .footer--wvu-blue { background: $wvu-blue; color: white; 
-  a { color: $pms-629-c; }
+  a { color: white; }
+}
+
+.footer--pms-warm-gray-3 { background: $pms-warm-gray-3; 
+  a { color: black; border-bottom: $link-border-style; }
 }
 
 .footer__wvu-credits { font-size: $footer-font-size; }

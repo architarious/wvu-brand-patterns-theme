@@ -2,8 +2,12 @@
   @include mq($bp-xlarge) { padding: 4em 0; }
 }
 
-.cards__card { font-size: 0.8em; 
+.cards--horizontal__card { font-size: 0.8em; }
+
+.cards__card { padding-bottom: 3em;  
+  h2 { font-size: 1.75em; }
   div + h2 { margin-top: 0.5em; }
+  @include mq($bp-medium) { padding-bottom: 0; }
 }
 
 .cards__copy { margin-bottom: 1.5em; }
@@ -14,7 +18,9 @@
 
 .cards--pms-warm-gray-3 { background: $pms-warm-gray-3; }
 
-.cards--pms-429-c { background: $pms-429-c; }
+.cards--pms-429-c { background: $pms-429-c; 
+  h1, h2, h3, h4, h5, h6, a { color: $black; }
+}
 
 .cards--pms-432-c { background: $pms-432-c; color: white; 
   h1, h2, h3, h4, h5, h6, a { color: white; }

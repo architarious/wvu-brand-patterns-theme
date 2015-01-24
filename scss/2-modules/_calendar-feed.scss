@@ -1,9 +1,11 @@
 $widget-bullet-size: 3.5em;
 
-.calendar-feed { 
+.cards__card--events, .cards--horizontal__card--events { 
   ul {
     li { margin-bottom: $widget-bullet-size /6; display: inline-block; width: 100%;
-      .eventDate { float: left; margin-right: 4%; width: 10%; text-align: center; padding-bottom: 6px; border-radius: 6px; border: 1px solid $pms-warm-gray-7;}
+      .eventDate { float: left; margin-right: 4%; width: 10%; text-align: center; padding-bottom: 6px; border-radius: 6px; 
+        @include mq($bp-large) { border: 1px solid $pms-warm-gray-7; }
+      }
       .calEventMonth { font-size: .8em; text-transform: uppercase; }
       .calEventDay { display: block; font-size: 1.5em; line-height: .8em; clear: both; }
       .eventInfo { float: left; width: 86%;}

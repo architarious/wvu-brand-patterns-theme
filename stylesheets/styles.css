@@ -275,6 +275,26 @@ a {
   a:hover {
     color: #005EB8; }
 
+.element-header {
+  border-top: 1px solid #eee;
+  margin: 140px 0 80px 0;
+  font-size: 0.8em;
+  padding-top: 0.5em;
+  text-align: center;
+  font-weight: normal; }
+  .element-header:after {
+    font-size: 2em;
+    line-height: 2em;
+    color: #ddd;
+    display: block;
+    clear: both;
+    content: "❯";
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg); }
+
 .wvu-blue {
   color: #002855;
   border-color: #002855; }
@@ -1091,10 +1111,18 @@ input[type="search"].wvu-masthead__search-box {
     .cards {
       padding: 4em 0; } }
 
-.cards__card {
+.cards--horizontal__card {
   font-size: 0.8em; }
+
+.cards__card {
+  padding-bottom: 3em; }
+  .cards__card h2 {
+    font-size: 1.75em; }
   .cards__card div + h2 {
     margin-top: 0.5em; }
+  @media (min-width: 48em) {
+    .cards__card {
+      padding-bottom: 0; } }
 
 .cards__copy {
   margin-bottom: 1.5em; }
@@ -1109,6 +1137,8 @@ input[type="search"].wvu-masthead__search-box {
 
 .cards--pms-429-c {
   background: #A2AAAD; }
+  .cards--pms-429-c h1, .cards--pms-429-c h2, .cards--pms-429-c h3, .cards--pms-429-c h4, .cards--pms-429-c h5, .cards--pms-429-c h6, .cards--pms-429-c a {
+    color: #2C2A29; }
 
 .cards--pms-432-c {
   background: #333F48;
@@ -1247,32 +1277,34 @@ input[type="search"].wvu-masthead__search-box {
     .type-system {
       padding: 50px 0; } }
 
-.calendar-feed ul li {
+.cards__card--events ul li, .cards--horizontal__card--events ul li {
   margin-bottom: 0.58333em;
   display: inline-block;
   width: 100%; }
-  .calendar-feed ul li .eventDate {
+  .cards__card--events ul li .eventDate, .cards--horizontal__card--events ul li .eventDate {
     float: left;
     margin-right: 4%;
     width: 10%;
     text-align: center;
     padding-bottom: 6px;
-    border-radius: 6px;
-    border: 1px solid #968C83; }
-  .calendar-feed ul li .calEventMonth {
+    border-radius: 6px; }
+    @media (min-width: 60em) {
+      .cards__card--events ul li .eventDate, .cards--horizontal__card--events ul li .eventDate {
+        border: 1px solid #968C83; } }
+  .cards__card--events ul li .calEventMonth, .cards--horizontal__card--events ul li .calEventMonth {
     font-size: .8em;
     text-transform: uppercase; }
-  .calendar-feed ul li .calEventDay {
+  .cards__card--events ul li .calEventDay, .cards--horizontal__card--events ul li .calEventDay {
     display: block;
     font-size: 1.5em;
     line-height: .8em;
     clear: both; }
-  .calendar-feed ul li .eventInfo {
+  .cards__card--events ul li .eventInfo, .cards--horizontal__card--events ul li .eventInfo {
     float: left;
     width: 86%; }
-  .calendar-feed ul li .eventTime {
+  .cards__card--events ul li .eventTime, .cards--horizontal__card--events ul li .eventTime {
     font-weight: bold; }
-  .calendar-feed ul li .eventName {
+  .cards__card--events ul li .eventName, .cards--horizontal__card--events ul li .eventName {
     display: block; }
 
 .graphic-header {
@@ -1284,13 +1316,17 @@ input[type="search"].wvu-masthead__search-box {
       padding: 4em 0; } }
 
 .graphic-header__header {
-  font-size: 6em;
-  margin-bottom: 0.15em;
+  font-size: 4em;
+  margin-bottom: 1em;
   font-family: "HelveticaNeueW01-97Blac", "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
   color: white;
   text-transform: uppercase;
   font-weight: normal;
   line-height: 0.80487em; }
+  @media (min-width: 60em) {
+    .graphic-header__header {
+      font-size: 6em;
+      margin-bottom: 0.15em; } }
 
 .graphic-header__intro {
   color: white;
@@ -1327,7 +1363,13 @@ input[type="search"].wvu-masthead__search-box {
   background: #002855;
   color: white; }
   .footer--wvu-blue a {
-    color: #9BD3DD; }
+    color: white; }
+
+.footer--pms-warm-gray-3 {
+  background: #BFB8AF; }
+  .footer--pms-warm-gray-3 a {
+    color: black;
+    border-bottom: 1px dotted; }
 
 .footer__wvu-credits {
   font-size: 0.8em; }
@@ -1720,54 +1762,6 @@ input.wvu-masthead__search-box {
   .wvu-masthead__search-button:last-child {
     margin-right: 0; }
 
-.element-header {
-  text-align: center;
-  padding: 0 10px;
-  position: relative;
-  background: white;
-  top: 13px;
-  text-transform: uppercase;
-  display: inline-block;
-  font-size: 18px; }
-
-.line-behind-text {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid #CACACA;
-  text-align: center;
-  margin-bottom: 100px;
-  margin-top: 100px; }
-  .line-behind-text:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-article {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  article:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.color-palette {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .color-palette:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .color-palette .color-palette__color-container {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%; }
-    .color-palette .color-palette__color-container:last-child {
-      margin-right: 0; }
-
 .nav__container {
   max-width: 68em;
   margin-left: auto;
@@ -1822,6 +1816,15 @@ article {
     display: table;
     clear: both; }
 
+.flex-caption .caption-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .flex-caption .caption-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .cards__wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -1840,15 +1843,6 @@ article {
     .cards__card:last-child {
       margin-right: 0; } }
 
-.flex-caption .caption-container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .flex-caption .caption-container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
 @media (min-width: 48em) {
   .cards__card--spotlights {
     float: left;
@@ -1856,6 +1850,42 @@ article {
     margin-right: 2.35765%;
     width: 48.82117%; }
     .cards__card--spotlights:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .cards__card--events {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .cards__card--events:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .cards--horizontal__card--spotlights {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .cards--horizontal__card--spotlights:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .cards--horizontal__card--events {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .cards--horizontal__card--events:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .cards--horizontal__card--quicklinks {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .cards--horizontal__card--quicklinks:last-child {
       margin-right: 0; } }
 
 @media (min-width: 48em) {
@@ -1891,6 +1921,15 @@ article {
   width: 70.14568%; }
   .cards__copy-wrapper:last-child {
     margin-right: 0; }
+
+@media (min-width: 48em) {
+  .cards__card--supernav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .cards__card--supernav:last-child {
+      margin-right: 0; } }
 
 .footer__container {
   max-width: 68em;

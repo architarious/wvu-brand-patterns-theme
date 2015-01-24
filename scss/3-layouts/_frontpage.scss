@@ -11,14 +11,6 @@
 .buttons { @include outer-container(); }
 .social-media-icons__container { @include outer-container(); }
 
-.cards__wrapper { @include outer-container(); }
-
-.cards__card { 
-  @include mq($bp-medium) {
-    @include span-columns(4);
-  }
-}
-
 .flex-caption { 
   .caption-container { @include outer-container(); }
 }
