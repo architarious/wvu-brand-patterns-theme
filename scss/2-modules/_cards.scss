@@ -8,6 +8,10 @@
 
 .cards__copy { margin-bottom: 1.5em; }
 
+.cards--black { background: $black; 
+  h1, h2, h3, h4, h5, h6, a { color: white; }
+}
+
 .cards--pms-warm-gray-3 { background: $pms-warm-gray-3; }
 
 .cards--pms-429-c { background: $pms-429-c; }
@@ -24,7 +28,7 @@
 
 .cards__spotlight { float: left; margin-bottom: 1.5em; }
 
-.cards__spotlight-header h3 { font-size: 1em; line-height: 1.5em; margin-bottom: 0.25em; }
+.cards__spotlight-header { font-size: 1.2em; line-height: 1.5em; margin-bottom: 0.25em; }
 
 .cards__spotlight-copy { margin-bottom: 0.65em; }
 
@@ -32,4 +36,14 @@
   @include mq($bp-medium) {
     padding-left: 0.75em;
   }
+}
+
+.cards__copy--quicklink {
+  padding-left: 1em;
+  background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
+  background-size: 20px;
+}
+
+.cards__social-media-icons { 
+  li { float: left; width: 3em; margin-right: 5px; }
 }

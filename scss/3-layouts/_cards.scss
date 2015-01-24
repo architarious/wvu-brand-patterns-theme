@@ -1,0 +1,30 @@
+
+.cards__card--spotlights {
+  @include mq($bp-medium) {
+    @include span-columns(6)
+  }
+}
+
+.cards__card--follow-us {
+  @include mq($bp-medium) {
+    @include span-columns(12)
+  }
+}
+
+.cards__card--quicklinks {
+  @include mq($bp-medium) {
+    @include span-columns(2)
+  }
+}
+
+.cards__spotlight-image {
+
+    @include span-columns(3.5);
+
+}
+
+.cards__copy-wrapper {
+
+    @include span-columns(8.5);
+
+}

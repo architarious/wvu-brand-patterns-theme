@@ -22,15 +22,6 @@
   }
 }
 
-.button--small {
-  font-size: 0.9em;
-  padding: 0.25em 0.5em;
-}
-
-.button--big {
-  font-size: 1.5em;
-}
-
 .button--white {
   color: white;
   border: 2px solid white;
@@ -38,6 +29,15 @@
     background-color: white;
     color: $wvu-blue;
   }
+}
+
+.button--small {
+  font-size: 0.9em;
+  padding: 0.35em 0.45em;
+}
+
+.button--big {
+  font-size: 1.5em;
 }
 
 

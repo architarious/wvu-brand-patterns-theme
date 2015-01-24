@@ -9,7 +9,7 @@
 }
 
 .buttons { @include outer-container(); }
-.social-media-icons { @include outer-container(); }
+.social-media-icons__container { @include outer-container(); }
 
 .cards__wrapper { @include outer-container(); }
 

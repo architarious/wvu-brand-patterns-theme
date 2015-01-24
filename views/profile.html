@@ -2,70 +2,12 @@
 layout: default
 ---
 
-<div class="u-full-width">
-  <div class="main-container container">
+<r:breadcrumbs ul_class="breadcrumbs" />
 
-    <r:breadcrumbs ul_class="breadcrumbs sixteen columns" />
+<r:partial name="profile" />
 
-    <aside class="sidebar four columns" role="complementary">
-
-      <div class="staff__photo">
-        <r:editable_region name="staff__photo">
-          Add a staff's profile photo.
-        </r:editable_region>
-      </div> <!-- /.staff__photo -->
-      
-      <div class="nav__main" role="navigation">
-        <r:ancestor_menu start_depth="2" max_depth="3" active_class="nav__main--current-page" open_class="nav__main--open" />
-      </div> <!-- /.nav__main -->
-
-    </aside> <!-- /.sidebar -->
-
-    <main class="main main__content seven columns" role="main">
-
-      <h1 class="main__heading">
-        <r:editable_region name="staff__name" type="simple">
-          <r:page:name/>
-        </r:editable_region>
-      </h1>
-
-      <p>
-        <r:editable_region name="staff__description" type="simple">
-          Enter a brief description of the person. This will be pulled into the staff index pages. Only enter a sentence or two in this region.
-        </r:editable_region>
-      </p>
-
-      <r:editable_region name="main">
-        Enter the extended description of the staff member here.
-      </r:editable_region>
-    
-    </main><!-- /.main -->
-
-    <div class="staff__meta-info four columns">
-      <p><strong>Title:</strong>
-       <r:editable_region name="staff__title" type="simple">
-         Enter a person's job title.
-       </r:editable_region>
-      </p>
-
-      <p><strong>Phone:</strong>
-       <r:editable_region name="staff__phone" type="simple">
-         (304) 293-5555
-       </r:editable_region>
-      </p>
-
-      <p><strong>Email:</strong>
-       <r:editable_region name="staff__email">
-        firstname.lastname@mail.wvu.edu
-       </r:editable_region>
-      </p>
-
-      <p><strong>What I do:</strong>
-       <r:editable_region name="staff__what-i-do" type="simple">
-         Enter what types of things the person handles.
-       </r:editable_region>
-      </p>
-    </div> <!-- /.staff__meta-info -->
-
-  </div> <!-- /.container -->
-</div> <!-- /.u-full-width -->
+<aside class="sidebar">
+  <div class="sidebar__sub-nav" role="navigation">
+    <r:ancestor_menu start_depth="1" max_depth="2" active_class="current-page"/>
+  </div> <!-- /.sidebar__sub-nav -->
+</aside> <!-- /.sidebar -->
