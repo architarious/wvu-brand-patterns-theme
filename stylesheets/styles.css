@@ -1171,6 +1171,45 @@ input[type="search"].wvu-masthead__search-box {
   .cards__copy-wrapper {
     padding-left: 0.75em; } }
 
+.cards__card--supernav {
+  font-size: 0.8em; }
+
+.cards__card--events ul li, .cards--horizontal__card--events ul li {
+  margin-bottom: 0.5em;
+  display: inline-block; }
+  .cards__card--events ul li .eventDate, .cards--horizontal__card--events ul li .eventDate {
+    float: left;
+    margin-right: 4%;
+    width: 10%;
+    text-align: center;
+    padding-bottom: 6px;
+    border-radius: 6px; }
+    @media (min-width: 60em) {
+      .cards__card--events ul li .eventDate, .cards--horizontal__card--events ul li .eventDate {
+        border: 1px solid #968C83; } }
+  .cards__card--events ul li .calEventMonth, .cards--horizontal__card--events ul li .calEventMonth {
+    font-size: .8em;
+    text-transform: uppercase; }
+  .cards__card--events ul li .calEventDay, .cards--horizontal__card--events ul li .calEventDay {
+    display: block;
+    font-size: 1.5em;
+    line-height: .8em;
+    clear: both; }
+  .cards__card--events ul li .eventInfo, .cards--horizontal__card--events ul li .eventInfo {
+    float: left;
+    width: 86%; }
+  .cards__card--events ul li .eventTime, .cards--horizontal__card--events ul li .eventTime {
+    font-weight: bold; }
+  .cards__card--events ul li .eventName, .cards--horizontal__card--events ul li .eventName {
+    display: block; }
+
+.cards--horizontal__card--events ul li {
+  width: 100%; }
+
+.cards--vertical__card--events ul {
+  display: flex;
+  flex-flow: row wrap; }
+
 .cards__copy--quicklink {
   padding-left: 1em;
   background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
@@ -1180,6 +1219,21 @@ input[type="search"].wvu-masthead__search-box {
   float: left;
   width: 3em;
   margin-right: 5px; }
+
+.cards--vertical__card--quicklinks {
+  display: flex;
+  flex-flow: row wrap; }
+
+.cards--vertical__copy--quicklink {
+  padding: 0.5em 0.75em;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  margin: auto;
+  border-right: 2px solid #333F48;
+  background: #2C2A29; }
+  .cards--vertical__copy--quicklink a {
+    color: white; }
 
 .hero {
   color: white;
@@ -1260,9 +1314,11 @@ input[type="search"].wvu-masthead__search-box {
       font-size: 3.5em; } }
 
 .sub-nav {
-  font-weight: bold;
-  border-left: 1px solid #eee;
-  padding-left: 1em; }
+  font-weight: bold; }
+  @media (min-width: 48em) {
+    .sub-nav {
+      border-left: 1px solid #eee;
+      padding-left: 1em; } }
   .sub-nav li {
     line-height: 1.2em;
     padding-bottom: 0.5em; }
@@ -1276,36 +1332,6 @@ input[type="search"].wvu-masthead__search-box {
   @media (min-width: 75em) {
     .type-system {
       padding: 50px 0; } }
-
-.cards__card--events ul li, .cards--horizontal__card--events ul li {
-  margin-bottom: 0.58333em;
-  display: inline-block;
-  width: 100%; }
-  .cards__card--events ul li .eventDate, .cards--horizontal__card--events ul li .eventDate {
-    float: left;
-    margin-right: 4%;
-    width: 10%;
-    text-align: center;
-    padding-bottom: 6px;
-    border-radius: 6px; }
-    @media (min-width: 60em) {
-      .cards__card--events ul li .eventDate, .cards--horizontal__card--events ul li .eventDate {
-        border: 1px solid #968C83; } }
-  .cards__card--events ul li .calEventMonth, .cards--horizontal__card--events ul li .calEventMonth {
-    font-size: .8em;
-    text-transform: uppercase; }
-  .cards__card--events ul li .calEventDay, .cards--horizontal__card--events ul li .calEventDay {
-    display: block;
-    font-size: 1.5em;
-    line-height: .8em;
-    clear: both; }
-  .cards__card--events ul li .eventInfo, .cards--horizontal__card--events ul li .eventInfo {
-    float: left;
-    width: 86%; }
-  .cards__card--events ul li .eventTime, .cards--horizontal__card--events ul li .eventTime {
-    font-weight: bold; }
-  .cards__card--events ul li .eventName, .cards--horizontal__card--events ul li .eventName {
-    display: block; }
 
 .graphic-header {
   padding: 4em 1em;
@@ -1929,6 +1955,51 @@ input.wvu-masthead__search-box {
     margin-right: 2.35765%;
     width: 23.23176%; }
     .cards__card--supernav:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 60em) {
+  .cards--vertical__card--events {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .cards--vertical__card--events:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 60em) {
+  .cards--vertical__calendar li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .cards--vertical__calendar li:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 60em) {
+  .cards--vertical__card--spotlights {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .cards--vertical__card--spotlights:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 60em) {
+  .cards--vertical__spotlight {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .cards--vertical__spotlight:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 60em) {
+  .cards--vertical__card--quicklinks {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .cards--vertical__card--quicklinks:last-child {
       margin-right: 0; } }
 
 .footer__container {

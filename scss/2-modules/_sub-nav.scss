@@ -1,6 +1,8 @@
 .sub-nav { font-weight: bold;
-  border-left: 1px solid #eee;
-  padding-left: 1em;
+  @include mq($bp-medium) {
+    border-left: 1px solid #eee;
+    padding-left: 1em;
+  }
   li { line-height: 1.2em; padding-bottom: 0.5em;
     ul { font-weight: normal;
       font-size: 0.8em;

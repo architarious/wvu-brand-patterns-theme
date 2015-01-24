@@ -61,3 +61,35 @@
     @include span-columns(3);
   }
 }
+
+.cards--vertical__card--events {
+  @include mq($bp-large) {
+    @include span-columns(12);
+  }
+}
+
+.cards--vertical__calendar {
+  li {
+    @include mq($bp-large) {
+      @include span-columns(4);
+    }
+  }
+}
+
+.cards--vertical__card--spotlights {
+  @include mq($bp-large) {
+    @include span-columns(12);
+  }
+}
+
+.cards--vertical__spotlight {
+  @include mq($bp-large) {
+    @include span-columns(6);
+  }
+}
+
+.cards--vertical__card--quicklinks {
+  @include mq($bp-large) {
+    @include span-columns(12);
+  }
+}

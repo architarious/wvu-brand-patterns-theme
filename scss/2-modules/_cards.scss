@@ -44,6 +44,33 @@
   }
 }
 
+.cards__card--supernav { font-size: 0.8em; }
+
+.cards__card--events, .cards--horizontal__card--events { 
+  ul {
+    li { margin-bottom: 0.5em; display: inline-block; 
+      .eventDate { float: left; margin-right: 4%; width: 10%; text-align: center; padding-bottom: 6px; border-radius: 6px; 
+        @include mq($bp-large) { border: 1px solid $pms-warm-gray-7; }
+      }
+      .calEventMonth { font-size: .8em; text-transform: uppercase; }
+      .calEventDay { display: block; font-size: 1.5em; line-height: .8em; clear: both; }
+      .eventInfo { float: left; width: 86%;}
+      .eventTime { font-weight: bold; }
+      .eventName { display: block; }
+    }
+  }
+}
+
+.cards--horizontal__card--events { 
+  ul { 
+    li { width: 100%; }
+  }
+}
+
+.cards--vertical__card--events { 
+  ul { display: flex; flex-flow: row wrap; }
+}
+
 .cards__copy--quicklink {
   padding-left: 1em;
   background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
@@ -52,4 +79,20 @@
 
 .cards__social-media-icons { 
   li { float: left; width: 3em; margin-right: 5px; }
+}
+
+.cards--vertical__card--quicklinks {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.cards--vertical__copy--quicklink {
+  padding: 0.5em 0.75em;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  margin: auto;
+  border-right: 2px solid $pms-432-c;
+  background: $black;
+  a { color: white; }
 }
