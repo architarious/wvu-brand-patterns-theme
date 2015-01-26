@@ -2,13 +2,23 @@
 layout: default
 ---
 
-<r:partial name="layouts/be/wvu-masthead" />
+<r:partial name="patterns/wvu-masthead" />
 
-<r:partial name="layouts/nav" />
+<r:partial name="patterns/nav" />
     
 <r:partial name="landing-page-header" />
 
-<r:partial name="layouts/be/features" />
+<div class="cards cards--pms-429-c">
+  <div class="cards__wrapper">
+    <r:partial name="patterns/super-nav" />
+  </div>
+</div>
+
+<div class="cards">
+  <div class="cards__wrapper">
+    <r:partial name="patterns/features-triptych" />
+  </div>
+</div>
 
 <r:content_for name="page_js"> 
   <r:include_javascript name="jquery.flexslider" />

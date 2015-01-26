@@ -2,13 +2,60 @@
 layout: default
 ---
 
-<r:partial name="layouts/be/wvu-masthead" />
+<r:partial name="patterns/wvu-masthead" />
 
-<r:partial name="layouts/nav" />
+<r:partial name="patterns/nav" />
     
 <r:partial name="flexslider" />
 
-<r:partial name="layouts/be/features" />
+<div class="cards">
+  <div class="cards__wrapper">
+    <r:partial name="patterns/features-triptych" />
+  </div>
+</div>
+
+<div class="cards cards--pms-429-c">
+  <div class="cards__wrapper">
+    
+    <div class="cards__card cards__card--full-width">
+      <h2 class="cards__header">
+        Events
+      </h2>
+
+      <r:partial name="patterns/widgets__calendar--flex" />
+  
+      <a class="button buttone">All Events</a>
+  
+    </div>
+    
+  </div>
+</div>
+
+<div class="cards cards--pms-432-c">
+  <div class="cards__wrapper">
+    
+    <div class="cards__card cards__card--full-width">
+
+      <div class="cards__quicklnks-container">
+        <h2 class="cards__header">
+          Quicklinks
+        </h2>
+        
+        <r:partial name="patterns/widgets__quicklinks--flex" />
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="cards cards--black">
+  <div class="cards__wrapper">
+    <div class="cards__card cards__card--follow-us">
+      <r:partial name="patterns/widgets__social-media-icons" />
+    </div>
+  </div>
+</div>
 
 <r:content_for name="page_js"> 
   <r:include_javascript name="jquery.flexslider" />

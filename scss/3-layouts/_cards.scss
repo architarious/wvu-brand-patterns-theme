@@ -68,7 +68,7 @@
   }
 }
 
-.cards--vertical__spotlight {
+.cards__spotlight--side-by-side {
   @include mq($bp-large) {
     @include span-columns(6);
   }

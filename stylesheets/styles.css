@@ -1176,35 +1176,6 @@ input[type="search"].wvu-masthead__search-box {
 .cards__card--supernav {
   font-size: 0.8em; }
 
-.cards__calendar li {
-  margin-bottom: 0.5em;
-  display: inline-block; }
-  .cards__calendar li .eventDate {
-    float: left;
-    margin-right: 4%;
-    width: 10%;
-    text-align: center;
-    padding-bottom: 6px;
-    border-radius: 6px; }
-    @media (min-width: 60em) {
-      .cards__calendar li .eventDate {
-        border: 1px solid #968C83; } }
-  .cards__calendar li .calEventMonth {
-    font-size: .8em;
-    text-transform: uppercase; }
-  .cards__calendar li .calEventDay {
-    display: block;
-    font-size: 1.5em;
-    line-height: .8em;
-    clear: both; }
-  .cards__calendar li .eventInfo {
-    float: left;
-    width: 86%; }
-  .cards__calendar li .eventTime {
-    font-weight: bold; }
-  .cards__calendar li .eventName {
-    display: block; }
-
 .cards--horizontal__card--events ul li {
   width: 100%; }
 
@@ -1652,7 +1623,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     border-radius: 6px; }
     @media (min-width: 60em) {
       .widgets__calendar li .eventDate {
-        border: 1px solid #968C83; } }
+        border: 1px solid; } }
   .widgets__calendar li .calEventMonth {
     font-size: .8em;
     text-transform: uppercase; }
@@ -1711,7 +1682,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   margin-right: 5px; }
 
 .wvu-footer {
-  padding: 2em 1em; }
+  padding: 2em 1em;
+  float: left;
+  width: 100%; }
   @media (min-width: 48em) {
     .wvu-footer {
       padding: 2em 0; } }
@@ -2040,12 +2013,12 @@ input.wvu-masthead__search-box {
       margin-right: 0; } }
 
 @media (min-width: 60em) {
-  .cards--vertical__spotlight {
+  .cards__spotlight--side-by-side {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    .cards--vertical__spotlight:last-child {
+    .cards__spotlight--side-by-side:last-child {
       margin-right: 0; } }
 
 .college-of-business-and-economics-homepage .hero .hero__inner {
