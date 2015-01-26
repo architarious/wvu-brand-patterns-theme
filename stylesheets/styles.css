@@ -1055,7 +1055,6 @@ input[type="search"].wvu-masthead__search-box {
 .nav {
   background: #2C2A29;
   width: 100%;
-  padding: 20px;
   display: table; }
   @media (min-width: 35.625em) {
     .nav {
@@ -1073,13 +1072,9 @@ input[type="search"].wvu-masthead__search-box {
   .nav .nav-toggle {
     float: left;
     width: 100%;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 1em;
     text-align: center;
-    color: white;
-    border: 1px solid #fff;
-    border-radius: 7px;
-    margin-bottom: 4px; }
+    color: white; }
     @media (min-width: 48em) {
       .nav .nav-toggle {
         margin-left: 10px; } }
@@ -1088,8 +1083,7 @@ input[type="search"].wvu-masthead__search-box {
     .nav .nav-toggle:hover {
       text-decoration: none;
       background-color: #EAAA00;
-      color: #002855;
-      border: 1px solid #EAAA00; }
+      color: #002855; }
 
 @media (min-width: 48em) {
   .nav__menu ul {
