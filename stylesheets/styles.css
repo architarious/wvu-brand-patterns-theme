@@ -2081,6 +2081,16 @@ input.wvu-masthead__search-box {
     display: table;
     clear: both; }
 
+@media (min-width: 48em) {
+  .profiles__container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .profiles__container:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
 .wvu-footer__container {
   max-width: 68em;
   margin-left: auto;

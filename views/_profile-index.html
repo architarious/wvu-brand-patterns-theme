@@ -1,18 +1,16 @@
-<div class="profile-index">
-  
-  <r:children:each>
-    <div class="profile-index__profile">
-      <div class="profile-index__photo">
-      
-      </div>
-      <div class="profile-index__info">
-        <h2 class="profile-index__name"><a href="<r:page:url />"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h2>
-        <p class="profile-index__intro">
-          <r:page:meta_description />
-        </p>
-        <a class="button">View <r:page:first_non_blank_attr names="alternate_name,name" />&rsquo;s Profile</a>
-      </div>
-    </div>
-  </r:children:each>
+<!-- Profile Index - wvu-pattern-library/views/patterns/_profile-index.html -->
 
-</div> <!-- /.profile-index -->
+<r:children:each>
+  <div class="profile-index__profile">
+    <div class="profile-index__photo">
+      <r:page:content name="profiles__photo" />
+    </div>
+    <div class="profile-index__info">
+      <h2 class="profile-index__name"><a href="<r:page:url />"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h2>
+      <p class="profile-index__intro">
+        <r:page:meta_description />
+      </p>
+      <a class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+    </div>
+  </div>
+</r:children:each>

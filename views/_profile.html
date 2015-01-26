@@ -1,11 +1,11 @@
-<div class="profiles">
-  <div class="profiles__profile">
-    <div class="profiles__photo">
-      <r:page:content name="profiles__photo" />
-    </div>
-    <div class="description twelve columns omega">
-      <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
-      <p><r:page:content name="profiles__content" /></p>
-    </div>
+<!-- Profile - wvu-pattern-library/views/patterns/_profile.html -->
+
+<div class="profiles__profile">
+  <div class="profiles__photo">
+    <r:editable_region name="profiles__photo" />
+  </div>
+  <div class="description twelve columns omega">
+    <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+    <p><r:editable_region name="profiles__content" /></p>
   </div>
 </div>
