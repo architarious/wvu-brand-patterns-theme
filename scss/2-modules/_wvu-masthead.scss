@@ -29,12 +29,12 @@ input[type="search"] {
   &.wvu-masthead__search-box { margin-bottom: 0.25em; }
 }
 
-.wvu-masthead__home-link { color: white; font-weight: bold; display: block; margin-bottom: 0.5em; width: 100%; 
+.wvu-masthead__link { color: white; font-weight: bold; display: inline-block; margin-bottom: 0.5em; float: left; margin-right: 0.5em; 
   @include mq($bp-medium) { margin-bottom: 3px; }
-  &:hover { color: white; }
+  &:hover { color: white; text-decoration: underline; }
 }
 
-.wvu-masthead__home-link--blue { color: $wvu-blue; 
+.wvu-masthead__link--blue { color: $wvu-blue; 
   &:hover { color: $base-link-color; }
 }
 

@@ -946,21 +946,23 @@ p + p.lede {
 input[type="search"].wvu-masthead__search-box {
   margin-bottom: 0.25em; }
 
-.wvu-masthead__home-link {
+.wvu-masthead__link {
   color: white;
   font-weight: bold;
-  display: block;
+  display: inline-block;
   margin-bottom: 0.5em;
-  width: 100%; }
+  float: left;
+  margin-right: 0.5em; }
   @media (min-width: 48em) {
-    .wvu-masthead__home-link {
+    .wvu-masthead__link {
       margin-bottom: 3px; } }
-  .wvu-masthead__home-link:hover {
-    color: white; }
+  .wvu-masthead__link:hover {
+    color: white;
+    text-decoration: underline; }
 
-.wvu-masthead__home-link--blue {
+.wvu-masthead__link--blue {
   color: #002855; }
-  .wvu-masthead__home-link--blue:hover {
+  .wvu-masthead__link--blue:hover {
     color: #0033A0; }
 
 .wvu-masthead__search-type {
