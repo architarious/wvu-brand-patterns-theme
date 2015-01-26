@@ -12,15 +12,38 @@
   }
 }
 
+.wvu-footer__wvu-content {
+  @include mq($bp-medium) {
+    @include span-columns(6);
+  }
+}
+
 .wvu-footer__wvu-credits { 
   @include mq($bp-medium) {
-    @include span-columns(3);
+    @include span-columns(6);
   }
 }
 
-.wvu-footer__wvu-icons { 
+.wvu-footer__link-lists-container {
   @include mq($bp-medium) {
-    @include span-columns(3);
+    @include span-columns(6);
   }
 }
 
+.wvu-footer__wvu-link-lists { 
+  @include mq($bp-medium) {
+    @include span-columns(6);
+  }
+}
+
+.wvu-footer__wvu-links {
+  @include mq($bp-medium) {
+    @include span-columns(6);
+  }
+}
+
+.wvu-footer__wvu-social-media-links {
+  @include mq($bp-medium) {
+    @include span-columns(12);
+  }
+}
