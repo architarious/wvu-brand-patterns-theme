@@ -3,14 +3,14 @@
 <r:children:each>
   <div class="profile-index__profile">
     <div class="profile-index__photo">
-      <r:page:content name="profiles__photo" />
+      <a href="<r:page:url />"><r:page:content name="profiles__photo" /></a>
     </div>
     <div class="profile-index__info">
       <h2 class="profile-index__name"><a href="<r:page:url />"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h2>
       <p class="profile-index__intro">
         <r:page:meta_description />
       </p>
-      <a class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+      <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
     </div>
   </div>
 </r:children:each>
