@@ -270,36 +270,6 @@ input[type="submit"] {
 
   .nav-toggle {
     display: none; } }
-body {
-  -webkit-font-smoothing: antialiased; }
-
-a {
-  color: #0033A0; }
-  a:hover {
-    color: #005EB8; }
-
-.element-header {
-  border-top: 1px solid #eee;
-  margin: 140px 0 80px 0;
-  font-size: 0.8em;
-  padding-top: 0.5em;
-  text-align: center;
-  font-weight: normal; }
-  .element-header:after {
-    font-size: 2em;
-    line-height: 2em;
-    color: #ddd;
-    position: relative;
-    z-index: -1;
-    display: block;
-    clear: both;
-    content: "❯";
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(90deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(90deg); }
-
 .wvu-blue {
   color: #002855;
   border-color: #002855; }
@@ -870,6 +840,33 @@ p + p.lede {
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
+a {
+  color: #0033A0; }
+  a:hover {
+    color: #005EB8; }
+
+.element-header {
+  border-top: 1px solid #eee;
+  margin: 140px 0 80px 0;
+  font-size: 0.8em;
+  padding-top: 0.5em;
+  text-align: center;
+  font-weight: normal; }
+  .element-header:after {
+    font-size: 2em;
+    line-height: 2em;
+    color: #ddd;
+    position: relative;
+    z-index: -1;
+    display: block;
+    clear: both;
+    content: "❯";
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg); }
+
 .wvu-masthead {
   background-color: #002855;
   color: white; }
@@ -941,7 +938,8 @@ p + p.lede {
     margin-right: 0; }
 
 .wvu-masthead__search-box {
-  color: #2C2A29; }
+  color: #2C2A29;
+  clear: both; }
 
 input[type="search"].wvu-masthead__search-box {
   margin-bottom: 0.25em; }
@@ -1220,48 +1218,14 @@ input[type="search"].wvu-masthead__search-box {
   display: flex;
   flex-flow: row wrap; }
 
-.cards__quicklink {
-  padding-left: 1em;
-  background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
-  background-size: 20px; }
-
-.cards__social-media-icons li {
-  float: left;
-  width: 3em;
-  margin-right: 5px; }
-
-@media (min-width: 48em) {
-  .cards__calendar--flex {
-    display: flex;
-    align-items: stretch;
-    flex-flow: row wrap; }
-    .cards__calendar--flex li {
-      width: 33%;
-      padding: 0 0 1em 0; } }
-
-@media (min-width: 48em) {
-  .cards__quicklinks--flex {
-    display: flex;
-    align-items: stretch;
-    flex-flow: row wrap; } }
-
-.cards__quicklink--flex {
-  font-size: 1em;
-  padding-left: 1.5em;
-  box-sizing: border-box;
-  background-size: 30px;
-  border-right: 5px solid #333F48;
-  border-bottom: 5px solid #333F48; }
-  @media (min-width: 48em) {
-    .cards__quicklink--flex {
-      width: 25%;
-      float: left; } }
-  .cards__quicklink--flex a {
-    color: white;
-    display: block; }
-
-.page-content {
+.main {
   padding-bottom: 2em; }
+  .main ul {
+    list-style-type: disc;
+    padding-left: 1em; }
+  .main ol {
+    list-style-type: decimal;
+    padding-left: 1em; }
 
 .hero {
   color: white;
@@ -1347,16 +1311,20 @@ input[type="search"].wvu-masthead__search-box {
     .sub-nav {
       border-left: 1px solid #eee;
       padding-left: 1em; } }
-  .sub-nav li {
-    line-height: 1.2em;
-    padding-bottom: 0.5em; }
-    .sub-nav li ul {
-      font-weight: normal;
-      font-size: 0.8em;
-      padding: 1em 0 0 0; }
-      .sub-nav li ul li ul {
-        font-size: 1em;
-        padding-left: 0.5em; }
+  .sub-nav ul {
+    list-style-type: none;
+    padding-left: 0; }
+    .sub-nav ul li {
+      line-height: 1.2em;
+      padding-bottom: 0.5em;
+      margin: 0; }
+      .sub-nav ul li ul {
+        font-weight: normal;
+        font-size: 0.8em;
+        padding: 1em 0 0 0; }
+        .sub-nav ul li ul li ul {
+          font-size: 1em;
+          padding-left: 0.5em; }
 
 .type-system {
   padding: 50px 1em; }
@@ -1678,6 +1646,76 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 @media only screen and (min-width: 75em) {
   #main-slider.flexslider {
     overflow: hidden; } }
+.widgets__calendar li {
+  margin-bottom: 0.5em;
+  display: inline-block; }
+  .widgets__calendar li .eventDate {
+    float: left;
+    margin-right: 4%;
+    width: 10%;
+    text-align: center;
+    padding-bottom: 6px;
+    border-radius: 6px; }
+    @media (min-width: 60em) {
+      .widgets__calendar li .eventDate {
+        border: 1px solid #968C83; } }
+  .widgets__calendar li .calEventMonth {
+    font-size: .8em;
+    text-transform: uppercase; }
+  .widgets__calendar li .calEventDay {
+    display: block;
+    font-size: 1.5em;
+    line-height: .8em;
+    clear: both; }
+  .widgets__calendar li .eventInfo {
+    float: left;
+    width: 86%; }
+  .widgets__calendar li .eventTime {
+    font-weight: bold; }
+  .widgets__calendar li .eventName {
+    display: block; }
+
+@media (min-width: 48em) {
+  .widgets__calendar--flex {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap; }
+    .widgets__calendar--flex li {
+      width: 33%;
+      padding: 0 0 1em 0; } }
+
+.widgets__quicklink {
+  padding-left: 1em;
+  background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
+  background-size: 20px;
+  margin-left: 0; }
+
+@media (min-width: 48em) {
+  .widgets__quicklinks--flex {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap; } }
+
+.widgets__quicklink--flex {
+  font-size: 1em;
+  padding-left: 1.5em;
+  box-sizing: border-box;
+  background-size: 30px;
+  border-right: 5px solid #333F48;
+  border-bottom: 5px solid #333F48; }
+  @media (min-width: 48em) {
+    .widgets__quicklink--flex {
+      width: 25%;
+      float: left; } }
+  .widgets__quicklink--flex a {
+    color: white;
+    display: block; }
+
+.widgets__social-media-icons li {
+  float: left;
+  width: 3em;
+  margin-right: 5px; }
+
 .wvu-footer {
   padding: 2em 1em; }
   @media (min-width: 48em) {
@@ -2026,12 +2064,12 @@ input.wvu-masthead__search-box {
     clear: both; }
 
 @media (min-width: 48em) {
-  .page-content {
+  .main {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 78.67549%; }
-    .page-content:last-child {
+    .main:last-child {
       margin-right: 0; } }
 
 @media (min-width: 48em) {

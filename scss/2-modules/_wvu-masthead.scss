@@ -23,7 +23,7 @@
   input[type="checkbox"], input[type="radio"] { margin-right: 0; }
 }
 
-.wvu-masthead__search-box { color: $black; }
+.wvu-masthead__search-box { color: $black; clear: both; }
 
 input[type="search"] {
   &.wvu-masthead__search-box { margin-bottom: 0.25em; }
