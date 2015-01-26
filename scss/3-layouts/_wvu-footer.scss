@@ -1,0 +1,26 @@
+.wvu-footer__container { @include outer-container(); }
+
+.wvu-footer__map { 
+  @include mq($bp-medium) {
+    @include span-columns(3);
+  }
+}
+
+.wvu-footer__contact-us { 
+  @include mq($bp-medium) {
+    @include span-columns(3);
+  }
+}
+
+.wvu-footer__wvu-credits { 
+  @include mq($bp-medium) {
+    @include span-columns(3);
+  }
+}
+
+.wvu-footer__wvu-icons { 
+  @include mq($bp-medium) {
+    @include span-columns(3);
+  }
+}
+

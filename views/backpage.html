@@ -5,9 +5,9 @@ layout: default
 <div class="u-full-width">
   <div class="main-container container">
 
-    <r:breadcrumbs ul_class="breadcrumbs sixteen columns" />
+    <r:breadcrumbs ul_class="breadcrumbs" />
 
-    <aside class="sidebar four columns">
+    <aside class="sidebar">
       
       <div class="nav__main" role="navigation">
         <r:ancestor_menu start_depth="2" max_depth="4" active_class="nav__main--current-page" open_class="nav__main--open" />
@@ -15,8 +15,8 @@ layout: default
 
     </aside> <!-- /.sidebar -->
 
-    <main class="main twelve columns" role="main">
-      <div class="main__content ten columns">
+    <main class="main" role="main">
+      <div class="main__content">
         <h1 class="main__heading"><r:page:first_non_blank_attr names="alternate_name,name" /></h1>
         <r:editable_region name="main" />
       </div> <!-- /.main__content -->

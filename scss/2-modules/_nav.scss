@@ -1,10 +1,10 @@
 .nav { background: $black; width: 100%; padding: 20px; display: table; 
-  @include mq($bp-medium) { padding: 0 20px; }
+  @include mq($bp-small) { padding: 0 20px; }
   @include mq($bp-xlarge) { padding: 0; }
   
   .nav-collapse { clear: both; overflow: visible;
     li { 
-      @include mq($bp-medium) { width: auto; float: left; }
+      @include mq($bp-small) { width: auto; float: left; }
     }
   }
   // Responsive-nav.com toggle (inside of .nav-department)

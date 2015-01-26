@@ -5,7 +5,7 @@
   @include mq($bp-xlarge) { padding: 0; }
 }
 
-.wvu-masthead__logo { position: relative; padding: 1em 0 1.6em 2em; font-size: 1.5em; overflow: hidden; border: 0; background-color: transparent; width: 100%; background: url(../images/flying-wv.png) no-repeat top 1.2em left; background-size: 1.8em; float: left; color: white; 
+.wvu-masthead__logo { font-family: $helvetica-roman; text-decoration: none; position: relative; padding: 1em 0 1.6em 2em; font-size: 1.5em; overflow: hidden; border: 0; background-color: transparent; width: 100%; background: url(../images/flying-wv.png) no-repeat top 1.2em left; background-size: 1.8em; float: left; color: white; 
   &:hover { color: white; }
   @include mq($bp-medium) { font-size: 1.75em; }
   @include mq($bp-large) { font-size: 2em; }

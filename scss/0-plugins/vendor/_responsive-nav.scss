@@ -1,6 +1,8 @@
 /*! responsive-nav.js 1.0.32 by @viljamis */
 // Changed nav breakpoint to coninside with our projects breakpoints
 
+$bp-medium: 768;
+
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -41,7 +43,7 @@
   user-select: none;
 }
 
-@include media($medium-screen) {
+@include mq($bp-medium) {
   .js .nav-collapse {
     position: relative;
   }
