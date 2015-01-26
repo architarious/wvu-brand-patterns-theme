@@ -2091,6 +2091,24 @@ input.wvu-masthead__search-box {
       display: table;
       clear: both; } }
 
+@media (min-width: 48em) {
+  .profiles__photo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .profiles__photo:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .profiles__content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .profiles__content:last-child {
+      margin-right: 0; } }
+
 .wvu-footer__container {
   max-width: 68em;
   margin-left: auto;

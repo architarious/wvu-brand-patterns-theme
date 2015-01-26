@@ -3,3 +3,15 @@
     @include outer-container();
   }
 }
+
+.profiles__photo {
+  @include mq($bp-medium) {
+    @include span-columns(6);
+  }
+}
+
+.profiles__content {
+  @include mq($bp-medium) {
+    @include span-columns(6);
+  }
+}
