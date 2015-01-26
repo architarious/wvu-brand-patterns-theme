@@ -1,5 +1,18 @@
-.breadcrumbs { 
-  li { float: left; }
+.breadcrumbs { width: 100%; position: absolute; }
+
+.breadcrumbs__list { padding: 0.5em 1em;
+  @include mq($bp-medium) { padding: 0.5em 0; }
+  li { float: left; font-size: .8em; margin-right: 0.5em;
+    a { border-bottom: 1px dotted; }
+    &:after { content: ' / '; }
+    &:last-child {
+      &:after { content: ''; }
+    };
+  }
+}
+
+.breadcrumbs__list--white { color: white;
+  a { color: white; }
 }
 
 .breadcrumbs--white {

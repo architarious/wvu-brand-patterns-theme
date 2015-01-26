@@ -1032,8 +1032,30 @@ input[type="search"].wvu-masthead__search-box {
   background: #002855;
   border-color: #002855; }
 
-.breadcrumbs li {
-  float: left; }
+.breadcrumbs {
+  width: 100%;
+  position: absolute; }
+
+.breadcrumbs__list {
+  padding: 0.5em 1em; }
+  @media (min-width: 48em) {
+    .breadcrumbs__list {
+      padding: 0.5em 0; } }
+  .breadcrumbs__list li {
+    float: left;
+    font-size: .8em;
+    margin-right: 0.5em; }
+    .breadcrumbs__list li a {
+      border-bottom: 1px dotted; }
+    .breadcrumbs__list li:after {
+      content: ' / '; }
+    .breadcrumbs__list li:last-child:after {
+      content: ''; }
+
+.breadcrumbs__list--white {
+  color: white; }
+  .breadcrumbs__list--white a {
+    color: white; }
 
 .breadcrumbs--white a {
   color: white; }
@@ -1839,6 +1861,16 @@ input.wvu-masthead__search-box {
     content: "";
     display: table;
     clear: both; }
+
+@media (min-width: 48em) {
+  .breadcrumbs__container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .breadcrumbs__container:after {
+      content: "";
+      display: table;
+      clear: both; } }
 
 .hero__inner {
   max-width: 68em;
