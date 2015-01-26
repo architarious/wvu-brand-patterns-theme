@@ -1,13 +1,13 @@
 <!-- Profile Index - wvu-pattern-library/views/patterns/_profile-index.html -->
 
 <r:children:each>
-  <div class="profile-index__profile">
-    <div class="profile-index__photo">
+  <div class="profiles__profile-index">
+    <div class="profiles__photo">
       <a href="<r:page:url />"><r:page:content name="profiles__photo" /></a>
     </div>
-    <div class="profile-index__info">
-      <h2 class="profile-index__name"><a href="<r:page:url />"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h2>
-      <p class="profile-index__intro">
+    <div class="profiles__info">
+      <h2 class="profiles__name"><a href="<r:page:url />"><r:page:first_non_blank_attr names="alternate_name,name" /></a></h2>
+      <p class="profiles__intro">
         <r:page:meta_description />
       </p>
       <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
