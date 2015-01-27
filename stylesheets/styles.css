@@ -867,6 +867,13 @@ a {
     /* Chrome, Safari, Opera */
     transform: rotate(90deg); }
 
+/* 
+  Variable options:
+  gold
+  white
+  blue-pattern
+  gold-pattern
+*/
 .wvu-masthead {
   background-color: #002855;
   color: white; }
@@ -895,7 +902,7 @@ a {
   float: left;
   color: white; }
   .wvu-masthead__logo:hover {
-    color: white; }
+    color: #ddd; }
   @media (min-width: 48em) {
     .wvu-masthead__logo {
       font-size: 1.75em; } }
@@ -909,21 +916,12 @@ a {
   font-size: 0.8em;
   text-transform: uppercase; }
 
-.wvu-masthead__university {
+.wvu-masthead__university-name {
   position: absolute;
   top: 5.9em;
   left: 5.1em;
   font-size: 0.4em;
   text-transform: uppercase; }
-
-.wvu-masthead__university--two-line-lockup {
-  top: 7.1em; }
-
-.wvu-masthead__title--two-line-lockup {
-  font-size: 0.75em;
-  line-height: 1.08333333em;
-  float: left;
-  margin-top: 0.1em; }
 
 .wvu-masthead__logo:before {
   content: "";
@@ -995,42 +993,18 @@ input[type="search"].wvu-masthead__search-box {
     .wvu-masthead__college-link {
       position: absolute; } }
 
-.wvu-masthead--blue-pattern {
+.wvu-masthead__title {
+  font-size: 0.75em;
+  line-height: 1.08333333em;
+  float: left;
+  margin-top: 0.1em; }
+
+.wvu-masthead__university-name {
+  top: 7.1em; }
+
+.wvu-masthead {
   background: url(../images/pattern-blue.jpg) no-repeat;
   background-size: cover; }
-
-.wvu-masthead--white {
-  background-color: white;
-  color: #2C2A29;
-  background-image: none; }
-
-.wvu-masthead__logo--gold-background {
-  background: url(../images/flying-wv-blue.png) no-repeat top 1.2em left;
-  background-size: 1.8em;
-  color: #002855; }
-  .wvu-masthead__logo--gold-background:hover {
-    color: #002855; }
-
-.wvu-masthead__logo--white-background {
-  color: #002855; }
-  .wvu-masthead__logo--white-background:hover {
-    color: #002855; }
-
-.wvu-masthead__search-button--blue {
-  border-color: #002855;
-  background: #002855; }
-  .wvu-masthead__search-button--blue:hover {
-    background: #EAAA00;
-    border-color: #EAAA00; }
-
-.wvu-masthead--gold {
-  background-color: #EAAA00;
-  color: #002855;
-  background-image: none; }
-
-.wvu-masthead__search-button--gold-background:hover {
-  background: #002855;
-  border-color: #002855; }
 
 .breadcrumbs {
   width: 100%;

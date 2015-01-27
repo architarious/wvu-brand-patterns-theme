@@ -36,6 +36,12 @@ editable_region:
       <li><a href="#">Another Article link</a></li>
       <li><a href="#">An Amazing story</a></li>
     </ul>
+    
+  title-top:
+    'Eberly College of'
+  
+  title-bottom:
+    'Arts and Sciences'
 
   quicklinks: |
     <ul>
