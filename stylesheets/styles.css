@@ -868,7 +868,7 @@ a {
     transform: rotate(90deg); }
 
 /* 
-  Variable options:
+  Variable options for WVU Masthead Background:
   gold
   white
   blue-pattern
@@ -955,11 +955,6 @@ input[type="search"].wvu-masthead__search-box {
   .wvu-masthead__link:hover {
     color: white;
     text-decoration: underline; }
-
-.wvu-masthead__link--blue {
-  color: #002855; }
-  .wvu-masthead__link--blue:hover {
-    color: #0033A0; }
 
 .wvu-masthead__search-type {
   clear: both;
