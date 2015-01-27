@@ -42,6 +42,12 @@ editable_region:
   
   title-bottom:
     'Arts and Sciences'
+  
+  hero-title-top:
+    'It Starts'
+  
+  hero-title-bottom:
+    'Now'
 
   quicklinks: |
     <ul>

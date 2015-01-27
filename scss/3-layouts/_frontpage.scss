@@ -1,4 +1,6 @@
 
+.wvu-hero__container { @include outer-container(); }
+
 .hero__inner { @include outer-container(); }
 
 .hero--small-photo__copy {

@@ -1257,6 +1257,88 @@ input[type="search"].wvu-masthead__search-box {
     .shout--small-photo {
       font-size: 3.5em; } }
 
+/*
+  Options for diagonal line:
+  $diagonal-line-gold
+  $diagonal-line-blue
+  $diagonal-line-white
+  $diagonal-line-gold-transparent
+  $diagonal-line-blue-transparent
+  $diagonal-line-white-transparent
+*/
+/*
+  Options for WVU Hero Title typeface:
+  $shout (Helvetica Neue Black Condensed)
+  $subhead (Helvetica Bold)
+  $iowan (Iowan Old Style)
+  $iowan-italic (Iowan Old Style Italic)
+*/
+/*
+  Options for WVU Hero Title typeface:
+  short
+  medium
+  long
+*/
+.wvu-hero {
+  color: white;
+  background-color: #002855;
+  background-image: url("../images/coopers-rock.jpg");
+  background-position: 75% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  text-shadow: 1px 1px 1px #000000; }
+  .wvu-hero h1 {
+    font-family: "HelveticaNeueW01-97Blac", "Helvetica W01 Bold", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+
+.wvu-hero__container {
+  padding: 3em; }
+  @media (min-width: 75em) {
+    .wvu-hero__container {
+      padding: 3em 0; } }
+
+.wvu-hero__text {
+  margin-bottom: 3em;
+  font-weight: bold; }
+  @media (min-width: 48em) {
+    .wvu-hero__text {
+      max-width: 40%; } }
+
+.wvu-hero {
+  background-image: url("../images/coopers-rock.jpg");
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover; }
+  @media (min-width: 60em) {
+    .wvu-hero {
+      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
+      background-size: 500px, cover;
+      background-position: 59% -209px, center top; } }
+
+.wvu-hero {
+  background-image: url("../images/coopers-rock.jpg");
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover; }
+  @media (min-width: 60em) {
+    .wvu-hero {
+      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
+      background-size: 500px, cover;
+      background-position: 59% -209px, center top; } }
+
+.wvu-hero {
+  background-image: url("../images/coopers-rock.jpg");
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover; }
+  @media (min-width: 60em) {
+    .wvu-hero {
+      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
+      background-size: 500px, cover;
+      background-position: 59% -209px, center top; } }
+
 .sub-nav {
   font-weight: bold; }
   @media (min-width: 48em) {
@@ -1836,6 +1918,15 @@ input.wvu-masthead__search-box {
       content: "";
       display: table;
       clear: both; } }
+
+.wvu-hero__container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wvu-hero__container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .hero__inner {
   max-width: 68em;

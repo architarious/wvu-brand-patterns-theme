@@ -45,6 +45,12 @@ $shout-length: 'short' !default;
   }
 }
 
+@mixin is-shout() {
+  @if $wvu-hero-title-typeface == $shout {
+    text-transform: uppercase;
+  }
+}
+
 @mixin has-diagonal-line() {
   .wvu-hero {
     background-image: url($hero-image);
@@ -96,7 +102,7 @@ $shout-length: 'short' !default;
   }
 }
 
-.hero {
+.wvu-hero {
 
   color: $wvu-hero-title-color;
   background-color: $wvu-blue;
@@ -108,7 +114,9 @@ $shout-length: 'short' !default;
   padding-top: 4em;
   text-shadow: 1px 1px 1px #000000;
   
-  h1 { font-family: $wvu-hero-title-typeface; }
+  h1 { font-family: $wvu-hero-title-typeface; 
+    @include is-shout();
+  }
   
 }
 
