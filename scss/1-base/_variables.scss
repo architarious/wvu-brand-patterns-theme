@@ -58,6 +58,17 @@ $base-link-color: $pms-286-c;
 $hover-link-color: $pms-300-c;
 $link-border-style: 1px dotted;
 
+// Hero Elements
+
+$diagonal-line-gold: '../images/gold-diagonal.svg';
+$diagonal-line-blue: '../images/blue-diagonal.svg';
+$diagonal-line-white: '../images/white-diagonal.svg';
+$diagonal-line-gold-transparent: '../images/gold-diagonal-transparent.svg';
+$diagonal-line-blue-transparent: '../images/blue-diagonal-transparent.svg';
+$diagonal-line-white-transparent: '../images/white-diagonal-transparent.svg';
+$wvu-pattern-grid: '../images/';
+$vignetting: '../images/vignetting.png';
+
 // Grid
 
 $gutter: golden-ratio(5em, 1) !default; // Gutter between each two columns

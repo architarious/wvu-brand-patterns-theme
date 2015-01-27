@@ -997,10 +997,6 @@ input[type="search"].wvu-masthead__search-box {
 .wvu-masthead__university-name {
   top: 7.1em; }
 
-.wvu-masthead {
-  background: url(../images/pattern-blue.jpg) no-repeat;
-  background-size: cover; }
-
 .breadcrumbs {
   width: 100%;
   position: absolute; }
