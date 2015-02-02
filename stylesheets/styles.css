@@ -419,13 +419,16 @@ input[type="submit"] {
     color: black;
     background-color: #FDDA24; }
 
+html {
+  font-size: 16px; }
+
 .helvetica-roman {
-  font-family: "Helvetica W01 Roman", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-55Roma", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1em; }
 
 .helvetica-light {
-  font-family: "Helvetica W01 Light", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-45Ligh", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1em; }
 
@@ -439,19 +442,21 @@ input[type="submit"] {
   font-weight: normal; }
 
 .helvetica-bold {
-  font-family: "Helvetica W01 Bold", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.08333333em; }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   color: #333F48;
   clear: both;
-  margin-bottom: 0.5em; }
+  margin-bottom: 1em; }
 
 h1 {
   font-size: 3em;
   line-height: 1.08333333em;
-  width: 100%; }
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.5em; }
   @media (min-width: 60em) {
     h1 {
       font-size: 4em; } }
@@ -488,12 +493,9 @@ h2 {
   font-size: 2.4em;
   line-height: 1.08333333em; }
 
-p + h2, ul + h2, ol + h2, div + h2, h3 + h2, h4 + h2, h5 + h2, h6 + h2 {
-  margin-top: 1.5em; }
-
 p.lede {
   font-size: 2.4em;
-  font-family: "Helvetica W01 Light", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-45Ligh", Helvetica, Arial, sans-serif;
   line-height: 1.08333333em; }
 
 p + p.lede {
@@ -841,9 +843,9 @@ p + p.lede {
     border: 2px solid #EAAA00; }
 
 a {
-  color: #0033A0; }
+  color: #477DCA; }
   a:hover {
-    color: #005EB8; }
+    color: #2c5999; }
 
 .element-header {
   border-top: 1px solid #eee;
@@ -867,9 +869,29 @@ a {
     /* Chrome, Safari, Opera */
     transform: rotate(90deg); }
 
+fieldset {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+  Options for WVU Hero Title typeface:
+  $shout (Helvetica Neue Black Condensed)
+  $subhead (Helvetica Bold)
+  $iowan (Iowan Old Style)
+  $iowan-italic (Iowan Old Style Italic)
+*/
+/*
+  Options for WVU Hero Title typeface:
+  short
+  medium
+  long
+*/
 /* 
   Variable options for WVU Masthead Background:
   gold
+  blue
   white
   blue-pattern
   gold-pattern
@@ -888,7 +910,7 @@ a {
       padding: 0; } }
 
 .wvu-masthead__logo {
-  font-family: "Helvetica W01 Roman", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-55Roma", Helvetica, Arial, sans-serif;
   text-decoration: none;
   position: relative;
   padding: 1em 0 1.6em 2em;
@@ -935,13 +957,6 @@ a {
   .wvu-masthead__search-bar input[type="checkbox"], .wvu-masthead__search-bar input[type="radio"] {
     margin-right: 0; }
 
-.wvu-masthead__search-box {
-  color: #2C2A29;
-  clear: both; }
-
-input[type="search"].wvu-masthead__search-box {
-  margin-bottom: 0.25em; }
-
 .wvu-masthead__link {
   color: white;
   font-weight: bold;
@@ -956,29 +971,6 @@ input[type="search"].wvu-masthead__search-box {
     color: white;
     text-decoration: underline; }
 
-.wvu-masthead__search-type {
-  clear: both;
-  font-weight: bold;
-  padding-top: 0.5em; }
-  @media (min-width: 48em) {
-    .wvu-masthead__search-type {
-      padding-top: 0; } }
-  .wvu-masthead__search-type input:last-child {
-    margin-left: 1em; }
-
-.wvu-masthead__search-button {
-  border: 2px solid white;
-  background: transparent;
-  padding: 4px 4px 0 4px; }
-  .wvu-masthead__search-button img {
-    max-height: 20px; }
-  .wvu-masthead__search-button:hover {
-    background: #EAAA00;
-    border-color: #EAAA00; }
-  @media (min-width: 48em) {
-    .wvu-masthead__search-button {
-      height: 30px; } }
-
 .wvu-masthead__college-link {
   font-size: 0.8em;
   line-height: 1.08333333em;
@@ -988,14 +980,50 @@ input[type="search"].wvu-masthead__search-box {
     .wvu-masthead__college-link {
       position: absolute; } }
 
-.wvu-masthead__title {
-  font-size: 0.75em;
-  line-height: 1.08333333em;
-  float: left;
-  margin-top: 0.1em; }
+.wvu-search {
+  clear: both; }
+  .wvu-search label, .wvu-search legend {
+    position: absolute;
+    top: -99999em; }
 
-.wvu-masthead__university-name {
-  top: 7.1em; }
+.wvu-search__search-bar {
+  padding-top: 2.1em;
+  font-size: 0.8em; }
+  .wvu-search__search-bar input[type="checkbox"], .wvu-search__search-bar input[type="radio"] {
+    margin-right: 0; }
+
+.wvu-search__search-form {
+  clear: both; }
+
+.wvu-search__search-box {
+  color: #2C2A29;
+  clear: both; }
+
+input[type="search"].wvu-search__search-box {
+  margin-bottom: 0.25em; }
+
+.wvu-search__search-type {
+  clear: both;
+  font-weight: bold;
+  padding-top: 0.5em; }
+  @media (min-width: 48em) {
+    .wvu-search__search-type {
+      padding-top: 0; } }
+  .wvu-search__search-type input:last-child {
+    margin-left: 1em; }
+
+.wvu-search__search-button {
+  border: 2px solid white;
+  background: transparent;
+  padding: 4px 4px 0 4px; }
+  .wvu-search__search-button img {
+    max-height: 20px; }
+  .wvu-search__search-button:hover {
+    background: #EAAA00;
+    border-color: #EAAA00; }
+  @media (min-width: 48em) {
+    .wvu-search__search-button {
+      height: 30px; } }
 
 .breadcrumbs {
   width: 100%;
@@ -1258,6 +1286,25 @@ input[type="search"].wvu-masthead__search-box {
       font-size: 3.5em; } }
 
 /*
+  Options for WVU Hero Title typeface:
+  $shout (Helvetica Neue Black Condensed)
+  $subhead (Helvetica Bold)
+  $traditional-audience (Iowan Old Style)
+  $narrow-audience (Iowan Old Style Italic)
+*/
+/*
+  If using Shout, options for WVU Shout length:
+  short
+  medium
+  long
+*/
+/*
+  Options for $wvu-pattern-grid-zoom:
+  $grid-zoom-1 (close)
+  $grid-zoom-2 (wide)
+  $grid-zoom-3 (cover)
+*/
+/*
   Options for diagonal line:
   $diagonal-line-gold
   $diagonal-line-blue
@@ -1265,19 +1312,6 @@ input[type="search"].wvu-masthead__search-box {
   $diagonal-line-gold-transparent
   $diagonal-line-blue-transparent
   $diagonal-line-white-transparent
-*/
-/*
-  Options for WVU Hero Title typeface:
-  $shout (Helvetica Neue Black Condensed)
-  $subhead (Helvetica Bold)
-  $iowan (Iowan Old Style)
-  $iowan-italic (Iowan Old Style Italic)
-*/
-/*
-  Options for WVU Hero Title typeface:
-  short
-  medium
-  long
 */
 .wvu-hero {
   color: white;
@@ -1287,11 +1321,27 @@ input[type="search"].wvu-masthead__search-box {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 4em;
-  padding-top: 4em;
-  text-shadow: 1px 1px 1px #000000; }
+  padding-top: 4em; }
+  .wvu-hero a:hover {
+    text-shadow: none; }
+  .wvu-hero h1, .wvu-hero p {
+    text-shadow: 1px 1px 1px #000000; }
   .wvu-hero h1 {
     font-family: "HelveticaNeueW01-97Blac", "Helvetica W01 Bold", Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
+    color: white;
+    font-size: 3em;
+    line-height: 0.80487em;
+    text-transform: uppercase;
+    font-weight: normal; }
+    @media (min-width: 48em) {
+      .wvu-hero h1 {
+        font-size: 8.2em; } }
+    .wvu-hero h1 .wvu-hero__title-bottom {
+      color: #EAAA00; }
+  .wvu-hero p {
+    margin-bottom: 2em;
+    font-weight: bold;
+    max-width: 40em; }
 
 .wvu-hero__container {
   padding: 3em; }
@@ -1305,39 +1355,6 @@ input[type="search"].wvu-masthead__search-box {
   @media (min-width: 48em) {
     .wvu-hero__text {
       max-width: 40%; } }
-
-.wvu-hero {
-  background-image: url("../images/coopers-rock.jpg");
-  background-repeat: no-repeat;
-  background-position: 75% 50%;
-  background-size: cover; }
-  @media (min-width: 60em) {
-    .wvu-hero {
-      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
-      background-size: 500px, cover;
-      background-position: 59% -209px, center top; } }
-
-.wvu-hero {
-  background-image: url("../images/coopers-rock.jpg");
-  background-repeat: no-repeat;
-  background-position: 75% 50%;
-  background-size: cover; }
-  @media (min-width: 60em) {
-    .wvu-hero {
-      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
-      background-size: 500px, cover;
-      background-position: 59% -209px, center top; } }
-
-.wvu-hero {
-  background-image: url("../images/coopers-rock.jpg");
-  background-repeat: no-repeat;
-  background-position: 75% 50%;
-  background-size: cover; }
-  @media (min-width: 60em) {
-    .wvu-hero {
-      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
-      background-size: 500px, cover;
-      background-position: 59% -209px, center top; } }
 
 .sub-nav {
   font-weight: bold; }
@@ -1841,6 +1858,112 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
   .wvu-icons ul {
     float: right; } }
+.wvu-masthead--two-line-lockup .wvu-masthead__title {
+  font-size: 0.75em;
+  line-height: 1.08333333em;
+  float: left;
+  margin-top: 0.1em; }
+.wvu-masthead--two-line-lockup .wvu-masthead__university-name {
+  top: 7.1em; }
+
+.wvu-masthead--gold {
+  background-color: #EAAA00;
+  color: #002855;
+  background-image: none; }
+  .wvu-masthead--gold .wvu-search__search-button:hover {
+    background: #002855;
+    border-color: #002855; }
+  .wvu-masthead--gold .wvu-masthead__logo {
+    background: url("../images/flying-wv-blue.png") no-repeat top 1.2em left;
+    background-size: 1.8em;
+    color: #002855; }
+    .wvu-masthead--gold .wvu-masthead__logo:hover {
+      color: #005EB8; }
+  .wvu-masthead--gold .wvu-masthead__link {
+    color: #002855; }
+    .wvu-masthead--gold .wvu-masthead__link:hover {
+      color: #0033A0; }
+
+.wvu-masthead--white {
+  background-color: white;
+  color: #2C2A29;
+  background-image: none; }
+  .wvu-masthead--white .wvu-search__search-button {
+    border-color: #002855;
+    background: #002855; }
+    .wvu-masthead--white .wvu-search__search-button:hover {
+      background: #EAAA00;
+      border-color: #EAAA00; }
+  .wvu-masthead--white .wvu-masthead__logo {
+    color: #002855; }
+    .wvu-masthead--white .wvu-masthead__logo:hover {
+      color: #005EB8; }
+  .wvu-masthead--white .wvu-masthead__link {
+    color: #002855; }
+    .wvu-masthead--white .wvu-masthead__link:hover {
+      color: #0033A0; }
+
+.wvu-masthead--blue-pattern {
+  background: url(../images/pattern-blue.jpg) no-repeat;
+  background-size: cover; }
+
+.wvu-hero--baby {
+  color: #2C2A29;
+  background-image: none;
+  background-color: transparent;
+  text-shadow: none; }
+  .wvu-hero--baby .wvu-hero__copy {
+    padding: 2em;
+    background: #eee; }
+  .wvu-hero--baby h1 {
+    font-size: 3em;
+    color: #002855; }
+    @media (min-width: 60em) {
+      .wvu-hero--baby h1 {
+        font-size: 3.5em; } }
+  .wvu-hero--baby h1, .wvu-hero--baby p {
+    text-shadow: 0px 0px 0px transparent; }
+
+.wvu-hero--traditional-audience h1 {
+  font-family: "IowanOldStyleW01-Roman", Georgia, Times, serif;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 3em; }
+  @media (min-width: 60em) {
+    .wvu-hero--traditional-audience h1 {
+      font-size: 4em; } }
+.wvu-hero--traditional-audience .wvu-hero__title-bottom {
+  color: white; }
+
+.wvu-hero--narrow-audience h1 {
+  font-family: "IowanOldStyleW01-Italic1120392", Georgia, Times, serif;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 3em; }
+  @media (min-width: 60em) {
+    .wvu-hero--narrow-audience h1 {
+      font-size: 4em; } }
+.wvu-hero--narrow-audience .wvu-hero__title-bottom {
+  color: white; }
+
+.wvu-hero--pattern-grid .button {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
+  /* IE6-9 */
+  -webkit-box-shadow: 2px 2px 15px 0 #000000;
+  box-shadow: 2px 2px 15px 0 #000000; }
+
 .wvu-masthead__container {
   max-width: 68em;
   margin-left: auto;
@@ -1884,20 +2007,21 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     .wvu-masthead__search-bar:last-child {
       margin-right: 0; } }
 
-input.wvu-masthead__search-box {
+input.wvu-search__search-box {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%; }
-  input.wvu-masthead__search-box:last-child {
+  input.wvu-search__search-box:last-child {
     margin-right: 0; }
 
-.wvu-masthead__search-button {
+.wvu-search__search-button {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%; }
-  .wvu-masthead__search-button:last-child {
+  width: 14.70196%;
+  margin-right: 0; }
+  .wvu-search__search-button:last-child {
     margin-right: 0; }
 
 .nav__container {
@@ -1938,21 +2062,21 @@ input.wvu-masthead__search-box {
     clear: both; }
 
 @media (min-width: 48em) {
-  .hero--small-photo__copy {
+  .wvu-hero__copy {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 40.29137%; }
-    .hero--small-photo__copy:last-child {
+    .wvu-hero__copy:last-child {
       margin-right: 0; } }
 
 @media (min-width: 48em) {
-  .hero__photo {
+  .wvu-hero__photo {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%; }
-    .hero__photo:last-child {
+    .wvu-hero__photo:last-child {
       margin-right: 0; } }
 
 .buttons {
@@ -2105,15 +2229,6 @@ input.wvu-masthead__search-box {
     width: 48.82117%; }
     .cards__spotlight--side-by-side:last-child {
       margin-right: 0; } }
-
-.college-of-business-and-economics-homepage .hero .hero__inner {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .college-of-business-and-economics-homepage .hero .hero__inner:after {
-    content: "";
-    display: table;
-    clear: both; }
 
 @media (min-width: 48em) {
   .main {

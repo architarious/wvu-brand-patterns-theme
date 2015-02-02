@@ -3,10 +3,10 @@
 
 .hero__inner { @include outer-container(); }
 
-.hero--small-photo__copy {
+.wvu-hero__copy {
   @include mq($bp-medium) { @include span-columns(5); }
 }
-.hero__photo {
+.wvu-hero__photo {
   @include mq($bp-medium) { @include span-columns(7); }
 }
 

@@ -17,13 +17,3 @@
     @include span-columns(3.5);
   }
 }
-
-input {
-  &.wvu-masthead__search-box {
-    @include span-columns(10);
-  }
-}
-
-.wvu-masthead__search-button {
-  @include span-columns(2);
-}

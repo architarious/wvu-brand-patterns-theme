@@ -1,0 +1,11 @@
+
+input {
+  &.wvu-search__search-box {
+    @include span-columns(10);
+  }
+}
+
+.wvu-search__search-button {
+  @include span-columns(2);
+  margin-right: 0;
+}

@@ -1,9 +1,10 @@
 $wvu-masthead-two-line-lockup: true !default;
-$wvu-masthead-background: '' !default;
+$wvu-masthead-background: 'blue' !default;
 
 /* 
   Variable options for WVU Masthead Background:
   gold
+  blue
   white
   blue-pattern
   gold-pattern
@@ -18,24 +19,26 @@ $wvu-masthead-background: '' !default;
 
 @mixin wvu-masthead-background() {
   @if $wvu-masthead-background == 'gold' {
-    .wvu-masthead { background-color: $wvu-gold; color: $wvu-blue; background-image: none; }
+    .wvu-masthead { background-color: $wvu-gold; color: $wvu-blue; background-image: none; 
+      .wvu-search__search-button { 
+        &:hover { background: $wvu-blue; border-color: $wvu-blue; }
+      }
+    }
     .wvu-masthead__logo { background: url(../images/flying-wv-blue.png) no-repeat top 1.2em left; background-size: 1.8em; color: $wvu-blue; 
       &:hover { color: $pms-300-c; }
-    }
-    .wvu-masthead__search-button { 
-      &:hover { background: $wvu-blue; border-color: $wvu-blue; }
     }
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
     }
   }
   @else if $wvu-masthead-background == 'white' {
-    .wvu-masthead { background-color: white; color: $black; background-image: none; }
+    .wvu-masthead { background-color: white; color: $black; background-image: none; 
+      .wvu-search__search-button { border-color: $wvu-blue; background: $wvu-blue;
+        &:hover { background: $wvu-gold; border-color: $wvu-gold; }
+      }
+    }
     .wvu-masthead__logo { color: $wvu-blue; 
       &:hover { color: $pms-300-c; };
-    }
-    .wvu-masthead__search-button { border-color: $wvu-blue; background: $wvu-blue;
-      &:hover { background: $wvu-gold; border-color: $wvu-gold; }
     }
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
@@ -45,12 +48,13 @@ $wvu-masthead-background: '' !default;
     .wvu-masthead { background: url(../images/pattern-blue.jpg) no-repeat; background-size: cover; }
   }
   @else if $wvu-masthead-background == 'gold-pattern' {
-    .wvu-masthead { background: url(../images/pattern-gold.jpg) no-repeat; color: $wvu-blue; background-size: cover; }
+    .wvu-masthead { background: url(../images/pattern-gold.jpg) no-repeat; color: $wvu-blue; background-size: cover; 
+      .wvu-search__search-button { 
+        &:hover { background: $wvu-blue; border-color: $wvu-blue; }
+      }
+    }
     .wvu-masthead__logo { background: url(../images/flying-wv-blue.png) no-repeat top 1.2em left; background-size: 1.8em; color: $wvu-blue; 
       &:hover { color: $pms-300-c; }
-    }
-    .wvu-masthead__search-button { 
-      &:hover { background: $wvu-blue; border-color: $wvu-blue; }
     }
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
@@ -65,7 +69,7 @@ $wvu-masthead-background: '' !default;
   @include mq($bp-xlarge) { padding: 0; }
 }
 
-.wvu-masthead__logo { font-family: $helvetica-roman; text-decoration: none; position: relative; padding: 1em 0 1.6em 2em; font-size: 1.5em; overflow: hidden; border: 0; background-color: transparent; width: 100%; background: url(../images/flying-wv.png) no-repeat top 1.2em left; background-size: 1.8em; float: left; color: white; 
+.wvu-masthead__logo { font-family: $helvetica-neue-roman; text-decoration: none; position: relative; padding: 1em 0 1.6em 2em; font-size: 1.5em; overflow: hidden; border: 0; background-color: transparent; width: 100%; background: url(../images/flying-wv.png) no-repeat top 1.2em left; background-size: 1.8em; float: left; color: white; 
   &:hover { color: #ddd; }
   @include mq($bp-medium) { font-size: 1.75em; }
   @include mq($bp-large) { font-size: 2em; }
@@ -80,34 +84,9 @@ $wvu-masthead-background: '' !default;
   input[type="checkbox"], input[type="radio"] { margin-right: 0; }
 }
 
-.wvu-masthead__search-box { color: $black; clear: both; }
-
-input[type="search"] {
-  &.wvu-masthead__search-box { margin-bottom: 0.25em; }
-}
-
 .wvu-masthead__link { color: white; font-weight: bold; display: inline-block; margin-bottom: 0.5em; float: left; margin-right: 0.5em; 
   @include mq($bp-medium) { margin-bottom: 3px; }
   &:hover { color: white; text-decoration: underline; }
-}
-
-.wvu-masthead__search-type { clear: both; font-weight: bold; padding-top: 0.5em;
-  @include mq($bp-medium) { padding-top: 0; }
-  input {
-    &:last-child { margin-left: 1em; }
-  }
-}
-
-.wvu-masthead__search-button {
-  border: 2px solid white;
-  background: transparent;
-  padding: 4px 4px 0 4px;
-  img { max-height: 20px; }
-  &:hover {
-    background: $wvu-gold;
-    border-color: $wvu-gold;
-  }
-  @include mq($bp-medium) { height: 30px; }
 }
 
 .wvu-masthead__college-link {

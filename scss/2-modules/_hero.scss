@@ -1,4 +1,4 @@
-$hero-image: '../images/coopers-rock.jpg';
+$hero-image: '../images/coopers-rock.jpg' !default;
 $diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
 
 .hero {
@@ -43,11 +43,11 @@ $diagonal-line-gold: '../images/gold-diagonal-transparent.svg';
   }
 }
 
-.hero--traditional__heading { font-family: $iowan; font-weight: normal; }
+.hero--traditional__heading { font-family: $iowan-old-style; font-weight: normal; }
 
 .hero--traditional__heading--white { color: white; }
 
-.hero--narrow-audience__heading { font-family: $iowan-italic; font-weight: normal; }
+.hero--narrow-audience__heading { font-family: $iowan-old-style-italic; font-weight: normal; }
 
 .hero--narrow-audience__heading--white { color: white; }
 

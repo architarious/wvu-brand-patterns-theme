@@ -1,0 +1,34 @@
+
+.wvu-search { clear: both;
+  label, legend { position: absolute; top: -99999em; }
+}
+
+.wvu-search__search-bar { padding-top: 2.1em; font-size: 0.8em;
+  input[type="checkbox"], input[type="radio"] { margin-right: 0; }
+}
+
+.wvu-search__search-form { clear: both; }
+.wvu-search__search-box { color: $black; clear: both; }
+
+input[type="search"] {
+  &.wvu-search__search-box { margin-bottom: 0.25em; }
+}
+
+.wvu-search__search-type { clear: both; font-weight: bold; padding-top: 0.5em;
+  @include mq($bp-medium) { padding-top: 0; }
+  input {
+    &:last-child { margin-left: 1em; }
+  }
+}
+
+.wvu-search__search-button {
+  border: 2px solid white;
+  background: transparent;
+  padding: 4px 4px 0 4px;
+  img { max-height: 20px; }
+  &:hover {
+    background: $wvu-gold;
+    border-color: $wvu-gold;
+  }
+  @include mq($bp-medium) { height: 30px; }
+}

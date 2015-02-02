@@ -29,6 +29,8 @@ editable_region:
   department-summary__main--how-do-i: 1
   department-summary__header--oas: "Some other random headline..."
   department-summary__main--oas: 5
+  wvu-masthead__title:
+    Department of English
   news: |
     <ul>
       <li><a href="#"><%= Faker::Business.credit_card_number %></a></li>
@@ -36,18 +38,13 @@ editable_region:
       <li><a href="#">Another Article link</a></li>
       <li><a href="#">An Amazing story</a></li>
     </ul>
-    
-  title-top:
-    'Eberly College of'
-  
-  title-bottom:
-    'Arts and Sciences'
-  
-  hero-title-top:
-    'It Starts'
-  
-  hero-title-bottom:
-    'Now'
+
+  wvu-hero-title-top:
+    It Starts
+  wvu-hero-title-bottom:
+    Now.
+  wvu-hero-text:
+    So let's go. Release the Mountaineer spirit inside of you. Reach the limits of what you can do and then keep on going.
 
   quicklinks: |
     <ul>

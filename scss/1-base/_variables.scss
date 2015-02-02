@@ -1,75 +1,71 @@
-// WVU Color Pallette
-//==================================================
-
-// Primary
-$wvu-blue: #002855;
-$wvu-gold: #EAAA00;
-
-// Neutral
-$black: #2C2A29;
-$pms-432-c: #333F48;
-$pms-429-c: #A2AAAD;
-$pms-warm-gray-11: #6E6259;
-$pms-warm-gray-7: #968C83;
-$pms-warm-gray-3: #BFB8AF;
-
-// Accent
-$pms-286-c: #0033A0;
-$pms-300-c: #005EB8;
-$pms-629-c: #9BD3DD;
-$pms-7554-c: #4B3D2A;
-$pms-7557-c: #9F7D23;
-$pms-144-c: #ED8B00;
-$pms-7476-c: #0D5257;
-$pms-5625-c: #708573;
-$pms-558-c: #9ABEAA;
-$pms-180-c: #BE3A34;
-$pms-166-c: #E35205;
-$pms-115-c: #FDDA24;
-
-// Breakpoints
-//==================================================
-
-$bp-mini: 450;
-$bp-small: 570;
-$bp-medium: 768;
-$bp-large: 960;
-$bp-xlarge: 1200;
-
-// Typography
-
-$shout: 'HelveticaNeueW01-97Blac', 'Helvetica W01 Bold', Helvetica, Arial, sans-serif;
-$subhead: 'Helvetica W01 Bold', Helvetica, Arial, sans-serif;
-$helvetica-roman: 'Helvetica W01 Roman', Helvetica, Arial, sans-serif;
-$helvetica-light: 'Helvetica W01 Light', Helvetica, Arial, sans-serif;
-$iowan: 'IowanOldStyleW01-Roman', Georgia, Times, serif;
-$iowan-italic: 'IowanOldStyleW01-Italic1120392', Georgia, Times, serif;
-
-$shout-line-height: 0.80487em;
-
-// Buttons
-
-$base-border-radius: 3px;
-$hover-button-color: $wvu-blue;
-
 // Links
+//==================================================
 
 $base-link-color: $pms-286-c;
 $hover-link-color: $pms-300-c;
 $link-border-style: 1px dotted;
 
-// Hero Elements
+// Masthead
+//==================================================
 
+$blue-flying-wv: '../images/flying-wv-blue.png';
+$wvu-masthead-two-line-lockup: false;
+$wvu-masthead-background: 'blue';
+
+// Hero Elements
+//==================================================
+
+$hero-image: '../images/coopers-rock.jpg';
 $diagonal-line-gold: '../images/gold-diagonal.svg';
 $diagonal-line-blue: '../images/blue-diagonal.svg';
 $diagonal-line-white: '../images/white-diagonal.svg';
 $diagonal-line-gold-transparent: '../images/gold-diagonal-transparent.svg';
 $diagonal-line-blue-transparent: '../images/blue-diagonal-transparent.svg';
 $diagonal-line-white-transparent: '../images/white-diagonal-transparent.svg';
-$wvu-pattern-grid: '../images/';
+$wvu-pattern-grid: '../images/wvu-pattern-grid.png';
 $vignetting: '../images/vignetting.png';
 
+// Set vignetting to true if you have a photo that is busy and makes text illegible
+
+$has-vignetting: false;
+
+// Sets the cropping of the WVU grid pattern
+
+$grid-zoom-1: 3340px;
+$grid-zoom-2: 1720px;
+$grid-zoom-3: cover;
+$wvu-pattern-grid-zoom: $grid-zoom-1;
+
+$wvu-hero-title-typeface: $shout;
+$wvu-hero-title-color: white;
+$is-shout-bottom-gold: true;
+
+/*
+  Options for WVU Hero Title typeface:
+  $shout (Helvetica Neue Black Condensed)
+  $subhead (Helvetica Bold)
+  $iowan (Iowan Old Style)
+  $iowan-italic (Iowan Old Style Italic)
+*/
+
+// Pick one -- Can only have one or the other (diagonal or grid)
+
+$has-diagonal-line: false;
+$has-wvu-pattern-grid: false;
+
+$has-small-photo: false;
+$shout-length: 'short';
+
+/*
+  Options for WVU Hero Title typeface:
+  short
+  medium
+  long
+*/
+
+
 // Grid
+//==================================================
 
 $gutter: golden-ratio(5em, 1) !default; // Gutter between each two columns
 $max-width: em(1180) !default; // Max-width of the outer container
