@@ -9,13 +9,13 @@
 
 <h2 class="element-header">Horizontal Widgets</h2>
 
-<div class="cards cards--horizontal cards--pms-432-c">
-  <div class="cards__wrapper">
+<div class="wvu-section u-full-width u-pms-432-c background">
+  <div class="wvu-container">
     <div class="cards--horizontal__card cards--horizontal__card--spotlights">
       <h2 class="cards__header">Spotlights</h2>
       
       <r:get_page id="4850">
-        <r:partial name="patterns/widgets__spotlights" />
+        <r:partial name="widgets__spotlights" />
       </r:get_page>
       
     </div>
@@ -24,7 +24,7 @@
         Events
       </h2>
       
-      <r:partial name="patterns/widgets__calendar" />
+      <r:partial name="widgets__calendar" />
 
       <a href="" class="button button--white">All Events</a>
   
@@ -36,7 +36,7 @@
         Quicklinks
       </h2>
       
-      <r:partial name="patterns/widgets__quicklinks" />
+      <r:partial name="widgets__quicklinks" />
 
     </div>
   </div>
@@ -44,9 +44,9 @@
 
 <h2 class="element-header">Features</h2>
 
-<div class="cards cards--pms-432-c">
+<div class="wvu-section u-full-width u-pms-432-c background">
 
-  <div class="cards__wrapper">
+  <div class="wvu-container">
     <div class="cards__card cards__card--full-width">
 
       <div class="cards__spotlight cards__spotlight--side-by-side">
@@ -77,15 +77,15 @@
 
 <h2 class="element-header">Events</h2>
 
-<div class="cards cards--pms-432-c">
-  <div class="cards__wrapper">
+<div class="wvu-section u-full-width u-pms-432-c background">
+  <div class="wvu-container">
     
     <div class="cards__card cards__card--full-width">
       <h2 class="cards__header">
         Events
       </h2>
 
-      <r:partial name="patterns/widgets__calendar--flex" />
+      <r:partial name="widgets__calendar--flex" />
   
       <a class="button button--white">All Events</a>
   
@@ -96,30 +96,47 @@
 
 <h2 class="element-header">Quicklinks</h2>
 
-<div class="cards cards--pms-432-c">
-  <div class="cards__wrapper">
-    
-    <div class="cards__card cards__card--full-width">
-
-      <div class="cards__quicklnks-container">
-        <h2 class="cards__header">
-          Quicklinks
-        </h2>
-        
-        <r:partial name="patterns/widgets__quicklinks--flex" />
-        
-      </div>
-
-    </div>
+<div class="wvu-section u-full-width u-pms-432-c background">
+  <div class="wvu-container">
+    <h2>
+      Quicklinks
+    </h2>
+    <ul class="wvu-quicklinks wvu-quicklinks--flex">
+      <li><a href="">Study Abroad</a></li>
+      <li><a href="">Jobs</a></li>
+      <li><a href="">Off-campus Summer Program</a></li>
+      <li><a href="">Davis College Computing Overview</a></li>
+      <li><a href="">Safety</a></li>
+      <li><a href="">Fact Sheet</a></li>
+      <li><a href="">Research Facts</a></li>
+    </ul>
   </div>
+</div>
+
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML</div>
+  <pre>
+    &lt;div class="wvu-section u-full-width u-pms-432-c background"&gt;
+      &lt;div class="wvu-container"&gt;
+        &lt;h2&gt;
+          Quicklinks
+        &lt;/h2&gt;
+        <span class="u-pms-166-c">&lt;r:partial name="views/patterns/wvu-quicklinks" /&gt;</span>
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </pre>
+  <div class="code-label code-label--styles">Styles</div>
+  <pre>
+    @import 'scss/2-modules/wvu-quicklinks--flex'
+  </pre>
 </div>
 
 <h2 class="element-header">Social Media Links</h2>
 
-<div class="cards cards--black">
-  <div class="cards__wrapper">
+<div class="wvu-section u-full-width u-black background">
+  <div class="wvu-container">
     <div class="cards__card cards__card--follow-us">
-      <r:partial name="patterns/widgets__social-media-icons" />
+      <r:partial name="widgets__social-media-icons" />
     </div>
   </div>
 </div>

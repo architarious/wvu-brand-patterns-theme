@@ -1,7 +1,6 @@
+.wvu-container { @include outer-container }
 
 .wvu-hero__container { @include outer-container(); }
-
-.hero__inner { @include outer-container(); }
 
 .wvu-hero__copy {
   @include mq($bp-medium) { @include span-columns(5); }
@@ -10,25 +9,22 @@
   @include mq($bp-medium) { @include span-columns(7); }
 }
 
-.buttons { @include outer-container(); }
-
-.social-media-icons__container { @include outer-container(); }
-
 .flex-caption { 
   .caption-container { @include outer-container(); }
-}
-
-
-.wvu-super-nav__container {
-  @include outer-container
-}
-
-.wvu-spotlights__container {
-  @include outer-container();
 }
 
 .wvu-spotlight--triptych {
   @include mq($bp-medium) {
     @include span-columns(4);
   }
+}
+
+.wvu-super-nav {
+  @include mq($bp-medium) {
+    @include span-columns(3);
+  }
+}
+
+.wvu-section {
+  padding: 4em 0 4.3em 0;
 }

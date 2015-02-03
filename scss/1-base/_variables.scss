@@ -23,7 +23,11 @@ $diagonal-line-gold-transparent: '../images/gold-diagonal-transparent.svg';
 $diagonal-line-blue-transparent: '../images/blue-diagonal-transparent.svg';
 $diagonal-line-white-transparent: '../images/white-diagonal-transparent.svg';
 $wvu-pattern-grid: '../images/wvu-pattern-grid.png';
-$vignetting: '../images/vignetting.png';
+$vignetting: '../images/vignetting-2.png';
+
+// Typography
+
+$wvu-hero-title-typeface: $shout !default;
 
 // Set vignetting to true if you have a photo that is busy and makes text illegible
 
@@ -34,7 +38,7 @@ $has-vignetting: false;
 $grid-zoom-1: 3340px;
 $grid-zoom-2: 1720px;
 $grid-zoom-3: cover;
-$wvu-pattern-grid-zoom: $grid-zoom-1;
+$wvu-pattern-grid-zoom: $grid-zoom-2;
 
 $wvu-hero-title-typeface: $shout;
 $wvu-hero-title-color: white;

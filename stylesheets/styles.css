@@ -226,6 +226,155 @@ input[type="submit"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.u-wvu-blue {
+  color: #002855;
+  border-color: #002855; }
+  .u-wvu-blue.background {
+    color: white;
+    background-color: #002855; }
+
+.u-wvu-gold {
+  color: #EAAA00;
+  border-color: #EAAA00; }
+  .u-wvu-gold.background {
+    color: #002855;
+    background-color: #EAAA00; }
+
+.u-black {
+  color: #2C2A29; }
+  .u-black.background {
+    color: white;
+    background-color: #2C2A29; }
+
+.u-pms-432-c {
+  color: #333F48;
+  border-color: #333F48; }
+  .u-pms-432-c.background {
+    color: white;
+    background-color: #333F48; }
+    .u-pms-432-c.background h1, .u-pms-432-c.background h2, .u-pms-432-c.background h3, .u-pms-432-c.background h4, .u-pms-432-c.background h5, .u-pms-432-c.background h6, .u-pms-432-c.background a {
+      color: white; }
+
+.u-pms-429-c {
+  color: #A2AAAD;
+  border-color: #A2AAAD; }
+  .u-pms-429-c.background {
+    color: #2C2A29;
+    background-color: #A2AAAD; }
+    .u-pms-429-c.background h1, .u-pms-429-c.background h2, .u-pms-429-c.background h3, .u-pms-429-c.background h4, .u-pms-429-c.background h5, .u-pms-429-c.background h6 {
+      color: #2C2A29; }
+
+.u-pms-warm-gray-11 {
+  color: #6E6259;
+  border-color: #6E6259; }
+  .u-pms-warm-gray-11.background {
+    color: white;
+    background-color: #6E6259; }
+    .u-pms-warm-gray-11.background h1, .u-pms-warm-gray-11.background h2, .u-pms-warm-gray-11.background h3, .u-pms-warm-gray-11.background h4, .u-pms-warm-gray-11.background h5, .u-pms-warm-gray-11.background h6, .u-pms-warm-gray-11.background a {
+      color: white; }
+
+.u-pms-warm-gray-7 {
+  color: #968C83;
+  border-color: #968C83; }
+  .u-pms-warm-gray-7.background {
+    color: white;
+    background-color: #968C83; }
+    .u-pms-warm-gray-7.background h1, .u-pms-warm-gray-7.background h2, .u-pms-warm-gray-7.background h3, .u-pms-warm-gray-7.background h4, .u-pms-warm-gray-7.background h5, .u-pms-warm-gray-7.background h6, .u-pms-warm-gray-7.background a {
+      color: white; }
+
+.u-pms-warm-gray-3 {
+  color: #BFB8AF;
+  border-color: #BFB8AF; }
+  .u-pms-warm-gray-3.background {
+    color: #2C2A29;
+    background-color: #BFB8AF; }
+    .u-pms-warm-gray-3.background h1, .u-pms-warm-gray-3.background h2, .u-pms-warm-gray-3.background h3, .u-pms-warm-gray-3.background h4, .u-pms-warm-gray-3.background h5, .u-pms-warm-gray-3.background h6, .u-pms-warm-gray-3.background a {
+      color: #2C2A29; }
+
+.u-pms-286-c {
+  color: #0033A0;
+  border-color: #0033A0; }
+  .u-pms-286-c.background {
+    color: white;
+    background-color: #0033A0; }
+
+.u-pms-300-c {
+  color: #005EB8;
+  border-color: #005EB8; }
+  .u-pms-300-c.background {
+    color: white;
+    background-color: #005EB8; }
+
+.u-pms-629-c {
+  color: #9BD3DD;
+  border-color: #9BD3DD; }
+  .u-pms-629-c.background {
+    color: white;
+    background-color: #9BD3DD; }
+
+.u-pms-7554-c {
+  color: #4B3D2A;
+  border-color: #4B3D2A; }
+  .u-pms-7554-c.background {
+    color: white;
+    background-color: #4B3D2A; }
+
+.u-pms-7557-c {
+  color: #9F7D23;
+  border-color: #9F7D23; }
+  .u-pms-7557-c.background {
+    color: white;
+    background-color: #9F7D23; }
+
+.u-pms-144-c {
+  color: #ED8B00;
+  border-color: #ED8B00; }
+  .u-pms-144-c.background {
+    color: white;
+    background-color: #ED8B00; }
+
+.u-pms-7476-c {
+  color: #0D5257;
+  border-color: #0D5257; }
+  .u-pms-7476-c.background {
+    color: white;
+    background-color: #0D5257; }
+
+.u-pms-5625-c {
+  color: #708573;
+  border-color: #708573; }
+  .u-pms-5625-c.background {
+    color: white;
+    background-color: #708573; }
+
+.u-pms-558-c {
+  color: #9ABEAA;
+  border-color: #9ABEAA; }
+  .u-pms-558-c.background {
+    color: white;
+    background-color: #9ABEAA; }
+
+.u-pms-180-c {
+  color: #BE3A34;
+  border-color: #BE3A34; }
+  .u-pms-180-c.background {
+    color: white;
+    background-color: #BE3A34; }
+
+.u-pms-166-c {
+  color: #E35205;
+  border-color: #E35205; }
+  .u-pms-166-c.background {
+    color: white;
+    background-color: #E35205; }
+
+.u-pms-115-c {
+  color: #FDDA24;
+  border-color: #FDDA24; }
+  .u-pms-115-c.background {
+    color: black;
+    background-color: #FDDA24; }
+
 /*! responsive-nav.js 1.0.32 by @viljamis */
 .nav-collapse ul {
   margin: 0;
@@ -270,181 +419,33 @@ input[type="submit"] {
 
   .nav-toggle {
     display: none; } }
-.wvu-blue {
-  color: #002855;
-  border-color: #002855; }
-  .wvu-blue.background {
-    color: white;
-    background-color: #002855; }
-
-.wvu-gold {
-  color: #EAAA00;
-  border-color: #EAAA00; }
-  .wvu-gold.background {
-    color: #002855;
-    background-color: #EAAA00; }
-
-.black {
-  color: #2C2A29; }
-  .black.background {
-    color: white;
-    background-color: #2C2A29; }
-
-.pms-432-c {
-  color: #333F48;
-  border-color: #333F48; }
-  .pms-432-c.background {
-    color: white;
-    background-color: #333F48; }
-    .pms-432-c.background h1, .pms-432-c.background h2, .pms-432-c.background h3, .pms-432-c.background h4, .pms-432-c.background h5, .pms-432-c.background h6, .pms-432-c.background a {
-      color: white; }
-
-.pms-429-c {
-  color: #A2AAAD;
-  border-color: #A2AAAD; }
-  .pms-429-c.background {
-    color: #2C2A29;
-    background-color: #A2AAAD; }
-    .pms-429-c.background h1, .pms-429-c.background h2, .pms-429-c.background h3, .pms-429-c.background h4, .pms-429-c.background h5, .pms-429-c.background h6 {
-      color: #2C2A29; }
-
-.pms-warm-gray-11 {
-  color: #6E6259;
-  border-color: #6E6259; }
-  .pms-warm-gray-11.background {
-    color: white;
-    background-color: #6E6259; }
-    .pms-warm-gray-11.background h1, .pms-warm-gray-11.background h2, .pms-warm-gray-11.background h3, .pms-warm-gray-11.background h4, .pms-warm-gray-11.background h5, .pms-warm-gray-11.background h6, .pms-warm-gray-11.background a {
-      color: white; }
-
-.pms-warm-gray-7 {
-  color: #968C83;
-  border-color: #968C83; }
-  .pms-warm-gray-7.background {
-    color: white;
-    background-color: #968C83; }
-    .pms-warm-gray-7.background h1, .pms-warm-gray-7.background h2, .pms-warm-gray-7.background h3, .pms-warm-gray-7.background h4, .pms-warm-gray-7.background h5, .pms-warm-gray-7.background h6, .pms-warm-gray-7.background a {
-      color: white; }
-
-.pms-warm-gray-3 {
-  color: #BFB8AF;
-  border-color: #BFB8AF; }
-  .pms-warm-gray-3.background {
-    color: #2C2A29;
-    background-color: #BFB8AF; }
-    .pms-warm-gray-3.background h1, .pms-warm-gray-3.background h2, .pms-warm-gray-3.background h3, .pms-warm-gray-3.background h4, .pms-warm-gray-3.background h5, .pms-warm-gray-3.background h6, .pms-warm-gray-3.background a {
-      color: #2C2A29; }
-
-.pms-286-c {
-  color: #0033A0;
-  border-color: #0033A0; }
-  .pms-286-c.background {
-    color: white;
-    background-color: #0033A0; }
-
-.pms-300-c {
-  color: #005EB8;
-  border-color: #005EB8; }
-  .pms-300-c.background {
-    color: white;
-    background-color: #005EB8; }
-
-.pms-629-c {
-  color: #9BD3DD;
-  border-color: #9BD3DD; }
-  .pms-629-c.background {
-    color: white;
-    background-color: #9BD3DD; }
-
-.pms-7554-c {
-  color: #4B3D2A;
-  border-color: #4B3D2A; }
-  .pms-7554-c.background {
-    color: white;
-    background-color: #4B3D2A; }
-
-.pms-7557-c {
-  color: #9F7D23;
-  border-color: #9F7D23; }
-  .pms-7557-c.background {
-    color: white;
-    background-color: #9F7D23; }
-
-.pms-144-c {
-  color: #ED8B00;
-  border-color: #ED8B00; }
-  .pms-144-c.background {
-    color: white;
-    background-color: #ED8B00; }
-
-.pms-7476-c {
-  color: #0D5257;
-  border-color: #0D5257; }
-  .pms-7476-c.background {
-    color: white;
-    background-color: #0D5257; }
-
-.pms-5625-c {
-  color: #708573;
-  border-color: #708573; }
-  .pms-5625-c.background {
-    color: white;
-    background-color: #708573; }
-
-.pms-558-c {
-  color: #9ABEAA;
-  border-color: #9ABEAA; }
-  .pms-558-c.background {
-    color: white;
-    background-color: #9ABEAA; }
-
-.pms-180-c {
-  color: #BE3A34;
-  border-color: #BE3A34; }
-  .pms-180-c.background {
-    color: white;
-    background-color: #BE3A34; }
-
-.pms-166-c {
-  color: #E35205;
-  border-color: #E35205; }
-  .pms-166-c.background {
-    color: white;
-    background-color: #E35205; }
-
-.pms-115-c {
-  color: #FDDA24;
-  border-color: #FDDA24; }
-  .pms-115-c.background {
-    color: black;
-    background-color: #FDDA24; }
-
 html {
   font-size: 16px; }
 
-.helvetica-roman {
+.helvetica-neue-roman {
   font-family: "HelveticaNeueW01-55Roma", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1em; }
 
-.helvetica-light {
+.helvetica-neue-light {
   font-family: "HelveticaNeueW01-45Ligh", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1em; }
 
-.iowan {
+.iowan-old-style {
   font-family: "IowanOldStyleW01-Roman", Georgia, Times, serif;
   font-weight: normal;
-  line-height: 1.16666666667em; }
+  line-height: 1.16667em; }
 
-.iowan-italic {
+.iowan-old-style-italic {
   font-family: "IowanOldStyleW01-Italic1120392", Georgia, Times, serif;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.16667em; }
 
-.helvetica-bold {
+.helvetica-neue-bold {
   font-family: "HelveticaNeueW01-75Bold", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  line-height: 1.08333333em; }
+  line-height: 1.08333em; }
 
 h2, h3, h4, h5, h6 {
   color: #333F48;
@@ -842,11 +843,6 @@ p + p.lede {
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
-a {
-  color: #477DCA; }
-  a:hover {
-    color: #2c5999; }
-
 .element-header {
   border-top: 1px solid #eee;
   margin: 140px 0 80px 0;
@@ -1050,54 +1046,50 @@ input[type="search"].wvu-search__search-box {
   .wvu-breadcrumbs__list--white a {
     color: white; }
 
-.wvu-nav {
-  background: #2C2A29;
-  width: 100%;
-  display: table; }
-  @media (min-width: 35.625em) {
-    .wvu-nav {
-      padding: 0 20px; } }
-  @media (min-width: 75em) {
-    .wvu-nav {
-      padding: 0; } }
-  .wvu-nav .nav-collapse {
-    clear: both;
-    overflow: visible; }
-    @media (min-width: 35.625em) {
-      .wvu-nav .nav-collapse li {
-        width: auto;
-        float: left; } }
-  .wvu-nav .nav-toggle {
-    float: left;
-    width: 100%;
-    padding: 1em;
-    text-align: center;
-    color: white; }
-    @media (min-width: 48em) {
-      .wvu-nav .nav-toggle {
-        margin-left: 10px; } }
-    .wvu-nav .nav-toggle:visited {
-      color: white; }
-    .wvu-nav .nav-toggle:hover {
-      text-decoration: none;
-      background-color: #EAAA00;
-      color: #002855; }
-
+@media (min-width: 35.625em) {
+  .wvu-nav {
+    padding: 0 20px; } }
+@media (min-width: 75em) {
+  .wvu-nav {
+    padding: 0; } }
 @media (min-width: 48em) {
-  .wvu-nav__menu ul {
+  .wvu-nav {
     margin-left: -1em; } }
-.wvu-nav__menu ul li {
+.wvu-nav li {
   margin-bottom: 0;
   float: left; }
-  .wvu-nav__menu ul li a {
+  .wvu-nav li a {
     float: left;
     color: white;
     margin-right: 0;
     padding: 1em;
     width: 100%; }
-    .wvu-nav__menu ul li a:hover {
+    .wvu-nav li a:hover {
       background: #EAAA00;
       color: #002855; }
+.wvu-nav.nav-collapse {
+  clear: both;
+  overflow: visible; }
+  @media (min-width: 35.625em) {
+    .wvu-nav.nav-collapse li {
+      width: auto;
+      float: left; } }
+
+.nav-toggle {
+  float: left;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  color: white; }
+  @media (min-width: 48em) {
+    .nav-toggle {
+      margin-left: 10px; } }
+  .nav-toggle:visited {
+    color: white; }
+  .nav-toggle:hover {
+    text-decoration: none;
+    background-color: #EAAA00;
+    color: #002855; }
 
 .buttons {
   padding: 0 1em; }
@@ -1365,34 +1357,33 @@ input[type="search"].wvu-search__search-box {
     .type-system {
       padding: 50px 0; } }
 
-.graphic-header {
+.wvu-landing-page-header {
   padding: 4em 1em;
   background-image: url("../images/dance-header.jpg");
   background-size: cover; }
   @media (min-width: 75em) {
-    .graphic-header {
+    .wvu-landing-page-header {
       padding: 4em 0; } }
+  .wvu-landing-page-header h1 {
+    font-size: 4em;
+    margin-bottom: 1em;
+    font-family: "HelveticaNeueW01-97Blac", "Helvetica W01 Bold", Helvetica, Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 0.80487em; }
+    @media (min-width: 60em) {
+      .wvu-landing-page-header h1 {
+        font-size: 6em;
+        margin-bottom: 0.15em; } }
 
-.graphic-header__header {
-  font-size: 4em;
-  margin-bottom: 1em;
-  font-family: "HelveticaNeueW01-97Blac", "Helvetica W01 Bold", Helvetica, Arial, sans-serif;
-  color: white;
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 0.80487em; }
-  @media (min-width: 60em) {
-    .graphic-header__header {
-      font-size: 6em;
-      margin-bottom: 0.15em; } }
-
-.graphic-header__intro {
+.wvu-landing-page-header__intro {
   color: white;
   font-weight: bold;
   text-shadow: 1px 1px 1px #000000;
   box-sizing: border-box; }
 
-.graphic-header__intro--overlay {
+.wvu-landing-page-header__intro--overlay {
   padding: 2em;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
   /* FF3.6+ */
@@ -1749,6 +1740,49 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   width: 3em;
   margin-right: 5px; }
 
+@media (min-width: 48em) {
+  .wvu-quicklinks {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap; } }
+.wvu-quicklinks li {
+  padding-left: 1.5em;
+  background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
+  margin-left: 0;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-size: 30px;
+  border-right: 5px solid #333F48;
+  border-bottom: 5px solid #333F48; }
+  @media (min-width: 48em) {
+    .wvu-quicklinks li {
+      width: 25%;
+      float: left; } }
+  .wvu-quicklinks li a {
+    color: white;
+    display: block; }
+
+.code-label {
+  margin-top: 3em;
+  font-size: 0.8em;
+  padding: 0.25em 0.4em;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 0.5em; }
+
+.code-label--html {
+  background: #9F7D23;
+  color: white; }
+
+.code-label--styles {
+  background: #708573;
+  color: white; }
+
+pre {
+  background: #eee;
+  margin: 0 0 0.5em 0;
+  padding: 1em 0; }
+
 .wvu-footer {
   padding: 3em 1em;
   float: left;
@@ -1910,7 +1944,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   font-family: "IowanOldStyleW01-Roman", Georgia, Times, serif;
   font-weight: normal;
   text-transform: none;
-  font-size: 3em; }
+  font-size: 3em;
+  line-height: 1.16667em; }
   @media (min-width: 60em) {
     .wvu-hero--traditional-audience h1 {
       font-size: 4em; } }
@@ -1921,30 +1956,116 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   font-family: "IowanOldStyleW01-Italic1120392", Georgia, Times, serif;
   font-weight: normal;
   text-transform: none;
-  font-size: 3em; }
+  font-size: 3em;
+  line-height: 1.16667em; }
   @media (min-width: 60em) {
     .wvu-hero--narrow-audience h1 {
       font-size: 4em; } }
 .wvu-hero--narrow-audience .wvu-hero__title-bottom {
   color: white; }
 
-.wvu-hero--pattern-grid .button {
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
-  /* IE6-9 */
-  -webkit-box-shadow: 2px 2px 15px 0 #000000;
-  box-shadow: 2px 2px 15px 0 #000000; }
+.wvu-hero--medium-shout {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+  .wvu-hero--medium-shout h1 {
+    font-size: 4.5em; }
+
+.wvu-hero--long-shout {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+  .wvu-hero--long-shout h1 {
+    font-size: 3em; }
+
+.wvu-hero--vignetting {
+  background-image: url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg");
+  background-size: cover, cover;
+  background-position: center top, center top; }
+
+.wvu-hero--pattern-grid {
+  background-image: url("../images/wvu-pattern-grid.png"), url("../images/coopers-rock.jpg");
+  background-size: 1720px, cover;
+  background-position: center top, center top; }
+  .wvu-hero--pattern-grid .button {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
+    /* IE6-9 */
+    -webkit-box-shadow: 2px 2px 15px 0 #000000;
+    box-shadow: 2px 2px 15px 0 #000000; }
+  .wvu-hero--pattern-grid.wvu-hero--vignetting {
+    background-image: url("../images/wvu-pattern-grid.png"), url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg");
+    background-size: 1720px, cover, cover;
+    background-position: center top, center top, center top; }
+
+.wvu-hero--grid-zoom-1 {
+  background-size: 3340px, cover; }
+  .wvu-hero--grid-zoom-1.wvu-hero--vignetting {
+    background-size: 3340px, cover, cover; }
+
+.wvu-hero--grid-zoom-2 {
+  background-size: 1720px, cover; }
+  .wvu-hero--grid-zoom-2.wvu-hero--vignetting {
+    background-size: 3340px, cover, cover; }
+
+.wvu-hero--grid-zoom-13 {
+  background-size: cover, cover; }
+  .wvu-hero--grid-zoom-13.wvu-hero--vignetting {
+    background-size: 3340px, cover, cover; }
+
+.wvu-hero--diagonal-line {
+  background-image: url("../images/coopers-rock.jpg");
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: cover; }
+  @media (min-width: 60em) {
+    .wvu-hero--diagonal-line {
+      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
+      background-size: 500px, cover;
+      background-position: 59% -209px, center top; }
+      .wvu-hero--diagonal-line.wvu-hero--vignetting {
+        background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg");
+        background-size: 500px, cover, cover;
+        background-position: 59% -209px, center top, center top; } }
+  .wvu-hero--diagonal-line.wvu-hero--vignetting {
+    background-image: url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg"); }
+
+.wvu-quicklinks li {
+  padding-left: 1em;
+  background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
+  background-size: 20px;
+  margin-left: 0; }
+
+@media (min-width: 48em) {
+  .wvu-quicklinks--flex {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap; } }
+.wvu-quicklinks--flex li {
+  padding-left: 1.5em;
+  background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
+  margin-left: 0;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-size: 30px;
+  border-right: 5px solid #333F48;
+  border-bottom: 5px solid #333F48; }
+  @media (min-width: 48em) {
+    .wvu-quicklinks--flex li {
+      width: 25%;
+      float: left; } }
+  .wvu-quicklinks--flex li a {
+    color: white;
+    display: block; }
 
 .wvu-masthead__container {
   max-width: 68em;
@@ -2016,29 +2137,29 @@ input.wvu-search__search-box {
     clear: both; }
 
 @media (min-width: 48em) {
-  .breadcrumbs__container {
+  .wvu-breadcrumbs__container {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
-    .breadcrumbs__container:after {
+    .wvu-breadcrumbs__container:after {
       content: "";
       display: table;
       clear: both; } }
+
+.wvu-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wvu-container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .wvu-hero__container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
   .wvu-hero__container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.hero__inner {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .hero__inner:after {
     content: "";
     display: table;
     clear: both; }
@@ -2061,47 +2182,11 @@ input.wvu-search__search-box {
     .wvu-hero__photo:last-child {
       margin-right: 0; } }
 
-.buttons {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .buttons:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.social-media-icons__container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .social-media-icons__container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
 .flex-caption .caption-container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
   .flex-caption .caption-container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.wvu-super-nav__container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .wvu-super-nav__container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.wvu-spotlights__container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .wvu-spotlights__container:after {
     content: "";
     display: table;
     clear: both; }
@@ -2114,6 +2199,18 @@ input.wvu-search__search-box {
     width: 31.76157%; }
     .wvu-spotlight--triptych:last-child {
       margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .wvu-super-nav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .wvu-super-nav:last-child {
+      margin-right: 0; } }
+
+.wvu-section {
+  padding: 4em 0 4.3em 0; }
 
 .cards__wrapper {
   max-width: 68em;
@@ -2257,41 +2354,23 @@ input.wvu-search__search-box {
     .sub-nav:last-child {
       margin-right: 0; } }
 
-.graphic-header__container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .graphic-header__container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
 @media (min-width: 48em) {
-  .graphic-header__header {
+  .wvu-landing-page-header h1 {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    .graphic-header__header:last-child {
+    .wvu-landing-page-header h1:last-child {
       margin-right: 0; } }
 
 @media (min-width: 48em) {
-  .graphic-header__intro {
+  .wvu-landing-page-header__intro {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    .graphic-header__intro:last-child {
+    .wvu-landing-page-header__intro:last-child {
       margin-right: 0; } }
-
-.type-system {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .type-system:after {
-    content: "";
-    display: table;
-    clear: both; }
 
 @media (min-width: 48em) {
   .profiles__container {

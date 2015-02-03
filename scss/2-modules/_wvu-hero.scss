@@ -64,11 +64,11 @@ $has-wvu-pattern-grid: true !default;
 @mixin wvu-hero-title-typeface() {
   
   @if $wvu-hero-title-typeface == $traditional-audience {
-    font-family: $iowan-old-style; font-weight: normal; text-transform: none;
+    font-family: $iowan-old-style; font-weight: normal; text-transform: none; line-height: $traditional-audience-line-height;
     .wvu-hero__title-bottom { color: white; }
   }
   @else if $wvu-hero-title-typeface == $narrow-audience {
-    font-family: $iowan-old-style-italic; font-weight: normal; text-transform: none;
+    font-family: $iowan-old-style-italic; font-weight: normal; text-transform: none; line-height: $traditional-audience-line-height;
     .wvu-hero__title-bottom { color: white; }
   }
   @else if $wvu-hero-title-typeface == $subhead {

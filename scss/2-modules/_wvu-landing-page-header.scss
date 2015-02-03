@@ -1,16 +1,15 @@
 $header-background: '../images/dance-header.jpg';
 
-.graphic-header { padding: 4em 1em; background-image: url($header-background); background-size: cover; 
+.wvu-landing-page-header { padding: 4em 1em; background-image: url($header-background); background-size: cover; 
   @include mq($bp-xlarge) { padding: 4em 0; }
+  h1 { font-size: 4em; margin-bottom: 1em; font-family: $shout; color: white; text-transform: uppercase; font-weight: normal; line-height: $shout-line-height; 
+    @include mq($bp-large) { font-size: 6em; margin-bottom: 0.15em; }
+  }
 }
 
-.graphic-header__header { font-size: 4em; margin-bottom: 1em; font-family: $shout; color: white; text-transform: uppercase; font-weight: normal; line-height: $shout-line-height; 
-  @include mq($bp-large) { font-size: 6em; margin-bottom: 0.15em; }
-}
+.wvu-landing-page-header__intro { color: white; font-weight: bold; text-shadow: 1px 1px 1px #000000; box-sizing: border-box; }
 
-.graphic-header__intro { color: white; font-weight: bold; text-shadow: 1px 1px 1px #000000; box-sizing: border-box; }
-
-.graphic-header__intro--overlay {
+.wvu-landing-page-header__intro--overlay {
   padding: 2em; 
   background: -moz-linear-gradient(top,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.7)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */

@@ -2,43 +2,88 @@
 
 <h2 class="element-header">Hero Unit with Shout</h2>
 
-<div class="hero" style="background-image: url(../images/wvu-pattern-close.jpg);">
-	<div class="hero__inner">
-		<h1 class="shout shout--white">Mountaineers<br><span class="wvu-gold">Go First.</span></h1>
+<div class="wvu-hero" style="background-image: url(../images/wvu-pattern-close.jpg);">
+	<div class="wvu-hero__container">
+		<h1 class="shout shout--white">Mountaineers<br><span class="u-wvu-gold">Go First.</span></h1>
 		<p class="hero__text">A few reasons why this product is worth using, who it's for and why they need it.</p>	
     <a href="" class="button button--white">Learn More</a>
 	</div>
 </div>
+
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $
+</pre>
 
 <h2 class="element-header">Hero Unit with Shout and Photo Diagonal Line</h2>
 
-<div class="hero hero--diagonal">
-	<div class="hero__inner">
-		<h1 class="shout shout--white">It Starts<br><span class="wvu-gold">Now.</span></h1>
-		<p class="hero__text">A few reasons why this product is worth using, who it's for and why they need it.</p>	
+<div class="wvu-hero wvu-hero--diagonal-line">
+	<div class="wvu-hero__container">
+		<h1>It Starts<br><span class="u-wvu-gold">Now.</span></h1>
+		<p class="wvu-hero__text">A few reasons why this product is worth using, who it's for and why they need it.</p>	
     <a href="" class="button button--white">Learn More</a>
 	</div>
 </div>
+
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $has-diagonal-line: true;
+</pre>
+
+<h2 class="element-header">Hero Unit with Busy Photo + Vignetting</h2>
+
+<div class="wvu-hero wvu-hero--vignetting">
+	<div class="wvu-hero__container">
+		<h1>It Starts<br><span class="u-wvu-gold">Now.</span></h1>
+		<p class="wvu-hero__text">A few reasons why this product is worth using, who it's for and why they need it.</p>	
+    <a href="" class="button button--white">Learn More</a>
+	</div>
+</div>
+
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $has-vignetting: true;
+</pre>
 
 <h2 class="element-header">Hero Unit with Medium Shout and Photo</h2>
 
-<div class="hero hero--medium-shout" style="background-image: url(<r:image_url name="girl-pointing.jpg" />);">
-	<div class="hero__inner">
-		<h1 class="shout shout--medium-shout shout--white">This is<br>Where<br>Ideas<br>Come<br><span class="wvu-gold">First.</span></h1>
-		<p class="hero__text">A few reasons why this product is worth using, who it's for and why they need it.</p>	
+<div class="wvu-hero wvu-hero--medium-shout" style="background-image: url(<r:image_url name="girl-pointing.jpg" />);">
+	<div class="wvu-hero__container">
+		<h1>This is<br>Where<br>Ideas<br>Come<br><span class="u-wvu-gold">First.</span></h1>
+		<p class="wvu-hero__text">A few reasons why this product is worth using, who it's for and why they need it.</p>	
     <a href="" class="button button--white">Learn More</a>
 	</div>
 </div>
+
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $shout-length: 'medium';
+</pre>
 
 <h2 class="element-header">Hero Unit with Long Shout and Photo</h2>
 
-<div class="hero hero--long-shout" style="background-image: url(<r:image_url name="dance-header.jpg" />);">
-	<div class="hero__inner">
-		<h1 class="shout shout--long-shout shout--white">The future<br>will be built<br>by those who<br>are willing<br>to get up and<br>go after it.<br></h1>
-		<p class="hero__text">Watch the &ldquo;Jingle Bell Rock&rdquo; holiday greeting from B&E faculty and staff.</p>	
+<div class="wvu-hero wvu-hero--long-shout" style="background-image: url(<r:image_url name="dance-header.jpg" />);">
+	<div class="wvu-hero__container">
+		<h1>The future<br>will be built<br>by those who<br>are willing<br>to get up and<br>go after it.<br></h1>
+		<p class="wvu-hero__text">Watch the &ldquo;Jingle Bell Rock&rdquo; holiday greeting from B&E faculty and staff.</p>	
     <a href="" class="button button--white">Learn More</a>
 	</div>
 </div>
+
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $shout-length: 'long';
+</pre>
 
 <h2 class="element-header">Hero Unit Traditional</h2>
 
@@ -50,6 +95,50 @@
 	</div>
 </div>
 
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $wvu-hero-title-typeface: 'traditional-audience';
+</pre>
+
+<h2 class="element-header">Hero Unit Traditional with Grid</h2>
+
+<div class="wvu-hero wvu-hero--traditional-audience wvu-hero--pattern-grid">
+	<div class="wvu-hero__container">
+		<h1>Moving the earth<br>and powering its future</h1>
+		<p><r:editable_region name="wvu-hero-text" type="simple" /></p>	
+    <a href="" class="button button--white">Learn More</a>
+	</div>
+</div>
+
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $wvu-hero-title-typeface: 'traditional-audience';
+  $has-wvu-pattern-grid: true;
+</pre>
+
+<h2 class="element-header">Hero Unit Traditional with Grid (zoomed)</h2>
+
+<div class="wvu-hero wvu-hero--traditional-audience wvu-hero--pattern-grid wvu-hero--grid-zoom-1">
+	<div class="wvu-hero__container">
+		<h1>Moving the earth<br>and powering its future</h1>
+		<p><r:editable_region name="wvu-hero-text" type="simple" /></p>	
+    <a href="" class="button button--white">Learn More</a>
+	</div>
+</div>
+
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $wvu-hero-title-typeface: 'traditional-audience';
+  $has-wvu-pattern-grid: true;
+  $wvu-pattern-grid-zoom: $grid-zoom-1;
+</pre>
+
 <h2 class="element-header">Hero Unit for Narrow Audience</h2>
 
 <div class="wvu-hero wvu-hero--narrow-audience">
@@ -59,6 +148,13 @@
     <a href="" class="button button--white">Learn More</a>
 	</div>
 </div>
+
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+<pre>
+  $wvu-hero-title-typeface: 'narrow-audience';
+</pre>
 
 <h2 class="element-header">Baby Hero Unit</h2>
 
