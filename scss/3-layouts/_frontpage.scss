@@ -18,7 +18,12 @@
   .caption-container { @include outer-container(); }
 }
 
-.wvu-spotlights {
+
+.wvu-super-nav__container {
+  @include outer-container
+}
+
+.wvu-spotlights__container {
   @include outer-container();
 }
 
