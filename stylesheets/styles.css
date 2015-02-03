@@ -1025,47 +1025,30 @@ input[type="search"].wvu-search__search-box {
     .wvu-search__search-button {
       height: 30px; } }
 
-.breadcrumbs {
+.wvu-breadcrumbs {
   width: 100%;
   position: absolute; }
 
-.breadcrumbs__list {
+.wvu-breadcrumbs__crumbs {
   padding: 0.5em 1em; }
-  @media (min-width: 48em) {
-    .breadcrumbs__list {
+  @media (min-width: 75em) {
+    .wvu-breadcrumbs__crumbs {
       padding: 0.5em 0; } }
-  .breadcrumbs__list li {
+  .wvu-breadcrumbs__crumbs li {
     float: left;
     font-size: .8em;
     margin-right: 0.5em; }
-    .breadcrumbs__list li a {
+    .wvu-breadcrumbs__crumbs li a {
       border-bottom: 1px dotted; }
-    .breadcrumbs__list li:after {
+    .wvu-breadcrumbs__crumbs li:after {
       content: ' / '; }
-    .breadcrumbs__list li:last-child:after {
+    .wvu-breadcrumbs__crumbs li:last-child:after {
       content: ''; }
 
-.breadcrumbs__list--white {
+.wvu-breadcrumbs__list--white {
   color: white; }
-  .breadcrumbs__list--white a {
+  .wvu-breadcrumbs__list--white a {
     color: white; }
-
-.breadcrumbs--white a {
-  color: white; }
-
-.breadcrumbs__container {
-  width: 100%;
-  padding: 1em 0;
-  position: relative; }
-
-.breadcrumbs__links {
-  position: absolute;
-  top: 0; }
-
-.breadcrumbs__breadcrumb {
-  float: left;
-  font-size: .8em;
-  margin-right: 0.5em; }
 
 .nav {
   background: #2C2A29;

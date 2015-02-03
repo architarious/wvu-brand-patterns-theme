@@ -1,56 +1,15 @@
 <!-- Super-nav - wvu-pattern-library/views/patterns/_super-av.html -->
 
-<div class="cards__card cards__card--supernav">
+<div class="wvu-super-nav">
+  <div class="wvu-super-nav__container">
 
-  <h2 class="card__header">
-    Financial Services
-  </h2>
-  <ul class="cards__copy">
-    <li><a href="">Money Management Center</a></li>
-    <li><a href="">Scholarships & Financial Aid</a></li>
-    <li><a href="">Student Accounts</a></li>
-    <li><a href="">Student Employment & Internships</a></li>
-  </ul>
-</div>
-
-<div class="cards__card cards__card--supernav">
-
-  <h2 class="card__header">
-    Health & Wellness
-  </h2>
-  <ul class="cards__copy">
-    <li><a href="">Campus Recreation</a></li>
-    <li><a href="">Counseling & Psychological Services</a></li>
-    <li><a href="">University Health Center</a></li>
-    <li><a href="">Women's Center</a></li>
-  </ul>
-</div>
-
-<div class="cards__card cards__card--supernav">
-
-  <h2 class="card__header">
-    Personal Resources
-  </h2>
-  <ul class="cards__copy">
-    <li><a href="">Childcare Center</a></li>
-    <li><a href="">International Student & Scholar Services</a></li>
-    <li><a href="">Office of Student Assistance</a></li>
-    <li><a href="">Student Government</a></li>
-    <li><a href="">Student Legal Center</a></li>
-  </ul>
-
-</div>
-
-<div class="cards__card cards__card--supernav">
-
-  <h2 class="card__header">
-    Activities
-  </h2>
-  <ul class="cards__copy">
-    <li><a href="">Greek Affairs</a></li>
-    <li><a href="">Intramurals</a></li>
-    <li><a href="">Center for Performing Arts</a></li>
-    <li><a href="">Student Involvement</a></li>
-  </ul>
-
+    <r:children:each>
+      <div class="wvu-super-nav__nav wvu-super-nav__nav--<r:page:slug />">
+        <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+        <p><r:page:meta_description /></p>
+        <r:sub_menu />
+      </div>
+    </r:children:each>
+  
+  </div>
 </div>

@@ -1,0 +1,16 @@
+.wvu-breadcrumbs { width: 100%; position: absolute; }
+
+.wvu-breadcrumbs__crumbs { padding: 0.5em 1em;
+  @include mq($bp-xlarge) { padding: 0.5em 0; }
+  li { float: left; font-size: .8em; margin-right: 0.5em;
+    a { border-bottom: 1px dotted; }
+    &:after { content: ' / '; }
+    &:last-child {
+      &:after { content: ''; }
+    };
+  }
+}
+
+.wvu-breadcrumbs__list--white { color: white;
+  a { color: white; }
+}
