@@ -1357,25 +1357,24 @@ input[type="search"].wvu-search__search-box {
       max-width: 40%; } }
 
 .sub-nav {
-  font-weight: bold; }
+  font-weight: bold;
+  list-style-type: none;
+  padding-left: 0; }
   @media (min-width: 48em) {
     .sub-nav {
       border-left: 1px solid #eee;
       padding-left: 1em; } }
-  .sub-nav ul {
-    list-style-type: none;
-    padding-left: 0; }
-    .sub-nav ul li {
-      line-height: 1.2em;
-      padding-bottom: 0.5em;
-      margin: 0; }
-      .sub-nav ul li ul {
-        font-weight: normal;
-        font-size: 0.8em;
-        padding: 1em 0 0 0; }
-        .sub-nav ul li ul li ul {
-          font-size: 1em;
-          padding-left: 0.5em; }
+  .sub-nav li {
+    line-height: 1.2em;
+    padding-bottom: 0.5em;
+    margin: 0; }
+    .sub-nav li ul {
+      font-weight: normal;
+      font-size: 0.8em;
+      padding: 1em 0 0 0; }
+      .sub-nav li ul li ul {
+        font-size: 1em;
+        padding-left: 0.5em; }
 
 .type-system {
   padding: 50px 1em; }

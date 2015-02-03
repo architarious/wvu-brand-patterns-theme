@@ -1,16 +1,14 @@
-.sub-nav { font-weight: bold;
+.sub-nav { font-weight: bold; list-style-type: none; padding-left: 0;
   @include mq($bp-medium) {
     border-left: 1px solid #eee;
     padding-left: 1em;
   }
-  ul { list-style-type: none; padding-left: 0;
-    li { line-height: 1.2em; padding-bottom: 0.5em; margin: 0;
-      ul { font-weight: normal;
-        font-size: 0.8em;
-        padding: 1em 0 0 0;
-        li {
-          ul { font-size: 1em; padding-left: 0.5em; }
-        }
+  li { line-height: 1.2em; padding-bottom: 0.5em; margin: 0;
+    ul { font-weight: normal;
+      font-size: 0.8em;
+      padding: 1em 0 0 0;
+      li {
+        ul { font-size: 1em; padding-left: 0.5em; }
       }
     }
   }
