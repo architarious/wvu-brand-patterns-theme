@@ -14,9 +14,38 @@
     <div class="cards--horizontal__card cards--horizontal__card--spotlights">
       <h2 class="cards__header">Spotlights</h2>
       
-      <r:get_page id="4850">
-        <r:partial name="widgets__spotlights" />
-      </r:get_page>
+      <div class="wvu-spotlight">
+        <div class="wvu-spotlight__image">
+          <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
+        </div>
+        <div class="wvu-spotlight__copy">
+          <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+          <p><r:page:meta_description /></p>
+          <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+        </div>
+      </div>
+      
+      <div class="wvu-spotlight">
+        <div class="wvu-spotlight__image">
+          <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
+        </div>
+        <div class="wvu-spotlight__copy">
+          <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+          <p><r:page:meta_description /></p>
+          <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+        </div>
+      </div>
+      
+      <div class="wvu-spotlight">
+        <div class="wvu-spotlight__image">
+          <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
+        </div>
+        <div class="wvu-spotlight__copy">
+          <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+          <p><r:page:meta_description /></p>
+          <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+        </div>
+      </div>
       
     </div>
     <div class="cards--horizontal__card cards--horizontal__card--events">
@@ -24,7 +53,7 @@
         Events
       </h2>
       
-      <r:partial name="widgets__calendar" />
+      <r:partial name="patterns/wvu-calendar" />
 
       <a href="" class="button button--white">All Events</a>
   
@@ -42,34 +71,31 @@
   </div>
 </div>
 
-<h2 class="element-header">Features</h2>
+<h2 class="element-header">Features Diptych</h2>
 
 <div class="wvu-section u-full-width u-pms-432-c background">
 
-  <div class="wvu-container">
-    <div class="cards__card cards__card--full-width">
-
-      <div class="cards__spotlight cards__spotlight--side-by-side">
-        <div class="cards__spotlight-image">
-          <a href=""><img src="../images/kids-sitting-by-tulips.jpg" alt="Kids sitting by tulips." /></a>
-        </div>
-        <div class="cards__copy-wrapper">
-          <h3 class="cards__spotlight-header">Spotlight 1</h3>
-          <p class="cards__spotlight-copy">Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-          <a href="" class="button button--white">Read More</a>
-        </div>
+  <div class="wvu-container wvu-diptych">
+    <div class="wvu-spotlight">
+      <div class="wvu-spotlight__image">
+        <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
       </div>
-      <div class="cards__spotlight cards__spotlight--side-by-side">
-        <div class="cards__spotlight-image">
-          <a href=""><img src="../images/kids-sitting-by-tulips.jpg" alt="Kids sitting by tulips." /></a>
-        </div>
-        <div class="cards__copy-wrapper">
-          <h3 class="cards__spotlight-header">Spotlight 1</h3>
-          <p class="cards__spotlight-copy">Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-          <a href="" class="button button--white">Read More</a>
-        </div>
+      <div class="wvu-spotlight__copy">
+        <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+        <p><r:page:meta_description /></p>
+        <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
       </div>
-      
+    </div>
+    
+    <div class="wvu-spotlight">
+      <div class="wvu-spotlight__image">
+        <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
+      </div>
+      <div class="wvu-spotlight__copy">
+        <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+        <p><r:page:meta_description /></p>
+        <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+      </div>
     </div>
 
   </div>
@@ -78,20 +104,42 @@
 <h2 class="element-header">Events</h2>
 
 <div class="wvu-section u-full-width u-pms-432-c background">
-  <div class="wvu-container">
-    
-    <div class="cards__card cards__card--full-width">
-      <h2 class="cards__header">
-        Events
-      </h2>
+  <div class="wvu-container">    
 
-      <r:partial name="widgets__calendar--flex" />
-  
-      <a class="button button--white">All Events</a>
-  
-    </div>
+    <h2 class="cards__header">
+      Events
+    </h2>
+
+    <ul class="wvu-calendar wvu-calendar--flex">
+      <script language="javascript" src="http://cal.wvu.edu/EventListSyndicator.aspx?type=N&number=5&category=67-0&ihc=y&expire=N&adpid=21&nem=No+events+are+available+that+match+your+request&sortorder=ASC"></script>
+    </ul>
+
+    <a class="button button--white">All Events</a>
     
   </div>
+</div>
+
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/patterns.html)</div>
+  <pre>
+    &lt;div class="wvu-section u-full-width u-pms-432-c background"&gt;
+      &lt;div class="wvu-container"&gt;
+        &lt;h2&gt;
+          Events
+        &lt;/h2&gt;
+        <span class="u-pms-166-c">&lt;r:partial name="patterns/wvu-calendar" /&gt;</span>
+        &lt;a class="button button--white"&gt;All Events&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </pre>
+  <div class="code-label code-label--styles">SCSS (scss/2-modules/modules-dir.scss)</div>
+  <pre>
+    @import 'wvu-calendar--flex'
+  </pre>
+  <div class="code-label code-label--js">JS (views/patterns.html)</div>
+  <pre>
+    &lt;r:include_javascript name="vendor/calendar-reformat" /&gt;
+  </pre>
 </div>
 
 <h2 class="element-header">Quicklinks</h2>
@@ -116,20 +164,20 @@
 </div>
 
 <div class="wvu-container">
-  <div class="code-label code-label--html">HTML</div>
+  <div class="code-label code-label--html">HTML (views/patterns.html)</div>
   <pre>
     &lt;div class="wvu-section u-full-width u-pms-432-c background"&gt;
       &lt;div class="wvu-container"&gt;
         &lt;h2&gt;
           Quicklinks
         &lt;/h2&gt;
-        <span class="u-pms-166-c">&lt;r:partial name="views/patterns/wvu-quicklinks" /&gt;</span>
+        <span class="u-pms-166-c">&lt;r:partial name="patterns/wvu-quicklinks" /&gt;</span>
       &lt;/div&gt;
     &lt;/div&gt;
   </pre>
-  <div class="code-label code-label--styles">SCSS</div>
+  <div class="code-label code-label--styles">SCSS (scss/2-modules/modules-dir.scss)</div>
   <pre>
-    @import 'scss/2-modules/wvu-quicklinks--flex'
+    @import 'wvu-quicklinks--flex'
   </pre>
 </div>
 

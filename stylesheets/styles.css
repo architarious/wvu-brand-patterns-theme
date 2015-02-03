@@ -1097,82 +1097,6 @@ input[type="search"].wvu-search__search-box {
     .buttons {
       padding: 0; } }
 
-.cards {
-  padding: 4em 1em; }
-  @media (min-width: 75em) {
-    .cards {
-      padding: 4em 0; } }
-
-.cards--horizontal__card {
-  font-size: 0.8em; }
-
-.cards__card {
-  padding-bottom: 3em; }
-  .cards__card h2 {
-    font-size: 1.75em; }
-  .cards__card div + h2 {
-    margin-top: 0.5em; }
-  @media (min-width: 48em) {
-    .cards__card {
-      padding-bottom: 0; } }
-
-.cards__copy {
-  margin-bottom: 1.5em; }
-
-.cards--black {
-  background: #2C2A29; }
-  .cards--black h1, .cards--black h2, .cards--black h3, .cards--black h4, .cards--black h5, .cards--black h6, .cards--black a {
-    color: white; }
-
-.cards--pms-warm-gray-3 {
-  background: #BFB8AF; }
-
-.cards--pms-429-c {
-  background: #A2AAAD; }
-  .cards--pms-429-c h1, .cards--pms-429-c h2, .cards--pms-429-c h3, .cards--pms-429-c h4, .cards--pms-429-c h5, .cards--pms-429-c h6, .cards--pms-429-c a {
-    color: #2C2A29; }
-
-.cards--pms-432-c {
-  background: #333F48;
-  color: white; }
-  .cards--pms-432-c h1, .cards--pms-432-c h2, .cards--pms-432-c h3, .cards--pms-432-c h4, .cards--pms-432-c h5, .cards--pms-432-c h6, .cards--pms-432-c a {
-    color: white; }
-
-.cards--pms-warm-gray-11 {
-  background: #6E6259;
-  color: white; }
-  .cards--pms-warm-gray-11 h1, .cards--pms-warm-gray-11 h2, .cards--pms-warm-gray-11 h3, .cards--pms-warm-gray-11 h4, .cards--pms-warm-gray-11 h5, .cards--pms-warm-gray-11 h6, .cards--pms-warm-gray-11 a {
-    color: white; }
-
-.cards__spotlight-image {
-  margin-top: 0.35em; }
-
-.cards__spotlight {
-  float: left;
-  margin-bottom: 1.5em; }
-
-.cards__spotlight-header {
-  font-size: 1.2em;
-  line-height: 1.5em;
-  margin-bottom: 0.25em; }
-
-.cards__spotlight-copy {
-  margin-bottom: 0.65em; }
-
-@media (min-width: 48em) {
-  .cards__copy-wrapper {
-    padding-left: 0.75em; } }
-
-.cards__card--supernav {
-  font-size: 0.8em; }
-
-.cards--horizontal__card--events ul li {
-  width: 100%; }
-
-.cards--vertical__card--events ul {
-  display: flex;
-  flex-flow: row wrap; }
-
 .main {
   padding-bottom: 2em; }
   .main ul {
@@ -1253,28 +1177,36 @@ input[type="search"].wvu-search__search-box {
     .wvu-hero__text {
       max-width: 40%; } }
 
-.wvu-sub-nav {
+.wvu-sub-nav ul {
   font-weight: bold;
   list-style-type: none;
   padding-left: 0; }
   @media (min-width: 48em) {
-    .wvu-sub-nav {
-      border-left: 1px solid #eee;
+    .wvu-sub-nav ul {
       padding-left: 1em; } }
-  .wvu-sub-nav li {
+  .wvu-sub-nav ul li {
     line-height: 1.2em;
     padding-bottom: 0.5em;
     margin: 0; }
-    .wvu-sub-nav li ul {
+    .wvu-sub-nav ul li ul {
       font-weight: normal;
       font-size: 0.8em;
       padding: 1em 0 0 0; }
-      .wvu-sub-nav li ul li ul {
+      .wvu-sub-nav ul li ul li ul {
         font-size: 1em;
         padding-left: 0.5em; }
+@media (min-width: 48em) {
+  .wvu-sub-nav > ul {
+    border-left: 1px solid #eee; } }
 
 .wvu-super-nav h2 {
   font-size: 1.5em; }
+
+.wvu-diptych h2 {
+  font-size: 2em;
+  margin: 0 0 0.5em 0; }
+.wvu-diptych p {
+  padding-bottom: 1em; }
 
 .wvu-triptych h2 {
   font-size: 2em;
@@ -1601,10 +1533,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 @media only screen and (min-width: 75em) {
   #main-slider.flexslider {
     overflow: hidden; } }
-.widgets__calendar li {
+.wvu-calendar li {
   margin-bottom: 0.5em;
-  display: inline-block; }
-  .widgets__calendar li .eventDate {
+  display: inline-block;
+  width: 100%; }
+  .wvu-calendar li .eventDate {
     float: left;
     margin-right: 4%;
     width: 10%;
@@ -1612,32 +1545,23 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     padding-bottom: 6px;
     border-radius: 6px; }
     @media (min-width: 60em) {
-      .widgets__calendar li .eventDate {
+      .wvu-calendar li .eventDate {
         border: 1px solid; } }
-  .widgets__calendar li .calEventMonth {
+  .wvu-calendar li .calEventMonth {
     font-size: .8em;
     text-transform: uppercase; }
-  .widgets__calendar li .calEventDay {
+  .wvu-calendar li .calEventDay {
     display: block;
     font-size: 1.5em;
     line-height: .8em;
     clear: both; }
-  .widgets__calendar li .eventInfo {
+  .wvu-calendar li .eventInfo {
     float: left;
     width: 86%; }
-  .widgets__calendar li .eventTime {
+  .wvu-calendar li .eventTime {
     font-weight: bold; }
-  .widgets__calendar li .eventName {
+  .wvu-calendar li .eventName {
     display: block; }
-
-@media (min-width: 48em) {
-  .widgets__calendar--flex {
-    display: flex;
-    align-items: stretch;
-    flex-flow: row wrap; }
-    .widgets__calendar--flex li {
-      width: 33%;
-      padding: 0 0 1em 0; } }
 
 .widgets__social-media-icons li {
   float: left;
@@ -1653,7 +1577,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .code-label {
   margin-top: 3em;
   font-size: 0.8em;
-  padding: 0.25em 0.4em;
+  padding: 0.25em 0.6em;
   border-radius: 8px;
   display: inline-block;
   margin-bottom: 0.5em; }
@@ -1664,6 +1588,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 
 .code-label--styles {
   background: #708573;
+  color: white; }
+
+.code-label--js {
+  background: #0D5257;
   color: white; }
 
 pre {
@@ -1961,6 +1889,15 @@ pre {
 .wvu-spotlight--triptych p {
   padding-bottom: 1em; }
 
+@media (min-width: 48em) {
+  .wvu-calendar--flex {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap; }
+    .wvu-calendar--flex li {
+      width: 33%;
+      padding: 0 0 1em 0; } }
+
 .wvu-masthead__container {
   max-width: 68em;
   margin-left: auto;
@@ -2091,6 +2028,31 @@ input.wvu-search__search-box {
 
 .wvu-section {
   padding: 4em 0 4.3em 0; }
+
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-spotlight {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .wvu-diptych .wvu-spotlight:last-child {
+      margin-right: 0; } }
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-spotlight__image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .wvu-diptych .wvu-spotlight__image:last-child {
+      margin-right: 0; } }
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-spotlight__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .wvu-diptych .wvu-spotlight__copy:last-child {
+      margin-right: 0; } }
 
 @media (min-width: 48em) {
   .wvu-triptych .wvu-spotlight {
@@ -2244,12 +2206,13 @@ input.wvu-search__search-box {
       margin-right: 0; } }
 
 @media (min-width: 48em) {
-  .sub-nav {
+  .wvu-sub-nav {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 18.96686%; }
-    .sub-nav:last-child {
+    width: 18.96686%;
+    margin-right: 0; }
+    .wvu-sub-nav:last-child {
       margin-right: 0; } }
 
 .wvu-landing-page-header__container {

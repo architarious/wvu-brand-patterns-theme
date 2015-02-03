@@ -65,7 +65,7 @@ page:
   id: 2
   name: "Test Page 2"
   slug: "test_page_2"
-  meta_description: "Hello World"
+  meta_description: "<%= Faker::Lorem.paragraph(5) %>"
   title: "Home"
   alternate_name: "Some other name"
   depth: 1
