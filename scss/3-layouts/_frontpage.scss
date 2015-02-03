@@ -17,3 +17,13 @@
 .flex-caption { 
   .caption-container { @include outer-container(); }
 }
+
+.wvu-spotlights {
+  @include outer-container();
+}
+
+.wvu-spotlight--triptych {
+  @include mq($bp-medium) {
+    @include span-columns(4);
+  }
+}

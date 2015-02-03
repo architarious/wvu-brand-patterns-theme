@@ -1,0 +1,7 @@
+.wvu-spotlights--triptych {
+  @include outer-container();
+}
+
+@include mq($bp-medium) {
+  @include span-columns
+}
