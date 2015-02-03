@@ -42,6 +42,9 @@ $pms-115-c: #FDDA24;
 .u-pms-432-c { color: $pms-432-c; border-color: $pms-432-c;
   &.background { color: white; background-color: $pms-432-c; 
     h1, h2, h3, h4, h5, h6, a { color: white; }
+    .button { border-color: white; 
+      &:hover { background: white; color: $pms-432-c; }
+    }
   }
 }
 .u-pms-429-c { color: $pms-429-c; border-color: $pms-429-c;

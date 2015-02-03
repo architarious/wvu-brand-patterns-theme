@@ -20,6 +20,7 @@ $hover-button-color: $wvu-blue;
   &:hover {
     background-color: $hover-button-color;
     color: white;
+    text-decoration: none;
   }
 
   &:disabled {
