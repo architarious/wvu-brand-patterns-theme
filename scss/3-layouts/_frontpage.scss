@@ -1,4 +1,6 @@
-.wvu-container { @include outer-container }
+.wvu-container { @include outer-container; padding: 0 1em;
+  @include mq($bp-xlarge) { padding: 0; }
+}
 
 .wvu-hero__container { @include outer-container(); }
 
@@ -11,18 +13,6 @@
 
 .flex-caption { 
   .caption-container { @include outer-container(); }
-}
-
-.wvu-spotlight--triptych {
-  @include mq($bp-medium) {
-    @include span-columns(4);
-  }
-}
-
-.wvu-super-nav {
-  @include mq($bp-medium) {
-    @include span-columns(3);
-  }
 }
 
 .wvu-section {

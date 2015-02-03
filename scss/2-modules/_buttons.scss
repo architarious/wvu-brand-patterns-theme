@@ -1,5 +1,5 @@
 .buttons { padding: 0 1em;
-  @include mq($bp-medium) {
+  @include mq($bp-xlarge) {
     padding: 0; 
   }
 }
