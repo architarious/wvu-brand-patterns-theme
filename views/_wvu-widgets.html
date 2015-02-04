@@ -11,62 +11,64 @@
 
 <div class="wvu-section u-full-width u-pms-432-c background">
   <div class="wvu-container">
-    <div class="cards--horizontal__card cards--horizontal__card--spotlights">
-      <h2 class="cards__header">Spotlights</h2>
+    <div class="wvu-triptych">
+      <div class="wvu-triptych__panel">
+        <h2>Spotlights</h2>
       
-      <div class="wvu-spotlight">
-        <div class="wvu-spotlight__image">
-          <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
+        <div class="wvu-spotlight">
+          <div class="wvu-spotlight__image">
+            <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
+          </div>
+          <div class="wvu-spotlight__copy">
+            <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+            <p><r:page:meta_description /></p>
+            <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+          </div>
         </div>
-        <div class="wvu-spotlight__copy">
-          <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
-          <p><r:page:meta_description /></p>
-          <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+      
+        <div class="wvu-spotlight">
+          <div class="wvu-spotlight__image">
+            <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
+          </div>
+          <div class="wvu-spotlight__copy">
+            <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+            <p><r:page:meta_description /></p>
+            <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+          </div>
+        </div>
+      
+        <div class="wvu-spotlight">
+          <div class="wvu-spotlight__image">
+            <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
+          </div>
+          <div class="wvu-spotlight__copy">
+            <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
+            <p><r:page:meta_description /></p>
+            <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+          </div>
         </div>
       </div>
       
-      <div class="wvu-spotlight">
-        <div class="wvu-spotlight__image">
-          <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
-        </div>
-        <div class="wvu-spotlight__copy">
-          <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
-          <p><r:page:meta_description /></p>
-          <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
-        </div>
-      </div>
+      <div class="wvu-triptych__panel">
+        <h2>
+          Events
+        </h2>
       
-      <div class="wvu-spotlight">
-        <div class="wvu-spotlight__image">
-          <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
-        </div>
-        <div class="wvu-spotlight__copy">
-          <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
-          <p><r:page:meta_description /></p>
-          <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
-        </div>
-      </div>
-      
-    </div>
-    <div class="cards--horizontal__card cards--horizontal__card--events">
-      <h2 class="card__header">
-        Events
-      </h2>
-      
-      <r:partial name="patterns/wvu-calendar" />
+        <r:partial name="patterns/wvu-calendar" />
 
-      <a href="" class="button button--white">All Events</a>
+        <a href="" class="button button--white">All Events</a>
   
-    </div>
+      </div>
     
-    <div class="cards--horizontal__card cards--horizontal__card--quicklinks">
+      <div class="wvu-triptych__panel">
 
-      <h2 class="card__header">
-        Quicklinks
-      </h2>
+        <h2>
+          Quicklinks
+        </h2>
       
-      <r:partial name="wvu-quicklinks" />
+        <r:partial name="wvu-quicklinks" />
 
+      </div>
     </div>
   </div>
 </div>

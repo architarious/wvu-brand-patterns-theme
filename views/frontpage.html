@@ -55,18 +55,3 @@ layout: default
 
   <h2>Have a problem? New Pattern? Submit on GitHub.</h2>
 </div>
-
-
-<r:content_for name="page_js"> 
-  <r:include_javascript name="jquery.flexslider" />
-  <r:include_javascript name="vendor/calendar-reformat" />
-
-  <!-- Target sliders individually with different properties -->
-  <script type="text/javascript">
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: 'fade',
-      });
-    });
-  </script>
-</r:content_for>

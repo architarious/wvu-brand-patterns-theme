@@ -1,3 +1,17 @@
+.nav__container {
+  @include outer-container();
+}
+
+.wvu-breadcrumbs__container {
+  @include mq($bp-medium) {
+    @include outer-container();
+  }
+}
+
+.wvu-section {
+  padding: 4em 0 4.3em 0;
+}
+
 .wvu-diptych {
   .wvu-spotlight {
     @include mq($bp-medium) {

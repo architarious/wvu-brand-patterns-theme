@@ -23,15 +23,5 @@ layout: default
 </div>
 
 <r:content_for name="page_js"> 
-  <r:include_javascript name="jquery.flexslider" />
   <r:include_javascript name="vendor/calendar-reformat" />
-
-  <!-- Target sliders individually with different properties -->
-  <script type="text/javascript">
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: 'fade',
-      });
-    });
-  </script>
 </r:content_for>
