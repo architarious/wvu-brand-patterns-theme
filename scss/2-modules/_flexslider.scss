@@ -40,6 +40,7 @@ html[xmlns] .slides {display: block;}
 #secondary-slider.flexslider {position: static;float:left;display:block;zoom: 1;background: transparent;width: 80%;}
 .lt-ie8 .flexslider {margin-bottom: -30px;background: transparent;}
 .flexslider .slides {zoom: 1;}
+.flexslider .slides li { margin: 0; }
 .flexslider .slides > li {position: relative;}
 /* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
 .flex-container {zoom: 1; position: relative;}

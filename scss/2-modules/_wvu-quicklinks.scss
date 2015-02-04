@@ -1,4 +1,7 @@
 .wvu-quicklinks {
+  ul {
+    list-style-type: none;
+  }
   li {
     padding-left: 1em;
     background: url(../images/diagonal-gold.svg) no-repeat 0 7px;

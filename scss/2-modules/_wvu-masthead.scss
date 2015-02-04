@@ -30,7 +30,10 @@ $wvu-masthead-background: 'blue' !default;
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
     }
-    .wvu-masthead__college-link { background: $wvu-blue; color: white; }
+    .wvu-masthead__college-link { background: $wvu-blue; color: white; 
+      &:hover { color: white; }
+      &:visited { color: white }
+    }
   }
   @else if $wvu-masthead-background == 'white' {
     .wvu-masthead { background-color: white; color: $black; background-image: none; 
@@ -44,7 +47,10 @@ $wvu-masthead-background: 'blue' !default;
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
     }
-    .wvu-masthead__college-link { background: $wvu-gold; color: $black; }
+    .wvu-masthead__college-link { background: $wvu-gold; color: $black; 
+      &:hover { color: white; }
+      &:visited { color: $black }
+    }
   }
   @else if $wvu-masthead-background == 'blue-pattern' {
     .wvu-masthead { background: url(../images/pattern-blue.jpg) no-repeat; background-size: cover; }
@@ -61,14 +67,39 @@ $wvu-masthead-background: 'blue' !default;
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
     }
-    .wvu-masthead__college-link { background: $wvu-blue; color: white; }
+    .wvu-masthead__college-link { background: $wvu-blue; color: white; 
+      &:hover { color: white; }
+      &:visited { color: white }
+    }
   }
   @else {
-    .wvu-masthead__college-link { background: $wvu-gold; color: $black; }
+    .wvu-masthead { background-color: $wvu-blue; color: white; }
+    .wvu-masthead__logo { color: white;
+      &:visited { color: white; }
+    }
+    .wvu-masthead__link { color: white; 
+      &:visited { color: white; }
+      &:hover { color: white; }
+    }
+    .wvu-masthead__college-link { background: $wvu-gold; color: $wvu-blue; 
+      &:hover { color: $wvu-blue; }
+      &:visited { color: $wvu-blue; }
+    }
   }
 }
 
-.wvu-masthead { background-color: $wvu-blue; color: white; }
+.wvu-masthead {
+  fieldset {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.wvu-masthead__logo {
+  &:hover { text-decoration: none; }
+}
 
 .wvu-masthead__container { padding: 0 1em 1em 1em; 
   @include mq($bp-medium) { padding: 0 1em 0 1em; }

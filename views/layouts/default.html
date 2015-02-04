@@ -13,12 +13,18 @@
     <r:include_javascript name="vendor/modernizr-2.8.3.custom" />
 
   </head>
-  <body class="<r:page:template:name /> page-<r:page:id /> <r:page:slug />">
+  <body class="<r:page:template:name /> page-<r:page:id /> page-<r:page:slug />">
 
     <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/DFAsPv --></r:comment>
     <r:yield />
-
-    <r:partial name="../patterns/wvu-footer" />
+    
+    <div class="wvu-container">
+      <footer class="footer">
+        <r:partial name="layouts/footer__contact--v1" theme="Code" />
+        <r:partial name="layouts/footer__credits--v1" theme="Code" />
+        <r:partial name="layouts/footer__icons--v1" theme="Code" />
+      </footer> <!-- /.footer -->
+    </div>
 
     <!-- Responsive-nav.com, calendar, & quicklinks -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

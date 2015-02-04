@@ -1,5 +1,6 @@
 .wvu-quicklinks {
   ul {
+    list-style-type: none;
     @include mq($bp-medium) {
       display: flex;
       align-items: stretch;
