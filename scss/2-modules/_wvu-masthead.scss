@@ -1,4 +1,4 @@
-$wvu-masthead-two-line-lockup: true !default;
+$wvu-masthead-two-line-lockup: false !default;
 $wvu-masthead-background: 'blue' !default;
 
 /* 
@@ -11,7 +11,7 @@ $wvu-masthead-background: 'blue' !default;
 */
 
 @mixin wvu-masthead-is-two-line-lockup() {
-  @if $wvu-masthead-two-line-lockup {
+  @if $wvu-masthead-two-line-lockup == true {
     .wvu-masthead__title { font-size: 0.75em; line-height: 1.08333333em; float: left; margin-top: 0.1em; }
     .wvu-masthead__university-name { top: 7.1em; }
   }
@@ -30,6 +30,7 @@ $wvu-masthead-background: 'blue' !default;
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
     }
+    .wvu-masthead__college-link { background: $wvu-blue; color: white; }
   }
   @else if $wvu-masthead-background == 'white' {
     .wvu-masthead { background-color: white; color: $black; background-image: none; 
@@ -43,6 +44,7 @@ $wvu-masthead-background: 'blue' !default;
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
     }
+    .wvu-masthead__college-link { background: $wvu-gold; color: $black; }
   }
   @else if $wvu-masthead-background == 'blue-pattern' {
     .wvu-masthead { background: url(../images/pattern-blue.jpg) no-repeat; background-size: cover; }
@@ -59,6 +61,10 @@ $wvu-masthead-background: 'blue' !default;
     .wvu-masthead__link { color: $wvu-blue; 
       &:hover { color: $base-link-color; }
     }
+    .wvu-masthead__college-link { background: $wvu-blue; color: white; }
+  }
+  @else {
+    .wvu-masthead__college-link { background: $wvu-gold; color: $black; }
   }
 }
 

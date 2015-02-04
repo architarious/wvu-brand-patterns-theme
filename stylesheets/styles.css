@@ -426,7 +426,6 @@ input[type="submit"] {
     display: none; } }
 body {
   font-size: 1em;
-  line-height: 1.5em;
   -webkit-font-smoothing: antialiased; }
 
 a:hover {
@@ -1049,6 +1048,10 @@ fieldset {
   @media (min-width: 48em) {
     .wvu-masthead__college-link {
       position: absolute; } }
+
+.wvu-masthead__college-link {
+  background: #EAAA00;
+  color: #2C2A29; }
 
 .wvu-search {
   clear: both; }

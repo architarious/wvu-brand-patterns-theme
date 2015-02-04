@@ -2,11 +2,11 @@
 
 <div class="wvu-spotlight wvu-spotlight--<r:page:slug />">
   <div class="wvu-spotlight__image">
-    <a href="<r:page:url />"><r:page:content name="spotlight__image" /></a>
+    <r:editable_region name="spotlight__image" />
   </div>
   <div class="wvu-spotlight__copy">
-    <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
-    <p><r:page:meta_description /></p>
-    <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
+    <h2><r:editable_region name="spotlight__header" type="simple" /></h2>
+    <p><r:editable_region name="spotlight__description" type="simple" /></p>
+    <r:editable_region name="spotlight__button" />
   </div>
 </div>

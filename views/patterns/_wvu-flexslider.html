@@ -1,1 +1,16 @@
 <!-- Flexslider - wvu-pattern-library/views/patterns/_flexslider.html -->
+
+<div class="slideshow-wrapper">
+	<div class="flexslider">	
+		<a name="maincontent"></a>
+		<ul class="slides">
+      <r:get_page id="4850">
+        <r:children:each>
+          <li>
+            <r:partial name="patterns/wvu-hero--auto" />
+          </li>
+        </r:children:each>
+      </r:get_page>
+		</ul>
+	</div>
+</div>

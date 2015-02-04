@@ -1,10 +1,5 @@
-// Taken From http://slate.wvu.edu/themes/shared/scss/v4/stylesheets/global-v4.css
-// Commented out the font-weight bold stuff in normalize 'cause we're using fonts.com fonts.
-// Somewhere around line ~43.
-
-
 // #Basic Styles */
-body { font-size: 1em; line-height: 1.5em; -webkit-font-smoothing: antialiased; }
+body { font-size: 1em; -webkit-font-smoothing: antialiased; }
 
 a {
   &:hover { text-decoration: underline; }

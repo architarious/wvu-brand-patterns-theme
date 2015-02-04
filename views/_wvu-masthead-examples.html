@@ -34,12 +34,11 @@
 <div class="wvu-container">
   <div class="code-label code-label--html">HTML (views/default.html)</div>
   <pre>
-    &lt;r:partial name="views/patterns/wvu-masthead" /&gt;
-  </pre>
+  &lt;r:partial name="patterns/wvu-masthead" /&gt;</pre>
+  
   <div class="code-label code-label--styles">SCSS (scss/1-base/variables.scss)</div>
   <pre>
-    $wvu-masthead-two-line-lockup: true;
-  </pre>
+  $wvu-masthead-two-line-lockup: true;</pre>
 </div>
 
 <h2 class="element-header">WVU Masthead for Department</h2>
@@ -51,15 +50,17 @@
     
     <a class="wvu-masthead__logo" href="http://www.wvu.edu/"><span class="wvu-masthead__university-name">West Virginia University</span> <span class="wvu-masthead__title">Department of English</span></a>
 
-    <a href="" class="wvu-masthead__college-link wvu-gold background">Eberly College of Arts and Sciences</a>
+    <a href="" class="wvu-masthead__college-link">Eberly College of Arts and Sciences</a>
     
     <r:partial name="patterns/wvu-masthead__search-bar" />
   </div> <!-- /.wvu-masthead-container -->
 </div> <!-- /.wvu-masthead --> 
 
-<pre>
-
-</pre>
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/default.html)</div>
+  <pre>
+  &lt;r:partial name="patterns/wvu-masthead--department" /&gt;</pre>
+</div>
 
 
 <h2 class="element-header">WVU Masthead Combo With Blue Pattern</h2>
@@ -78,9 +79,15 @@
   </div> <!-- /.wvu-masthead-container -->
 </div> <!-- /.wvu-masthead --> 
 
-<pre>
-  $wvu-masthead-background: 'blue-pattern'
-</pre>
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/default.html)</div>
+  <pre>
+  &lt;r:partial name="patterns/wvu-masthead" /&gt;</pre>
+  
+  <div class="code-label code-label--styles">SCSS (scss/1-base/variables.scss)</div>
+  <pre>
+  $wvu-masthead-background: 'blue-pattern'</pre>
+</div>
 
 <h2 class="element-header">WVU Masthead Combo Gold</h2>
 
@@ -98,9 +105,15 @@
   </div> <!-- /.wvu-masthead-container -->
 </div> <!-- /.wvu-masthead --> 
 
-<pre>
-  $wvu-masthead-background: 'gold'
-</pre>
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/default.html)</div>
+  <pre>
+  &lt;r:partial name="patterns/wvu-masthead" /&gt;</pre>
+  
+  <div class="code-label code-label--styles">SCSS (scss/1-base/variables.scss)</div>
+  <pre>
+  $wvu-masthead-background: 'gold'</pre>
+</div>
 
 <h2 class="element-header">WVU Masthead Combo White</h2>
 
@@ -118,6 +131,12 @@
   </div> <!-- /.wvu-masthead-container -->
 </div> <!-- /.wvu-masthead --> 
 
-<pre>
-  $wvu-masthead-background: 'white'
-</pre>
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/default.html)</div>
+  <pre>
+  &lt;r:partial name="patterns/wvu-masthead" /&gt;</pre>
+  
+  <div class="code-label code-label--styles">SCSS (scss/1-base/variables.scss)</div>
+  <pre>
+  $wvu-masthead-background: 'white'</pre>
+</div>
