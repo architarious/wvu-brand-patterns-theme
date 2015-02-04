@@ -37,7 +37,7 @@ a:visited { color: $pms-286-c; text-decoration: none; }
 a:active { text-decoration: none; }
 a:hover { color: $wvu-gold; text-decoration: underline; }
 
-ul { list-style-type: disc; }
+ul { list-style-type: disc; padding-left: 1em; }
 
 ul ul { list-style-type: circle; margin-bottom: 0; }
 
@@ -45,7 +45,7 @@ ul ul { list-style-type: circle; margin-bottom: 0; }
 
 ul li, ol li { line-height: 1.4; margin: 10px 0; }
 
-ol { list-style-type: decimal; }
+ol { list-style-type: decimal; padding-left: 1em;}
 
 ol ol { list-style-type: lower-alpha; margin-bottom: 0; }
 
