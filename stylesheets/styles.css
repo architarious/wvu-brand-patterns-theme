@@ -1640,7 +1640,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   .wvu-calendar li .eventName {
     display: block; }
 
-.widgets__social-media-icons li {
+.wvu-social-media-icons li {
   float: left;
   width: 3em;
   margin-right: 5px; }
