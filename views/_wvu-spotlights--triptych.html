@@ -12,7 +12,7 @@
           <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
         </div>
       </div>
-      <div class="wvu-spotlight wvu-spotlight--triptych">
+      <div class="wvu-spotlight">
         <div class="wvu-spotlight__image">
           <a href="<r:page:url />"><img src="<r:image_url name="coopers-rock.jpg" />" /></a>
         </div>
@@ -22,7 +22,7 @@
           <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
         </div>
       </div>
-      <div class="wvu-spotlight wvu-spotlight--triptych">
+      <div class="wvu-spotlight">
         <div class="wvu-spotlight__image">
           <a href="<r:page:url />"><img src="<r:image_url name="girl-pointing.jpg" />" /></a>
         </div>
@@ -34,4 +34,20 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/frontpage.html)</div>
+<pre>
+  &lt;r:partial name="patterns/wvu-spotlights-index--auto" /&gt;
+  &lt;!-- This loops through a set of child pages and pulls appropriate elements --&gt;
+</pre>
+  <div class="code-label code-label--styles">SCSS (scss/2-modules/modules-dir.scss)</div>
+<pre>
+  @include 'wvu-triptych'
+</pre>
+  <div class="code-label code-label--styles">SCSS (scss/3-layouts/layouts-dir.scss)</div>
+<pre>
+  @include 'wvu-triptych'
+</pre>
 </div>
