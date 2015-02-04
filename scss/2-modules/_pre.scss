@@ -1,8 +1,0 @@
-
-.code-label { margin-top: 3em; font-size: 0.8em; padding: 0.25em 0.6em; border-radius: 8px; display: inline-block; margin-bottom: 0.5em; }
-.code-label--html { background: $pms-7557-c; color: white;}
-.code-label--styles { background: $pms-5625-c; color: white; }
-.code-label--js { background: $pms-7476-c; color: white; }
-pre { background: #eee; margin: 0 0 0.5em 0; padding: 1em 0; font-size: 0.8em; 
-  @include mq($bp-medium) { font-size: 1em; }
-}
