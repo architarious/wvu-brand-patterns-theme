@@ -268,6 +268,8 @@ input[type="submit"] {
     background-color: #A2AAAD; }
     .u-pms-429-c.background h1, .u-pms-429-c.background h2, .u-pms-429-c.background h3, .u-pms-429-c.background h4, .u-pms-429-c.background h5, .u-pms-429-c.background h6 {
       color: #2C2A29; }
+    .u-pms-429-c.background hr {
+      border-bottom-color: #333F48; }
 
 .u-pms-warm-gray-11 {
   color: #6E6259;
@@ -476,7 +478,7 @@ a:active {
   text-decoration: none; }
 
 a:hover {
-  color: #EAAA00;
+  color: #E35205;
   text-decoration: underline; }
 
 ul {
@@ -1552,6 +1554,26 @@ input[type="search"].wvu-search__search-box {
   .wvu-triptych p {
     padding-bottom: 1em; }
 
+.wvu-triptych-combo {
+  font-size: 0.8em; }
+
+.wvu-triptych-combo__panel--spotlights {
+  padding-right: 4em; }
+  .wvu-triptych-combo__panel--spotlights .wvu-spotlight {
+    padding-bottom: 2em;
+    float: left;
+    width: 100%; }
+    .wvu-triptych-combo__panel--spotlights .wvu-spotlight h2 {
+      font-size: 1.75em;
+      margin-bottom: 0.5em; }
+    .wvu-triptych-combo__panel--spotlights .wvu-spotlight p {
+      margin-bottom: 1em; }
+  .wvu-triptych-combo__panel--spotlights .wvu-spotlight__photo {
+    margin-top: 1.5em; }
+
+.wvu-triptych-combo__panel--quicklinks {
+  margin-right: 0; }
+
 .wvu-landing-page-header {
   padding: 4em 1em;
   background-image: url("../images/dance-header.jpg");
@@ -1595,35 +1617,37 @@ input[type="search"].wvu-search__search-box {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 );
   /* IE6-9 */ }
 
-.wvu-calendar li {
-  margin-bottom: 0.5em;
-  display: inline-block;
-  width: 100%; }
-  .wvu-calendar li .eventDate {
-    float: left;
-    margin-right: 4%;
-    width: 10%;
-    text-align: center;
-    padding-bottom: 6px;
-    border-radius: 6px; }
-    @media (min-width: 60em) {
-      .wvu-calendar li .eventDate {
-        border: 1px solid; } }
-  .wvu-calendar li .calEventMonth {
-    font-size: .8em;
-    text-transform: uppercase; }
-  .wvu-calendar li .calEventDay {
-    display: block;
-    font-size: 1.5em;
-    line-height: .8em;
-    clear: both; }
-  .wvu-calendar li .eventInfo {
-    float: left;
-    width: 86%; }
-  .wvu-calendar li .eventTime {
-    font-weight: bold; }
-  .wvu-calendar li .eventName {
-    display: block; }
+.wvu-calendar {
+  padding-left: 0; }
+  .wvu-calendar li {
+    margin-bottom: 0.5em;
+    display: inline-block;
+    width: 100%; }
+    .wvu-calendar li .eventDate {
+      float: left;
+      margin-right: 4%;
+      width: 10%;
+      text-align: center;
+      padding-bottom: 6px;
+      border-radius: 6px; }
+      @media (min-width: 60em) {
+        .wvu-calendar li .eventDate {
+          border: 1px solid; } }
+    .wvu-calendar li .calEventMonth {
+      font-size: .8em;
+      text-transform: uppercase; }
+    .wvu-calendar li .calEventDay {
+      display: block;
+      font-size: 1.5em;
+      line-height: .8em;
+      clear: both; }
+    .wvu-calendar li .eventInfo {
+      float: left;
+      width: 86%; }
+    .wvu-calendar li .eventTime {
+      font-weight: bold; }
+    .wvu-calendar li .eventName {
+      display: block; }
 
 .wvu-social-media-icons ul {
   list-style-type: none;
@@ -1634,7 +1658,8 @@ input[type="search"].wvu-search__search-box {
     margin-right: 5px; }
 
 .wvu-quicklinks ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0; }
 .wvu-quicklinks li {
   padding-left: 1em;
   background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
@@ -2079,6 +2104,34 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   .wvu-hero--diagonal-line.wvu-hero--vignetting {
     background-image: url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg"); }
 
+.wvu-hero--small-photo {
+  color: #2C2A29;
+  background-image: none;
+  background-color: #efefef;
+  text-shadow: none;
+  padding: 0; }
+  .wvu-hero--small-photo .wvu-hero__container {
+    padding: 0 1em; }
+    @media (min-width: 75em) {
+      .wvu-hero--small-photo .wvu-hero__container {
+        padding: 0; } }
+  .wvu-hero--small-photo .wvu-hero__copy {
+    padding: 3em 0; }
+    .wvu-hero--small-photo .wvu-hero__copy h1 {
+      font-size: 3em;
+      color: #002855; }
+      @media (min-width: 60em) {
+        .wvu-hero--small-photo .wvu-hero__copy h1 {
+          font-size: 3.5em; } }
+    .wvu-hero--small-photo .wvu-hero__copy h1, .wvu-hero--small-photo .wvu-hero__copy p {
+      text-shadow: 0px 0px 0px transparent; }
+  .wvu-hero--small-photo .button--white {
+    color: #2C2A29 !important;
+    border-color: #2C2A29 !important; }
+    .wvu-hero--small-photo .button--white:hover {
+      color: white !important;
+      background-color: #2C2A29 !important; }
+
 .wvu-quicklinks li {
   padding-left: 1em;
   background: url(../images/diagonal-gold.svg) no-repeat 0 7px;
@@ -2142,52 +2195,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       content: "";
       display: table;
       clear: both; } }
-
-.wvu-section {
-  padding: 4em 0 4.3em 0; }
-
-@media (min-width: 48em) {
-  .wvu-diptych .wvu-spotlight {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .wvu-diptych .wvu-spotlight:last-child {
-      margin-right: 0; } }
-@media (min-width: 48em) {
-  .wvu-diptych .wvu-spotlight__image {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .wvu-diptych .wvu-spotlight__image:last-child {
-      margin-right: 0; } }
-@media (min-width: 48em) {
-  .wvu-diptych .wvu-spotlight__copy {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    .wvu-diptych .wvu-spotlight__copy:last-child {
-      margin-right: 0; } }
-
-@media (min-width: 48em) {
-  .wvu-triptych .wvu-spotlight {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .wvu-triptych .wvu-spotlight:last-child {
-      margin-right: 0; } }
-
-@media (min-width: 48em) {
-  .wvu-quadtych .wvu-super-nav {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    .wvu-quadtych .wvu-super-nav:last-child {
-      margin-right: 0; } }
 
 .wvu-masthead__container {
   max-width: 68em;
@@ -2370,6 +2377,86 @@ input.wvu-search__search-box {
     margin-right: 2.35765%;
     width: 48.82117%; }
     .profiles__content:last-child {
+      margin-right: 0; } }
+
+.wvu-section {
+  padding: 4em 0 4.3em 0; }
+
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-spotlight {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .wvu-diptych .wvu-spotlight:last-child {
+      margin-right: 0; } }
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-spotlight__image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .wvu-diptych .wvu-spotlight__image:last-child {
+      margin-right: 0; } }
+@media (min-width: 48em) {
+  .wvu-diptych .wvu-spotlight__copy {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .wvu-diptych .wvu-spotlight__copy:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .wvu-triptych .wvu-spotlight {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .wvu-triptych .wvu-spotlight:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .wvu-triptych-combo__panel--spotlights {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .wvu-triptych-combo__panel--spotlights:last-child {
+      margin-right: 0; } }
+  @media (min-width: 48em) and (min-width: 48em) {
+    .wvu-triptych-combo__panel--spotlights .wvu-spotlight__image {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 27.49666%; }
+      .wvu-triptych-combo__panel--spotlights .wvu-spotlight__image:last-child {
+        margin-right: 0; } }
+  @media (min-width: 48em) and (min-width: 48em) {
+    .wvu-triptych-combo__panel--spotlights .wvu-spotlight__copy {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 70.14568%; }
+      .wvu-triptych-combo__panel--spotlights .wvu-spotlight__copy:last-child {
+        margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .wvu-triptych-combo__panel--calendar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .wvu-triptych-combo__panel--calendar:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .wvu-quadtych .wvu-super-nav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .wvu-quadtych .wvu-super-nav:last-child {
       margin-right: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

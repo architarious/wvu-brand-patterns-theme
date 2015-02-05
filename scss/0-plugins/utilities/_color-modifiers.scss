@@ -45,11 +45,13 @@ $pms-115-c: #FDDA24;
     .button { border-color: white; 
       &:hover { background: white; color: $pms-432-c; }
     }
+    
   }
 }
 .u-pms-429-c { color: $pms-429-c; border-color: $pms-429-c;
   &.background { color: $black; background-color: $pms-429-c; 
     h1, h2, h3, h4, h5, h6 { color: $black; }
+    hr { border-bottom-color: $pms-432-c; }
   }
 }
 .u-pms-warm-gray-11 { color: $pms-warm-gray-11; border-color: $pms-warm-gray-11;

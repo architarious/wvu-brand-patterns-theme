@@ -68,9 +68,12 @@ $shout-length: 'short';
   long
 */
 
+// Layout
+$wvu-section-padding: 4em 0 4.3em 0;
 
 // Grid
 //==================================================
 
 $gutter: golden-ratio(5em, 1) !default; // Gutter between each two columns
 $max-width: em(1180) !default; // Max-width of the outer container
+

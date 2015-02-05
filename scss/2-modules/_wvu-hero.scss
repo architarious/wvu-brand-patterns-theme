@@ -215,8 +215,11 @@ $has-wvu-pattern-grid: true !default;
 
 @mixin has-small-photo() {
   @if $has-small-photo == true {
-    .wvu-hero { color: $black; background-image: none; background-color: transparent; text-shadow: none; }
-    .wvu-hero__copy { padding: 2em; background: #eee;}
+    .wvu-hero-container { padding: 0 1em; 
+      @include mq($bp-xlarge) { padding: 0; }
+    }
+    .wvu-hero { color: $black; background-image: none; background-color: #efefef; text-shadow: none; padding: 0; }
+    .wvu-hero__copy { padding: 3em 0;}
     .wvu-hero {
       h1 { font-size: 3em; color: $wvu-blue;
         @include mq($bp-large) { font-size: 3.5em; }

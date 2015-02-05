@@ -1,4 +1,11 @@
+<r:partial name="patterns/wvu-hero" />
 
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/frontpage.html)</div>
+<pre>
+  &lt;r:partial name="patterns/wvu-hero" /&gt;
+</pre>
+</div>
 
 <h2 class="element-header">Hero Unit with Shout</h2>
 
@@ -57,6 +64,7 @@
   <div class="code-label code-label--styles">SCSS (scss/1-base/variables.scss)</div>
 <pre>
   $has-vignetting: true;
+  // use this when you have a background image that is busy and renders the typography illegible
 </pre>
 </div>
 
@@ -77,6 +85,7 @@
   <div class="code-label code-label--styles">SCSS (scss/1-base/variables.scss)</div>
 <pre>
   $shout-length: 'medium';
+  // use this when you have a longer headline so as to shrink the text size and padding
 </pre>
 </div>
 
@@ -185,7 +194,8 @@
 
 <h2 class="element-header">Baby Hero Unit</h2>
 
-<div class="wvu-hero wvu-hero--baby">
+
+<div class="wvu-hero wvu-hero--small-photo">
 	<div class="wvu-hero__container">
 		<div class="wvu-hero__copy">
   		<h1><r:editable_region name="wvu-hero-title-top" /><br><span class="wvu-hero__title-bottom"><r:editable_region name="wvu-hero-title-bottom" type="simple" /></span></h1>
@@ -197,6 +207,7 @@
 	</div>
 </div>
 
+
 <div class="wvu-container">
   <div class="code-label code-label--html">HTML (views/frontpage.html)</div>
 <pre>
@@ -205,5 +216,6 @@
   <div class="code-label code-label--styles">SCSS (scss/1-base/variables.scss)</div>
 <pre>
   $has-small-photo: true;
+  // don&rsquo;t have a big fancy photo? no problem, use the baby hero
 </pre>
 </div>

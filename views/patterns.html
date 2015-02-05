@@ -11,8 +11,6 @@ layout: default
 
 <h2 class="element-header">Hero</h2>
 
-<r:partial name="patterns/wvu-hero" />
-
 <r:partial name="wvu-hero-examples" />
 
 <h2 class="element-header">Landing Page Header</h2>
@@ -33,6 +31,17 @@ layout: default
   <div class="wvu-container">
     <r:partial name="patterns/wvu-breadcrumbs" />
   </div>
+</div>
+
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/backpage.html)</div>
+  <pre>
+  &lt;div class="wvu-container"&gt;
+    <span class="u-pms-166-c">&lt;r:partial name="patterns/wvu-breadcrumbs" /&gt;</span>
+  &lt;/div&gt;</pre>
+  <div class="code-label code-label--styles">SCSS (scss/2-modules/modules-dir.scss)</div>
+  <pre>
+  @import 'wvu-breadcrumbs'</pre>
 </div>
 
 <h2 class="element-header">Type Hierarchy</h2>

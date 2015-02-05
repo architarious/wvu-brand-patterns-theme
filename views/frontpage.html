@@ -23,11 +23,12 @@ layout: default
 <div class="wvu-section u-full-width">
   <div class="wvu-container">
   
-    <h2>Quickly develop website themes using basic styles, utilities, and HTML partials.</h2> 
-    <p>Patterns use Radius tags. They look like this:</p>
+    <h2>Quickly develop website themes by including ready-made Sass and HTML partials, which include standard design patterns.</h2> 
+    <hr>
+    <p>Patterns are referenced using Radius tags. They look like this:</p>
   
     <pre>
-  &lt;r:partial name="patterns/wvu-masthead" /&gt;</pre>
+  <span class="u-pms-166-c">&lt;r:partial name="patterns/wvu-masthead" /&gt;</span></pre>
   
     <p>Which outputs the following:</p>
 
@@ -35,16 +36,18 @@ layout: default
   &lt;div class="wvu-masthead"&gt;
     &lt;div class="wvu-masthead__container"&gt;
       &lt;a class="wvu-masthead__logo" href="http://www.wvu.edu/"&gt;&lt;span class="wvu-masthead__university-name">West Virginia University&lt;/span&gt;Digital Services&lt;/span&gt;&lt;/a&gt;  
-      &lt;r:partial name="patterns/wvu-masthead__search-bar" /&gt;
+      <span class="u-pms-166-c">&lt;r:partial name="patterns/wvu-masthead__search-bar" /&gt;</span>
     &lt;/div&gt;
   &lt;/div&gt;</pre>
-  
-    <p>And is styled by referencing a Sass partial:</p>
+  <hr>
+    <p>Patterns can contain partials (which reference other patterns). In the examples shown above, partials that reference other patterns are highlighted in orange.</p>
+    <hr>
+    <p>The HTML which is output using the code above is styled when we import a corresponding Sass partial into our scss/2-modules/modules-dir.sass file:</p>
     
     <pre>
-  &lt;r:partial name="scss/2-modules/wvu-masthead" /&gt;</pre>
-  
-    <p>The WVU Brand Patterns theme includes patterns for the official WVU masthead, hero unit, sub features, navigation, typography, WVU footer, and various other elements, which can be viewed <a href="">here</a>, along with the required code.</p>
+  @import 'wvu-masthead'</pre>
+  <hr>
+    <p>The WVU Brand Patterns theme includes patterns for the official WVU masthead, hero unit, sub features, navigation, typography, WVU footer, and various other elements. These elements can be viewed <a href="">here</a>, along with the required code.</p>
 
   </div>
 </div>
@@ -52,11 +55,11 @@ layout: default
 <div class="u-pms-432-c background wvu-section u-full-width">
   <div class="wvu-container">
 
-    <h2>Instructions:</h2>
+    <h2>Instructions</h2>
 
     <ol>
       <li>Clone/download the WVU Brand Patterns theme from <a href="">GitHub</a> or <a href="">Stash</a>.</li>
-      <li>Create a repo for your new in the CleanSlate Themes project on Stash.</li>
+      <li>Create a repo for your new theme in the CleanSlate Themes project on Stash.</li>
       <li>Copy the files you want from the WVU Brand Patterns theme into your new theme.</li>
       <li>Edit your theme and compile your changes using your favorite Sass compiler.</li>
       <li>Test your theme in <a href="">Hammer</a>.</li>
@@ -70,27 +73,35 @@ layout: default
 
     <h2>Configuration</h2>
 
-    <p>Include the modules you want into your theme. Each has an HTML partial and SCSS file. Variables. </p>
+    <p>All modules in your scss/0-plugins and scss/1-base folders are required and are imported by default (if you do not wish to use Bourbon and Neat, you can remove those files).</p>
+    <p>Include any additional modules you want into your theme&rsquo;s scss/2-modules and a corresponding layout  from the scss/3-layouts folders. Each has a corresponding HTML partial you must include in your HTML templates (found in your 'views' folder).</p>
+<hr>
+    <p>Easily change design elements using Sass variables in your scss/1-base/variables.scss file (or create your own variables file). For example, the following code changes the site&rsquo;s masthead to show a gold background with a blue Flying WV w/Signature, blue links, and a blue search button.</p>
 
-    <p>Easily change design elements using Sass variables. For example...</p>
-
-    <p>Here are example templates created using the WVU Brand Patterns theme.</p>
+    
+    <pre>
+  $wvu-masthead-background: 'gold'</pre>
+<hr>
+    <p>Below are example templates created using the WVU Brand Patterns theme:</p>
 
     <ul>
       <li>Example patterns</li>
       <li>Example college-level page</li>
       <li>Example landing page</li>
       <li>Example back page</li>
+      <li>Example profiles listing</li>
+      <li>Example profile page</li>
       <li>Example HTML email theme</li>
     </ul>
-
-    <p>The WVU Brand Patterns theme comes with <a href="">Boubon/Neat</a> by default. Want to use your own grid instead? No problem, just remove the references to Bourbon and Neat from the plugins.sass and layouts-dir.sass file and include your own grid.</p>
+<hr>
+    <p>The WVU Brand Patterns theme comes with <a href="http://bourbon.io">Boubon/Neat</a>. Want to use your own grid or mixin library instead? No problem, just remove the references to Bourbon and Neat from the plugins.sass and the layouts-dir.sass file and include your own.</p>
     
   </div>
 </div>
 <div class="wvu-section u-full-width">
   <div class="wvu-container">
 
-    <h2>Have a problem? New Pattern? Submit on GitHub.</h2>
+    <h2>Have suggestions? Want to submit a new pattern?</h2>
+    <a href="" class="button button--big">Submit on GitHub</a>
   </div>
 </div>

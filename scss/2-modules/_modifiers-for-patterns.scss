@@ -138,6 +138,22 @@
   }
 }
 
+.wvu-hero--small-photo {
+  color: $black; background-image: none; background-color: #efefef; text-shadow: none; padding: 0;
+  .wvu-hero__container { padding: 0 1em; 
+    @include mq($bp-xlarge) { padding: 0; }
+  }
+  .wvu-hero__copy { padding: 3em 0;
+    h1 { font-size: 3em; color: $wvu-blue;
+      @include mq($bp-large) { font-size: 3.5em; }
+    }
+    h1, p { text-shadow: 0px 0px 0px transparent; }
+  }
+  .button--white { color: $black !important; border-color: $black !important;
+    &:hover { color: white !important; background-color: $black !important; }
+  }
+}
+
 
 // Quicklinks
 
