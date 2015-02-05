@@ -6,8 +6,10 @@
 }
 
 .wvu-masthead--gold { background-color: $wvu-gold; color: $wvu-blue; background-image: none; 
-  .wvu-search__search-button { 
-    &:hover { background: $wvu-blue; border-color: $wvu-blue; }
+  input[type="submit"] {
+    .form-search__submit { 
+      &:hover { background: $wvu-blue; border-color: $wvu-blue; }
+    }
   }
   .wvu-masthead__logo { background: url($blue-flying-wv) no-repeat top 1.2em left; background-size: 1.8em; color: $wvu-blue; 
     &:hover { color: $pms-300-c; }
@@ -18,8 +20,10 @@
 }
 
 .wvu-masthead--white { background-color: white; color: $black; background-image: none; 
-  .wvu-search__search-button { border-color: $wvu-blue; background: $wvu-blue;
-    &:hover { background: $wvu-gold; border-color: $wvu-gold; }
+  input[type="submit"] {
+    &.form-search__submit { border-color: $wvu-blue; background: $wvu-blue;
+      &:hover { background: $wvu-gold; border-color: $wvu-gold; }
+    }
   }
   .wvu-masthead__logo { color: $wvu-blue; 
     &:hover { color: $pms-300-c; }

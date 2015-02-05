@@ -39,6 +39,8 @@ editable_region:
       <li><a href="#">An Amazing story</a></li>
     </ul>
 
+  long-paragraph:
+    <%= Faker::Lorem.paragraph(7) %>
   wvu-hero-title-top:
     It Starts
   wvu-hero-title-bottom:

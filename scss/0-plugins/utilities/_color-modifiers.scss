@@ -78,7 +78,9 @@ $pms-115-c: #FDDA24;
   &.background { color: white; background-color: $pms-300-c; }
 }
 .u-pms-629-c { color: $pms-629-c; border-color: $pms-629-c;
-  &.background { color: white; background-color: $pms-629-c; }
+  &.background { color: $wvu-blue; background-color: $pms-629-c; 
+    h1, h2, h3, h4, h5, h6 { color: $wvu-blue; }
+  }
 }
 .u-pms-7554-c { color: $pms-7554-c; border-color: $pms-7554-c;
   &.background { color: white; background-color: $pms-7554-c; }

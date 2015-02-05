@@ -55,6 +55,8 @@ ins { text-decoration: underline; }
 
 p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquote { vertical-align: baseline; }
 
+p { max-width: 40em; }
+
 em, i, cite, q { font-style: italic; }
 
 .comment { padding: 20px; }

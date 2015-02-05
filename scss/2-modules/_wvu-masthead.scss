@@ -129,7 +129,7 @@ $wvu-masthead-background: 'blue' !default;
 .wvu-masthead__college-link {
   font-size: 0.8em;
   line-height: 1.08333333em;
-  padding: 0.2em 0.5em;
+  padding: 0.4em 0.5em;
   margin-bottom: -2em;
   @include mq($bp-medium) { position: absolute; }
 }
