@@ -1403,6 +1403,7 @@ input[type="search"].wvu-search__search-box {
     margin-left: -1em; } }
 .wvu-nav li {
   margin-bottom: 0;
+  margin-top: 0;
   float: left; }
   .wvu-nav li a {
     float: left;
