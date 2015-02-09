@@ -27,11 +27,11 @@ layout: default
 
 <h2 class="element-header">Breadcrumbs</h2>
 
-<div class="u-full-width">
-  <div class="wvu-container">
-    <r:partial name="patterns/wvu-breadcrumbs" />
-  </div>
+
+<div class="wvu-container">
+  <r:partial name="patterns/wvu-breadcrumbs" />
 </div>
+
 
 <div class="wvu-container">
   <div class="code-label code-label--html">HTML (views/backpage.html)</div>
@@ -92,14 +92,23 @@ layout: default
   // this loops through a set of child pages based on a page ID to populate flexslider slides. substitute your own page ID for the parent of your slide pages.</pre>
   <div class="code-label code-label--styles">SCSS (scss/2-modules/modules-dir.scss)</div>
   <pre>
-  @import 'wvu-flexslider';</pre>
+  @import 'wvu-flexslider';
+  @import 'wvu-hero';</pre>
+  <div class="code-label code-label--js">JS (views/frontpage.html)</div>
+  <pre>
+  &lt;r:include_javascript name="vendor/jquery.flexslider" /&gt;
+  &lt;script type="text/javascript"&gt;
+    $(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  &lt;/script&gt;</pre>
   </div>
 
 
 
 <h2 class="element-header">Profile Index</h2>
 
-<div class="wvu-section u-full-width">
+<div class="wvu-section">
   <div class="wvu-container">
     <r:get_page id="5102">
       <r:partial name="patterns/wvu-spotlights-index" />
@@ -123,8 +132,14 @@ layout: default
 
 <h2 class="element-header">YouTube Video</h2>
 
-<div class="u-full-width u-black background">
-  
+<div class="wvu-section u-black background">
+  <div class="wvu-container">
+    <div class="wvu-youtube-video">
+      <div class="u-embed-container">
+        <iframe src="https://www.youtube.com/embed/wxU3MyLav0U" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 </div>
 
 <h2 class="element-header">YouTube Playlist</h2>

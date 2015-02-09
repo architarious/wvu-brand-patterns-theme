@@ -16,6 +16,9 @@
   <body class="<r:page:template:name /> page-<r:page:id /> page-<r:page:slug />">
 
     <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/DFAsPv --></r:comment>
+    
+    <a class="wvu-skip-nav" href="#maincontent">Skip to main content</a>
+    
     <r:yield />
     
     <div class="wvu-container">
@@ -32,7 +35,7 @@
     <r:include_javascript name="vendor/responsive-nav, responsive-nav--custom, vendor/quicklinks" />
 
     <r:yield name="page_js">
-        <r:content />
+      <r:content />
     </r:yield>
 
     <r:partial name="layouts/browser-update-org--v1" theme="Code" />

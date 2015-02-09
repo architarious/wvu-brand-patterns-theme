@@ -1205,6 +1205,10 @@ pre {
   medium
   long
 */
+.wvu-skip-nav {
+  position: absolute;
+  top: -999999em; }
+
 /* 
   Variable options for WVU Masthead Background:
   gold
@@ -2563,6 +2567,16 @@ input[type="submit"].form-search__submit {
     margin-right: 2.35765%;
     width: 23.23176%; }
     .wvu-quadtych .wvu-super-nav:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .wvu-youtube-video {
+    margin-left: 25.58941%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .wvu-youtube-video:last-child {
       margin-right: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
