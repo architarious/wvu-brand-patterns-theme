@@ -5,15 +5,6 @@
 // Full width div
 .u-full-width { float: left; width: 100%; }
 
-// Add some padding
-.u-padded { padding-top: 20px; padding-bottom: 20px; 
-  @include mq($bp-medium) { padding-top: 40px; padding-bottom: 40px; }
-  @include mq($bp-xlarge) { padding-top: 60px; padding-bottom: 60px; }
-} //.u-padded
-
-// Change color to yellow
-.u-highlight { color: $wvu-gold; text-transform: uppercase; }
-
 // Make videos responsive 
 .u-embed-container {
   position: relative;
@@ -29,17 +20,6 @@
     height: 100%;
   }
 }
-
-// Make a horizontal list when screen is wide enough
-.u-list--horizontal {
-  @include mq($bp-medium) { padding-left: 0; }
-  li {
-    @include mq($bp-medium) { list-style-type: none; display: inline;
-      &:after { content: '|'; padding-right: 1px; color: #999; }
-      &:last-child:after { content: ''; padding-right: 0; }
-    } //$bp-medium
-  } //li
-} //.list--horizontal
 
 // http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
 // Removed vendor prefixes so that Autoprefixer will handle them
