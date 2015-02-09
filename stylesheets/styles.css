@@ -2060,7 +2060,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     @media (min-width: 60em) {
       .wvu-tabs ul li {
         margin-bottom: 20px; } }
-  .wvu-tabs ul h3 {
+  .wvu-tabs ul h2 {
     float: left;
     font-size: 1.5em;
     line-height: 1em;
@@ -2070,10 +2070,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     margin-top: 12px;
     max-width: 60%; }
     @media (min-width: 48em) {
-      .wvu-tabs ul h3 {
+      .wvu-tabs ul h2 {
         font-size: 1em; } }
     @media (min-width: 60em) {
-      .wvu-tabs ul h3 {
+      .wvu-tabs ul h2 {
         font-size: 1.5em; } }
 
 .wvu-tabs {
