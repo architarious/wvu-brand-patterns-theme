@@ -2012,14 +2012,15 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       padding-top: 30px; } }
   .wvu-tabs ul li {
     font-size: 0.8em;
-    margin-bottom: 9px;
+    padding: 1em 0;
     float: left;
     clear: both;
     width: 100%;
     border-bottom: 1px solid #eee; }
     .wvu-tabs ul li h2 {
       font-size: 1.75em;
-      margin-bottom: 0.5em; }
+      margin-bottom: 0.5em;
+      margin-top: 0; }
     .wvu-tabs ul li a {
       width: 100%;
       display: block;
