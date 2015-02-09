@@ -6,7 +6,7 @@
     <input id="q" class="form-search__field" name="q" maxlength="256" placeholder="Search this site..." type="search" />
   </label>
 
-  <input id="as_sitesearch" name="as_sitesearch" type="hidden" value="brand.wvu.edu" />
+  <input id="as_sitesearch" name="as_sitesearch" type="hidden" value="<r:site:domain />" />
   <input id="sort" name="sort" type="hidden" value="date:D:L:d1" />
   <input id="output" name="output" type="hidden" value="xml_no_dtd" />
   <input id="ie" name="ie" type="hidden" value="UTF-8" />
@@ -25,7 +25,7 @@
 </form>
 <script>
 	document.getElementById("form-search__sitesearch").addEventListener("click", function() {
-		document.getElementById("as_sitesearch").value = "brand.wvu.edu";
+		document.getElementById("as_sitesearch").value = "<r:site:domain />";
 	});
 	document.getElementById("form-search__wvusearch").addEventListener("click", function() {
 		document.getElementById("as_sitesearch").value = "wvu.edu";

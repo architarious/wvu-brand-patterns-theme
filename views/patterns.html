@@ -56,6 +56,19 @@ layout: default
   
   <r:partial name="wvu-sub-nav-example" />
 
+  <div class="wvu-container">
+    <div class="code-label code-label--styles">SCSS (scss/1-base/base-dir.scss)</div>
+  <pre>
+  @import 'typography';</pre>
+  <div class="code-label code-label--html">HTML (views/backpage.html)</div>
+  <pre>
+  &lt;div class="wvu-sub-nav"&gt;
+    <span class="u-pms-166-c">&lt;r:partial name="patterns/wvu-sub-nav"&gt;</span>
+  &lt;/div&gt;</pre>
+  <div class="code-label code-label--styles">SCSS (scss/2-modules/modules-dir.scss)</div>
+  <pre>
+  @import 'wvu-sub-nav';</pre>
+  </div>
 </div>
 
 <r:partial name="wvu-back-page-callouts" />
