@@ -16,7 +16,9 @@
       padding-top: 30px;
     } 
   
-    li { font-size: 0.8em; margin-bottom: 9px; float: left; clear: both; width: 100%;
+    li { font-size: 0.8em; margin-bottom: 9px; float: left; clear: both; width: 100%; border-bottom: 1px solid #eee;
+      h2 { font-size: 1.75em; margin-bottom: 0.5em;
+      }
       a { width: 100%; display: block; float: left; border: 0; }
       @include mq($bp-large) {
         margin-bottom: 20px;
@@ -25,5 +27,6 @@
   }
 }
 
-.wvu-tabs { width: 100%;
+.wvu-tabs__content { 
+  img { min-width: 100%; }
 }

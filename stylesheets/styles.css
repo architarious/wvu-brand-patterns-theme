@@ -2015,7 +2015,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     margin-bottom: 9px;
     float: left;
     clear: both;
-    width: 100%; }
+    width: 100%;
+    border-bottom: 1px solid #eee; }
+    .wvu-tabs ul li h2 {
+      font-size: 1.75em;
+      margin-bottom: 0.5em; }
     .wvu-tabs ul li a {
       width: 100%;
       display: block;
@@ -2025,8 +2029,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       .wvu-tabs ul li {
         margin-bottom: 20px; } }
 
-.wvu-tabs {
-  width: 100%; }
+.wvu-tabs__content img {
+  min-width: 100%; }
 
 .wvu-footer {
   padding-bottom: 2em; }
