@@ -9,38 +9,6 @@
   }
 }
 
-.wvu-tabs__caption.video {display: none;}
-
-.wvu-tabs__caption { background: #000; padding: 25px; float: left;
-  
-  h3 {
-    color: #fff;
-    font-size: 18px;
-    margin-top: 0;
-  }
-  
-  @include mq($bp-medium) {
-    position: absolute;
-    z-index: 9999;
-    right: 0;
-    font-size: 12px;
-    bottom: 20px;
-    width: 70%;
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.7)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
-  }
-  
-  a:link, a:visited {
-   color: $pms-166-c;
-   font-weight: bold; 
-  }
-}
-
 .wvu-tabs {
   ul { list-style-type: none; padding-left: 0; padding-top: 10px;
   
@@ -48,19 +16,10 @@
       padding-top: 30px;
     } 
   
-    li { margin-bottom: 9px; float: left; clear: both; width: 100%;
+    li { font-size: 0.8em; margin-bottom: 9px; float: left; clear: both; width: 100%;
       a { width: 100%; display: block; float: left; border: 0; }
       @include mq($bp-large) {
         margin-bottom: 20px;
-      }
-    }
-  
-    h2 { float: left; font-size: 1.5em; line-height: 1em; margin: 0; color: #fff; margin-left: 20px; margin-top: 12px; max-width: 60%;
-      @include mq($bp-medium) {
-        font-size: 1em;
-      }
-      @include mq($bp-large) {
-        font-size: 1.5em;
       }
     }
   }
