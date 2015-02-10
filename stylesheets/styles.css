@@ -2015,8 +2015,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     padding: 1em 0;
     float: left;
     clear: both;
-    width: 100%;
-    border-bottom: 1px solid #eee; }
+    width: 33.33333%; }
+    @media (min-width: 60em) {
+      .wvu-tabs ul li {
+        width: 100%;
+        border-bottom: 1px solid #eee; } }
     .wvu-tabs ul li h2 {
       font-size: 1.75em;
       margin-bottom: 0.5em;
@@ -2030,8 +2033,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       .wvu-tabs ul li {
         margin-bottom: 20px; } }
 
-.wvu-tabs__content img {
-  min-width: 100%; }
+.wvu-tabs__content {
+  float: left; }
 
 .wvu-footer {
   padding-bottom: 2em; }

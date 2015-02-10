@@ -16,7 +16,10 @@
       padding-top: 30px;
     } 
   
-    li { font-size: 0.8em; padding: 1em 0; float: left; clear: both; width: 100%; border-bottom: 1px solid #eee;
+    li { font-size: 0.8em; padding: 1em 0; float: left; clear: both; width: 33.33333%;
+      @include mq($bp-large) {
+        width: 100%; border-bottom: 1px solid #eee;
+      }
       h2 { font-size: 1.75em; margin-bottom: 0.5em; margin-top: 0;
       }
       a { width: 100%; display: block; float: left; border: 0; }
@@ -27,6 +30,6 @@
   }
 }
 
-.wvu-tabs__content { 
-  img { min-width: 100%; }
+.wvu-tabs__content {
+  float: left;
 }
