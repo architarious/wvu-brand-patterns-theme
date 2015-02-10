@@ -25,4 +25,5 @@
 
 .wvu-tabs__content {
   @include mq($bp-large) { float: left; }
+  img { min-width: 100%; }
 }

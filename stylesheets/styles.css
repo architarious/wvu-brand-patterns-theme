@@ -2038,6 +2038,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 @media (min-width: 60em) {
   .wvu-tabs__content {
     float: left; } }
+.wvu-tabs__content img {
+  min-width: 100%; }
 
 .wvu-footer {
   padding-bottom: 2em; }
