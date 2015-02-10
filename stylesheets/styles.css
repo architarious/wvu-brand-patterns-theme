@@ -2035,11 +2035,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       float: left;
       border: 0; }
 
-@media (min-width: 60em) {
-  .wvu-tabs__content {
-    float: left; } }
-.wvu-tabs__content img {
-  min-width: 100%; }
+.wvu-tabs__content {
+  float: left;
+  width: 100%; }
+  .wvu-tabs__content img {
+    min-width: 100%; }
 
 .wvu-footer {
   padding-bottom: 2em; }

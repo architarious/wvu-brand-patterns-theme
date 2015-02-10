@@ -23,7 +23,6 @@
   }
 }
 
-.wvu-tabs__content {
-  @include mq($bp-large) { float: left; }
+.wvu-tabs__content { float: left; width: 100%; 
   img { min-width: 100%; }
 }
