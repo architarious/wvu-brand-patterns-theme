@@ -19,9 +19,8 @@
     li { font-size: 0.6em; padding: 0 1em; border-right: 1px solid #eee; float: left; width: 33.33333%;
       &:last-child { border-right: 0; }
       h2 { font-size: 1.25em; margin-bottom: 0.5em; margin-top: 0; }
-      @include mq($bp-large) {
-        font-size: 0.8em; padding: 1em 0; width: 100%; border-bottom: 1px solid #eee; clear: both; 
-        h2 { font-size: 1.75em; margin-bottom: 0.5em; margin-top: 0;
+      @include mq($bp-large) { font-size: 0.8em; padding: 1em 0; width: 100%; border-bottom: 1px solid #eee; clear: both; 
+        h2 { font-size: 1.75em; }
       }
       a { width: 100%; display: block; float: left; border: 0; }
     }
