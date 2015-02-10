@@ -134,28 +134,11 @@ layout: default
   <r:partial name="wvu-tabbed-ui-example" />
 </div>
 
-<h2 class="element-header">YouTube Video</h2>
-
-<div class="wvu-section u-black background">
-  <div class="wvu-container">
-    <div class="wvu-youtube-video">
-      <div class="u-embed-container">
-        <iframe src="https://www.youtube.com/embed/wxU3MyLav0U" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-<h2 class="element-header">YouTube Playlist</h2>
-
-<h2 class="element-header">YouTube Playlist Grid</h2>
-
-<h2 class="element-header">Photo Gallery</h2>
-
 <h2 class="element-header">Footer</h2>
 
 <r:content_for name="page_js"> 
   <r:include_javascript name="vendor/calendar-reformat" />
   <r:partial name="javascripts-wvu-flexslider" />
   <r:partial name="javascripts-wvu-tabbed-ui" />
+  <r:partial name="javascripts-wvu-youtube-playlist" />
 </r:content_for>
