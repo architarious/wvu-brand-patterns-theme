@@ -2649,7 +2649,7 @@ input[type="submit"].form-search__submit {
     .wvu-quadtych .wvu-super-nav:last-child {
       margin-right: 0; } }
 
-@media (min-width: 48em) {
+@media (min-width: 60em) {
   .wvu-tabs__tabs {
     float: left;
     display: block;
@@ -2658,7 +2658,7 @@ input[type="submit"].form-search__submit {
     .wvu-tabs__tabs:last-child {
       margin-right: 0; } }
 
-@media (min-width: 48em) {
+@media (min-width: 60em) {
   .wvu-tabs__content {
     float: left;
     display: block;
