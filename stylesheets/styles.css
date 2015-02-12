@@ -1225,6 +1225,10 @@ pre {
     /* Chrome, Safari, Opera */
     transform: rotate(90deg); }
 
+a:focus {
+  outline: 2px dotted red;
+  outline-offset: -2px; }
+
 /*
   Options for WVU Hero Title typeface:
   $shout (Helvetica Neue Black Condensed)
@@ -1240,7 +1244,12 @@ pre {
 */
 .wvu-skip-nav {
   position: absolute;
-  top: -999999em; }
+  padding: 0.5em;
+  left: -99999em;
+  background: white;
+  font-color: #005EB8; }
+  .wvu-skip-nav:focus {
+    left: 0; }
 
 /* 
   Variable options for WVU Masthead Background:

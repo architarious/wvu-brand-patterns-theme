@@ -1,1 +1,10 @@
-.wvu-skip-nav { position: absolute; top: -999999em; }
+.wvu-skip-nav {
+  position: absolute;
+  padding: 0.5em;
+  left: -99999em;
+  background: white;
+  font-color: $pms-300-c;
+  &:focus {
+    left: 0;
+  }
+}

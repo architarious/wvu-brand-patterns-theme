@@ -21,3 +21,8 @@ pre { background: #eee; margin: 0 0 0.5em 0; padding: 1em 0; font-size: 0.8em;
     transform: rotate(90deg);}
 }
 
+a:focus { 
+  outline: 2px dotted red;
+  outline-offset: -2px;
+}
+
