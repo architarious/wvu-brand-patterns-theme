@@ -16,7 +16,7 @@ $wvu-masthead-background: 'blue';
 //==================================================
 
 $hero-image: '../images/coopers-rock.jpg';
-$blue-pattern-background: '../blue-pattern-close';
+$blue-pattern-background: '../blue-pattern-close.jpg';
 $diagonal-line-gold: '../images/gold-diagonal.svg';
 $diagonal-line-blue: '../images/blue-diagonal.svg';
 $diagonal-line-white: '../images/white-diagonal.svg';
@@ -77,3 +77,14 @@ $wvu-section-padding: 4em 0 4.3em 0;
 $gutter: golden-ratio(5em, 1) !default; // Gutter between each two columns
 $max-width: em(1180) !default; // Max-width of the outer container
 
+
+// AJ's Grid
+//==================================================
+
+// Grid Media Queries:
+$grid-mq-tablet: 48em;
+$grid-mq-desktop: 60em;
+
+// Grid Gutters
+$grid-gutter-tablet: 1.302083333333333%;
+$grid-gutter-desktop: 1.041666666666667%;
