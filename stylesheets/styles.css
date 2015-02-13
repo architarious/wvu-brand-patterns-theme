@@ -1445,10 +1445,6 @@ pre {
     /* Chrome, Safari, Opera */
     transform: rotate(90deg); }
 
-a:focus {
-  outline: 2px dotted red;
-  outline-offset: -2px; }
-
 .form-search {
   clear: both; }
 
