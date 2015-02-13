@@ -460,6 +460,19 @@ input[type="submit"] {
 
   .nav-toggle {
     display: none; } }
+/*
+  Options for WVU Hero Title typeface:
+  $shout (Helvetica Neue Black Condensed)
+  $subhead (Helvetica Bold)
+  $iowan (Iowan Old Style)
+  $iowan-italic (Iowan Old Style Italic)
+*/
+/*
+  Options for WVU Hero Title typeface:
+  short
+  medium
+  long
+*/
 html {
   font-size: 16px; }
 
@@ -543,19 +556,6 @@ p.lede {
 p + p.lede {
   margin-top: 1em; }
 
-/*
-  Options for WVU Hero Title typeface:
-  $shout (Helvetica Neue Black Condensed)
-  $subhead (Helvetica Bold)
-  $iowan (Iowan Old Style)
-  $iowan-italic (Iowan Old Style Italic)
-*/
-/*
-  Options for WVU Hero Title typeface:
-  short
-  medium
-  long
-*/
 body {
   font-size: 1em;
   line-height: 1.5; }
@@ -650,10 +650,15 @@ abbr {
 
 .wvu-masthead__university-name {
   position: absolute;
-  top: 5.9em;
-  left: 5.1em;
-  font-size: 0.4em;
+  top: 4.2em;
+  left: 3.3em;
+  font-size: 0.6em;
   text-transform: uppercase; }
+  @media (min-width: 48em) {
+    .wvu-masthead__university-name {
+      top: 5.9em;
+      left: 5.1em;
+      font-size: 0.4em; } }
 
 .wvu-masthead__logo:before {
   content: "";
@@ -666,6 +671,16 @@ abbr {
   font-size: 0.8em; }
   .wvu-masthead__search-bar input[type="checkbox"], .wvu-masthead__search-bar input[type="radio"] {
     margin-right: 0; }
+
+.form-search__label {
+  width: 82.94039%;
+  margin-right: 2.35765%;
+  float: left; }
+
+input[type="submit"].form-search__submit {
+  width: 14.70196%;
+  margin-right: 0;
+  float: left; }
 
 .wvu-masthead__link {
   color: white;
@@ -1027,6 +1042,8 @@ abbr {
   background: #002855;
   border: 2px solid #002855;
   color: white; }
+  .button--wvu-blue-fill:visited {
+    color: white; }
   .button--wvu-blue-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1036,6 +1053,8 @@ abbr {
   background: #2C2A29;
   border: 2px solid #2C2A29;
   color: white; }
+  .button--black-fill:visited {
+    color: white; }
   .button--black-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1045,6 +1064,8 @@ abbr {
   background: #333F48;
   border: 2px solid #333F48;
   color: white; }
+  .button--pms-432-c-fill:visited {
+    color: white; }
   .button--pms-432-c-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1062,6 +1083,8 @@ abbr {
   background: #6E6259;
   border: 2px solid #6E6259;
   color: white; }
+  .button--pms-warm-gray-11-fill:visited {
+    color: white; }
   .button--pms-warm-gray-11-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1071,6 +1094,8 @@ abbr {
   background: #968C83;
   border: 2px solid #968C83;
   color: white; }
+  .button--pms-warm-gray-7-fill:visited {
+    color: white; }
   .button--pms-warm-gray-7-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1088,6 +1113,8 @@ abbr {
   background: #0033A0;
   border: 2px solid #0033A0;
   color: white; }
+  .button--pms-286-c-fill:visited {
+    color: white; }
   .button--pms-286-c-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1116,6 +1143,8 @@ abbr {
   background: #4B3D2A;
   border: 2px solid #4B3D2A;
   color: white; }
+  .button--pms-7554-c-fill:visited {
+    color: white; }
   .button--pms-7554-c-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1125,6 +1154,8 @@ abbr {
   background: #9F7D23;
   border: 2px solid #9F7D23;
   color: white; }
+  .button--pms-7557-c-fill:visited {
+    color: white; }
   .button--pms-7557-c-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1142,6 +1173,8 @@ abbr {
   background: #0D5257;
   border: 2px solid #0D5257;
   color: white; }
+  .button--pms-7476-c-fill:visited {
+    color: white; }
   .button--pms-7476-c-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1151,6 +1184,8 @@ abbr {
   background: #708573;
   border: 2px solid #708573;
   color: white; }
+  .button--pms-5625-c-fill:visited {
+    color: white; }
   .button--pms-5625-c-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1168,6 +1203,8 @@ abbr {
   background: #BE3A34;
   border: 2px solid #BE3A34;
   color: white; }
+  .button--pms-180-c-fill:visited {
+    color: white; }
   .button--pms-180-c-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -1177,6 +1214,8 @@ abbr {
   background: #E35205;
   border: 2px solid #E35205;
   color: white; }
+  .button--pms-166-c-fill:visited {
+    color: white; }
   .button--pms-166-c-fill:hover {
     background: #EAAA00;
     color: #2C2A29;
@@ -2426,23 +2465,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     width: 27.49666%; }
     .wvu-masthead__search-bar:last-child {
       margin-right: 0; } }
-
-.form-search__label {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%; }
-  .form-search__label:last-child {
-    margin-right: 0; }
-
-input[type="submit"].form-search__submit {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%;
-  margin-right: 0; }
-  input[type="submit"].form-search__submit:last-child {
-    margin-right: 0; }
 
 .wvu-container {
   max-width: 68em;

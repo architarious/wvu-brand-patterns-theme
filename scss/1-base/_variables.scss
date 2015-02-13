@@ -1,3 +1,25 @@
+// Typography
+//==================================================
+
+$helvetica-neue-condensed-black: 'HelveticaNeueW01-97Blac', 'Helvetica W01 Bold', Helvetica, Arial, sans-serif;
+$helvetica-neue-bold: 'HelveticaNeueW01-75Bold', Helvetica, Arial, sans-serif;
+$helvetica-neue-roman: 'HelveticaNeueW01-55Roma', Helvetica, Arial, sans-serif;
+$helvetica-neue-light: 'HelveticaNeueW01-45Ligh', Helvetica, Arial, sans-serif;
+$iowan-old-style: 'IowanOldStyleW01-Roman', Georgia, Times, serif;
+$iowan-old-style-italic: 'IowanOldStyleW01-Italic1120392', Georgia, Times, serif;
+
+$shout: $helvetica-neue-condensed-black !default;
+$subhead: $helvetica-neue-bold !default;
+$traditional-audience: $iowan-old-style !default;
+$narrow-audience: $iowan-old-style-italic !default;
+
+$shout-font-size: 8.2em;
+$shout-line-height: 0.80487em;
+
+$helvetica-neue-bold-line-height: 1.08333333em;
+$traditional-audience-line-height: 1.16666666667em;
+
+
 // Links
 //==================================================
 
@@ -88,3 +110,13 @@ $grid-mq-desktop: 60em;
 // Grid Gutters
 $grid-gutter-tablet: 1.302083333333333%;
 $grid-gutter-desktop: 1.041666666666667%;
+
+
+// Breakpoints
+//==================================================
+
+$bp-mini: 450;
+$bp-small: 570;
+$bp-medium: 768;
+$bp-large: 960;
+$bp-xlarge: 1200;
