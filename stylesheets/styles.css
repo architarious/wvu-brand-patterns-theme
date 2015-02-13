@@ -1034,9 +1034,9 @@ input[type="submit"].form-search__submit {
   background: #EAAA00;
   border: 2px solid #EAAA00; }
   .button--wvu-gold-fill:hover {
-    background: #EAAA00;
-    color: #2C2A29;
-    border: 2px solid #EAAA00; }
+    background: #002855;
+    color: white;
+    border: 2px solid #002855; }
 
 .button--wvu-blue-fill {
   background: #002855;
@@ -1045,9 +1045,9 @@ input[type="submit"].form-search__submit {
   .button--wvu-blue-fill:visited {
     color: white; }
   .button--wvu-blue-fill:hover {
-    background: #EAAA00;
-    color: #2C2A29;
-    border: 2px solid #EAAA00; }
+    background: transparent;
+    color: #002855;
+    border: 2px solid #002855; }
 
 .button--black-fill {
   background: #2C2A29;
@@ -1056,9 +1056,9 @@ input[type="submit"].form-search__submit {
   .button--black-fill:visited {
     color: white; }
   .button--black-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
-    border: 2px solid #EAAA00; }
+    border: 2px solid #2C2A29; }
 
 .button--pms-432-c-fill {
   background: #333F48;
@@ -1067,17 +1067,17 @@ input[type="submit"].form-search__submit {
   .button--pms-432-c-fill:visited {
     color: white; }
   .button--pms-432-c-fill:hover {
-    background: #EAAA00;
-    color: #2C2A29;
-    border: 2px solid #EAAA00; }
+    background: transparent;
+    color: #333F48;
+    border: 2px solid #333F48; }
 
 .button--pms-429-c-fill {
   background: #A2AAAD;
   border: 2px solid #A2AAAD; }
   .button--pms-429-c-fill:hover {
-    background: #EAAA00;
-    color: #2C2A29;
-    border: 2px solid #EAAA00; }
+    background: transparent;
+    color: #A2AAAD;
+    border: 2px solid #A2AAAD; }
 
 .button--pms-warm-gray-11-fill {
   background: #6E6259;
@@ -1086,9 +1086,9 @@ input[type="submit"].form-search__submit {
   .button--pms-warm-gray-11-fill:visited {
     color: white; }
   .button--pms-warm-gray-11-fill:hover {
-    background: #EAAA00;
-    color: #2C2A29;
-    border: 2px solid #EAAA00; }
+    background: transparent;
+    color: #6E6259;
+    border: 2px solid #6E6259; }
 
 .button--pms-warm-gray-7-fill {
   background: #968C83;
@@ -1097,17 +1097,17 @@ input[type="submit"].form-search__submit {
   .button--pms-warm-gray-7-fill:visited {
     color: white; }
   .button--pms-warm-gray-7-fill:hover {
-    background: #EAAA00;
-    color: #2C2A29;
-    border: 2px solid #EAAA00; }
+    background: transparent;
+    color: #968C83;
+    border: 2px solid #968C83; }
 
 .button--pms-warm-gray-3-fill {
   background: #BFB8AF;
   border: 2px solid #BFB8AF; }
   .button--pms-warm-gray-3-fill:hover {
-    background: #EAAA00;
-    color: #2C2A29;
-    border: 2px solid #EAAA00; }
+    background: transparent;
+    color: #BFB8AF;
+    border: 2px solid #BFB8AF; }
 
 .button--pms-286-c-fill {
   background: #0033A0;
@@ -1116,7 +1116,7 @@ input[type="submit"].form-search__submit {
   .button--pms-286-c-fill:visited {
     color: white; }
   .button--pms-286-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1127,7 +1127,7 @@ input[type="submit"].form-search__submit {
   .button--pms-300-c-fill:visited {
     color: white; }
   .button--pms-300-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1135,7 +1135,7 @@ input[type="submit"].form-search__submit {
   background: #9BD3DD;
   border: 2px solid #9BD3DD; }
   .button--pms-629-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1146,7 +1146,7 @@ input[type="submit"].form-search__submit {
   .button--pms-7554-c-fill:visited {
     color: white; }
   .button--pms-7554-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1157,7 +1157,7 @@ input[type="submit"].form-search__submit {
   .button--pms-7557-c-fill:visited {
     color: white; }
   .button--pms-7557-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1165,7 +1165,7 @@ input[type="submit"].form-search__submit {
   background: #ED8B00;
   border: 2px solid #ED8B00; }
   .button--pms-144-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1176,7 +1176,7 @@ input[type="submit"].form-search__submit {
   .button--pms-7476-c-fill:visited {
     color: white; }
   .button--pms-7476-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1187,7 +1187,7 @@ input[type="submit"].form-search__submit {
   .button--pms-5625-c-fill:visited {
     color: white; }
   .button--pms-5625-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1195,7 +1195,7 @@ input[type="submit"].form-search__submit {
   background: #9ABEAA;
   border: 2px solid #9ABEAA; }
   .button--pms-558-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1206,7 +1206,7 @@ input[type="submit"].form-search__submit {
   .button--pms-180-c-fill:visited {
     color: white; }
   .button--pms-180-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1217,7 +1217,7 @@ input[type="submit"].form-search__submit {
   .button--pms-166-c-fill:visited {
     color: white; }
   .button--pms-166-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
@@ -1225,7 +1225,7 @@ input[type="submit"].form-search__submit {
   background: #FDDA24;
   border: 2px solid #FDDA24; }
   .button--pms-115-c-fill:hover {
-    background: #EAAA00;
+    background: transparent;
     color: #2C2A29;
     border: 2px solid #EAAA00; }
 
