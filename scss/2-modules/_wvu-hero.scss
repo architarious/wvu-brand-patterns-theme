@@ -219,7 +219,14 @@ $has-wvu-pattern-grid: true !default;
       @include mq($bp-xlarge) { padding: 0; }
     }
     .wvu-hero { color: $black; background-image: none; background-color: #efefef; text-shadow: none; padding: 0; }
-    .wvu-hero__copy { padding: 3em 0;}
+    .wvu-hero__copy { padding: 3em 0;
+      @include mq($bp-medium) {
+        font-size: 0.9em;
+      }
+      @include mq($bp-large) {
+        font-size: 1em;
+      }
+    }
     .wvu-hero {
       h1 { font-size: 3em; color: $wvu-blue;
         @include mq($bp-large) { font-size: 3.5em; }

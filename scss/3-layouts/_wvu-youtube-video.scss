@@ -1,6 +1,0 @@
-.wvu-youtube-video {
-  @include mq($bp-medium) {
-    @include shift(2);
-    @include span-columns(8);
-  }
-}

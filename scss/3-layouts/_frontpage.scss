@@ -5,10 +5,12 @@
 .wvu-hero__container { @include outer-container(); }
 
 .wvu-hero__copy {
-  @include mq($bp-medium) { @include span-columns(5); }
+  @include mq($bp-medium) { @include span-columns(4); }
+  @include mq($bp-large) { @include span-columns(5); }
 }
 .wvu-hero__photo {
-  @include mq($bp-medium) { @include span-columns(7); }
+  @include mq($bp-medium) { @include span-columns(8); }
+  @include mq($bp-large) { @include span-columns(7); }
 }
 
 .flex-caption { 
