@@ -3,7 +3,7 @@
 input[type="submit"].form-search__submit { background-image: url(); background-repeat: no-repeat; }
 .wvu-hero__photo { margin-right: 0; }
 .wvu-landing-page-header__intro { margin-right: 0; }
-.omega { margin-right: 0; }
+.wvu-container .omega { margin-right: 0; }
 
 .wvu-quicklinks--flex ul li { background-image: url(../images/diagonal-gold.svg); }
 .wvu-quicklinks li { background-image: url(../images/diagonal-gold.svg); }
