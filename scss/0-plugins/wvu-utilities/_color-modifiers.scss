@@ -37,7 +37,12 @@ $pms-115-c: #FDDA24;
 
 //  Secondary
 .u-black { color: $black;
-  &.background { color: white; background-color: $black; }
+  &.background { color: white; background-color: $black; 
+    h1, h2, h3, h4, h5, h6, a { color: white; }
+    .button { border-color: white; 
+      &:hover { background: white; color: $black; }
+    }
+  }
 }
 .u-pms-432-c { color: $pms-432-c; border-color: $pms-432-c;
   &.background { color: white; background-color: $pms-432-c; 
@@ -45,23 +50,26 @@ $pms-115-c: #FDDA24;
     .button { border-color: white; 
       &:hover { background: white; color: $pms-432-c; }
     }
-    
   }
 }
 .u-pms-429-c { color: $pms-429-c; border-color: $pms-429-c;
   &.background { color: $black; background-color: $pms-429-c; 
-    h1, h2, h3, h4, h5, h6 { color: $black; }
+    h1, h2, h3, h4, h5, h6, a { color: $black; }
     hr { border-bottom-color: $pms-432-c; }
   }
 }
 .u-pms-warm-gray-11 { color: $pms-warm-gray-11; border-color: $pms-warm-gray-11;
   &.background { color: white; background-color: $pms-warm-gray-11; 
-    h1, h2, h3, h4, h5, h6, a { color: white; }
+    h1, h2, h3, h4, h5, h6, a { color: white; 
+      &:hover { color: $pms-warm-gray-11; }
+    }
   }
 }
 .u-pms-warm-gray-7 { color: $pms-warm-gray-7; border-color: $pms-warm-gray-7;
   &.background { color: white; background-color: $pms-warm-gray-7; 
-    h1, h2, h3, h4, h5, h6, a { color: white; }
+    h1, h2, h3, h4, h5, h6, a { color: white; 
+      &:hover { color: $pms-warm-gray-7; }
+    }
   }
 }
 .u-pms-warm-gray-3 { color: $pms-warm-gray-3; border-color: $pms-warm-gray-3;

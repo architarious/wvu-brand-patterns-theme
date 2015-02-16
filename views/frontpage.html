@@ -14,8 +14,8 @@ layout: default
 
       <p class="lede">WVU Brand Patterns is a theme for making WVU-branded websites. It is built with <a href="">Sass</a> and works with WVU&rsquo;s <a href="">CleanSlate</a> content management system.</p>
 
-      <a href="" class="button button--wvu-blue button--big">GitHub</a>
-      <a href="" class="button button--wvu-blue button--big">Examples</a>
+      <a href="https://github.com/wvuweb/wvu-brand-patterns-theme" class="button button--wvu-blue button--big">GitHub</a>
+      <a href="#examples" class="button button--wvu-blue button--big">Examples</a>
     </main><!-- /.main -->
   </div>
 </div>
@@ -53,16 +53,16 @@ layout: default
 </div>
 
 <div class="u-pms-432-c background wvu-section u-full-width">
-  <div class="wvu-container">
+  <div class="wvu-container instructions">
 
     <h2>Instructions</h2>
 
     <ol>
-      <li>Clone/download the WVU Brand Patterns theme from <a href="">GitHub</a> or <a href="">Stash</a>. If you clone from Stash, the repo name is Adam G&rsquo;s Magic Pattern Library.</li>
+      <li>Clone/download the WVU Brand Patterns theme from <a href="https://github.com/wvuweb/wvu-brand-patterns-theme">GitHub</a> or <a href="https://stash.development.wvu.edu/projects/CST/repos/adam-gs-magic-pattern-library/browse">Stash</a>. If you clone from Stash, the repo name is Adam G&rsquo;s Magic Pattern Library.</li>
       <li>Create a repo for your new theme in the CleanSlate Themes project on Stash.</li>
       <li>Copy the files you want from the WVU Brand Patterns theme into your new theme.</li>
       <li>Edit your theme and compile your changes using your favorite Sass compiler.</li>
-      <li>Test your theme in <a href="">Hammer</a>.</li>
+      <li>Test your theme in <a href="https://github.com/wvuweb/hammer">Hammer</a>.</li>
       <li>Push and sync your theme.</li>
     </ol>
     
@@ -73,9 +73,10 @@ layout: default
 
     <h2>Configuration</h2>
 
-    <p>All modules in your scss/0-plugins and scss/1-base folders are required and are imported by default (if you do not wish to use Bourbon and Neat, you can remove those files).</p>
-    <p>Include any additional modules you want into your theme&rsquo;s scss/2-modules and a corresponding layout  from the scss/3-layouts folders. Each has a corresponding HTML partial you must include in your HTML templates (found in your 'views' folder).</p>
-<hr>
+    <p>All modules in your scss/0-plugins and scss/1-base folders are required and are imported by default.</p>
+    
+    <p>The WVU Brand Patterns theme comes with <a href="http://bourbon.io">Boubon/Neat</a>. Want to use your own grid or mixin library instead? No problem, just remove the references to Bourbon and Neat from the plugins.sass and the layouts-dir.sass files and include your own.</p>
+    <p>Include any additional modules you want into your theme&rsquo;s from the scss/2-modules directory and a corresponding layout from the scss/3-layouts directory. Each has a corresponding HTML partial you must include in your HTML templates (found in the 'views' directory).</p>
     <p>Easily change design elements using Sass variables in your scss/1-base/variables.scss file (or create your own variables file). For example, the following code changes the site&rsquo;s masthead to show a gold background with a blue Flying WV w/Signature, blue links, and a blue search button.</p>
 
     
@@ -89,27 +90,22 @@ layout: default
 
 <div class="wvu-section u-full-width">
   <div class="wvu-container">
-    <h2>Examples</h2>
+    <h2><a name="examples"></a>Examples</h2>
     <p>Below are example templates created using the WVU Brand Patterns theme:</p>
 
     <ul>
-      <li>Example patterns</li>
-      <li>Example college-level page</li>
-      <li>Example landing page</li>
-      <li>Example back page</li>
-      <li>Example profiles listing</li>
-      <li>Example profile page</li>
-      <li>Example HTML email theme</li>
+      <li><a href="patterns.html">Example patterns</a></li>
+      <li><a href="sample-home-page.html">Example college-level page</a></li>
+      <li><a href="sample-landing-page.html">Example landing page</a></li>
+      <li><a href="sample-back-page.html">Example back page</a></li>
     </ul>
-<hr>
-    <p>The WVU Brand Patterns theme comes with <a href="http://bourbon.io">Boubon/Neat</a>. Want to use your own grid or mixin library instead? No problem, just remove the references to Bourbon and Neat from the plugins.sass and the layouts-dir.sass file and include your own.</p>
     
   </div>
 </div>
-<div class="wvu-section u-full-width">
+<div class="wvu-section u-full-width u-pms-warm-gray-11 background">
   <div class="wvu-container">
 
-    <h2>Have suggestions? Want to submit a new pattern?</h2>
-    <a href="" class="button button--big">Submit on GitHub</a>
+    <h2>Have suggestions or want to submit a new pattern?</h2>
+    <a href="https://github.com/wvuweb/wvu-brand-patterns-theme/issues" class="button button--big button--white">File an Issue on GitHub</a>
   </div>
 </div>

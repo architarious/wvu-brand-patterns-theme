@@ -42,7 +42,7 @@ h3, h4, h5 { line-height: 1.15; }
 p { max-width: 75em; margin-bottom: 18px; }
 blockquote { font-size: .95em; line-height: 1.6; max-width: 60em; margin-bottom: 18px; border-left: 4px solid; padding-left: 10px; }
 ul, ol { margin-bottom: 18px; }
-a { color: $base-link-color; text-decoration: none;
+a { color: $base-link-color; text-decoration: underline;
   &:visited { color: $visited-link-color; text-decoration: none; }
   &:active { text-decoration: none; }
   &:hover { color: $hover-link-color; text-decoration: underline; }
