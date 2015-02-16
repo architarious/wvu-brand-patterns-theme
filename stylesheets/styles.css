@@ -385,7 +385,6 @@ input[type="submit"] {
     background-color: #FDDA24; }
 
 .u-full-width {
-  float: left;
   width: 100%; }
 
 .u-embed-container {
@@ -556,6 +555,96 @@ p.lede {
 p + p.lede {
   margin-top: 1em; }
 
+h3 {
+  font-size: 2em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.2em; }
+
+h3, h4, h5, h6 {
+  margin-bottom: 18px; }
+
+h4, h5, h6 {
+  color: #2C2A29;
+  margin-bottom: 18px; }
+
+h3, h4, h5 {
+  line-height: 1.15; }
+
+p {
+  max-width: 75em;
+  margin-bottom: 18px; }
+
+blockquote {
+  font-size: .95em;
+  line-height: 1.6;
+  max-width: 60em;
+  margin-bottom: 18px;
+  border-left: 4px solid;
+  padding-left: 10px; }
+
+ul, ol {
+  margin-bottom: 18px; }
+
+a {
+  color: #005EB8;
+  text-decoration: none; }
+  a:visited {
+    color: #0033A0;
+    text-decoration: none; }
+  a:active {
+    text-decoration: none; }
+  a:hover {
+    color: #E35205;
+    text-decoration: underline; }
+
+ul {
+  list-style-type: disc; }
+
+ul ul {
+  list-style-type: circle;
+  margin-bottom: 0; }
+
+.wvu-nav ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  float: left; }
+
+ul li, ol li {
+  line-height: 1.4;
+  margin: 10px 0; }
+
+ol {
+  list-style-type: decimal; }
+
+ol ol {
+  list-style-type: lower-alpha;
+  margin-bottom: 0; }
+
+acronym, abbr {
+  font-variant: small-caps; }
+
+ins {
+  text-decoration: underline; }
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquote {
+  vertical-align: baseline; }
+
+h6, .wvu-sidebar {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 18px; }
+
+ul li, .wvu-sidebar li {
+  line-height: 1.4; }
+
+em, i, cite, q {
+  font-style: italic; }
+
 body {
   font-size: 1em;
   line-height: 1.5; }
@@ -575,8 +664,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  border-top: 1px solid #EAAA00;
+  margin: 4em 0;
   padding: 0; }
 
 img {
@@ -1322,7 +1411,6 @@ input[type="submit"].form-search__submit {
 
 @media (min-width: 48em) {
   .wvu-footer {
-    padding: 10px;
     width: 100%; }
 
   .wvu-contact {
@@ -1559,7 +1647,7 @@ input[type="submit"].form-search__submit {
 .wvu-hero {
   color: white;
   background-color: #002855;
-  background-image: url("./images/coopers-rock.jpg");
+  background-image: url("../images/coopers-rock.jpg");
   background-position: 75% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2093,7 +2181,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     background: #002855;
     border-color: #002855; }
   .wvu-masthead--gold .wvu-masthead__logo {
-    background: url("./images/flying-wv-blue.png") no-repeat top 1.2em left;
+    background: url("../images/flying-wv-blue.png") no-repeat top 1.2em left;
     background-size: 1.8em;
     color: #002855; }
     .wvu-masthead--gold .wvu-masthead__logo:hover {
@@ -2101,7 +2189,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   .wvu-masthead--gold .wvu-masthead__link {
     color: #002855; }
     .wvu-masthead--gold .wvu-masthead__link:hover {
-      color: #0033A0; }
+      color: #005EB8; }
 
 .wvu-masthead--white {
   background-color: white;
@@ -2109,7 +2197,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   background-image: none; }
   .wvu-masthead--white input[type="submit"].form-search__submit {
     border-color: #002855;
-    background: #002855; }
+    background-color: #002855; }
     .wvu-masthead--white input[type="submit"].form-search__submit:hover {
       background: #EAAA00;
       border-color: #EAAA00; }
@@ -2120,7 +2208,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   .wvu-masthead--white .wvu-masthead__link {
     color: #002855; }
     .wvu-masthead--white .wvu-masthead__link:hover {
-      color: #0033A0; }
+      color: #005EB8; }
 
 .wvu-masthead--blue-pattern {
   background: url(../images/pattern-blue.jpg) no-repeat;
@@ -2180,12 +2268,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     font-size: 3em; }
 
 .wvu-hero--vignetting {
-  background-image: url("./images/vignetting-2.png"), url("./images/coopers-rock.jpg");
+  background-image: url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg");
   background-size: cover, cover;
   background-position: center top, center top; }
 
 .wvu-hero--pattern-grid {
-  background-image: url("./images/wvu-pattern-grid.png"), url("./images/coopers-rock.jpg");
+  background-image: url("../images/wvu-pattern-grid.png"), url("../images/coopers-rock.jpg");
   background-size: 1720px, cover;
   background-position: center top, center top; }
   .wvu-hero--pattern-grid .button {
@@ -2206,7 +2294,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     -webkit-box-shadow: 2px 2px 15px 0 #000000;
     box-shadow: 2px 2px 15px 0 #000000; }
   .wvu-hero--pattern-grid.wvu-hero--vignetting {
-    background-image: url("./images/wvu-pattern-grid.png"), url("./images/vignetting-2.png"), url("./images/coopers-rock.jpg");
+    background-image: url("../images/wvu-pattern-grid.png"), url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg");
     background-size: 1720px, cover, cover;
     background-position: center top, center top, center top; }
 
@@ -2226,21 +2314,21 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     background-size: 3340px, cover, cover; }
 
 .wvu-hero--diagonal-line {
-  background-image: url("./images/coopers-rock.jpg");
+  background-image: url("../images/coopers-rock.jpg");
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: cover; }
   @media (min-width: 60em) {
     .wvu-hero--diagonal-line {
-      background-image: url("./images/gold-diagonal-transparent.svg"), url("./images/coopers-rock.jpg");
+      background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/coopers-rock.jpg");
       background-size: 500px, cover;
       background-position: 59% -209px, center top; }
       .wvu-hero--diagonal-line.wvu-hero--vignetting {
-        background-image: url("./images/gold-diagonal-transparent.svg"), url("./images/vignetting-2.png"), url("./images/coopers-rock.jpg");
+        background-image: url("../images/gold-diagonal-transparent.svg"), url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg");
         background-size: 500px, cover, cover;
         background-position: 59% -209px, center top, center top; } }
   .wvu-hero--diagonal-line.wvu-hero--vignetting {
-    background-image: url("./images/vignetting-2.png"), url("./images/coopers-rock.jpg"); }
+    background-image: url("../images/vignetting-2.png"), url("../images/coopers-rock.jpg"); }
 
 .wvu-hero--small-photo {
   color: #2C2A29;
@@ -2311,7 +2399,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   padding-bottom: 1em; }
 
 .wvu-calendar--flex {
-  padding-left: 0; }
+  padding-left: 0;
+  font-size: 0.8em; }
   @media (min-width: 48em) {
     .wvu-calendar--flex {
       display: flex;
@@ -2390,7 +2479,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1em; }
+  padding: 0 1em;
+  position: relative; }
   .wvu-container:after {
     content: "";
     display: table;
@@ -2461,13 +2551,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       margin-right: 0; } }
 
 @media (min-width: 48em) {
-  .wvu-sub-nav {
+  .wvu-sidebar {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 18.96686%;
-    margin-right: 0; }
-    .wvu-sub-nav:last-child {
+    width: 18.96686%; }
+    .wvu-sidebar:last-child {
       margin-right: 0; } }
 
 .wvu-landing-page-header__container {
@@ -2496,6 +2585,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     width: 48.82117%; }
     .wvu-landing-page-header__intro:last-child {
       margin-right: 0; } }
+
+.backpage-content {
+  padding: 100px 0; }
 
 @media (min-width: 48em) {
   .profiles__container {

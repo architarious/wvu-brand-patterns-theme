@@ -23,30 +23,31 @@ $traditional-audience-line-height: 1.16666666667em;
 // Links
 //==================================================
 
-$base-link-color: $pms-286-c;
-$hover-link-color: $pms-300-c;
+$base-link-color: $pms-300-c;
+$hover-link-color: $pms-166-c;
 $link-border-style: 1px dotted;
+$visited-link-color: $pms-286-c;
 
 // Masthead
 //==================================================
 
-$blue-flying-wv: './images/flying-wv-blue.png';
+$blue-flying-wv: '../images/flying-wv-blue.png';
 $wvu-masthead-two-line-lockup: false;
 $wvu-masthead-background: 'blue';
 
 // Hero Elements
 //==================================================
 
-$hero-image: './images/coopers-rock.jpg';
-$blue-pattern-background: './blue-pattern-close.jpg';
-$diagonal-line-gold: './images/gold-diagonal.svg';
-$diagonal-line-blue: './images/blue-diagonal.svg';
-$diagonal-line-white: './images/white-diagonal.svg';
-$diagonal-line-gold-transparent: './images/gold-diagonal-transparent.svg';
-$diagonal-line-blue-transparent: './images/blue-diagonal-transparent.svg';
-$diagonal-line-white-transparent: './images/white-diagonal-transparent.svg';
-$wvu-pattern-grid: './images/wvu-pattern-grid.png';
-$vignetting: './images/vignetting-2.png';
+$hero-image: '../images/coopers-rock.jpg';
+$blue-pattern-background: '../images/blue-pattern-close.jpg';
+$diagonal-line-gold: '../images/gold-diagonal.svg';
+$diagonal-line-blue: '../images/blue-diagonal.svg';
+$diagonal-line-white: '../images/white-diagonal.svg';
+$diagonal-line-gold-transparent: '../images/gold-diagonal-transparent.svg';
+$diagonal-line-blue-transparent: '../images/blue-diagonal-transparent.svg';
+$diagonal-line-white-transparent: '../images/white-diagonal-transparent.svg';
+$wvu-pattern-grid: '../images/wvu-pattern-grid.png';
+$vignetting: '../images/vignetting-2.png';
 
 // Typography
 

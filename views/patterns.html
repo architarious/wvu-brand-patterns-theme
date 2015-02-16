@@ -46,18 +46,21 @@ layout: default
 
 <h2 class="element-header">Type Hierarchy</h2>
 
-<div class="wvu-container">
-
-  <h1 class="shout shout--wvu-blue">Mountaineers <br><span class="shout--wvu-gold">Go First.</span></h1>
-  
-  <main class="main" role="main">
-    <r:partial name="demo/wvu-typography" />
-  </main>
-  
-  <r:partial name="demo/wvu-sub-nav-example" />
-
+<div class="u-full-width wvu-section">
   <div class="wvu-container">
-    <div class="code-label code-label--styles">SCSS (scss/1-base/base-dir.scss)</div>
+
+    <h1 class="shout shout--wvu-blue">Mountaineers <br><span class="shout--wvu-gold">Go First.</span></h1>
+  
+    <main class="main" role="main">
+      <r:partial name="demo/wvu-typography" />
+    </main>
+  
+    <aside class="wvu-sidebar">
+      <r:partial name="demo/wvu-sub-nav-example" />
+    </div>
+    
+    <div class="wvu-container">
+      <div class="code-label code-label--styles">SCSS (scss/1-base/base-dir.scss)</div>
   <pre>
   @import 'typography';</pre>
   <div class="code-label code-label--html">HTML (views/backpage.html)</div>
@@ -68,9 +71,10 @@ layout: default
   <div class="code-label code-label--styles">SCSS (scss/2-modules/modules-dir.scss)</div>
   <pre>
   @import 'wvu-sub-nav';</pre>
+    </div>
   </div>
 </div>
-
+<h2 class="element-header">Back Page/Below-the-fold Callout</h2>
 <r:partial name="demo/wvu-back-page-callouts" />
 
 <h2 class="element-header">Slideshow Hero Unit with Shout and Photo</h2>

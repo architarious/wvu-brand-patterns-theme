@@ -4,22 +4,38 @@ layout: default
 
 <r:partial name="patterns/wvu-masthead" />
 
-<r:partial name="patterns/wvu-nav" />
+<div class="u-full-width u-black background">
+  <div class="wvu-container">
+    <r:partial name="patterns/wvu-nav" />
+  </div>
+</div>
 
-<r:partial name="patterns/wvu-breadcrumbs" />
+<div class="wvu-container">
+  
+  <r:partial name="patterns/wvu-breadcrumbs" />
+  
+  <div class="backpage-content">
+  
+    <main class="main" role="main">
+      <a name="maincontent"></a>
+      <r:partial name="demo/wvu-typography" />
+    </main>
+  
+    <aside class="wvu-sidebar" role="complementary">
+      <r:partial name="demo/wvu-sub-nav-example" />
+     <r:editable_region name="sidebar" />
+    </aside> <!-- /.wvu-sidebar -->
+  
+  </div>
+</div>
 
-<div class="type-system">
-  
-  <main class="main" role="main">
-    <a name="maincontent"></a>
-    <r:partial name="demo/wvu-typography" />
-  </main>
-  
-  <aside class="wvu-sidebar" role="complementary">
-    <r:partial name="demo/wvu-sub-nav-example" />
-   <r:editable_region name="sidebar" />
-  </aside> <!-- /.wvu-sidebar -->
-  
+<div class="wvu-section u-full-width u-pms-432-c background">
+  <div class="wvu-container">
+    <h3><span class="u-pms-558-c">This is a headline.</h3>
+    <p><r:editable_region name="long-paragraph" /></p>
+    <h3><span class="u-pms-144-c">This is a headline.</h3>
+    <p><r:editable_region name="long-paragraph" /></p>
+  </div>
 </div>
 
 <r:content_for name="page_js"> 

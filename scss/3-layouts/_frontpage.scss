@@ -1,4 +1,4 @@
-.wvu-container { @include outer-container; padding: 0 1em;
+.wvu-container { @include outer-container(); padding: 0 1em; position: relative;
   @include mq($bp-xlarge) { padding: 0; }
 }
 

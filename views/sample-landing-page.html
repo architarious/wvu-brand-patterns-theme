@@ -4,24 +4,20 @@ layout: default
 
 <r:partial name="patterns/wvu-masthead" />
 
-<r:partial name="patterns/nav" />
-
-<r:partial name="patterns/breadcrumbs" />    
+  <div class="u-full-width u-black background">
+    <div class="wvu-container">
+      <r:partial name="patterns/wvu-nav" />
+    </div>
+  </div> 
 
 <a name="maincontent"></a>
 
-<r:partial name="landing-page-header" />
+<r:partial name="patterns/wvu-landing-page-header" />
 
-<div class="cards cards--pms-429-c">
-  <div class="cards__wrapper">
-    <r:partial name="patterns/super-nav" />
-  </div>
-</div>
+<r:partial name="demo/wvu-super-nav-example" />
 
-<div class="cards">
-  <div class="cards__wrapper">
-    <r:partial name="patterns/features-triptych" />
-  </div>
+<div class="wvu-section">
+  <r:partial name="demo/wvu-spotlights--triptych" />
 </div>
 
 <r:content_for name="page_js"> 

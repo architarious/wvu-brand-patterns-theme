@@ -21,7 +21,7 @@
 
 .wvu-masthead--white { background-color: white; color: $black; background-image: none; 
   input[type="submit"] {
-    &.form-search__submit { border-color: $wvu-blue; background: $wvu-blue;
+    &.form-search__submit { border-color: $wvu-blue; background-color: $wvu-blue;
       &:hover { background: $wvu-gold; border-color: $wvu-gold; }
     }
   }
@@ -211,7 +211,7 @@
   }
 }
 
-.wvu-calendar--flex { padding-left: 0;
+.wvu-calendar--flex { padding-left: 0; font-size: 0.8em;
   @include mq($bp-medium) {
     display: flex;
     align-items: stretch;

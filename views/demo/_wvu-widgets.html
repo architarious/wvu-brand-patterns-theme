@@ -3,55 +3,43 @@
 
 <r:partial name="demo/wvu-spotlights--triptych" />
 
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/frontpage.html)</div>
+<pre>
+  &lt;r:partial name="patterns/wvu-spotlights-index--auto" /&gt;
+  &lt;!-- This loops through a set of child pages and pulls appropriate elements --&gt;
+</pre>
+  <div class="code-label code-label--styles">SCSS (scss/2-modules/modules-dir.scss)</div>
+<pre>
+  @include 'wvu-triptych'
+</pre>
+  <div class="code-label code-label--styles">SCSS (scss/3-layouts/layouts-dir.scss)</div>
+<pre>
+  @include 'wvu-triptych'
+</pre>
+</div>
+
 <h2 class="element-header">Super Nav</h2>
 
 <r:partial name="demo/wvu-super-nav-example" />
+
+<div class="wvu-container">
+  <div class="code-label code-label--html">HTML (views/default.html)</div>
+  <pre>
+  &lt;r:partial name="patterns/wvu-super-nav" /&gt;</pre>
+  <div class="code-label code-label--styles">SCSS (scss/2-layouts/modules-dir.sass)</div>
+  <pre>
+  @import 'wvu-super-nav'</pre>
+  <div class="code-label code-label--styles">SCSS (scss/3-layouts/layouts-dir.sass)</div>
+  <pre>
+  @import 'wvu-quadtych'</pre>
+</div>
 
 <h2 class="element-header">Horizontal Widgets</h2>
 
 <div class="wvu-section u-full-width u-pms-432-c background">
   <div class="wvu-container">
-    <div class="wvu-triptych-combo">
-      <div class="wvu-triptych-combo__panel wvu-triptych-combo__panel--spotlights">
-        <h2>Spotlights</h2>
-      
-        <div class="wvu-spotlight">
-          <div class="wvu-spotlight__image">
-            <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
-          </div>
-          <div class="wvu-spotlight__copy">
-            <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
-            <p><r:page:meta_description /></p>
-            <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
-          </div>
-        </div>
-      
-        <div class="wvu-spotlight">
-          <div class="wvu-spotlight__image">
-            <a href="<r:page:url />"><img src="<r:image_url name="kids-sitting-by-tulips.jpg" />" /></a>
-          </div>
-          <div class="wvu-spotlight__copy">
-            <h2><r:page:first_non_blank_attr names="alternate_name,name" /></h2>
-            <p><r:page:meta_description /></p>
-            <a href="<r:page:url />" class="button">Continue to <r:page:first_non_blank_attr names="alternate_name,name" /></a>
-          </div>
-        </div>
-
-      </div>
-      
-      <div class="wvu-triptych-combo__panel wvu-triptych-combo__panel--calendar">
-        <h2>
-          Events
-        </h2>
-      
-        <r:partial name="demo/wvu-calendar" />
-
-        <a href="" class="button button--white">All Events</a>
-
-  
-      </div>
-
-    </div>
+    <r:partial name="demo/wvu-spotlights--diptych-combo" />
   </div>
 </div>
 
@@ -80,13 +68,11 @@
 <div class="wvu-section u-full-width u-pms-432-c background">
   <div class="wvu-container">    
 
-    <h2 class="cards__header">
+    <h2>
       Events
     </h2>
 
-    <ul class="wvu-calendar wvu-calendar--flex">
-      <script language="javascript" src="http://cal.wvu.edu/EventListSyndicator.aspx?type=N&number=5&category=67-0&ihc=y&expire=N&adpid=21&nem=No+events+are+available+that+match+your+request&sortorder=ASC"></script>
-    </ul>
+    <r:partial name="demo/wvu-calendar--flex" />
 
     <a class="button button--white">All Events</a>
     
