@@ -1,5 +1,5 @@
 $(function(){
-	$('.wvu-nav').setup_navigation();
+	$('.wvu-nav, .wvu-nav ul').setup_navigation();
 });
 
 var keyCodeMap = {
