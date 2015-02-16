@@ -249,9 +249,8 @@ input[type="submit"] {
       color: white; }
     .u-black.background .button {
       border-color: white; }
-      .u-black.background .button:hover {
-        background: white;
-        color: #2C2A29; }
+    .u-black.background a:hover {
+      color: #6E6259; }
 
 .u-pms-432-c {
   color: #333F48;
@@ -263,9 +262,8 @@ input[type="submit"] {
       color: white; }
     .u-pms-432-c.background .button {
       border-color: white; }
-      .u-pms-432-c.background .button:hover {
-        background: white;
-        color: #333F48; }
+    .u-pms-432-c.background a:hover {
+      color: #6E6259; }
 
 .u-pms-429-c {
   color: #A2AAAD;
@@ -286,8 +284,8 @@ input[type="submit"] {
     background-color: #6E6259; }
     .u-pms-warm-gray-11.background h1, .u-pms-warm-gray-11.background h2, .u-pms-warm-gray-11.background h3, .u-pms-warm-gray-11.background h4, .u-pms-warm-gray-11.background h5, .u-pms-warm-gray-11.background h6, .u-pms-warm-gray-11.background a {
       color: white; }
-      .u-pms-warm-gray-11.background h1:hover, .u-pms-warm-gray-11.background h2:hover, .u-pms-warm-gray-11.background h3:hover, .u-pms-warm-gray-11.background h4:hover, .u-pms-warm-gray-11.background h5:hover, .u-pms-warm-gray-11.background h6:hover, .u-pms-warm-gray-11.background a:hover {
-        color: #6E6259; }
+    .u-pms-warm-gray-11.background a:hover {
+      color: #6E6259; }
 
 .u-pms-warm-gray-7 {
   color: #968C83;
@@ -297,8 +295,8 @@ input[type="submit"] {
     background-color: #968C83; }
     .u-pms-warm-gray-7.background h1, .u-pms-warm-gray-7.background h2, .u-pms-warm-gray-7.background h3, .u-pms-warm-gray-7.background h4, .u-pms-warm-gray-7.background h5, .u-pms-warm-gray-7.background h6, .u-pms-warm-gray-7.background a {
       color: white; }
-      .u-pms-warm-gray-7.background h1:hover, .u-pms-warm-gray-7.background h2:hover, .u-pms-warm-gray-7.background h3:hover, .u-pms-warm-gray-7.background h4:hover, .u-pms-warm-gray-7.background h5:hover, .u-pms-warm-gray-7.background h6:hover, .u-pms-warm-gray-7.background a:hover {
-        color: #968C83; }
+    .u-pms-warm-gray-7.background a:hover {
+      color: #6E6259; }
 
 .u-pms-warm-gray-3 {
   color: #BFB8AF;
