@@ -111,7 +111,7 @@ $has-wvu-pattern-grid: true !default;
   
 }
 
-.wvu-hero__container { padding: 3em;
+.wvu-hero__container { padding: 3em; position: relative;
   @include mq($bp-xlarge) {
     padding: 3em 0;
   }

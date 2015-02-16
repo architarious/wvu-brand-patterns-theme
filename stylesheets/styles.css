@@ -1687,7 +1687,8 @@ input[type="submit"].form-search__submit {
     max-width: 40em; }
 
 .wvu-hero__container {
-  padding: 3em; }
+  padding: 3em;
+  position: relative; }
   @media (min-width: 75em) {
     .wvu-hero__container {
       padding: 3em 0; } }
@@ -1793,7 +1794,7 @@ input[type="submit"].form-search__submit {
   text-shadow: 1px 1px 1px #000000;
   box-sizing: border-box; }
 
-.wvu-landing-page-header__intro--overlay {
+.wvu-landing-page-header__intro {
   padding: 2em;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
   /* FF3.6+ */
@@ -2183,6 +2184,60 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   text-decoration: underline; }
 .instructions ol {
   font-size: 1.5em; }
+
+.wvu-nav,
+.wvu-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* Dropdowns */
+.wvu-nav ul {
+  display: none;
+  background: #2C2A29; }
+  @media (min-width: 48em) {
+    .wvu-nav ul {
+      display: block;
+      position: absolute;
+      top: 3.45em;
+      left: -9999px;
+      z-index: 9999;
+      opacity: 0;
+      -webkit-transition: 0.1s linear opacity;
+      min-width: 150px; } }
+
+.wvu-nav li {
+  float: left;
+  position: relative; }
+
+.wvu-nav li:hover ul,
+.wvu-nav li:focus ul,
+ul.show-menu {
+  left: 0;
+  opacity: 0.99; }
+
+.wvu-nav ul li {
+  float: none;
+  position: static; }
+
+.wvu-nav ul a {
+  float: none;
+  display: block;
+  color: #FFF;
+  font-size: 12px;
+  text-shadow: none;
+  border: 1px solid #222;
+  border-width: 0 0 1px;
+  -webkit-transition: 0.1s linear all; }
+
+.wvu-nav ul a:hover,
+.wvu-nav ul a:focus {
+  background: #EEE;
+  color: #333;
+  text-shadow: none; }
+
+p {
+  clear: both; }
 
 .wvu-masthead--two-line-lockup .wvu-masthead__title {
   font-size: 0.75em;
