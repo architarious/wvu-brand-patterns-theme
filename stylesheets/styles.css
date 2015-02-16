@@ -1792,7 +1792,8 @@ input[type="submit"].form-search__submit {
   color: white;
   font-weight: bold;
   text-shadow: 1px 1px 1px #000000;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  clear: none; }
 
 .wvu-landing-page-header__intro {
   padding: 2em;
