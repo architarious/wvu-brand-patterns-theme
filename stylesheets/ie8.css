@@ -1,2 +1,3 @@
-.wvu-masthead__logo { background-image: url(../images/flying-wv.png); }
+.wvu-masthead__logo { background-image: url(../images/flying-wv-ie.png); background-repeat: no-repeat; }
 .wvu-masthead__search-bar { margin-right: 0; }
+input[type="submit"].form-search__submit { background-image: url(); background-repeat: no-repeat; }
