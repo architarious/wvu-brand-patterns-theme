@@ -35,6 +35,52 @@
 
 .wvu-masthead--blue-pattern { background: url(../images/pattern-blue.jpg) no-repeat; background-size: cover; }
 
+//// has signature 
+
+.wvu-masthead--has-signature {
+
+  .wvu-masthead__logo {
+    background-image: url(../images/flying-wv-w-signature.png);
+    background-repeat: no-repeat;
+    background-position: top 1.2em left;
+    background-size: 300px;
+    padding-left: 54px;
+    padding-bottom: 1em;
+  }
+  .wvu-masthead__title, &.wvu-masthead--two-line-lockup .wvu-masthead__title {
+    padding-top: 46px;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .wvu-masthead__university-name, &.wvu-masthead--two-line-lockup .wvu-masthead__university-name {
+    position: absolute;
+    left: -99999em;
+  }
+  &.wvu-masthead--two-line-lockup {
+    .wvu-masthead__title {
+      padding-top: 46px;
+      display: inline-block;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .wvu-masthead__university-name {
+      position: absolute;
+      left: -99999em;
+    }
+  }
+  &.wvu-masthead--gold {
+    .wvu-masthead__logo {
+      background-image: url(../images/flying-wv-w-signature-gold-bg.png);
+    }
+  }
+  &.wvu-masthead--white {
+    .wvu-masthead__logo {
+      background-image: url(../images/flying-wv-w-signature-white-bg.png);
+    }
+  }
+}
+
 
 // WVU Hero
 
@@ -222,3 +268,6 @@
     }
   }
 }
+
+
+

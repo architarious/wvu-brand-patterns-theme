@@ -5,5 +5,7 @@ input[type="submit"].form-search__submit { background-image: url(); background-r
 .wvu-landing-page-header__intro { margin-right: 0; }
 .wvu-container .omega { margin-right: 0; }
 
+.wvu-masthead__logo { background-image: url(../images/flying-wv-w-signature-ie8.png); background-repeat: no-repeat; background-position-y: 1.2em; }
+
 .wvu-quicklinks--flex ul li { background-image: url(../images/diagonal-gold.svg); }
 .wvu-quicklinks li { background-image: url(../images/diagonal-gold.svg); }
