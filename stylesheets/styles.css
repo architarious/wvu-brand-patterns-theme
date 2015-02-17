@@ -841,53 +841,6 @@ input[type="submit"].form-search__submit {
   .wvu-masthead__college-link:visited {
     color: #002855; }
 
-@media (min-width: 35.625em) {
-  .wvu-nav {
-    padding: 0 20px; } }
-@media (min-width: 75em) {
-  .wvu-nav {
-    padding: 0; } }
-@media (min-width: 48em) {
-  .wvu-nav {
-    margin-left: -1em; } }
-.wvu-nav li {
-  margin-bottom: 0;
-  margin-top: 0;
-  float: left; }
-  .wvu-nav li a {
-    float: left;
-    color: white;
-    margin-right: 0;
-    padding: 1em;
-    width: 100%;
-    text-decoration: none; }
-    .wvu-nav li a:hover {
-      background: #EAAA00;
-      color: #002855; }
-.wvu-nav.nav-collapse {
-  clear: both;
-  overflow: visible; }
-  @media (min-width: 35.625em) {
-    .wvu-nav.nav-collapse li {
-      width: auto;
-      float: left; } }
-
-.nav-toggle {
-  float: left;
-  width: 100%;
-  padding: 1em;
-  text-align: center;
-  color: white; }
-  @media (min-width: 48em) {
-    .nav-toggle {
-      margin-left: 10px; } }
-  .nav-toggle:visited {
-    color: white; }
-  .nav-toggle:hover {
-    text-decoration: none;
-    background-color: #EAAA00;
-    color: #002855; }
-
 .wvu-article {
   float: left;
   width: 100%;
@@ -2190,6 +2143,56 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
   padding: 0;
   list-style: none; }
 
+@media (min-width: 35.625em) {
+  .wvu-nav {
+    padding: 0 20px; } }
+@media (min-width: 75em) {
+  .wvu-nav {
+    padding: 0; } }
+@media (min-width: 48em) {
+  .wvu-nav {
+    margin-left: -1em; } }
+.wvu-nav li {
+  margin-bottom: 0;
+  margin-top: 0;
+  float: left; }
+  .wvu-nav li a {
+    float: left;
+    color: white;
+    margin-right: 0;
+    padding: 1em;
+    width: 100%;
+    text-decoration: none; }
+    .wvu-nav li a:hover {
+      background: #EAAA00;
+      color: #002855; }
+.wvu-nav.nav-collapse {
+  clear: both;
+  overflow: visible; }
+  @media (min-width: 35.625em) {
+    .wvu-nav.nav-collapse li {
+      width: auto;
+      float: left; } }
+
+.nav-toggle {
+  float: left;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  color: white; }
+  @media (min-width: 48em) {
+    .nav-toggle {
+      margin-left: 10px; } }
+  .nav-toggle:visited {
+    color: white; }
+  .nav-toggle:hover {
+    text-decoration: none;
+    background-color: #EAAA00;
+    color: #002855; }
+
+.wvu-nav.nav-collapse li ul li {
+  width: 100%; }
+
 /* Dropdowns */
 .wvu-nav ul {
   display: none;
@@ -2203,10 +2206,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       z-index: 9999;
       opacity: 0;
       -webkit-transition: 0.1s linear opacity;
-      width: 150px; } }
-
-.wvu-nav.nav-collapse li ul li {
-  width: 100%; }
+      width: 200px; } }
 
 .wvu-nav li {
   float: left;
@@ -2224,7 +2224,15 @@ ul.show-menu {
 
 .wvu-nav ul li:hover ul, .wvu-nav ul li:focus ul, .wvu-nav ul ul.show-menu {
   top: 0;
-  left: 150px; }
+  left: 195px; }
+  .wvu-nav ul li:hover ul ul, .wvu-nav ul li:focus ul ul, .wvu-nav ul ul.show-menu ul {
+    left: -9999em; }
+
+.wvu-nav ul ul li:hover ul, .wvu-nav ul ul li:focus ul, .wvu-nav ul ul ul.show-menu {
+  top: 0;
+  left: 195px; }
+  .wvu-nav ul ul li:hover ul ul, .wvu-nav ul ul li:focus ul ul, .wvu-nav ul ul ul.show-menu ul {
+    left: -9999em; }
 
 .wvu-nav ul li {
   float: none;
@@ -2240,6 +2248,37 @@ ul.show-menu {
 .wvu-nav ul a:focus {
   background: #EAAA00;
   color: #2C2A29; }
+
+li.more {
+  padding-right: 0; }
+  @media (min-width: 60em) {
+    li.more {
+      padding-right: 1em; } }
+  li.more > ul > li:first-child a {
+    padding-top: 1em; }
+  li.more a {
+    margin-right: 0; }
+  li.more > a {
+    padding-right: 1.5em; }
+  @media (min-width: 48em) {
+    li.more > a:after {
+      position: absolute;
+      top: auto;
+      right: 1.5em;
+      bottom: auto;
+      left: auto;
+      content: '\25BE'; } }
+  li.more li.more {
+    padding-right: 0; }
+    @media (min-width: 60em) {
+      li.more li.more > a {
+        padding-right: 1em; } }
+    @media (min-width: 48em) {
+      li.more li.more > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; } }
 
 .wvu-masthead--two-line-lockup .wvu-masthead__title {
   font-size: 0.75em;
