@@ -1,4 +1,4 @@
-.wvu-nav { 
+.wvu-nav { margin-bottom: 0;
   @include mq($bp-small) { padding: 0 20px; }
   @include mq($bp-xlarge) { padding: 0; }
   
