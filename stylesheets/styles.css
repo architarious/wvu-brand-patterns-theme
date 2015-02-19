@@ -250,7 +250,7 @@ input[type="submit"] {
     .u-black.background .button {
       border-color: white; }
     .u-black.background a:hover {
-      color: #6E6259; }
+      color: #2C2A29; }
 
 .u-pms-432-c {
   color: #333F48;
@@ -263,7 +263,7 @@ input[type="submit"] {
     .u-pms-432-c.background .button {
       border-color: white; }
     .u-pms-432-c.background a:hover {
-      color: #6E6259; }
+      color: #A2AAAD; }
 
 .u-pms-429-c {
   color: #A2AAAD;
@@ -285,7 +285,7 @@ input[type="submit"] {
     .u-pms-warm-gray-11.background h1, .u-pms-warm-gray-11.background h2, .u-pms-warm-gray-11.background h3, .u-pms-warm-gray-11.background h4, .u-pms-warm-gray-11.background h5, .u-pms-warm-gray-11.background h6, .u-pms-warm-gray-11.background a {
       color: white; }
     .u-pms-warm-gray-11.background a:hover {
-      color: #6E6259; }
+      color: #BFB8AF; }
 
 .u-pms-warm-gray-7 {
   color: #968C83;
@@ -826,6 +826,9 @@ a:focus {
   display: block;
   width: 0;
   height: 100%; }
+
+.form-search__field {
+  color: #2C2A29; }
 
 .wvu-masthead__search-bar {
   padding-top: 2.1em;

@@ -166,6 +166,10 @@ $wvu-masthead-has-signature: false !default;
 
 .wvu-masthead__logo:before { content: ""; display: block; width: 0; height: 100%; }
 
+.form-search__field {
+  color: $black;
+}
+
 .wvu-masthead__search-bar { padding-top: 2.1em; font-size: 0.8em;
   input[type="checkbox"], input[type="radio"] { margin-right: 0; }
 }
