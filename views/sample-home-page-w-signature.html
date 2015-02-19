@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<r:partial name="demo/wvu-masthead-w-signature" />
+
+<div class="u-full-width u-black background">
+  <div class="wvu-container">
+    <r:partial name="patterns/wvu-nav" />
+  </div>
+</div>
+
+<a name="maincontent" tabindex="-1"></a>
+
+<r:partial name="demo/wvu-flexslider" />
+
+<div class="wvu-section u-full-width">
+  <div class="wvu-container">
+    <r:partial name="demo/wvu-spotlights--triptych" />
+  </div>
+</div>
+
+<div class="wvu-section u-full-width u-pms-432-c background">
+  <div class="wvu-container">    
+
+    <h2>
+      Events
+    </h2>
+
+    <r:partial name="demo/wvu-calendar--flex" />
+
+    <a class="button button--white">All Events</a>
+    
+  </div>
+</div>
+
+<div class="wvu-section u-full-width u-black background">
+  <div class="wvu-container">
+    <r:partial name="demo/wvu-social-media-icons" />
+  </div>
+</div>
+
+<r:content_for name="page_js"> 
+  <r:include_javascript name="vendor/calendar-reformat" />
+  <r:partial name="demo/javascripts-wvu-flexslider" />
+</r:content_for>

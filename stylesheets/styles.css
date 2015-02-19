@@ -263,7 +263,8 @@ input[type="submit"] {
     .u-pms-432-c.background .button {
       border-color: white; }
     .u-pms-432-c.background a:hover {
-      color: #A2AAAD; }
+      color: #333F48;
+      background: white; }
 
 .u-pms-429-c {
   color: #A2AAAD;
@@ -285,7 +286,8 @@ input[type="submit"] {
     .u-pms-warm-gray-11.background h1, .u-pms-warm-gray-11.background h2, .u-pms-warm-gray-11.background h3, .u-pms-warm-gray-11.background h4, .u-pms-warm-gray-11.background h5, .u-pms-warm-gray-11.background h6, .u-pms-warm-gray-11.background a {
       color: white; }
     .u-pms-warm-gray-11.background a:hover {
-      color: #BFB8AF; }
+      color: #6E6259;
+      background: white; }
 
 .u-pms-warm-gray-7 {
   color: #968C83;
@@ -296,7 +298,8 @@ input[type="submit"] {
     .u-pms-warm-gray-7.background h1, .u-pms-warm-gray-7.background h2, .u-pms-warm-gray-7.background h3, .u-pms-warm-gray-7.background h4, .u-pms-warm-gray-7.background h5, .u-pms-warm-gray-7.background h6, .u-pms-warm-gray-7.background a {
       color: white; }
     .u-pms-warm-gray-7.background a:hover {
-      color: #6E6259; }
+      color: #968C83;
+      background: white; }
 
 .u-pms-warm-gray-3 {
   color: #BFB8AF;
