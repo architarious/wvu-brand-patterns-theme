@@ -39,8 +39,9 @@
     <!-- Responsive-nav.com, calendar, & quicklinks -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="//code.wvu.edu/public/vendor/jquery/1.11.1/jquery.min.js"><\/script>')</script>
+    <script type="text/javascript">$.debugBGS = true;</script>
     <r:include_javascript name="vendor/responsive-nav, responsive-nav--custom, vendor/quicklinks, vendor/wvu-nav-dropdowns" />
-
+    
     <r:yield name="page_js">
       <r:content />
     </r:yield>
@@ -49,6 +50,13 @@
 
     <r:comment><!-- Fix IE 8 and below so that media queries get supported --></r:comment>
     <!--[if lt IE 9]>
+      <script src="/javascripts/vendor/jquery.backgroundSize.js"></script>
+      <script type="text/javascript">
+        $(function() {
+
+        $(".wvu-hero").css({backgroundSize: "cover"});
+
+      </script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
