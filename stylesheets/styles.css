@@ -721,8 +721,6 @@ a:focus {
   border: 0;
   margin: 0;
   padding: 0; }
-.wvu-masthead a {
-  text-decoration: none; }
 
 .wvu-masthead__logo:hover {
   text-decoration: none; }
@@ -1657,8 +1655,12 @@ li.more {
   top: -99999em; }
 
 .form-search__search-type label {
-  position: absolute;
-  top: -99999em; }
+  float: left;
+  margin: 0 1em 0 0.5em; }
+.form-search__search-type input {
+  float: left;
+  position: relative;
+  top: 3px; }
 
 .wvu-search__search-bar {
   padding-top: 2.1em;
@@ -2578,58 +2580,13 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
       display: table;
       clear: both; } }
 
-.wvu-section {
-  padding: 4em 0 4.3em 0; }
-
-.wvu-masthead__container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .wvu-masthead__container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-@media (min-width: 48em) {
-  .wvu-masthead__logo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 61.61588%; }
-    .wvu-masthead__logo:last-child {
-      margin-right: 0; } }
-@media (min-width: 60em) {
-  .wvu-masthead__logo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 70.14568%; }
-    .wvu-masthead__logo:last-child {
-      margin-right: 0; } }
-
-@media (min-width: 48em) {
-  .wvu-masthead__search-bar {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 36.02647%; }
-    .wvu-masthead__search-bar:last-child {
-      margin-right: 0; } }
-@media (min-width: 60em) {
-  .wvu-masthead__search-bar {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 27.49666%; }
-    .wvu-masthead__search-bar:last-child {
-      margin-right: 0; } }
-
 .wvu-container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1em;
-  position: relative; }
+  position: relative;
+  padding: 4em 0 4.3em 0; }
   .wvu-container:after {
     content: "";
     display: table;
@@ -2735,8 +2692,48 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     .wvu-landing-page-header__intro:last-child {
       margin-right: 0; } }
 
-.backpage-content {
-  padding: 100px 0; }
+.wvu-masthead__container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wvu-masthead__container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media (min-width: 48em) {
+  .wvu-masthead__logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 61.61588%; }
+    .wvu-masthead__logo:last-child {
+      margin-right: 0; } }
+@media (min-width: 60em) {
+  .wvu-masthead__logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 70.14568%; }
+    .wvu-masthead__logo:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 48em) {
+  .wvu-masthead__search-bar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 36.02647%; }
+    .wvu-masthead__search-bar:last-child {
+      margin-right: 0; } }
+@media (min-width: 60em) {
+  .wvu-masthead__search-bar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 27.49666%; }
+    .wvu-masthead__search-bar:last-child {
+      margin-right: 0; } }
 
 @media (min-width: 48em) {
   .profiles__container {
