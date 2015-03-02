@@ -1,0 +1,6 @@
+.wvu-spotlight {
+  padding: 0 1em 4em;
+  @include mq($bp-medium) {
+    padding: 0;
+  }
+}

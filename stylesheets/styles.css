@@ -668,7 +668,8 @@ img, iframe, video, audio, embed, object {
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -1838,6 +1839,12 @@ input[type="submit"].form-search__submit {
   .wvu-super-nav a:visited {
     color: #2C2A29; }
 
+.wvu-spotlight {
+  padding: 0 1em 4em; }
+  @media (min-width: 48em) {
+    .wvu-spotlight {
+      padding: 0; } }
+
 .wvu-diptych {
   font-size: 0.8em; }
   .wvu-diptych h2 {
@@ -2591,9 +2598,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     content: "";
     display: table;
     clear: both; }
-  @media (min-width: 75em) {
-    .wvu-container {
-      padding: 0; } }
 
 .wvu-hero__container {
   max-width: 68em;
@@ -2734,6 +2738,15 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     width: 27.49666%; }
     .wvu-masthead__search-bar:last-child {
       margin-right: 0; } }
+
+.wvu-nav-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wvu-nav-container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 @media (min-width: 48em) {
   .profiles__container {

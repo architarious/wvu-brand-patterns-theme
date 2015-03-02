@@ -8,9 +8,7 @@
   }
 }
 
-.wvu-container { @include outer-container(); padding: 0 1em; position: relative; padding: $wvu-container-padding;
-  @include mq($bp-xlarge) { padding: 0; }
-}
+.wvu-container { @include outer-container(); padding: 0 1em; position: relative; padding: $wvu-container-padding; }
 
 .wvu-hero__container { @include outer-container(); }
 
