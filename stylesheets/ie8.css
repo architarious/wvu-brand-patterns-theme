@@ -39,4 +39,16 @@ input[type="submit"].form-search__submit {
 .wvu-masthead--has-signature.wvu-masthead--white .wvu-masthead__logo {
   background-image: url(../images/flying-wv-w-signature-white-bg-ie8.png); }
 
+.wvu-hero.wvu-hero--medium-shout {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+  .wvu-hero.wvu-hero--medium-shout h1 {
+    font-size: 4.5em; }
+
+.wvu-hero.wvu-hero--long-shout {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+  .wvu-hero.wvu-hero--long-shout h1 {
+    font-size: 3em; }
+
 /*# sourceMappingURL=ie8.css.map */

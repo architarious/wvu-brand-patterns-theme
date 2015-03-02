@@ -8,6 +8,9 @@ $subhead: $helvetica-neue-bold !default;
 $traditional-audience: $iowan-old-style !default;
 $narrow-audience: $iowan-old-style-italic !default;
 
+$medium-shout-font-size: 4.5em !default;
+$long-shout-font-size: 3em !default;
+
 $wvu-hero-title-typeface: $shout !default;
 
 /*
@@ -131,7 +134,7 @@ $has-wvu-pattern-grid: true !default;
     .wvu-hero { padding-bottom: 2em; padding-top: 2em; }
     @if $wvu-hero-title-typeface == $shout {
       .wvu-hero {
-        h1 { font-size: 4.5em; }
+        h1 { font-size: $medium-shout-font-size; }
       }
     }
   }
@@ -139,7 +142,7 @@ $has-wvu-pattern-grid: true !default;
     .wvu-hero { padding-bottom: 2em; padding-top: 2em; }
     @if $wvu-hero-title-typeface == $shout {
       .wvu-hero {
-        h1 { font-size: 3em; }
+        h1 { font-size: $long-shout-font-size; }
       }
     }
   }
