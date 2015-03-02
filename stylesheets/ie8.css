@@ -30,6 +30,9 @@ input[type="submit"].form-search__submit {
 .wvu-quicklinks li {
   background-image: url(../images/diagonal-gold.svg); }
 
+.wvu-masthead.wvu-masthead--gold .wvu-masthead__logo {
+  background-image: url(../images/flying-wv-blue-ie8.png); }
+
 .wvu-masthead--has-signature.wvu-masthead--gold .wvu-masthead__logo {
   background-image: url(../images/flying-wv-w-signature-gold-bg-ie8.png); }
 
