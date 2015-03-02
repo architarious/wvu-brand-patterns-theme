@@ -1,6 +1,5 @@
 .wvu-masthead__logo {
-  background-image: url(../images/flying-wv-ie.png);
-  background-repeat: no-repeat; }
+  background-image: url(../images/flying-wv-ie.png) no-repeat top 1.2em left; }
 
 .wvu-masthead--has-signature .wvu-masthead__logo {
   background-image: url(../images/flying-wv-w-signature-ie8.png); }
