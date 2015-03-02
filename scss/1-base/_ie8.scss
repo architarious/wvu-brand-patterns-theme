@@ -17,10 +17,10 @@ input[type="submit"].form-search__submit { background-image: url(../images/searc
 
 @mixin wvu-masthead-background() {
   @if $wvu-masthead-background == 'gold' {
-    .wvu-masthead__logo { background-image: url(./images/flying-wv-blue.png); }
+    .wvu-masthead__logo { background-image: url(./images/flying-wv-blue-ie.png); }
   }
   @else if $wvu-masthead-background == 'gold-pattern' {
-    .wvu-masthead__logo { background-image: url(./images/flying-wv-blue.png); }
+    .wvu-masthead__logo { background-image: url(./images/flying-wv-blue-ie.png); }
   }
 }
 
