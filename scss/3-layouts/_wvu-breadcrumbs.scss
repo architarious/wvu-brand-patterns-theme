@@ -1,0 +1,5 @@
+.wvu-breadcrumbs {
+  @include mq($bp-medium) {
+    @include outer-container();
+  }
+}

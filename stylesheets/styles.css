@@ -1710,8 +1710,7 @@ input[type="submit"].form-search__submit {
     border-color: #EAAA00; }
 
 .wvu-breadcrumbs {
-  width: 100%;
-  position: absolute; }
+  width: 100%; }
 
 .wvu-breadcrumbs__crumbs {
   padding: 0.5em 1em;
@@ -2747,6 +2746,16 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     content: "";
     display: table;
     clear: both; }
+
+@media (min-width: 48em) {
+  .wvu-breadcrumbs {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .wvu-breadcrumbs:after {
+      content: "";
+      display: table;
+      clear: both; } }
 
 @media (min-width: 48em) {
   .profiles__container {
